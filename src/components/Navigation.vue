@@ -28,7 +28,7 @@ export default {
     };
   },
   mounted() {
-    this.textLogo = navigation["logo-text"];
+    this.logoText = navigation["logo-text"];
     this.home = navigation.home;
     this.about = navigation.about;
     this.work = navigation.work;
