@@ -43,11 +43,16 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   max-height: 50px;
   color: #464646;
   font-weight: 500;
   margin-top: 30px;
   margin-bottom: 100px;
+  font-family: $font__public;
+  font-weight: 700;
   .logo {
     align-items: center;
     display: flex;
@@ -61,8 +66,9 @@ export default {
   button {
     font-size: 14px;
     border: none;
-    background-color: white;
+    background-color: transparent;
     margin: 0 20px;
+    font-weight: 500;
   }
   .buttons {
     display: flex;
