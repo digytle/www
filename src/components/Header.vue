@@ -48,7 +48,7 @@ export default {
     text-align: left;
     max-width: 440px;
     h1 {
-      font-weight: 700;
+      font-weight: 800;
       font-size: 50px;
       color: #650fba;
       margin-bottom: 40px;
