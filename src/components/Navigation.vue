@@ -1,14 +1,17 @@
 <template>
-  <div class="container row">
-    <div class="col-6">
-      <h1>{{logoText}}</h1>
+  <div class="row navigation">
+    <div class="col-6 logo">
+      <h1 class="logo">{{logoText}}</h1>
     </div>
-    <div class="col-6">
+    <div class="col-6 buttons">
       <div class="row">
         <button>{{home}}</button>
         <button>{{about}}</button>
         <button>{{work}}</button>
         <button>{{contacts}}</button>
+        <button>
+          <b-icon icon="search"></b-icon>
+        </button>
       </div>
     </div>
   </div>
@@ -36,3 +39,35 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+@import "../assets/main.scss";
+.navigation {
+  max-height: 50px;
+  color: #464646;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+      font-weight: 700;
+      font-size: 25px;
+      margin-left: 60px;
+    }
+  }
+  button {
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    margin: 0 20px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+</style>

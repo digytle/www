@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6 text">
         <div class="row">
           <h1>{{text}}</h1>
         </div>
@@ -10,7 +10,7 @@
         </div>
         <div class="row">
           <button>
-            <p>{{button}}</p>
+            <span>{{button}}</span>
           </button>
         </div>
       </div>
@@ -39,3 +39,38 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+@import "../assets/main.scss";
+.container {
+  margin-bottom: 185px;
+  .text {
+    text-align: left;
+    max-width: 440px;
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+      color: #650fba;
+      margin-bottom: 40px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #7a7a7a;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+    button {
+      background-color: #650fba;
+      border-radius: 10px;
+      border: none;
+      padding: 15px 50px;
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+}
+</style>

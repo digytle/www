@@ -32,8 +32,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/main.scss";
 .main-page {
+  font-family: $font__public;
   overflow-x: hidden;
 }
 </style>
