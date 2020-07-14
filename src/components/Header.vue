@@ -43,6 +43,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
+  margin-top: 150px;
   margin-bottom: 185px;
   .text {
     text-align: left;
