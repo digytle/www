@@ -7,7 +7,7 @@
       </div>
       <div class="row">
         <div class="col-4" v-for="feature in features" :key="feature.name">
-          <img src="../..//public/assets/Caterina_AboutPage.png" />
+          <img :src="feature.image" />
           <h3>{{feature.name}}</h3>
           <p>{{feature.description}}</p>
           <router-link :to="`featurette/${feature.link}`">Go to</router-link>
@@ -37,7 +37,4 @@ export default {
 </script>
 
 <style scoped>
-.background {
-  background-color: #c971f3;
-}
 </style>
