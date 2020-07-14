@@ -3,8 +3,13 @@ header-description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
 features:
 - name: Caterina Maniscalco
   description: Caterina Maniscalco is a partner in a London consulting firm, with 20 years of experience across several industries in digital transformation and innovation.
+  image: assets/Caterina_AboutPage.png
   link: learn-more
 - name: Distributed Leadership
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+  image: assets/41v5mLXBRaL.png
+  link: leadership
 - name: Coding for executives
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+  image: assets/maxresdefault.png
+  link: coding
