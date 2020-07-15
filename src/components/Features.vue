@@ -9,10 +9,13 @@
       </div>
       <div class="row">
         <div class="col-4 info-cards" v-for="feature in features" :key="feature.name">
-          <img :src="feature.image" />
-          <h3>{{feature.name}}</h3>
-          <p>{{feature.description}}</p>
-          <router-link :to="`featurette/${feature.link}`">Go to</router-link>
+          <router-link :to="`featurette/${feature.link}`">
+            <div>
+              <img :src="feature.image" />
+              <h3>{{feature.name}}</h3>
+              <p>{{feature.description}}</p>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -59,6 +62,19 @@ export default {
   }
   .info-cards {
     text-align: left;
+    div {
+      padding: 25px;
+    }
+    &:hover div {
+      background-color: #c971f3;
+      h3,
+      p {
+        color: white;
+      }
+    }
+    a:hover {
+      text-decoration: none;
+    }
     h3 {
       font-weight: 700;
       font-size: 25px;
@@ -70,6 +86,9 @@ export default {
       color: #7a7a7a;
       font-size: 16px;
       line-height: 25px;
+    }
+    img {
+      width: 100%;
     }
   }
 }

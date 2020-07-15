@@ -1,11 +1,15 @@
 <template>
-  <div class="row navigation" id="navigation">
+  <div
+    class="row navigation"
+    :style="{'background': this.$route.path.startsWith('/featurette') ? 'linear-gradient(90deg, transparent 44%, #FFFFFF 41%)' : 'white'}"
+    id="navigation"
+  >
     <div class="col-6 logo">
       <h1 class="logo">{{logoText}}</h1>
     </div>
     <div class="col-6 buttons">
       <div class="row">
-        <router-link to="#/" v-scroll-to="'#navigation'">{{firstComponent}}</router-link>
+        <router-link to="/" v-scroll-to="'#navigation'">{{firstComponent}}</router-link>
         <router-link to="#who-we-are" v-scroll-to="'#we-are'">{{secondComponent}}</router-link>
         <router-link to="#what-we-do" v-scroll-to="'#what-we-do'">{{thirdComponent}}</router-link>
         <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{fourthComponent}}</router-link>
