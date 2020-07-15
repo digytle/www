@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="header">
     <div class="row">
       <div class="col-6 text">
         <div class="row">
@@ -44,7 +44,6 @@ export default {
 @import "../assets/main.scss";
 .container {
   margin-top: 150px;
-  margin-bottom: 185px;
   .text {
     text-align: left;
     max-width: 440px;

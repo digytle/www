@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="latest-work">
     <div class="row">
       <div class="col-12 row header-text">
         <h1>{{headerText}}</h1>

@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div class="background" id="what-we-do">
     <div class="container">
       <div class="col-12 row header-text">
         <h1>{{headerText}}</h1>
@@ -70,8 +70,8 @@ export default {
         position: absolute;
         font-size: 300px;
         opacity: 0.1;
-        margin-left: -100px;
-        margin-top: -100px;
+        left: -80px;
+        top: -100px;
         font-weight: 400;
       }
       h3 {
@@ -90,6 +90,8 @@ export default {
         width: 355px;
       }
       button {
+        position: relative;
+        z-index: 2;
         display: flex;
         border-radius: 100%;
         padding: 20px 20px;

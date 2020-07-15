@@ -1,5 +1,6 @@
 logo-text: Digytle
-home: HOME
-about: ABOUT
-work: WORK
-contacts: CONTACTS
+firstComponent: HOME
+secondComponent: WHO WE ARE
+thirdComponent: WHAT WE DO
+fourthComponent: LATEST WORK
+fifthComponent: FEATURETTES

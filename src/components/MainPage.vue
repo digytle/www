@@ -18,6 +18,7 @@ import WhatWeDo from "./WhatWeDo";
 import LatestWork from "./LatestWork";
 import Features from "./Features";
 import Footer from "./Footer";
+// import VueScrollTo from "vue-scrollto";
 export default {
   name: "Home",
   components: {
@@ -29,13 +30,19 @@ export default {
     Features,
     Footer
   }
+  // mounted() {
+  //   if (this.$route.hash) {
+  //     let cancelScroll = VueScrollTo.scrollTo(this.$route.hash);
+  //     let cancelScroll = this.$scrollTo(this.$route.hash);
+  //     cancelScroll();
+  //   }
+  // }
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .main-page {
-  font-family: $font__public;
   overflow-x: hidden;
 }
 </style>

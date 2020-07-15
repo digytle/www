@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="features">
     <div class="row">
       <div class="col-12 row">
         <h1>{{headerText}}</h1>

@@ -1,17 +1,18 @@
 <template>
-  <div class="row navigation">
+  <div class="row navigation" id="navigation">
     <div class="col-6 logo">
       <h1 class="logo">{{logoText}}</h1>
     </div>
     <div class="col-6 buttons">
       <div class="row">
-        <button>{{home}}</button>
-        <button>{{about}}</button>
-        <button>{{work}}</button>
-        <button>{{contacts}}</button>
-        <button>
+        <router-link to="#/" v-scroll-to="'#navigation'">{{firstComponent}}</router-link>
+        <router-link to="#who-we-are" v-scroll-to="'#we-are'">{{secondComponent}}</router-link>
+        <router-link to="#what-we-do" v-scroll-to="'#what-we-do'">{{thirdComponent}}</router-link>
+        <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{fourthComponent}}</router-link>
+        <router-link to="#featurette" v-scroll-to="'#features'">{{fifthComponent}}</router-link>
+        <a>
           <b-icon icon="search"></b-icon>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -24,18 +25,20 @@ export default {
   data() {
     return {
       logoText: "",
-      home: "",
-      about: "",
-      work: "",
-      contacts: ""
+      firstComponent: "",
+      secondComponent: "",
+      thirdComponent: "",
+      fourthComponent: "",
+      fifthComponent: ""
     };
   },
   mounted() {
     this.logoText = navigation["logo-text"];
-    this.home = navigation.home;
-    this.about = navigation.about;
-    this.work = navigation.work;
-    this.contacts = navigation.contacts;
+    this.firstComponent = navigation.firstComponent;
+    this.secondComponent = navigation.secondComponent;
+    this.thirdComponent = navigation.thirdComponent;
+    this.fourthComponent = navigation.fourthComponent;
+    this.fifthComponent = navigation.fifthComponent;
   }
 };
 </script>
@@ -43,13 +46,13 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .navigation {
+  height: 60px;
+  background-color: white;
   position: fixed;
-  width: 100%;
+  width: 102%;
   z-index: 1;
-  max-height: 50px;
   color: #464646;
   font-weight: 500;
-  margin-top: 30px;
   margin-bottom: 100px;
   font-family: $font__public;
   font-weight: 700;
@@ -63,7 +66,9 @@ export default {
       margin-left: 60px;
     }
   }
-  button {
+  a {
+    text-decoration: none;
+    color: #333333;
     font-size: 14px;
     border: none;
     background-color: transparent;
@@ -74,6 +79,9 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    .router-link-exact-active {
+      color: #650fba;
+    }
   }
 }
 </style>

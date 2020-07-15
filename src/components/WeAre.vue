@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="we-are">
     <div class="row items">
       <div class="col-6 text">
         <div class="row">
@@ -39,6 +39,7 @@ export default {
   .items {
     align-items: center;
     margin-bottom: 190px;
+    margin-top: 185px;
   }
   .text {
     h1 {
