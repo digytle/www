@@ -2,7 +2,9 @@
   <div>
     <Navigation></Navigation>
     <div class="row">
-      <div class="image"></div>
+      <div class="image">
+        <img :src="data.image" />
+      </div>
       <div class="col-6 info">
         <h1>{{data.title}}</h1>
         <p>{{data.description}}</p>
@@ -56,7 +58,6 @@ export default {
     margin-left: 75px;
     margin-top: 30px;
     text-align: left;
-    font-family: $font__public;
     font-weight: 700;
     font-size: 25px;
     z-index: 1;
@@ -66,10 +67,17 @@ export default {
   margin-top: 130px;
   margin-left: 60px;
   text-align: left;
+  h1 {
+    font-weight: 800;
+    font-size: 50px;
+    color: #333333;
+  }
   p {
     margin-top: 50px;
-    width: 580px;
+    width: 590px;
     line-height: 30px;
+    color: #7a7a7a;
+    font-weight: 400;
   }
 }
 .container {
@@ -82,6 +90,8 @@ export default {
       line-height: 30px;
       font-size: 16px;
       max-width: 500px;
+      font-weight: 400;
+      color: #7a7a7a;
     }
     img {
       width: 500px;
