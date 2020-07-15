@@ -8,8 +8,8 @@
         <p>{{headerDescription}}</p>
       </div>
       <div class="col-12 row section">
-        <img src="../../public/assets/blits.png" />
-        <img src="../../public/assets/Asset 8-100.png" />
+        <img :src="firstImage" />
+        <img :src="secondImage" />
         <div class="image-box">
           <p>{{title}}</p>
           <button>
@@ -29,13 +29,17 @@ export default {
     return {
       headerText: "",
       headerDescription: "",
-      title: ""
+      title: "",
+      firstImage: {},
+      secondImage: {}
     };
   },
   mounted() {
     this.headerText = LatestWork["header-text"];
     this.headerDescription = LatestWork["header-description"];
     this.title = LatestWork.title;
+    this.firstImage = LatestWork.firstImage;
+    this.secondImage = LatestWork.secondImage;
   }
 };
 </script>

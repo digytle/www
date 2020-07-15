@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-6">
-        <img src="../../public/assets/Image 24.png" />
+        <img :src="image" />
       </div>
     </div>
   </div>
@@ -29,13 +29,15 @@ export default {
     return {
       text: "",
       description: "",
-      button: ""
+      button: "",
+      image: {}
     };
   },
   mounted() {
     this.text = header.text;
     this.description = header.description;
     this.button = header.button;
+    this.image = header.image;
   }
 };
 </script>

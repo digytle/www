@@ -10,7 +10,9 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="empty-box"></div>
+        <div class="empty-box">
+          <img :src="image" />
+        </div>
       </div>
     </div>
   </div>
@@ -23,12 +25,14 @@ export default {
   data() {
     return {
       text: "",
-      description: ""
+      description: "",
+      image: {}
     };
   },
   mounted() {
     this.text = weAre.text;
     this.description = weAre.description;
+    this.image = weAre.image;
   }
 };
 </script>
@@ -60,7 +64,6 @@ export default {
   .empty-box {
     width: 400px;
     height: 300px;
-    background-color: #b5b5b5;
     border: 1px solid #707070;
     margin-left: auto;
   }
