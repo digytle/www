@@ -1,10 +1,18 @@
 <template>
   <div class="row">
     <h1>Digytle</h1>
-    <p>{{privacy}}</p>
-    <p>{{contact}}</p>
-    <p>{{social}}</p>
-    <p>{{copyright}}</p>
+    <div class="col-2">
+      <p>{{privacy}}</p>
+    </div>
+    <div class="col-2">
+      <p>{{contact}}</p>
+    </div>
+    <div class="col-2">
+      <p>{{social}}</p>
+    </div>
+    <div class="col-4">
+      <p>{{copyright}}</p>
+    </div>
   </div>
 </template>
 
@@ -39,8 +47,16 @@ export default {
 }
 h1 {
   margin-left: 60px;
+  font-weight: 700;
+  font-size: 25px;
 }
 p {
-  margin-left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 70px;
+  margin-bottom: 0;
+}
+.col-4 {
+  margin-left: auto;
 }
 </style>
