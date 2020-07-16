@@ -4,10 +4,10 @@
     :style="{'background': this.$route.path.startsWith('/featurette') ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)' : 'white'}"
     id="navigation"
   >
-    <div class="col-5 logo">
+    <div class="col-6 logo">
       <h1 class="logo">{{logoText}}</h1>
     </div>
-    <div class="col-6 buttons">
+    <div class="col-5 buttons">
       <div class="row">
         <router-link to="/" v-scroll-to="'#navigation'">{{firstComponent}}</router-link>
         <router-link to="#who-we-are" v-scroll-to="'#we-are'">{{secondComponent}}</router-link>
