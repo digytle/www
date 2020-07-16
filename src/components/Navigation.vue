@@ -10,10 +10,10 @@
     <div class="col-6 buttons">
       <div class="row">
         <router-link to="/" v-scroll-to="'#navigation'">{{firstComponent}}</router-link>
-        <router-link to="#who-we-are" v-scroll-to="'#we-are'">{{secondComponent}}</router-link>
-        <router-link to="#what-we-do" v-scroll-to="'#what-we-do'">{{thirdComponent}}</router-link>
-        <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{fourthComponent}}</router-link>
-        <router-link to="#featurette" v-scroll-to="'#features'">{{fifthComponent}}</router-link>
+        <router-link to="/#who-we-are" v-scroll-to="'#we-are'">{{secondComponent}}</router-link>
+        <router-link to="/#what-we-do" v-scroll-to="'#what-we-do'">{{thirdComponent}}</router-link>
+        <router-link to="/#latest-work" v-scroll-to="'#latest-work'">{{fourthComponent}}</router-link>
+        <router-link to="/#featurette" v-scroll-to="'#features'">{{fifthComponent}}</router-link>
         <a>
           <b-icon icon="search"></b-icon>
         </a>
