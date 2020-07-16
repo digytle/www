@@ -1,10 +1,10 @@
 <template>
   <div
     class="row navigation"
-    :style="{'background': this.$route.path.startsWith('/featurette') ? 'linear-gradient(90deg, transparent 44%, #FFFFFF 41%)' : 'white'}"
+    :style="{'background': this.$route.path.startsWith('/featurette') ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)' : 'white'}"
     id="navigation"
   >
-    <div class="col-6 logo">
+    <div class="col-5 logo">
       <h1 class="logo">{{logoText}}</h1>
     </div>
     <div class="col-6 buttons">
@@ -14,9 +14,6 @@
         <router-link to="#what-we-do" v-scroll-to="'#what-we-do'">{{thirdComponent}}</router-link>
         <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{fourthComponent}}</router-link>
         <router-link to="#featurette" v-scroll-to="'#features'">{{fifthComponent}}</router-link>
-        <a>
-          <b-icon icon="search"></b-icon>
-        </a>
       </div>
     </div>
   </div>
@@ -76,13 +73,14 @@ export default {
     font-size: 14px;
     border: none;
     background-color: transparent;
-    margin: 0 20px;
+    margin: 0 10px;
     font-weight: 500;
   }
   .buttons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: 60px;
     .router-link-exact-active {
       color: #650fba;
     }
