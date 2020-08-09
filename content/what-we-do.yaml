@@ -2,10 +2,10 @@ header-text: What we do
 header-description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
 explanations:
 - number: "01"
-  text: Leadership Support
-  description: Digytle supports Leaders in the areas of Distributed Leadership, Digital Transformation, Digital Products, Talent Discovery and Development.
+  text: Leadership
+  description: Digytle supports leaders in the areas of distributed leadership, digital transformation, digital products, talent discovery and development. Caterina Maniscalco's book Distributed Leadership and Digital Transformation, her lectures as well as T. E. Shaw's advise on talent management.
   image: assets/Image 27.png
-  link: featurettes/learn-more.yaml
+  link: featurettes/leadership.yaml
 - number: "01"
   text: Digital transformation
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
