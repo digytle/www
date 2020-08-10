@@ -3,7 +3,7 @@ header-description: Digytle is a digital consultancy and delivery organisation w
 explanations:
 - number: "01"
   text: Leadership
-  description: Digytle supports leaders in the areas of distributed leadership, digital transformation, digital products, talent discovery and development. Caterina Maniscalco's book Distributed Leadership and Digital Transformation, her lectures as well as T. E. Shaw's advise on talent management.
+  description: Digytle supports leaders in the areas of distributed leadership, digital transformation, digital products, talent discovery and development.
   image: assets/Image 27.png
   link: featurettes/leadership.yaml
 - number: "01"
