@@ -30,14 +30,14 @@ export default {
     return {
       headerText: "",
       headerDescription: "",
-      features: []
+      features: [],
     };
   },
   mounted() {
     this.headerText = Features["header-text"];
     this.headerDescription = Features["header-description"];
     this.features = Features.features;
-  }
+  },
 };
 </script>
 
@@ -66,7 +66,7 @@ export default {
       padding: 25px;
     }
     &:hover div {
-      background-color: #c971f3;
+      background-color: green;
       h3,
       p {
         color: white;
