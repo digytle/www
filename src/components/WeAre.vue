@@ -3,16 +3,14 @@
     <div class="row items">
       <div class="col-6 text">
         <div class="row">
-          <h1>{{text}}</h1>
+          <h2>{{text}}</h2>
         </div>
         <div class="row">
           <p>{{description}}</p>
         </div>
       </div>
-      <div class="col-6">
-        <div class="empty-box">
-          <img :src="image" />
-        </div>
+      <div class="image">
+        <img :src="image" />
       </div>
     </div>
   </div>
@@ -26,14 +24,14 @@ export default {
     return {
       text: "",
       description: "",
-      image: {}
+      image: {},
     };
   },
   mounted() {
     this.text = weAre.text;
     this.description = weAre.description;
     this.image = weAre.image;
-  }
+  },
 };
 </script>
 
@@ -46,14 +44,12 @@ export default {
     margin-top: 185px;
   }
   .text {
-    h1 {
-      font-weight: 700;
-      color: #650fba;
-      font-size: 40px;
+    h2 {
+      color: #2b2d42;
       margin-bottom: 40px;
     }
     p {
-      color: #464646;
+      color: #8d99ae;
       line-height: 30px;
       font-size: 16px;
       font-weight: 400;
@@ -61,11 +57,8 @@ export default {
       width: 500px;
     }
   }
-  .empty-box {
-    width: 400px;
-    height: 300px;
-    border: 1px solid #707070;
-    margin-left: auto;
+  .image {
+    margin-left: 290px;
   }
 }
 </style>

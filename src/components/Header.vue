@@ -46,7 +46,6 @@ export default {
       font-size: 52px;
       color: #d90429;
       margin-bottom: 40px;
-      font-family: $font__title;
       font-weight: 500;
       max-width: 535px;
       max-height: 135px;
@@ -56,7 +55,6 @@ export default {
       font-size: 16px;
       color: #8d99ae;
       margin-bottom: 25px;
-      font-family: $font__public;
       max-width: 516px;
       max-height: 78px;
     }
