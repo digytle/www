@@ -1,24 +1,14 @@
-header-text: What we do
-header-description: Digytle is a digital consultancy and delivery organisation which spans the full spectrum from leadership and management to full digital product lifecycle.
 explanations:
-- number: "01"
-  text: Leadership
-  description: Digytle supports leaders in the areas of distributed leadership, digital transformation, digital products, talent discovery and development.
-  image: assets/Image 27.png
-  link: featurettes/leadership.yaml
-- number: "01"
-  text: Digital transformation
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-  image: assets/Image 27.png
-  link: featurettes/learn-more.yaml
-- number: "02"
-  text: Digital products
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-  image: assets/Image 27.png
-- number: "03"
-  text: Blits ChatBots
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-  image: assets/Image 27.png
-- number: "04"
-  text: Test Automation
-  description: Comprehensive test automation.
+- header: Digital transformation
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  background: /assets/background_blue.svg
+- header: Digital products
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  background: /assets/background_grey.svg
+- header: Blits Bots
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  background: /assets/background_offwhite.svg
+- header: Auxta Automation testing
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  background: /assets/background_white.svg
+
