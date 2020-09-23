@@ -37,7 +37,9 @@
           <p>{{section.description}}</p>
         </div>
         <div class="col-5">
-          <img :src="section.image" alt="image2" />
+          <router-link to="/design/">
+            <img :src="section.image" alt="image2" />
+          </router-link>
         </div>
       </div>
       <button class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev"></button>

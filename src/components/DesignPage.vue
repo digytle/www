@@ -14,43 +14,7 @@
       <h2>{{data.subTitle}}</h2>
       <p>{{data.subDescription}}</p>
     </div>
-    <div class="quote col-7">
-      <div class="row" v-for="paragraph in data.quote" :key="paragraph">
-        <img :src="paragraph.bigQuotes" />
-        <h2>{{paragraph.text}}</h2>
-        <img class="small" :src="paragraph.smallQuotes" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="container">
-        <div class="row first" v-for="section in data.firstSections" :key="section">
-          <p class="col-6">{{section.description}}</p>
-          <img class="col-6" :src="section.image" />
-        </div>
-        <div class="row second" v-for="section in data.secondSections" :key="section">
-          <img class="second" :src="section.image" />
-          <div class="col-6">
-            <h2>{{data.subTitle}}</h2>
-            <p>{{section.description}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="buy-book">
-      <div class="container">
-        <div class="book" v-for="book in data.books" :key="book">
-          <h2>{{book.question}}</h2>
-          <p>{{book.text}}</p>
-        </div>
-        <button>
-          <p>Buy me</p>
-        </button>
-        <div class="book" v-for="book in data.books" :key="book">
-          <img :src="book.image" />
-        </div>
-      </div>
-      <Footer></Footer>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -72,7 +36,7 @@ export default {
     };
   },
   mounted() {
-    this.data = require(`js-yaml-loader!../../content/featurettes/${this.$route.params.pathMatch}.yaml`);
+    this.data = require(`js-yaml-loader!../../content/design.yaml`);
     this.logoText = navigation["logo-text"];
     this.home = navigation.home;
     this.about = navigation.about;
@@ -92,8 +56,7 @@ export default {
   margin-left: 170px;
   text-align: left;
   h1 {
-    color: #ef233c;
-    text-align: center;
+    color: #6e44ff;
     margin-top: 30px;
     z-index: 1;
   }
