@@ -6,32 +6,40 @@
         <img :src="data.image" />
       </div>
       <div class="info">
-        <h1>{{data.title}}</h1>
-        <p>{{data.description}}</p>
+        <h1>{{ data.title }}</h1>
+        <p>{{ data.description }}</p>
       </div>
     </div>
     <div class="information">
-      <h2>{{data.subTitle}}</h2>
-      <p>{{data.subDescription}}</p>
+      <h2>{{ data.subTitle }}</h2>
+      <p>{{ data.subDescription }}</p>
     </div>
     <div class="quote col-7">
       <div class="row" v-for="paragraph in data.quote" :key="paragraph">
         <img :src="paragraph.bigQuotes" />
-        <h2>{{paragraph.text}}</h2>
+        <h2>{{ paragraph.text }}</h2>
         <img class="small" :src="paragraph.smallQuotes" />
       </div>
     </div>
     <div class="row">
       <div class="container">
-        <div class="row first" v-for="section in data.firstSections" :key="section">
-          <p class="col-6">{{section.description}}</p>
+        <div
+          class="row first"
+          v-for="section in data.firstSection"
+          :key="section"
+        >
+          <p class="col-6">{{ section.description }}</p>
           <img class="col-6" :src="section.image" />
         </div>
-        <div class="row second" v-for="section in data.secondSections" :key="section">
+        <div
+          class="row second"
+          v-for="section in data.secondSection"
+          :key="section"
+        >
           <img class="second" :src="section.image" />
           <div class="col-6">
-            <h2>{{data.subTitle}}</h2>
-            <p>{{section.description}}</p>
+            <h2>{{ data.subTitle }}</h2>
+            <p>{{ section.description }}</p>
           </div>
         </div>
       </div>
@@ -39,8 +47,8 @@
     <div class="buy-book">
       <div class="container">
         <div class="book" v-for="book in data.books" :key="book">
-          <h2>{{book.question}}</h2>
-          <p>{{book.text}}</p>
+          <h2>{{ book.question }}</h2>
+          <p>{{ book.text }}</p>
         </div>
         <button>
           <p>Buy me</p>
