@@ -1,8 +1,8 @@
 <template>
-  <div class="design">
+  <div class="digytle">
     <Navigation></Navigation>
     <div class="row">
-      <div class="image">
+      <div class="logo">
         <img :src="data.image" />
       </div>
       <div class="info">
@@ -16,17 +16,30 @@
     </div>
 
     <div
-      class="row second"
+      class="row section"
       v-for="section in sections"
-      :class="{'row-reverse': section.imagePosition === 'right'}"
+      :class="{ 'row-reverse': section.imagePosition === 'right' }"
       :key="section.title"
     >
-      <img class="blits" :src="section.image" />
+      <img class="image" :src="section.image" />
       <div>
         <h3>{{ section.title }}</h3>
         <p>{{ section.description }}</p>
         <h4>{{ section.subTitle }}</h4>
         <p>{{ section.subDescription }}</p>
+      </div>
+    </div>
+    <div class="design">
+      <h1>{{ data.designTitle }}</h1>
+      <div class="row design-faces">
+        <div class="row faces" v-for="face in faces" :key="face.image">
+          <img :src="face.image" />
+          <div>
+            <h3>{{ face.name }}</h3>
+            <h4>{{ face.position }}</h4>
+            <p>{{ face.text }}</p>
+          </div>
+        </div>
       </div>
     </div>
     <Footer></Footer>
@@ -48,8 +61,8 @@ export default {
       about: "",
       work: "",
       contacts: "",
-      sections: []
-
+      sections: [],
+      faces: [],
     };
   },
   mounted() {
@@ -59,16 +72,17 @@ export default {
     this.about = navigation.about;
     this.work = navigation.work;
     this.contacts = navigation.contacts;
-    this.sections = this.data.sections
+    this.sections = this.data.sections;
+    this.faces = this.data.faces;
   },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-.design {
+.digytle {
   text-align: left;
-  .image {
+  .logo {
     margin-left: 15px;
   }
   .info {
@@ -99,33 +113,31 @@ export default {
       margin: 0 auto;
     }
   }
-
   .row {
     align-items: center;
     &.row-reverse {
       flex-direction: row-reverse;
+      margin-top: 200px;
+      p {
+        max-width: 500px;
+        color: #8d99ae;
+      }
+      h3 {
+        width: 480px;
+      }
+      h4 {
+        width: 480px;
+        color: #ef233c;
+      }
+      img {
+        width: 600px;
+        margin-left: 120px;
+        margin-right: 100px;
+      }
     }
   }
-  .first {
-    margin-left: 145px;
-    margin-right: 20px;
-    p {
-      max-width: 500px;
-      color: #8d99ae;
-    }
-    h3 {
-      width: 480px;
-    }
-    h4 {
-      width: 480px;
-      color: #ef233c;
-    }
-  }
-  .second {
+  .section {
     margin-top: 200px;
-    margin-left: 30px;
-    margin-right: 105px;
-
     p {
       max-width: 500px;
       color: #8d99ae;
@@ -137,27 +149,34 @@ export default {
       width: 480px;
       color: #ef233c;
     }
-    .blits {
-      margin-left: 30px;
+    .image {
+      margin-left: 140px;
       margin-right: 125px;
+      width: 600px;
     }
   }
-  .third {
-    margin-left: 140px;
-    margin-top: 200px;
-    p {
-      max-width: 500px;
-      color: #8d99ae;
+  .design {
+    h1 {
+      color: #6e44ff;
+      text-align: center;
+      margin-top: 300px;
+      margin-bottom: 100px;
     }
-    h3 {
-      width: 480px;
-    }
-    h4 {
-      width: 480px;
-      color: #ef233c;
-    }
-    .access {
-      margin-left: 120px;
+    .design-faces {
+      justify-content: space-evenly;
+      .faces {
+        justify-content: space-evenly;
+        p {
+          width: 320px;
+          color: #8d99ae;
+        }
+        img {
+          margin-right: 35px;
+        }
+        h4 {
+          color: #ef233c;
+        }
+      }
     }
   }
 }
