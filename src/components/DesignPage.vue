@@ -16,20 +16,10 @@
     </div>
 
     <div
-      class="row first col-6"
-      v-for="section in data.firstSection"
-      :key="section"
-    >
-      <h3>{{ section.title }}</h3>
-      <p>{{ section.description }}</p>
-      <h4>{{ section.subTitle }}</h4>
-      <p>{{ section.subDescription }}</p>
-      <img class="first" :src="section.image" />
-    </div>
-    <div
       class="row second"
-      v-for="section in data.secondSection"
-      :key="section"
+      v-for="section in sections"
+      :class="{'row-reverse': section.imagePosition === 'right'}"
+      :key="section.title"
     >
       <img class="blits" :src="section.image" />
       <div>
@@ -37,19 +27,6 @@
         <p>{{ section.description }}</p>
         <h4>{{ section.subTitle }}</h4>
         <p>{{ section.subDescription }}</p>
-      </div>
-      <div
-        class="row third"
-        v-for="section in data.thirdSection"
-        :key="section"
-      >
-        <div>
-          <h3>{{ section.title }}</h3>
-          <p>{{ section.description }}</p>
-          <h4>{{ section.subTitle }}</h4>
-          <p>{{ section.subDescription }}</p>
-        </div>
-        <img class="access" :src="section.image" />
       </div>
     </div>
     <Footer></Footer>
@@ -71,6 +48,8 @@ export default {
       about: "",
       work: "",
       contacts: "",
+      sections: []
+
     };
   },
   mounted() {
@@ -80,6 +59,7 @@ export default {
     this.about = navigation.about;
     this.work = navigation.work;
     this.contacts = navigation.contacts;
+    this.sections = this.data.sections
   },
 };
 </script>
@@ -122,6 +102,9 @@ export default {
 
   .row {
     align-items: center;
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
   }
   .first {
     margin-left: 145px;

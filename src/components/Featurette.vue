@@ -15,7 +15,7 @@
       <p>{{ data.subDescription }}</p>
     </div>
     <div class="quote col-7">
-      <div class="row" v-for="paragraph in data.quote" :key="paragraph">
+      <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
         <img :src="paragraph.bigQuotes" />
         <h2>{{ paragraph.text }}</h2>
         <img class="small" :src="paragraph.smallQuotes" />
@@ -26,7 +26,7 @@
         <div
           class="row first"
           v-for="section in data.firstSection"
-          :key="section"
+          :key="section.description"
         >
           <p class="col-6">{{ section.description }}</p>
           <img class="col-6" :src="section.image" />
@@ -34,7 +34,7 @@
         <div
           class="row second"
           v-for="section in data.secondSection"
-          :key="section"
+          :key="section.subTitle"
         >
           <img class="second" :src="section.image" />
           <div class="col-6">
@@ -46,16 +46,14 @@
     </div>
     <div class="buy-book">
       <div class="container">
-        <div class="book" v-for="book in data.books" :key="book">
+        <div class="book" v-for="book in data.books" :key="book.question">
           <h2>{{ book.question }}</h2>
           <p>{{ book.text }}</p>
-        </div>
-        <button>
-          <p>Buy me</p>
-        </button>
-        <div class="book" v-for="book in data.books" :key="book">
           <img :src="book.image" />
         </div>
+        <button v-if="data.button">
+          <p>{{data.button}}</p>
+        </button>
       </div>
       <Footer></Footer>
     </div>

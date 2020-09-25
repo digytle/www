@@ -13,14 +13,14 @@
           <p>{{section.description}}</p>
         </div>
       </div>
-      <div v-for="section in secondSection" :key="section" class="carousel-item">
+      <div v-for="section in secondSection" :key="section.header" class="carousel-item">
         <img :src="section.background" class="d-block w-100" alt="image1" />
         <div class="col-4 second">
           <h2>{{section.header}}</h2>
           <p>{{section.description}}</p>
         </div>
       </div>
-      <div v-for="section in thirdSection" :key="section" class="carousel-item">
+      <div v-for="section in thirdSection" :key="section.header" class="carousel-item">
         <img :src="section.background" class="d-block w-100" alt="image1" />
         <div class="col-4 third">
           <h2>{{section.header}}</h2>
@@ -30,7 +30,7 @@
           <img :src="section.image" alt="image2" />
         </div>
       </div>
-      <div v-for="section in fourthSection" :key="section" class="carousel-item">
+      <div v-for="section in fourthSection" :key="section.header" class="carousel-item">
         <img :src="section.background" class="d-block w-100" alt="image1" />
         <div class="col-4 fourth">
           <h2>{{section.header}}</h2>
