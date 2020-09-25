@@ -82,6 +82,13 @@ export default {
 @import "../assets/main.scss";
 .digytle {
   text-align: left;
+  h4 {
+    width: 480px;
+    color: #ef233c;
+  }
+  h3 {
+    width: 480px;
+  }
   .logo {
     margin-left: 15px;
   }
@@ -122,13 +129,6 @@ export default {
         max-width: 500px;
         color: #8d99ae;
       }
-      h3 {
-        width: 480px;
-      }
-      h4 {
-        width: 480px;
-        color: #ef233c;
-      }
       img {
         width: 600px;
         margin-left: 120px;
@@ -141,13 +141,6 @@ export default {
     p {
       max-width: 500px;
       color: #8d99ae;
-    }
-    h3 {
-      width: 480px;
-    }
-    h4 {
-      width: 480px;
-      color: #ef233c;
     }
     .image {
       margin-left: 140px;
@@ -172,9 +165,6 @@ export default {
         }
         img {
           margin-right: 35px;
-        }
-        h4 {
-          color: #ef233c;
         }
       }
     }
