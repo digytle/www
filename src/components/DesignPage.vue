@@ -42,6 +42,19 @@
         </div>
       </div>
     </div>
+    <div class="work-with-us">
+      <div class="work" v-for="section in data.work" :key="section.question">
+        <h2>{{ section.question }}</h2>
+        <p class="text">
+          {{ section.text }}
+        </p>
+        <router-link :to="`/featurette/learn-more`">
+          <button v-if="section.button">
+            <p>{{ section.button }}</p>
+          </button></router-link
+        >
+      </div>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -122,6 +135,7 @@ export default {
   }
   .row {
     align-items: center;
+    margin-top: 0;
     &.row-reverse {
       flex-direction: row-reverse;
       margin-top: 200px;
@@ -157,14 +171,45 @@ export default {
     }
     .design-faces {
       justify-content: space-evenly;
+      margin-left: 100px;
       .faces {
-        justify-content: space-evenly;
         p {
           width: 320px;
           color: #8d99ae;
         }
         img {
           margin-right: 35px;
+        }
+      }
+    }
+  }
+  .work-with-us {
+    // background-image: url("/assets/background_with_us.svg");
+    margin-top: 270px;
+    background-color: #2b2d42;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    .work {
+      text-align: center;
+      .text {
+        color: #edf2f4;
+        width: 685px;
+        margin: 40px auto 30px;
+      }
+      h2 {
+        color: #edf2f4;
+      }
+      button {
+        background-color: #ef233c;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        border-color: transparent;
+        outline: none;
+        margin-bottom: 0;
+        p {
+          color: #ffffff;
+          margin: 0;
         }
       }
     }
