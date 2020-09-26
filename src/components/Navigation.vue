@@ -1,7 +1,7 @@
 <template>
   <div
     class="row navigation"
-    :style="{'background': this.$route.path.startsWith('/featurette') ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)' : 'white'}"
+    :style="{'background': this.$route.path.startsWith('/featurette') || this.$route.path.startsWith('/design')  ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)' : 'white'}"
     id="navigation"
   >
     <div class="col-6 logo">
@@ -30,7 +30,7 @@ export default {
       secondComponent: "",
       thirdComponent: "",
       fourthComponent: "",
-      fifthComponent: ""
+      fifthComponent: "",
     };
   },
   mounted() {
@@ -40,7 +40,7 @@ export default {
     this.thirdComponent = navigation.thirdComponent;
     this.fourthComponent = navigation.fourthComponent;
     this.fifthComponent = navigation.fifthComponent;
-  }
+  },
 };
 </script>
 

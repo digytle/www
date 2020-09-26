@@ -1,25 +1,50 @@
 <template>
-  <div class="background" id="what-we-do">
-    <div class="container">
-      <div class="col-12 row header-text">
-        <h1>{{headerText}}</h1>
-      </div>
-      <div class="col-12 row header-text">
-        <p>{{headerDescription}}</p>
-      </div>
-      <div class="col-12 row section" v-for="row of explanations" :key="row">
-        <div class="col-6">
-          <h1>{{row.number}}</h1>
-          <h3>{{row.text}}</h3>
-          <p>{{row.description}}</p>
-          <button>
-            <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
-          </button>
-        </div>
-        <div class="col-6">
-          <img :src="row.image" />
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div
+        v-for="(section, index) in firstSection"
+        :key="index"
+        class="carousel-item"
+        :class="{'active':index==0}"
+      >
+        <img :src="section.background" class="d-block w-100" alt="image1" />
+        <div class="col-4 first">
+          <h2>{{section.header}}</h2>
+          <p>{{section.description}}</p>
         </div>
       </div>
+      <div v-for="section in secondSection" :key="section.header" class="carousel-item">
+        <img :src="section.background" class="d-block w-100" alt="image1" />
+        <div class="col-4 second">
+          <h2>{{section.header}}</h2>
+          <p>{{section.description}}</p>
+        </div>
+      </div>
+      <div v-for="section in thirdSection" :key="section.header" class="carousel-item">
+        <img :src="section.background" class="d-block w-100" alt="image1" />
+        <div class="col-4 third">
+          <h2>{{section.header}}</h2>
+          <p>{{section.description}}</p>
+        </div>
+        <div class="col-5">
+          <img :src="section.image" alt="image2" />
+        </div>
+      </div>
+      <div v-for="section in fourthSection" :key="section.header" class="carousel-item">
+        <img :src="section.background" class="d-block w-100" alt="image1" />
+        <div class="col-4 fourth">
+          <h2>{{section.header}}</h2>
+          <p>{{section.description}}</p>
+        </div>
+        <div class="col-5">
+          <router-link to="/design/">
+            <img :src="section.image" alt="image2" />
+          </router-link>
+        </div>
+      </div>
+      <button class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev"></button>
+
+      <button class="carousel-control-next" href="#carouselExampleControls" data-slide="next"></button>
     </div>
   </div>
 </template>
@@ -30,78 +55,71 @@ export default {
   name: "WhatWeDo",
   data() {
     return {
-      headerText: "",
-      headerDescription: "",
-      explanations: []
+      firstSection: [],
+      secondSection: [],
+      thirdSection: [],
+      fourthSection: [],
     };
   },
   mounted() {
-    this.headerText = WhatWeDo["header-text"];
-    this.headerDescription = WhatWeDo["header-description"];
-    this.explanations = WhatWeDo.explanations;
-  }
+    this.firstSection = WhatWeDo.firstSection;
+    this.secondSection = WhatWeDo.secondSection;
+    this.thirdSection = WhatWeDo.thirdSection;
+    this.fourthSection = WhatWeDo.fourthSection;
+  },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-.background {
-  background-color: #c971f3;
-  .container {
-    color: white;
-    .header-text {
-      justify-content: center;
-      h1 {
-        margin-top: 80px;
-        margin-bottom: 40px;
-        font-weight: 700;
-        font-size: 40px;
-      }
-      p {
-        width: 850px;
-        margin-bottom: 120px;
-        font-weight: 400;
-        font-size: 16px;
-      }
+#carouselExampleControls {
+  margin: 70px auto 155px;
+  position: relative;
+  .carousel-control-next {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+  }
+  .carousel-control-prev {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+  }
+  .col-4 {
+    text-align: left;
+    position: absolute;
+    bottom: 300px;
+    left: 130px;
+  }
+  .col-5 {
+    text-align: left;
+    position: absolute;
+    bottom: 200px;
+    right: 80px;
+  }
+  .first {
+    h2 {
+      color: #ef233c;
     }
-    .section {
-      margin-bottom: 130px;
-      h1 {
-        position: absolute;
-        font-size: 300px;
-        opacity: 0.1;
-        left: -80px;
-        top: -100px;
-        font-weight: 400;
-      }
-      h3 {
-        color: #ffff37;
-        font-weight: 700;
-        font-size: 30px;
-        text-align: left;
-        margin-bottom: 20px;
-      }
-      p {
-        font-weight: 500;
-        font-size: 20px;
-        text-align: left;
-        margin-bottom: 30px;
-        line-height: 30px;
-        width: 355px;
-      }
-      button {
-        position: relative;
-        z-index: 2;
-        display: flex;
-        border-radius: 100%;
-        padding: 20px 20px;
-        border: none;
-        background-color: white;
-        margin-bottom: 115px;
-        .arrow-icon {
-          color: #c971f3;
-        }
-      }
+    p {
+      color: #edf2f4;
+    }
+  }
+  .second {
+    h2 {
+      color: #6e44ff;
+    }
+    p {
+      color: #edf2f4;
+    }
+  }
+  .third,
+  .fourth {
+    h2 {
+      color: #2b2d42;
+    }
+    p {
+      color: #8d99ae;
     }
   }
 }

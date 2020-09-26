@@ -30,14 +30,14 @@ export default {
     return {
       headerText: "",
       headerDescription: "",
-      features: []
+      features: [],
     };
   },
   mounted() {
     this.headerText = Features["header-text"];
     this.headerDescription = Features["header-description"];
     this.features = Features.features;
-  }
+  },
 };
 </script>
 
@@ -47,10 +47,8 @@ export default {
   .header-text {
     justify-content: center;
     h1 {
-      font-weight: 700;
-      font-size: 40px;
       margin-bottom: 40px;
-      color: #333333;
+      color: #ef233c;
     }
     p {
       width: 860px;
@@ -66,7 +64,7 @@ export default {
       padding: 25px;
     }
     &:hover div {
-      background-color: #c971f3;
+      background-color: green;
       h3,
       p {
         color: white;
@@ -76,8 +74,6 @@ export default {
       text-decoration: none;
     }
     h3 {
-      font-weight: 700;
-      font-size: 25px;
       color: #333333;
       margin: 20px 0;
     }

@@ -2,7 +2,7 @@
   <div class="container" id="latest-work">
     <div class="row">
       <div class="col-12 row header-text">
-        <h1>{{headerText}}</h1>
+        <h2>{{headerText}}</h2>
       </div>
       <div class="col-12 row header-text">
         <p>{{headerDescription}}</p>
@@ -31,7 +31,7 @@ export default {
       headerDescription: "",
       title: "",
       firstImage: {},
-      secondImage: {}
+      secondImage: {},
     };
   },
   mounted() {
@@ -40,25 +40,22 @@ export default {
     this.title = LatestWork.title;
     this.firstImage = LatestWork.firstImage;
     this.secondImage = LatestWork.secondImage;
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/main.scss";
 .header-text {
   justify-content: center;
-  h1 {
-    font-weight: 700;
-    font-size: 40px;
-    color: #333333;
+  h2 {
+    color: #2b2d42;
     margin-bottom: 40px;
   }
   p {
     width: 860px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #7a7a7a;
+    line-height: 30px;
+    color: #8d99ae;
     margin-bottom: 80px;
   }
 }
@@ -68,7 +65,7 @@ export default {
   .image-box {
     width: 350px;
     height: 350px;
-    background-color: #650fba;
+    background-color: #ef233c;
     color: white;
     p {
       margin-top: 100px;

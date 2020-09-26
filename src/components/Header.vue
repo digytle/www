@@ -1,6 +1,9 @@
 <template>
-  <div class="container" id="header">
+  <div class="header">
     <div class="row">
+      <div class="col-6">
+        <img :src="image" />
+      </div>
       <div class="col-6 text">
         <div class="row">
           <h1>{{text}}</h1>
@@ -8,14 +11,6 @@
         <div class="row">
           <p>{{description}}</p>
         </div>
-        <div class="row">
-          <button>
-            <span>{{button}}</span>
-          </button>
-        </div>
-      </div>
-      <div class="col-6">
-        <img :src="image" />
       </div>
     </div>
   </div>
@@ -29,49 +24,39 @@ export default {
     return {
       text: "",
       description: "",
-      button: "",
-      image: {}
+      image: {},
     };
   },
   mounted() {
     this.text = header.text;
     this.description = header.description;
-    this.button = header.button;
     this.image = header.image;
-  }
+  },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-.container {
-  margin-top: 150px;
+.header {
+  margin-top: 100px;
   .text {
+    margin-top: 105px;
     text-align: left;
-    max-width: 440px;
     h1 {
-      font-weight: 800;
-      font-size: 50px;
-      color: #650fba;
+      font-size: 52px;
+      color: #d90429;
       margin-bottom: 40px;
+      font-weight: 500;
+      max-width: 535px;
+      max-height: 135px;
     }
     p {
       font-weight: 400;
       font-size: 16px;
-      color: #7a7a7a;
-      line-height: 30px;
+      color: #8d99ae;
       margin-bottom: 25px;
-    }
-    button {
-      background-color: #650fba;
-      border-radius: 10px;
-      border: none;
-      padding: 15px 50px;
-      span {
-        font-weight: 500;
-        font-size: 18px;
-        color: white;
-      }
+      max-width: 516px;
+      max-height: 78px;
     }
   }
 }
