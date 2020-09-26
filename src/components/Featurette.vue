@@ -49,11 +49,16 @@
         <div class="book" v-for="book in data.books" :key="book.question">
           <h2>{{ book.question }}</h2>
           <p>{{ book.text }}</p>
-          <img :src="book.image" />
         </div>
-        <button v-if="data.button">
-          <p>{{data.button}}</p>
-        </button>
+        <div class="col-3">
+          <button v-if="data.button">
+            <p>{{ data.button }}</p></button
+          ><img
+            v-for="book in data.books"
+            :key="book.question"
+            :src="book.image"
+          />
+        </div>
       </div>
       <Footer></Footer>
     </div>
@@ -144,6 +149,9 @@ export default {
       margin: 30px auto 35px;
     }
   }
+  .col-3 {
+    margin: 0 auto;
+  }
   button {
     background-color: #ef233c;
     border-radius: 10px;
@@ -151,7 +159,7 @@ export default {
     height: 50px;
     border-color: transparent;
     outline: none;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     p {
       color: #ffffff;
       margin: 0;
