@@ -24,23 +24,19 @@
     <div class="row">
       <div class="container">
         <div
-          class="row first"
-          v-for="section in data.firstSection"
-          :key="section.description"
+          class="row"
+          v-for="(section, index) in data.sections"
+          :key="index"
+          :class="{
+            first: index == 0,
+            second: index == 1,
+          }"
         >
-          <p class="col-6">{{ section.description }}</p>
-          <img v-if="section.image" class="col-6" :src="section.image" />
-        </div>
-        <div
-          class="row second"
-          v-for="section in data.secondSection"
-          :key="section.subTitle"
-        >
-          <img class="second" :src="section.image" />
-          <div class="col-6">
-            <h2>{{ data.subTitle }}</h2>
+          <div>
+            <h2>{{ section.title }}</h2>
             <p>{{ section.description }}</p>
           </div>
+          <img v-if="section.image" :src="section.image" />
         </div>
       </div>
     </div>
@@ -174,6 +170,9 @@ export default {
     align-items: center;
   }
   .first {
+    img {
+      margin-left: 85px;
+    }
     p {
       text-align: left;
       max-width: 625px;
@@ -184,6 +183,7 @@ export default {
     }
   }
   .second {
+    flex-direction: row-reverse;
     img {
       width: 300px;
       height: 425px;
@@ -192,10 +192,13 @@ export default {
     p {
       text-align: left;
       max-width: 625px;
+      height: 307px;
       color: #8d99ae;
     }
     h2 {
       text-align: left;
+      margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 }
