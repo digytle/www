@@ -1,4 +1,3 @@
-
 sections:
 - header: Digital transformation
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -8,11 +7,11 @@ sections:
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   background: /assets/background_grey.svg
   image:
-- header: Blits Bots
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+- header: Blits Chat Bot Management Platform
+  description: Blits is one of the most advanced Chat Bot Management Platforms. Blits allows you to connect to any Natural Language Processing Engine, so that you can choose the best for your case (language, subject matter, etc.). And then connects to your complete IT Landscape, in order to enable full bi-directional service of your customers.
   background: /assets/background_offwhite.svg
   image: /assets/blits_bots.png
-- header: Auxta Automation testing
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+- header: AUXTA Deep Automated Quality Assurance
+  description: AUXTA performs Deep Automated Quality Assurance of your online or mobile application. It can perform 10s of 1000s of steps every hour, imitating human visitor, and comparing the result fixed or dynamic values. AUXTA performs compliance supervision such as European Securities and Markets Authority (ESMA) monitoring.
   background: /assets/background_white.svg
   image: /assets/auxta.png
