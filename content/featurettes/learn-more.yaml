@@ -17,5 +17,5 @@ books:
 - question: Would you like to get a copy of this book?
 - text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
 - image: ../assets/amazon.png
-- button: Buy me!
-- link: /
+button: Buy me!
+link: /
