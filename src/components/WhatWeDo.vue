@@ -2,49 +2,45 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div
-        v-for="(section, index) in firstSection"
+        v-for="(section, index) in sections"
         :key="index"
         class="carousel-item"
-        :class="{'active':index==0}"
+        :class="{ active: index == 0 }"
       >
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 first">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
-        </div>
-      </div>
-      <div v-for="section in secondSection" :key="section.header" class="carousel-item">
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 second">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
-        </div>
-      </div>
-      <div v-for="section in thirdSection" :key="section.header" class="carousel-item">
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 third">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
-        </div>
-        <div class="col-5">
-          <img :src="section.image" alt="image2" />
-        </div>
-      </div>
-      <div v-for="section in fourthSection" :key="section.header" class="carousel-item">
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 fourth">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
+        <img
+          v-if="section.background"
+          :src="section.background"
+          class="d-block w-100"
+          alt="image1"
+        />
+        <div
+          class="col-4"
+          :class="{
+            first: index == 0,
+            second: index == 1,
+            third: index == 2,
+            fourth: index == 3,
+          }"
+        >
+          <h2 v-if="section.header">{{ section.header }}</h2>
+          <p v-if="section.description">{{ section.description }}</p>
         </div>
         <div class="col-5">
           <router-link to="/design/">
-            <img :src="section.image" alt="image2" />
+            <img v-if="section.image" :src="section.image" alt="image2" />
           </router-link>
         </div>
       </div>
-      <button class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev"></button>
-
-      <button class="carousel-control-next" href="#carouselExampleControls" data-slide="next"></button>
+      <button
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        data-slide="prev"
+      ></button>
+      <button
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        data-slide="next"
+      ></button>
     </div>
   </div>
 </template>
@@ -55,17 +51,11 @@ export default {
   name: "WhatWeDo",
   data() {
     return {
-      firstSection: [],
-      secondSection: [],
-      thirdSection: [],
-      fourthSection: [],
+      sections: [],
     };
   },
   mounted() {
-    this.firstSection = WhatWeDo.firstSection;
-    this.secondSection = WhatWeDo.secondSection;
-    this.thirdSection = WhatWeDo.thirdSection;
-    this.fourthSection = WhatWeDo.fourthSection;
+    this.sections = WhatWeDo.sections;
   },
 };
 </script>

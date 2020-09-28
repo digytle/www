@@ -29,7 +29,7 @@
           :key="section.description"
         >
           <p class="col-6">{{ section.description }}</p>
-          <img class="col-6" :src="section.image" />
+          <img v-if="section.image" class="col-6" :src="section.image" />
         </div>
         <div
           class="row second"
@@ -51,8 +51,10 @@
           <p>{{ book.text }}</p>
         </div>
         <div class="col-3">
-          <button v-if="data.button">
-            <p>{{ data.button }}</p></button
+          <router-link :to="data.link">
+            <button v-if="data.button">
+              <p>{{ data.button }}</p>
+            </button> </router-link
           ><img
             v-for="book in data.books"
             :key="book.question"

@@ -18,7 +18,9 @@
     <div
       class="row section"
       v-for="section in sections"
-      :class="{ 'row-reverse': section.imagePosition === 'right' }"
+      :class="{
+        'row-reverse': index == 0,
+      }"
       :key="section.title"
     >
       <img class="image" :src="section.image" />
@@ -48,7 +50,7 @@
         <p class="text">
           {{ section.text }}
         </p>
-        <router-link :to="`/featurette/learn-more`">
+        <router-link :to="section.link">
           <button v-if="section.button">
             <p>{{ section.button }}</p>
           </button></router-link
