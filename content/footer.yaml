@@ -1,4 +1,9 @@
+address: 699 Dee Camp North Alexanderburgh, Buckinghamshire
 privacy: Privacy policy
-contact: Contacts
-social: Social links
+contactsImage: /assets/contacts.svg
+contacts: 
+-  charliecox@digytle.com
+-  t.e.shaw@digytle.com
 copyright: © 2020 Digytle. All rights reserved
+location: /assets/location-point.svg
+

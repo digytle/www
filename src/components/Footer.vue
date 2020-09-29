@@ -1,17 +1,23 @@
 <template>
-  <div class="row">
+  <div class="footer row">
     <h1>Digytle</h1>
-    <div class="col-2">
-      <p>{{privacy}}</p>
+    <div class="row location">
+      <img :src="locationPoint" />
+      <p>{{ address }}</p>
     </div>
-    <div class="col-2">
-      <p>{{contact}}</p>
+    <div class="row contacts">
+      <img :src="contactsImage" />
+      <div class="col-2">
+        <div v-for="email in contacts" :key="email">
+          <p>{{ email }}</p>
+        </div>
+      </div>
     </div>
-    <div class="col-2">
-      <p>{{social}}</p>
+    <div class="row privacy">
+      <p>{{ privacy }}</p>
     </div>
-    <div class="col-4">
-      <p>{{copyright}}</p>
+    <div class="copyright">
+      <p>{{ copyright }}</p>
     </div>
   </div>
 </template>
@@ -25,23 +31,30 @@ export default {
       privacy: "",
       contact: "",
       social: "",
-      copyright: ""
+      copyright: "",
+      locationPoint: "",
+      address: "",
+      contactsImage: {},
+      contacts: [],
     };
   },
   mounted() {
     this.privacy = footer.privacy;
     this.contact = footer.contact;
-    this.social = footer.social;
+    this.address = footer.address;
     this.copyright = footer.copyright;
-  }
+    this.locationPoint = footer.location;
+    this.contactsImage = footer.contactsImage;
+    this.contacts = footer.contacts;
+  },
 };
 </script>
 
-<style scoped>
-.row {
+<style scoped lang="scss">
+@import "../assets/main.scss";
+.footer {
   background-color: #333333;
   height: 150px;
-  color: white;
   align-items: center;
   margin-top: 180px;
 }
@@ -49,14 +62,37 @@ h1 {
   margin-left: 60px;
   font-weight: 700;
   font-size: 25px;
+  color: white;
 }
 p {
+  text-align: left;
   font-weight: 500;
   font-size: 14px;
-  margin-left: 70px;
   margin-bottom: 0;
+  color: #edf2f4;
 }
-.col-4 {
-  margin-left: auto;
+.location {
+  margin-left: 70px;
+  p {
+    width: 250px;
+  }
+  img {
+    margin-right: 8px;
+    margin-bottom: 30px;
+  }
+}
+.contacts {
+  margin-left: 100px;
+  img {
+    margin-right: 8px;
+    margin-bottom: 30px;
+  }
+}
+.privacy {
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+.copyright {
+  margin-left: 195px;
 }
 </style>
