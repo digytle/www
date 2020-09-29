@@ -1,19 +1,37 @@
 <template>
   <div
     class="row navigation"
-    :style="{'background': this.$route.path.startsWith('/featurette') || this.$route.path.startsWith('/design')  ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)' : 'white'}"
+    :style="{
+      background:
+        this.$route.path.startsWith('/featurette') ||
+        this.$route.path.startsWith('/design')
+          ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)'
+          : 'white',
+    }"
     id="navigation"
   >
     <div class="col-6 logo">
-      <h1 class="logo">{{logoText}}</h1>
+      <router-link to="/">
+        <h1 class="logo">{{ logoText }}</h1></router-link
+      >
     </div>
     <div class="col-5 buttons">
       <div class="row">
-        <router-link to="/" v-scroll-to="'#navigation'">{{firstComponent}}</router-link>
-        <router-link to="#who-we-are" v-scroll-to="'#we-are'">{{secondComponent}}</router-link>
-        <router-link to="#what-we-do" v-scroll-to="'#what-we-do'">{{thirdComponent}}</router-link>
-        <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{fourthComponent}}</router-link>
-        <router-link to="#featurette" v-scroll-to="'#features'">{{fifthComponent}}</router-link>
+        <router-link to="/" v-scroll-to="'#navigation'">{{
+          firstComponent
+        }}</router-link>
+        <router-link to="#who-we-are" v-scroll-to="'#we-are'">{{
+          secondComponent
+        }}</router-link>
+        <router-link to="#what-we-do" v-scroll-to="'#what-we-do'">{{
+          thirdComponent
+        }}</router-link>
+        <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{
+          fourthComponent
+        }}</router-link>
+        <router-link to="#featurette" v-scroll-to="'#features'">{{
+          fifthComponent
+        }}</router-link>
       </div>
     </div>
   </div>
