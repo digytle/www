@@ -17,11 +17,9 @@
 
     <div
       class="row section"
-      v-for="section in sections"
-      :class="{
-        'row-reverse': index == 0,
-      }"
-      :key="section.title"
+      v-for="(section, index) in sections"
+      :key="index"
+      :class="{ 'row-reverse': index % 2 == 0 }"
     >
       <img class="image" :src="section.image" />
       <div>
