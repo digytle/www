@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="col-4 info-cards" v-for="feature in features" :key="feature.name">
-          <router-link :to="`featurette/${feature.link}`">
+          <router-link :to="`${feature.template}/${feature.link}`">
             <div>
               <img :src="feature.image" />
               <h3>{{feature.name}}</h3>

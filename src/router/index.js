@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Featurette from '../components/Featurette'
 import DesignPage from '../components/DesignPage'
-
+import PrivacyPolicy from '../components/PrivacyPolicy'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -19,6 +19,11 @@ const routes = [{
     path: '/design/**',
     name: 'DesignPage',
     component: DesignPage
+  },
+  {
+    path: '/privacy-policy/**',
+    name: 'PrivacyPolicy',
+    component: PrivacyPolicy
   },
 ]
 

@@ -14,7 +14,9 @@
       </div>
     </div>
     <div class="row privacy">
-      <p>{{ privacy }}</p>
+      <router-link to="/privacy-policy/"
+        ><p>{{ privacy }}</p></router-link
+      >
     </div>
     <div class="copyright">
       <p>{{ copyright }}</p>
