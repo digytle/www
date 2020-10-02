@@ -6,11 +6,12 @@
       </div>
       <div class="col-6 text">
         <div class="row">
-          <h1>{{text}}</h1>
+          <h1>{{ text }}</h1>
         </div>
         <div class="row">
-          <p>{{description}}</p>
+          <p>{{ description }}</p>
         </div>
+        <img :src="arrow" />
       </div>
     </div>
   </div>
@@ -25,12 +26,14 @@ export default {
       text: "",
       description: "",
       image: {},
+      arrow: {},
     };
   },
   mounted() {
     this.text = header.text;
     this.description = header.description;
     this.image = header.image;
+    this.arrow = header.arrow;
   },
 };
 </script>
@@ -55,6 +58,7 @@ export default {
       font-size: 16px;
       color: #8d99ae;
       margin-bottom: 25px;
+      margin-top: 30px;
       max-width: 516px;
       max-height: 78px;
     }

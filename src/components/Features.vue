@@ -2,18 +2,22 @@
   <div class="container" id="features">
     <div class="row">
       <div class="col-12 row header-text">
-        <h1>{{headerText}}</h1>
+        <h2>{{ headerText }}</h2>
       </div>
       <div class="col-12 row header-text">
-        <p>{{headerDescription}}</p>
+        <p>{{ headerDescription }}</p>
       </div>
       <div class="row">
-        <div class="col-4 info-cards" v-for="feature in features" :key="feature.name">
+        <div
+          class="col-4 info-cards"
+          v-for="feature in features"
+          :key="feature.name"
+        >
           <router-link :to="`${feature.template}/${feature.link}`">
             <div>
               <img :src="feature.image" />
-              <h3>{{feature.name}}</h3>
-              <p>{{feature.description}}</p>
+              <h3>{{ feature.name }}</h3>
+              <p>{{ feature.description }}</p>
             </div>
           </router-link>
         </div>
@@ -46,7 +50,7 @@ export default {
 .container {
   .header-text {
     justify-content: center;
-    h1 {
+    h2 {
       margin-bottom: 40px;
       color: #ef233c;
     }
@@ -64,7 +68,8 @@ export default {
       padding: 25px;
     }
     &:hover div {
-      background-color: green;
+      
+      background-color:#2B2D42;
       h3,
       p {
         color: white;

@@ -15,6 +15,7 @@ h2 {
     font-family: $font__title;
     font-size: 40px;
     font-weight: 500;
+    margin-top: 60px;
 }
 
 h3 {
@@ -32,4 +33,20 @@ h4 {
 p {
     font-family: $font__public;
     line-height: 30px;
+}
+
+.line {
+    width: 115px;
+    height: 1px;
+    border-bottom: 1px solid #8d99ae;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+h5 {
+    color: #8D99AE;
+    font-size: 12px;
+    font-family: $font__title;
+    font-weight: 500;
 }

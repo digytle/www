@@ -71,6 +71,9 @@ export default {
 #carouselExampleControls {
   margin: 70px auto 155px;
   position: relative;
+  h2 {
+    margin-bottom: 50px;
+  }
   .carousel-control-next {
     border-radius: 100%;
     width: 50px;
@@ -84,14 +87,17 @@ export default {
   .col-4 {
     text-align: left;
     position: absolute;
-    bottom: 300px;
+    top: 195px;
     left: 130px;
   }
   .col-5 {
     text-align: left;
     position: absolute;
-    bottom: 200px;
+    top: 120px;
     right: 80px;
+    img{
+      height:435px;
+    }
   }
   .first {
     h2 {
