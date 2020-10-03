@@ -107,7 +107,7 @@ export default {
   }
   .info {
     margin-top: 130px;
-    margin-left: 170px;
+    margin-left: 115px;
     h1 {
       color: #6e44ff;
       margin-top: 30px;
@@ -139,6 +139,7 @@ export default {
     &.row-reverse {
       flex-direction: row-reverse;
       margin-top: 200px;
+      margin-right: 20px;
       p {
         max-width: 500px;
         color: #8d99ae;
@@ -146,20 +147,20 @@ export default {
       img {
         width: 600px;
         margin-left: 120px;
-        margin-right: 100px;
+        margin-right: 0px;
       }
     }
   }
   .section {
     margin-top: 200px;
+    margin-left: 30px;
     p {
       max-width: 500px;
       color: #8d99ae;
     }
     .image {
-      margin-left: 140px;
-      margin-right: 125px;
       width: 600px;
+      margin-right: 120px;
     }
   }
   .design {
@@ -171,14 +172,19 @@ export default {
     }
     .design-faces {
       justify-content: space-evenly;
-      margin-left: 100px;
       .faces {
+        h3 {
+          width: 250px;
+        }
+        h4 {
+          width: 140px;
+        }
         p {
           width: 320px;
           color: #8d99ae;
         }
         img {
-          margin-right: 35px;
+          margin-right: 30px;
         }
       }
     }
