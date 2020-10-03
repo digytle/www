@@ -21,6 +21,10 @@
       >
     </div>
     <div class="copyright">
+      <div>
+        <img :src="twitter" />
+        <img :src="linkedin" />
+      </div>
       <p>{{ copyright }}</p>
     </div>
   </div>
@@ -40,6 +44,8 @@ export default {
       address: "",
       contactsImage: {},
       contacts: [],
+      twitter: {},
+      linkedin: {},
     };
   },
   mounted() {
@@ -50,6 +56,8 @@ export default {
     this.locationPoint = footer.location;
     this.contactsImage = footer.contactsImage;
     this.contacts = footer.contacts;
+    this.twitter = footer.twitter;
+    this.linkedin = footer.linkedin;
   },
 };
 </script>
@@ -61,7 +69,7 @@ export default {
   height: 150px;
   align-items: center;
   margin-top: 180px;
-  padding-right:75px;
+  padding-right: 75px;
 }
 h1 {
   margin-left: 60px;
@@ -82,14 +90,12 @@ p {
     width: 235px;
   }
   img {
-    margin-right: 8px;
     margin-bottom: 30px;
   }
 }
 .contacts {
   margin-left: 30px;
   img {
-    margin-right: 8px;
     margin-bottom: 30px;
   }
 }
@@ -99,5 +105,11 @@ p {
 }
 .copyright {
   margin-left: 195px;
+  p {
+    margin-top: 15px;
+  }
+  img {
+    margin-right: 30px;
+  }
 }
 </style>
