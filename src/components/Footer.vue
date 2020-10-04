@@ -3,7 +3,9 @@
     <h1>Digytle</h1>
     <div class="row location">
       <img :src="locationPoint" />
-      <p>{{ address }}</p>
+      <div class="col-2">
+        <p>{{ address }}</p>
+      </div>
     </div>
     <div class="row contacts">
       <img :src="contactsImage" />
@@ -19,6 +21,10 @@
       >
     </div>
     <div class="copyright">
+      <div class="icons">
+        <img :src="twitter" />
+        <img :src="linkedin" />
+      </div>
       <p>{{ copyright }}</p>
     </div>
   </div>
@@ -38,6 +44,8 @@ export default {
       address: "",
       contactsImage: {},
       contacts: [],
+      twitter: {},
+      linkedin: {},
     };
   },
   mounted() {
@@ -48,6 +56,8 @@ export default {
     this.locationPoint = footer.location;
     this.contactsImage = footer.contactsImage;
     this.contacts = footer.contacts;
+    this.twitter = footer.twitter;
+    this.linkedin = footer.linkedin;
   },
 };
 </script>
@@ -59,6 +69,7 @@ export default {
   height: 150px;
   align-items: center;
   margin-top: 180px;
+  padding-right: 75px;
 }
 h1 {
   margin-left: 60px;
@@ -76,25 +87,32 @@ p {
 .location {
   margin-left: 70px;
   p {
-    width: 250px;
+    width: 235px;
   }
   img {
-    margin-right: 8px;
     margin-bottom: 30px;
   }
 }
 .contacts {
-  margin-left: 100px;
+  margin-left: 30px;
   img {
-    margin-right: 8px;
     margin-bottom: 30px;
   }
 }
 .privacy {
-  margin-left: 70px;
+  margin-left: 85px;
   margin-bottom: 30px;
 }
 .copyright {
   margin-left: 195px;
+  p {
+    margin-top: 15px;
+  }
+  .icons {
+    margin: 0 auto;
+    img {
+      margin-right: 30px;
+    }
+  }
 }
 </style>

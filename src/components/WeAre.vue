@@ -3,10 +3,10 @@
     <div class="row items">
       <div class="col-6 text">
         <div class="row">
-          <h2>{{text}}</h2>
+          <h2>{{ text }}</h2>
         </div>
         <div class="row">
-          <p>{{description}}</p>
+          <p>{{ description }}</p>
         </div>
       </div>
       <div class="image">
@@ -38,6 +38,8 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
+  margin-left: 130px;
+  margin-right: 165px;
   .items {
     align-items: center;
     margin-bottom: 190px;
