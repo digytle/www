@@ -50,3 +50,15 @@ h5 {
     font-family: $font__title;
     font-weight: 500;
 }
+
+button {
+    border-radius: 10px;
+    border-color: transparent;
+    outline: none;
+    margin-bottom: 0;
+
+    p {
+        color: #FFFFFF;
+        margin: 0;
+    }
+}

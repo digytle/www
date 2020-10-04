@@ -109,7 +109,7 @@ p {
     margin-top: 15px;
   }
   .icons {
-    margin-left: 50px;
+    margin: 0 auto;
     img {
       margin-right: 30px;
     }

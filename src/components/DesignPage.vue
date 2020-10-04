@@ -27,6 +27,14 @@
         <p>{{ section.description }}</p>
         <h4>{{ section.subTitle }}</h4>
         <p>{{ section.subDescription }}</p>
+        <div class="tools">
+          <h4>{{ section.tools }}</h4>
+          <img :src="section.xdImage" />
+          <img :src="section.aiImage" />
+        </div>
+        <button>
+          <p>{{ section.button }}</p>
+        </button>
       </div>
     </div>
     <div class="design">
@@ -149,6 +157,15 @@ export default {
         margin-left: 120px;
         margin-right: 0px;
       }
+      button {
+        background-color: #ef233c;
+        width: 160px;
+        height: 45px;
+        margin-top: 30px;
+        p {
+          color: #ffffff;
+        }
+      }
     }
   }
   .section {
@@ -161,6 +178,26 @@ export default {
     .image {
       width: 600px;
       margin-right: 120px;
+    }
+    .tools {
+      img {
+        margin-left: 0;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+      h4 {
+        color: #51586d;
+      }
+    }
+    button {
+      background-color: #2b2d42;
+      width: 160px;
+      height: 45px;
+      margin-top: 30px;
+      p {
+        color: #ffffff;
+      }
     }
   }
   .design {
