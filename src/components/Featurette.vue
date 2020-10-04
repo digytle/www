@@ -98,7 +98,7 @@ export default {
 }
 .info {
   margin-top: 130px;
-  margin-left: 170px;
+  margin-left: 115px;
   text-align: left;
   h1 {
     color: #ef233c;

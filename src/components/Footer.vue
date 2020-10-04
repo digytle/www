@@ -21,7 +21,7 @@
       >
     </div>
     <div class="copyright">
-      <div>
+      <div class="icons">
         <img :src="twitter" />
         <img :src="linkedin" />
       </div>
@@ -108,8 +108,11 @@ p {
   p {
     margin-top: 15px;
   }
-  img {
-    margin-right: 30px;
+  .icons {
+    margin-left: 50px;
+    img {
+      margin-right: 30px;
+    }
   }
 }
 </style>
