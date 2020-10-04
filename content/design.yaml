@@ -13,6 +13,7 @@ sections:
   xdImage: /assets/xd_image.png
   aiImage: /assets/ai_image.png
   button: Go to website
+  buttonImage: /assets/button_arrow.svg
 - title: "Blits ChatBots"
   description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
@@ -22,6 +23,7 @@ sections:
   xdImage: /assets/xd_image.png
   aiImage: /assets/ai_image.png
   button: Go to website
+  buttonImage: /assets/button_arrow.svg
 - title: "Access App: Safe & queue-free visiting"
   description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
@@ -31,6 +33,7 @@ sections:
   xdImage: /assets/xd_image.png
   aiImage: /assets/ai_image.png
   button: Go to website
+  buttonImage: /assets/button_arrow.svg
 - title: "Green Atlas"
   description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
@@ -40,6 +43,7 @@ sections:
   xdImage: /assets/xd_image.png
   aiImage: /assets/ai_image.png
   button: Go to website
+  buttonImage: /assets/button_arrow.svg
 designTitle: Faces of Digytle
 faces:
 - image: /assets/viktoria_image.png

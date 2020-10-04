@@ -33,7 +33,10 @@
           <img :src="section.aiImage" />
         </div>
         <button>
-          <p>{{ section.button }}</p>
+          <div class="row">
+            <p>{{ section.button }}</p>
+            <img :src="section.buttonImage" />
+          </div>
         </button>
       </div>
     </div>
@@ -113,6 +116,9 @@ export default {
   .logo {
     margin-left: 15px;
   }
+  p {
+    color: #8d99ae;
+  }
   .info {
     margin-top: 130px;
     margin-left: 115px;
@@ -124,7 +130,6 @@ export default {
     p {
       margin-top: 50px;
       width: 590px;
-      color: #8d99ae;
       font-weight: 400;
     }
   }
@@ -136,7 +141,6 @@ export default {
       text-align: center;
     }
     p {
-      color: #8d99ae;
       width: 950px;
       margin: 0 auto;
     }
@@ -146,25 +150,13 @@ export default {
     margin-top: 0;
     &.row-reverse {
       flex-direction: row-reverse;
-      margin-top: 200px;
       margin-right: 20px;
-      p {
-        max-width: 500px;
-        color: #8d99ae;
-      }
       img {
-        width: 600px;
         margin-left: 120px;
         margin-right: 0px;
       }
       button {
         background-color: #ef233c;
-        width: 160px;
-        height: 45px;
-        margin-top: 30px;
-        p {
-          color: #ffffff;
-        }
       }
     }
   }
@@ -173,7 +165,6 @@ export default {
     margin-left: 30px;
     p {
       max-width: 500px;
-      color: #8d99ae;
     }
     .image {
       width: 600px;
@@ -195,8 +186,17 @@ export default {
       width: 160px;
       height: 45px;
       margin-top: 30px;
-      p {
-        color: #ffffff;
+      padding-left: 15px;
+      .row {
+        margin: 0 auto;
+        p {
+          color: #ffffff;
+        }
+        img {
+          width: 20px;
+          height: 13px;
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -218,7 +218,6 @@ export default {
         }
         p {
           width: 320px;
-          color: #8d99ae;
         }
         img {
           margin-right: 30px;
