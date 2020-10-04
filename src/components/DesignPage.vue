@@ -33,7 +33,10 @@
           <img :src="section.aiImage" />
         </div>
         <button>
-          <p>{{ section.button }}</p>
+          <div class="row">
+            <p>{{ section.button }}</p>
+            <img :src="section.buttonImage" />
+          </div>
         </button>
       </div>
     </div>
@@ -165,6 +168,11 @@ export default {
         p {
           color: #ffffff;
         }
+        img {
+          width: 20px;
+          height: 13px;
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -195,8 +203,17 @@ export default {
       width: 160px;
       height: 45px;
       margin-top: 30px;
-      p {
-        color: #ffffff;
+      padding-left: 15px;
+      .row {
+        margin: 0 auto;
+        p {
+          color: #ffffff;
+        }
+        img {
+          width: 20px;
+          height: 13px;
+          margin-left: 10px;
+        }
       }
     }
   }
