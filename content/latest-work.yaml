@@ -1,5 +1,15 @@
-header-text: Latest Work
-header-description: Here are some ofour latest victories.
 title: Title
-firstImage: assets/blits.png
-secondImage: assets/Asset 8-100.png
+description: Here are some of our latest victories.
+work:
+- item:
+  image: assets/blits.png
+  template: featurett
+  url: blits
+- item:
+  image: assets/sbf.png
+  template: featurett
+  url: sbf
+- item:
+  image: assets/auxta.png
+  template: featurett
+  url: auxta
