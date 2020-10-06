@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       data: {},
-      logoText: "",
+      logoBlack: {},
       home: "",
       about: "",
       work: "",
@@ -82,7 +82,7 @@ export default {
   },
   mounted() {
     this.data = require(`js-yaml-loader!../../content/featurettes/${this.$route.params.pathMatch}.yaml`);
-    this.logoText = navigation["logo-text"];
+    this.logoBlack = navigation.logoBlack;
     this.home = navigation.home;
     this.about = navigation.about;
     this.work = navigation.work;
@@ -93,6 +93,9 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.row {
+  margin-right: 0;
+}
 .image {
   margin-left: 15px;
 }
@@ -149,6 +152,9 @@ export default {
   }
   .col-3 {
     margin: 0 auto;
+    img {
+      margin-bottom: 70px;
+    }
   }
   button {
     background-color: #ef233c;
@@ -166,7 +172,7 @@ export default {
 }
 .container {
   .row {
-    margin-bottom: 130px;
+    margin: 0 auto 130px;
     align-items: center;
   }
   .first {

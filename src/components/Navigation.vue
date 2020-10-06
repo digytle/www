@@ -12,8 +12,15 @@
   >
     <div class="col-6 logo">
       <router-link to="/">
-        <h1 class="logo">{{ logoText }}</h1></router-link
-      >
+        <img
+          :src="
+            this.$route.path.startsWith('/featurette') ||
+            this.$route.path.startsWith('/design')
+              ? logoWhite
+              : logoBlack
+          "
+          class="logo"
+      /></router-link>
     </div>
     <div class="col-5 buttons">
       <div class="row">
@@ -43,7 +50,8 @@ export default {
   name: "Navigation",
   data() {
     return {
-      logoText: "",
+      logoBlack: {},
+      logoWhite: {},
       firstComponent: "",
       secondComponent: "",
       thirdComponent: "",
@@ -52,7 +60,8 @@ export default {
     };
   },
   mounted() {
-    this.logoText = navigation["logo-text"];
+    this.logoBlack = navigation.logoBlack;
+    this.logoWhite = navigation.logoWhite;
     this.firstComponent = navigation.firstComponent;
     this.secondComponent = navigation.secondComponent;
     this.thirdComponent = navigation.thirdComponent;
@@ -72,18 +81,12 @@ export default {
   z-index: 1;
   color: #464646;
   font-weight: 500;
-  margin-bottom: 100px;
   font-family: $font__public;
   font-weight: 700;
   .logo {
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    h1 {
-      font-weight: 700;
-      font-size: 25px;
-      margin-left: 60px;
-    }
   }
   a {
     text-decoration: none;

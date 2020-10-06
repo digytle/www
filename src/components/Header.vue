@@ -2,7 +2,7 @@
   <div class="header">
     <div class="row">
       <div class="col-6">
-        <img :src="image" />
+        <img class="rocket-image" :src="image" />
       </div>
       <div class="col-6 text">
         <div class="row">
@@ -42,6 +42,10 @@ export default {
 @import "../assets/main.scss";
 .header {
   margin-top: 100px;
+  .rocket-image {
+    width: 650px;
+    height: 325px;
+  }
   .text {
     margin-top: 105px;
     text-align: left;

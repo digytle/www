@@ -2,19 +2,22 @@
   <div class="container" id="latest-work">
     <div class="row">
       <div class="col-12 row header-text">
-        <h2>{{headerText}}</h2>
+        <h2>{{ title }}</h2>
       </div>
       <div class="col-12 row header-text">
-        <p>{{headerDescription}}</p>
+        <p>{{ description }}</p>
       </div>
       <div class="col-12 row section">
-        <img :src="firstImage" />
-        <img :src="secondImage" />
-        <div class="image-box">
-          <p>{{title}}</p>
-          <button>
-            <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
-          </button>
+        <div class="image-container" v-for="item in work" :key="item.text">
+          <div class="image-box">
+            <p>{{ item.title }}</p>
+            <router-link :to="`${item.template}/`">
+              <button>
+                <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
+              </button>
+            </router-link>
+          </div>
+          <img class="images" :src="item.image" />
         </div>
       </div>
     </div>
@@ -22,24 +25,20 @@
 </template>
 
 <script>
-import LatestWork from "js-yaml-loader!../../content/latest-work.yaml";
+import LatestWork from "js-yaml-loader!../../content/work.yaml";
 export default {
   name: "LatestWork",
   data() {
     return {
-      headerText: "",
-      headerDescription: "",
       title: "",
-      firstImage: {},
-      secondImage: {},
+      description: "",
+      work: [],
     };
   },
   mounted() {
-    this.headerText = LatestWork["header-text"];
-    this.headerDescription = LatestWork["header-description"];
     this.title = LatestWork.title;
-    this.firstImage = LatestWork.firstImage;
-    this.secondImage = LatestWork.secondImage;
+    this.description = LatestWork.description;
+    this.work = LatestWork.work;
   },
 };
 </script>
@@ -62,14 +61,29 @@ export default {
 .section {
   justify-content: space-between;
   margin-bottom: 170px;
+  .image-container {
+    height: 300px;
+    .images {
+      width: 300px;
+      height: 300px;
+    }
+    &:hover {
+      background-color: #ef233c;
+      .images {
+        visibility: hidden;
+      }
+      .image-box {
+        display: block;
+      }
+    }
+  }
   .image-box {
-    width: 350px;
-    height: 350px;
-    background-color: #ef233c;
+    display: none;
     color: white;
+    max-width: 300px;
+    max-height: 300px;
     p {
-      margin-top: 100px;
-      margin-bottom: 30px;
+      margin: 100px auto 30px;
       font-weight: 700;
       font-size: 40px;
     }

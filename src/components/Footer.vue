@@ -68,8 +68,10 @@ export default {
   background-color: #333333;
   height: 150px;
   align-items: center;
-  margin-top: 180px;
   padding-right: 75px;
+}
+.row {
+  margin-right: 0;
 }
 h1 {
   margin-left: 60px;
@@ -104,7 +106,7 @@ p {
   margin-bottom: 30px;
 }
 .copyright {
-  margin-left: 195px;
+  margin-left: 145px;
   p {
     margin-top: 15px;
   }
