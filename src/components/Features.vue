@@ -48,6 +48,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
+  margin-bottom: 180px;
   .header-text {
     justify-content: center;
     h2 {
@@ -68,8 +69,7 @@ export default {
       padding: 25px;
     }
     &:hover div {
-      
-      background-color:#2B2D42;
+      background-color: #2b2d42;
       h3,
       p {
         color: white;

@@ -1,69 +1,74 @@
 <template>
-  <div class="digytle">
+  <div>
     <Navigation></Navigation>
-    <div class="row">
-      <div class="logo">
-        <img :src="data.image" />
+    <div class="digytle">
+      <div class="row">
+        <div class="logo">
+          <img :src="data.image" />
+        </div>
+        <div class="info">
+          <h1>{{ data.title }}</h1>
+          <p>{{ data.description }}</p>
+        </div>
       </div>
-      <div class="info">
-        <h1>{{ data.title }}</h1>
-        <p>{{ data.description }}</p>
+      <div class="information">
+        <h2>{{ data.infoTitle }}</h2>
+        <p>{{ data.infoDescription }}</p>
       </div>
-    </div>
-    <div class="information">
-      <h2>{{ data.infoTitle }}</h2>
-      <p>{{ data.infoDescription }}</p>
-    </div>
 
-    <div
-      class="row section"
-      v-for="(section, index) in sections"
-      :key="index"
-      :class="{ 'row-reverse': index % 2 == 0 }"
-    >
-      <img class="image" :src="section.image" />
-      <div>
-        <h3>{{ section.title }}</h3>
-        <p>{{ section.description }}</p>
-        <h4>{{ section.subTitle }}</h4>
-        <p>{{ section.subDescription }}</p>
-        <div class="tools">
-          <h4>{{ section.tools }}</h4>
-          <img :src="section.xdImage" />
-          <img :src="section.aiImage" />
-        </div>
-        <button>
-          <div class="row">
-            <p>{{ section.button }}</p>
-            <img :src="section.buttonImage" />
+      <div
+        class="row section"
+        v-for="(section, index) in sections"
+        :key="index"
+        :class="{ 'row-reverse': index % 2 == 0 }"
+      >
+        <img class="image" :src="section.image" />
+        <div>
+          <h3>{{ section.title }}</h3>
+          <p>{{ section.description }}</p>
+          <h4>{{ section.subTitle }}</h4>
+          <p>{{ section.subDescription }}</p>
+          <div class="tools">
+            <h4>{{ section.tools }}</h4>
+            <img :src="section.xdImage" />
+            <img :src="section.aiImage" />
           </div>
-        </button>
-      </div>
-    </div>
-    <div class="design">
-      <h1>{{ data.designTitle }}</h1>
-      <div class="row design-faces">
-        <div class="row faces" v-for="face in faces" :key="face.image">
-          <img :src="face.image" />
-          <div>
-            <h3>{{ face.name }}</h3>
-            <h4>{{ face.position }}</h4>
-            <p>{{ face.text }}</p>
-          </div>
+          <button>
+            <div class="row">
+              <p>{{ section.button }}</p>
+              <img :src="section.buttonImage" />
+            </div>
+          </button>
         </div>
       </div>
-    </div>
-    <div class="work-with-us">
-      <div class="work" v-for="section in data.work" :key="section.question">
-        <h2>{{ section.question }}</h2>
-        <p class="text">
-          {{ section.text }}
-        </p>
-        <router-link :to="section.link">
-          <button v-if="section.button">
-            <p>{{ section.button }}</p>
-          </button></router-link
-        >
+      <div class="design">
+        <h1>{{ data.designTitle }}</h1>
+        <div class="row design-faces">
+          <div class="row faces" v-for="face in faces" :key="face.image">
+            <img :src="face.image" />
+            <div>
+              <h3>{{ face.name }}</h3>
+              <h4>{{ face.position }}</h4>
+              <p>{{ face.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="work-with-us"
+        :style="{ 'background-image': `url('${background}')` }"
+      >
+        <div class="work" v-for="section in data.work" :key="section.question">
+          <h2>{{ section.question }}</h2>
+          <p class="text">
+            {{ section.text }}
+          </p>
+          <router-link :to="section.link">
+            <button v-if="section.button">
+              <p>{{ section.button }}</p>
+            </button></router-link
+          >
+        </div>
       </div>
     </div>
     <Footer></Footer>
@@ -80,24 +85,26 @@ export default {
   data() {
     return {
       data: {},
-      logoText: "",
+      logoBlack: {},
       home: "",
       about: "",
       work: "",
       contacts: "",
       sections: [],
       faces: [],
+      background: {},
     };
   },
   mounted() {
     this.data = require(`js-yaml-loader!../../content/design.yaml`);
-    this.logoText = navigation["logo-text"];
+    this.logoBlack = navigation.logoBlack;
     this.home = navigation.home;
     this.about = navigation.about;
     this.work = navigation.work;
     this.contacts = navigation.contacts;
     this.sections = this.data.sections;
     this.faces = this.data.faces;
+    this.background = this.data.background;
   },
 };
 </script>
@@ -105,6 +112,9 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .digytle {
+  .row{
+    margin-right:0;
+  }
   text-align: left;
   h4 {
     width: 480px;
@@ -146,7 +156,6 @@ export default {
     }
   }
   .row {
-    align-items: center;
     margin-top: 0;
     &.row-reverse {
       flex-direction: row-reverse;
@@ -196,6 +205,7 @@ export default {
           width: 20px;
           height: 13px;
           margin-left: 10px;
+          margin-top: 10px;
         }
       }
     }
@@ -210,6 +220,7 @@ export default {
     .design-faces {
       justify-content: space-evenly;
       .faces {
+        align-items: center;
         h3 {
           width: 250px;
         }
@@ -226,11 +237,12 @@ export default {
     }
   }
   .work-with-us {
-    // background-image: url("/assets/background_with_us.svg");
+    // background-image: url("/assets/background_with_us.png");
     margin-top: 270px;
-    background-color: #2b2d42;
+    // background-color: #2b2d42;
     padding-top: 140px;
     padding-bottom: 140px;
+    background-position: top center;
     .work {
       text-align: center;
       .text {
