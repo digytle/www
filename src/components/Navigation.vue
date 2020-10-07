@@ -3,8 +3,8 @@
     class="row navigation"
     :style="{
       background:
-        this.$route.path.startsWith('/featurette') ||
-        this.$route.path.startsWith('/design')
+        this.$route.path.startsWith('/person') ||
+        this.$route.path.startsWith('/feature')
           ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)'
           : 'white',
     }"
@@ -14,8 +14,8 @@
       <router-link to="/">
         <img
           :src="
-            this.$route.path.startsWith('/featurette') ||
-            this.$route.path.startsWith('/design')
+            this.$route.path.startsWith('/person') ||
+            this.$route.path.startsWith('/feature')
               ? logoWhite
               : logoBlack
           "

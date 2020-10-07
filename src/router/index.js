@@ -12,11 +12,11 @@ const routes = [{
     component: MainPage
   },
   {
-    path: '/featurette/**',
+    path: '/person/**',
     name: 'Featurette',
     component: Featurette
   }, {
-    path: '/design/**',
+    path: '/feature/**',
     name: 'DesignPage',
     component: DesignPage
   },

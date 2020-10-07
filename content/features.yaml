@@ -5,14 +5,14 @@ features:
   description: Caterina Maniscalco is a partner in a London consulting firm, with 20 years of experience across several industries in digital transformation and innovation.
   image: assets/Caterina_AboutPage.png
   link: learn-more
-  template: featurette
+  template: person
 - name: Distributed Leadership and Digital Innovation
   description: 'A book before its time: Distributed Leadership and Digital Innovation is even more current now, when we are locked away and cannot meet, but has power to carry you beyond.'
   image: assets/41v5mLXBRaL.png
   link: leadership
-  template: featurette
+  template: person
 - name: Scratch for Executives
   description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
   image: assets/maxresdefault.png
   link: coding
-  template: featurette
+  template: person
