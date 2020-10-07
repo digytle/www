@@ -7,7 +7,7 @@ work:
   url: blits
 - title: Stichting Bedrijfsfinanciering
   image: assets/sbf.png
-  template: featurette
+  template: design
   url: sbf
 - title: AUXTA
   image: assets/auxta.png
