@@ -32,34 +32,24 @@
             second: index == 1,
           }"
         >
-          <div>
+          <div class="book">
             <h2>{{ section.title }}</h2>
             <p>{{ section.description }}</p>
+            <div v-if="section.question" class="buy-book row">
+              <div>
+                <h3>{{ section.question }}</h3>
+                <router-link :to="section.link">
+                  <h4>{{ section.text }}</h4>
+                </router-link>
+              </div>
+              <img class="amazon" :src="section.imageAmazon" />
+            </div>
           </div>
           <img v-if="section.image" :src="section.image" />
         </div>
       </div>
     </div>
-    <div class="buy-book">
-      <div class="container">
-        <div class="book" v-for="book in data.books" :key="book.question">
-          <h2>{{ book.question }}</h2>
-          <p>{{ book.text }}</p>
-        </div>
-        <div class="col-3">
-          <router-link :to="data.link">
-            <button v-if="data.button">
-              <p>{{ data.button }}</p>
-            </button> </router-link
-          ><img
-            v-for="book in data.books"
-            :key="book.question"
-            :src="book.image"
-          />
-        </div>
-      </div>
-      <Footer></Footer>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -139,37 +129,6 @@ export default {
     line-height: 30px;
   }
 }
-.buy-book {
-  background-color: #edf2f4;
-  padding-top: 120px;
-  .book {
-    p {
-      color: #8d99ae;
-      text-align: left;
-      width: 687px;
-      margin: 30px auto 35px;
-    }
-  }
-  .col-3 {
-    margin: 0 auto;
-    img {
-      margin-bottom: 70px;
-    }
-  }
-  button {
-    background-color: #ef233c;
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    border-color: transparent;
-    outline: none;
-    margin-bottom: 10px;
-    p {
-      color: #ffffff;
-      margin: 0;
-    }
-  }
-}
 .container {
   .row {
     margin: 0 auto 130px;
@@ -193,18 +152,41 @@ export default {
     img {
       width: 300px;
       height: 425px;
-      margin-right: 180px;
+      margin-right: 170px;
     }
-    p {
-      text-align: left;
+    .book {
       max-width: 625px;
-      height: 307px;
-      color: #8d99ae;
-    }
-    h2 {
-      text-align: left;
-      margin-bottom: 30px;
-      margin-top: 30px;
+
+      p {
+        text-align: left;
+        max-width: 625px;
+        height: 307px;
+        color: #8d99ae;
+      }
+      h2 {
+        text-align: left;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        max-width: 625px;
+      }
+      .buy-book {
+        margin-right: 0;
+        h3 {
+          margin-top: 50px;
+          text-align: left;
+          font-size: 20px;
+        }
+        h4 {
+          text-align: left;
+          font-size: 20px;
+          color: red;
+        }
+        .amazon {
+          width: 175px;
+          height: 85px;
+          margin-right: 0;
+        }
+      }
     }
   }
 }
