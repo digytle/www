@@ -1,4 +1,4 @@
-title: Title
+title: Latest Work
 description: Here are some of our latest victories.
 work:
 - title: Blits ChatBots
@@ -11,5 +11,5 @@ work:
   url: sbf
 - title: AUXTA
   image: assets/auxta.png
-  template: featurette/
+  template: featurette
   url: auxta
