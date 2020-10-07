@@ -11,7 +11,7 @@
         <div class="image-container" v-for="item in work" :key="item.text">
           <div class="image-box">
             <p>{{ item.title }}</p>
-            <router-link :to="`${item.template}/`">
+            <router-link :to="`${item.template}/${item.url}`">
               <button>
                 <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
               </button>
