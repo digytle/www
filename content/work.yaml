@@ -3,13 +3,13 @@ description: Here are some of our latest victories.
 work:
 - title: Blits ChatBots
   image: assets/blits.png
-  template: design
+  template: feature
   url: blits
 - title: Stichting Bedrijfsfinanciering
   image: assets/sbf.png
-  template: design
+  template: feature
   url: sbf
 - title: AUXTA
   image: assets/auxta.png
-  template: featurette
+  template: feature
   url: auxta
