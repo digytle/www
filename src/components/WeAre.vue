@@ -3,10 +3,10 @@
     <div class="row items">
       <div class="col-6 text">
         <div class="row">
-          <h2>{{ text }}</h2>
+          <h2>{{ title }}</h2>
         </div>
-        <div class="row">
-          <p>{{ description }}</p>
+        <div class="row" >
+          <p v-for="paragraph of text" :key="paragraph">{{ paragraph }}</p>
         </div>
       </div>
       <div class="image">
@@ -22,15 +22,15 @@ export default {
   name: "WeAre",
   data() {
     return {
+      title: "",
       text: "",
-      description: "",
-      image: {},
+      image: "",
     };
   },
   mounted() {
     this.text = weAre.text;
-    this.description = weAre.description;
-    this.image = weAre.image;
+    this.title = weAre.title;
+    this.image = weAre.image;    
   },
 };
 </script>
