@@ -5,7 +5,7 @@
         <div class="row section">
           <div>
             <h2>{{ title }}</h2>
-            <p>{{ description }}</p>
+            <p v-for="paragraph in description" :key="paragraph">{{ paragraph }}</p>
           </div>
           <img :src="image" />
         </div>
@@ -108,6 +108,7 @@ export default {
       width: 300px;
       height: 425px;
       margin-right: 180px;
+      margin-bottom: 180px;
     }
     p {
       text-align: left;
