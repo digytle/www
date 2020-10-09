@@ -24,7 +24,7 @@ export default {
     };
   },
   mounted() {
-    this.data = require(`js-yaml-loader!../../content/privacy-policy.yaml`);
+    this.data = require(`js-yaml-loader!../../content/privacy.yaml`);
     this.logoText = navigation["logo-text"];
     this.home = navigation.home;
     this.about = navigation.about;
@@ -37,6 +37,9 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .privacy-policy {
+  .row {
+    margin-right: 0;
+  }
   .privacy {
     margin-left: 170px;
     text-align: left;
