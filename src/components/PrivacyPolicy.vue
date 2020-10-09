@@ -24,7 +24,7 @@ export default {
     };
   },
   mounted() {
-    this.data = require(`js-yaml-loader!../../content/privacy-policy.yaml`);
+    this.data = require(`js-yaml-loader!../../content/privacy.yaml`);
     this.logoText = navigation["logo-text"];
     this.home = navigation.home;
     this.about = navigation.about;
