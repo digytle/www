@@ -108,12 +108,10 @@ export default {
       width: 300px;
       height: 425px;
       margin-right: 180px;
-      margin-bottom: 180px;
     }
     p {
       text-align: left;
       max-width: 625px;
-      height: 307px;
       color: #8d99ae;
     }
     h2 {
