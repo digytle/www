@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import weAre from "js-yaml-loader!../../content/we-are.yaml";
+import weAre from "js-yaml-loader!../../content/we.yaml";
 export default {
   name: "WeAre",
   data() {
