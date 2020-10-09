@@ -34,7 +34,9 @@
         >
           <div class="book">
             <h2>{{ section.title }}</h2>
-            <p>{{ section.description }}</p>
+            <p v-for="paragraph in section.description" :key="paragraph">
+              {{ paragraph }}
+            </p>
             <div v-if="section.question" class="buy-book row">
               <div>
                 <h3>{{ section.question }}</h3>
@@ -160,7 +162,6 @@ export default {
       p {
         text-align: left;
         max-width: 625px;
-        height: 307px;
         color: #8d99ae;
       }
       h2 {
