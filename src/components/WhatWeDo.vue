@@ -83,7 +83,7 @@ export default {
     height: 50px;
     top: 609px;
     right: 130px;
-    opacity: 100%;
+    opacity: 1;
   }
   .carousel-control-prev {
     position: absolute;
@@ -92,7 +92,7 @@ export default {
     height: 50px;
     top: 609px;
     left: 1270px;
-    opacity: 100%;
+    opacity: 1;
   }
   .col-4 {
     text-align: left;
