@@ -35,17 +35,19 @@
               <img v-if="section.image" :src="section.image" alt="image2" />
             </router-link>
           </div>
+          <b-img
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            data-slide="prev"
+            :src="section.leftButton"
+          ></b-img>
+          <b-img
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            data-slide="next"
+            :src="section.rightButton"
+          ></b-img>
         </div>
-        <button
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          data-slide="prev"
-        ></button>
-        <button
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          data-slide="next"
-        ></button>
       </div>
     </div>
   </div>
@@ -75,14 +77,22 @@ export default {
     margin-bottom: 50px;
   }
   .carousel-control-next {
+    position: absolute;
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    top: 609px;
+    right: 130px;
+    opacity: 100%;
   }
   .carousel-control-prev {
+    position: absolute;
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    top: 609px;
+    left: 1270px;
+    opacity: 100%;
   }
   .col-4 {
     text-align: left;
@@ -95,8 +105,8 @@ export default {
     position: absolute;
     top: 120px;
     right: 80px;
-    img{
-      height:435px;
+    img {
+      height: 435px;
     }
   }
   .first {
