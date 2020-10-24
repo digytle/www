@@ -153,6 +153,7 @@ export default {
 
     .progress-bar {
       background-color: green;
+      transition: none;
     }
     .firstSlide {
       width: 25%;
