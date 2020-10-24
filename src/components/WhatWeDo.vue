@@ -31,7 +31,6 @@
             <h2 v-if="section.header">{{ section.header }}</h2>
             <p v-if="section.description">{{ section.description }}</p>
           </div>
-
           <div class="col-5">
             <router-link to="/design/">
               <img v-if="section.image" :src="section.image" alt="image2" />
@@ -52,7 +51,6 @@
             :src="section.rightButton"
             @click="step++"
           ></b-img>
-          <!-- <p>0{{ step }}/04</p> -->
         </div>
         <div v-if="Step()"></div>
         <div
@@ -74,6 +72,30 @@
               fourthSlide: step == 4,
             }"
           ></div>
+        </div>
+        <div class="row numberOfStep">
+          <p
+            class="currentStep"
+            :class="{
+              firstPage: step == 1,
+              secondPage: step == 2,
+              thirdPage: step == 3,
+              fourthPage: step == 4,
+            }"
+          >
+            0{{ step }}/
+          </p>
+          <p
+            class="allSteps"
+            :class="{
+              firstOfAll: step == 1,
+              secondOfAll: step == 2,
+              thirdOfAll: step == 3,
+              fourthOfAll: step == 4,
+            }"
+          >
+            04
+          </p>
         </div>
       </div>
     </div>
@@ -135,14 +157,40 @@ export default {
     opacity: 1;
     z-index: 0;
   }
-  .firstBackground {
-    background-color: #8d99ae;
-  }
-  .secondBackground {
-    background-color: #edf2f4;
-  }
-  .thirdBackground {
-    background-color: #d0d7df;
+  .numberOfStep {
+    position: absolute;
+    top: 610px;
+    left: 200px;
+    font-size: 40px;
+    font-family: $font__public;
+    .currentStep {
+      &.firstPage {
+        color: #edf2f4;
+      }
+      &.secondPage {
+        color: #6e44ff;
+      }
+      &.thirdPage {
+        color: #2b2d42;
+      }
+      &.fourthPage {
+        color: #6e44ff;
+      }
+    }
+    .allSteps {
+      &.firstOfAll {
+        color: #8d99ae;
+      }
+      &.secondOfAll {
+        color: #edf2f4;
+      }
+      &.thirdOfAll {
+        color: #d0d7df;
+      }
+      &.fourthOfAll {
+        color: #8d99ae;
+      }
+    }
   }
   .progress {
     height: 4px;
@@ -150,26 +198,33 @@ export default {
     position: absolute;
     top: 620px;
     left: 330px;
-
-    .progress-bar {
-      background-color: green;
-      transition: none;
+    &.firstBackground {
+      background-color: #8d99ae;
     }
-    .firstSlide {
-      width: 25%;
+    &.secondBackground {
       background-color: #edf2f4;
     }
-    .secondSlide {
-      width: 50%;
-      background-color: #6e44ff;
+    &.thirdBackground {
+      background-color: #d0d7df;
     }
-    .thirdSlide {
-      width: 75%;
-      background-color: #2b2d42;
-    }
-    .fourthSlide {
-      width: 100%;
-      background-color: #6e44ff;
+    .progress-bar {
+      transition: none;
+      &.firstSlide {
+        width: 25%;
+        background-color: #edf2f4;
+      }
+      &.secondSlide {
+        width: 50%;
+        background-color: #6e44ff;
+      }
+      &.thirdSlide {
+        width: 75%;
+        background-color: #2b2d42;
+      }
+      &.fourthSlide {
+        width: 100%;
+        background-color: #6e44ff;
+      }
     }
   }
   .col-4 {
@@ -177,6 +232,31 @@ export default {
     position: absolute;
     top: 195px;
     left: 130px;
+    &.first {
+      h2 {
+        color: #ef233c;
+      }
+      p {
+        color: #edf2f4;
+      }
+    }
+    &.second {
+      h2 {
+        color: #6e44ff;
+      }
+      p {
+        color: #edf2f4;
+      }
+    }
+    &.third,
+    &.fourth {
+      h2 {
+        color: #2b2d42;
+      }
+      p {
+        color: #8d99ae;
+      }
+    }
   }
   .col-5 {
     text-align: left;
@@ -185,31 +265,6 @@ export default {
     right: 80px;
     img {
       height: 435px;
-    }
-  }
-  .first {
-    h2 {
-      color: #ef233c;
-    }
-    p {
-      color: #edf2f4;
-    }
-  }
-  .second {
-    h2 {
-      color: #6e44ff;
-    }
-    p {
-      color: #edf2f4;
-    }
-  }
-  .third,
-  .fourth {
-    h2 {
-      color: #2b2d42;
-    }
-    p {
-      color: #8d99ae;
     }
   }
 }
