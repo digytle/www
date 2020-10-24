@@ -2,8 +2,9 @@
   <div id="what-we-do">
     <div
       id="carouselExampleControls"
-      class="carousel slide"
+      class="carousel"
       data-ride="carousel"
+      data-interval="false"
     >
       <div class="carousel-inner">
         <div
@@ -30,23 +31,49 @@
             <h2 v-if="section.header">{{ section.header }}</h2>
             <p v-if="section.description">{{ section.description }}</p>
           </div>
+
           <div class="col-5">
             <router-link to="/design/">
               <img v-if="section.image" :src="section.image" alt="image2" />
             </router-link>
           </div>
+
           <b-img
             class="carousel-control-prev"
             href="#carouselExampleControls"
             data-slide="prev"
             :src="section.leftButton"
+            @click="step--"
           ></b-img>
           <b-img
             class="carousel-control-next"
             href="#carouselExampleControls"
             data-slide="next"
             :src="section.rightButton"
+            @click="step++"
           ></b-img>
+          <!-- <p>0{{ step }}/04</p> -->
+        </div>
+        <div v-if="Step()"></div>
+        <div
+          class="progress"
+          :class="{
+            firstBackground: step == 1,
+            secondBackground: step == 2,
+            thirdBackground: step == 3,
+          }"
+        >
+          <div
+            class="progress-bar"
+            role="progressbar "
+            aria-valuemax="100"
+            :class="{
+              firstSlide: step == 1,
+              secondSlide: step == 2,
+              thirdSlide: step == 3,
+              fourthSlide: step == 4,
+            }"
+          ></div>
         </div>
       </div>
     </div>
@@ -60,10 +87,22 @@ export default {
   data() {
     return {
       sections: [],
+      step: 1,
     };
+  },
+  methods: {
+    Step() {
+      if (this.step > 4) {
+        this.step = 1;
+      }
+      if (this.step < 1) {
+        this.step = 4;
+      }
+    },
   },
   mounted() {
     this.sections = WhatWeDo.sections;
+    console.log(this.step);
   },
 };
 </script>
@@ -84,6 +123,7 @@ export default {
     top: 609px;
     right: 130px;
     opacity: 1;
+    z-index: 0;
   }
   .carousel-control-prev {
     position: absolute;
@@ -93,6 +133,43 @@ export default {
     top: 609px;
     left: 1270px;
     opacity: 1;
+    z-index: 0;
+  }
+  .firstBackground {
+    background-color: #8d99ae;
+  }
+  .secondBackground {
+    background-color: #edf2f4;
+  }
+  .thirdBackground {
+    background-color: #d0d7df;
+  }
+  .progress {
+    height: 4px;
+    width: 800px;
+    position: absolute;
+    top: 620px;
+    left: 330px;
+
+    .progress-bar {
+      background-color: green;
+    }
+    .firstSlide {
+      width: 25%;
+      background-color: #edf2f4;
+    }
+    .secondSlide {
+      width: 50%;
+      background-color: #6e44ff;
+    }
+    .thirdSlide {
+      width: 75%;
+      background-color: #2b2d42;
+    }
+    .fourthSlide {
+      width: 100%;
+      background-color: #6e44ff;
+    }
   }
   .col-4 {
     text-align: left;
