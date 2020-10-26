@@ -5,6 +5,7 @@
     <WeAre></WeAre>
     <WhatWeDo></WhatWeDo>
     <LatestWork></LatestWork>
+    <Testimonials></Testimonials>
     <Features></Features>
     <Footer></Footer>
   </div>
@@ -16,6 +17,7 @@ import Header from "./Header";
 import WeAre from "./WeAre";
 import WhatWeDo from "./WhatWeDo";
 import LatestWork from "./LatestWork";
+import Testimonials from "./Testimonials";
 import Features from "./Features";
 import Footer from "./Footer";
 // import VueScrollTo from "vue-scrollto";
@@ -27,9 +29,10 @@ export default {
     WeAre,
     WhatWeDo,
     LatestWork,
+    Testimonials,
     Features,
-    Footer
-  }
+    Footer,
+  },
   // mounted() {
   //   if (this.$route.hash) {
   //     let cancelScroll = VueScrollTo.scrollTo(this.$route.hash);
