@@ -3,8 +3,8 @@ sections:
   description: Digytle helps you harness and adopt the best technologies to transform your businesse's processes and services. To digitally transform means a paradigm shift, organisational change and market re-positioning. Digytle can help you achieve all three.
   background: /assets/background_blue.svg
   image:
-  rightButton: /assets/right-purple-button.svg
-  leftButton: /assets/left-purple-button.svg
+  rightButton: /assets/right-white-button.svg
+  leftButton: /assets/left-white-button.svg
 - header: Digital Products
   description: Digytle delivers full set of services related to Digital Products including fitness for purpose, competitiveness and robustness.
   background: /assets/background_grey.svg
