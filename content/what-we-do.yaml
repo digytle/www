@@ -15,11 +15,13 @@ sections:
   description: Blits is one of the most advanced Chat Bot Management Platforms. Blits allows you to connect to any Natural Language Processing Engine, so that you can choose the best for your case (language, subject matter, etc.). And then connects to your complete IT Landscape, in order to enable full bi-directional service of your customers.
   background: /assets/background_offwhite.svg
   image: /assets/blits_bots.png
+  link: feature/sbf
   rightButton: /assets/right-black-button.svg
   leftButton: /assets/left-black-button.svg
 - header: Testing Automation Platform
   description: AUXTA performs Deep Automated Quality Assurance of your online or mobile application. It can perform 10s of 1000s of steps every hour, imitating human visitor, and comparing the result fixed or dynamic values. AUXTA performs compliance supervision such as European Securities and Markets Authority (ESMA) monitoring.
   background: /assets/background_white.svg
   image: /assets/auxta.png
+  link: feature/auxta
   rightButton: /assets/right-grey-button.svg
   leftButton: /assets/left-grey-button.svg 
