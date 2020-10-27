@@ -32,7 +32,7 @@
             <p v-if="section.description">{{ section.description }}</p>
           </div>
           <div class="col-5">
-            <router-link to="/design/">
+            <router-link :to="section.link">
               <img v-if="section.image" :src="section.image" alt="image2" />
             </router-link>
           </div>
