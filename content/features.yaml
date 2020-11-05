@@ -12,7 +12,7 @@ features:
   link: leadership
   template: person
 - name: Scratch for Executives
-  description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
+  description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and find the Holy Graal of collaboration: empathy.'
   image: assets/maxresdefault.png
   template: person
   link: scratch-for-executives
