@@ -3,6 +3,8 @@ description: Here are some of our latest victories.
 work:
 - title: Blits ChatBots
   image: assets/blits.png
+# TODO
+# rename the template and the component to featurettes
   template: feature
   url: blits
 - title: Stichting Bedrijfsfinanciering
