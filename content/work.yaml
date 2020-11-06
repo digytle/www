@@ -5,13 +5,13 @@ work:
   image: assets/blits.png
 # TODO
 # rename the template and the component to featurettes
-  template: feature
-  url: blits
+  template: featurettes
+  content: blits
 - title: Stichting Bedrijfsfinanciering
   image: assets/sbf.png
-  template: feature
-  url: sbf
+  template: featurettes
+  content: sbf
 - title: AUXTA
   image: assets/auxta.png
-  template: feature
-  url: auxta
+  template: featurettes
+  content: auxta
