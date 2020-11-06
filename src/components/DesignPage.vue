@@ -112,8 +112,8 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .digytle {
-  .row{
-    margin-right:0;
+  .row {
+    margin-right: 0;
   }
   text-align: left;
   h4 {
@@ -159,7 +159,6 @@ export default {
     margin-top: 0;
     &.row-reverse {
       flex-direction: row-reverse;
-      margin-right: 20px;
       img {
         margin-left: 120px;
         margin-right: 0px;
@@ -170,8 +169,8 @@ export default {
     }
   }
   .section {
-    margin-top: 200px;
-    margin-left: 30px;
+    margin: 200px auto 200px;
+    max-width: 1366px;
     p {
       max-width: 500px;
     }

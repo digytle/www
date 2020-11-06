@@ -134,137 +134,165 @@ export default {
 #carouselExampleControls {
   margin: 70px auto 155px;
   position: relative;
-  h2 {
-    margin-bottom: 50px;
-  }
-  .carousel-control-next {
-    position: absolute;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    top: 609px;
-    right: 130px;
-    opacity: 1;
-    z-index: 0;
-  }
-  .carousel-control-prev {
-    position: absolute;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    top: 609px;
-    left: 1270px;
-    opacity: 1;
-    z-index: 0;
-  }
-  .numberOfStep {
-    position: absolute;
-    top: 610px;
-    left: 200px;
-    font-size: 40px;
-    font-family: $font__public;
-    .currentStep {
-      &.firstPage {
-        color: #edf2f4;
+  .carousel-inner {
+    height: 700px;
+    h2 {
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+    .carousel-control-next {
+      position: absolute;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      top: 609px;
+      right: 130px;
+      opacity: 1;
+      z-index: 0;
+    }
+    .carousel-control-prev {
+      position: absolute;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      top: 609px;
+      left: 1270px;
+      opacity: 1;
+      z-index: 0;
+    }
+    .numberOfStep {
+      position: absolute;
+      top: 610px;
+      left: 200px;
+      font-size: 40px;
+      font-family: $font__public;
+      .currentStep {
+        &.firstPage {
+          color: #edf2f4;
+        }
+        &.secondPage {
+          color: #6e44ff;
+        }
+        &.thirdPage {
+          color: #2b2d42;
+        }
+        &.fourthPage {
+          color: #6e44ff;
+        }
       }
-      &.secondPage {
-        color: #6e44ff;
-      }
-      &.thirdPage {
-        color: #2b2d42;
-      }
-      &.fourthPage {
-        color: #6e44ff;
+      .allSteps {
+        &.firstOfAll {
+          color: #8d99ae;
+        }
+        &.secondOfAll {
+          color: #edf2f4;
+        }
+        &.thirdOfAll {
+          color: #d0d7df;
+        }
+        &.fourthOfAll {
+          color: #8d99ae;
+        }
       }
     }
-    .allSteps {
-      &.firstOfAll {
-        color: #8d99ae;
+    .progress {
+      height: 4px;
+      width: 800px;
+      position: absolute;
+      top: 630px;
+      left: 330px;
+      &.firstBackground {
+        background-color: #8d99ae;
       }
-      &.secondOfAll {
-        color: #edf2f4;
-      }
-      &.thirdOfAll {
-        color: #d0d7df;
-      }
-      &.fourthOfAll {
-        color: #8d99ae;
-      }
-    }
-  }
-  .progress {
-    height: 4px;
-    width: 800px;
-    position: absolute;
-    top: 620px;
-    left: 330px;
-    &.firstBackground {
-      background-color: #8d99ae;
-    }
-    &.secondBackground {
-      background-color: #edf2f4;
-    }
-    &.thirdBackground {
-      background-color: #d0d7df;
-    }
-    .progress-bar {
-      transition: none;
-      &.firstSlide {
-        width: 25%;
+      &.secondBackground {
         background-color: #edf2f4;
       }
-      &.secondSlide {
-        width: 50%;
-        background-color: #6e44ff;
+      &.thirdBackground {
+        background-color: #d0d7df;
       }
-      &.thirdSlide {
-        width: 75%;
-        background-color: #2b2d42;
+      .progress-bar {
+        transition: none;
+        &.firstSlide {
+          width: 25%;
+          background-color: #edf2f4;
+        }
+        &.secondSlide {
+          width: 50%;
+          background-color: #6e44ff;
+        }
+        &.thirdSlide {
+          width: 75%;
+          background-color: #2b2d42;
+        }
+        &.fourthSlide {
+          width: 100%;
+          background-color: #6e44ff;
+        }
       }
-      &.fourthSlide {
-        width: 100%;
-        background-color: #6e44ff;
+    }
+    .col-4 {
+      text-align: left;
+      position: absolute;
+      top: 195px;
+      left: 130px;
+      &.first {
+        h2 {
+          color: #ef233c;
+        }
+        p {
+          color: #edf2f4;
+        }
+      }
+      &.second {
+        h2 {
+          color: #6e44ff;
+        }
+        p {
+          color: #edf2f4;
+        }
+      }
+      &.third,
+      &.fourth {
+        h2 {
+          color: #2b2d42;
+        }
+        p {
+          color: #8d99ae;
+        }
+      }
+    }
+    .col-5 {
+      text-align: left;
+      position: absolute;
+      top: 120px;
+      right: 80px;
+      img {
+        height: 435px;
       }
     }
   }
-  .col-4 {
-    text-align: left;
-    position: absolute;
-    top: 195px;
-    left: 130px;
-    &.first {
-      h2 {
-        color: #ef233c;
+}
+@media only screen and (max-width: 1367px) {
+  #carouselExampleControls {
+    .carousel-inner {
+      .carousel-control-next {
+        position: absolute;
+        top: 565px;
+        left: 1235px;
       }
-      p {
-        color: #edf2f4;
+      .carousel-control-prev {
+        position: absolute;
+        top: 565px;
+        left: 1170px;
       }
-    }
-    &.second {
-      h2 {
-        color: #6e44ff;
+      .numberOfStep {
+        position: absolute;
+        top: 565px;
       }
-      p {
-        color: #edf2f4;
+      .progress {
+        position: absolute;
+        top: 585px;
       }
-    }
-    &.third,
-    &.fourth {
-      h2 {
-        color: #2b2d42;
-      }
-      p {
-        color: #8d99ae;
-      }
-    }
-  }
-  .col-5 {
-    text-align: left;
-    position: absolute;
-    top: 120px;
-    right: 80px;
-    img {
-      height: 435px;
     }
   }
 }

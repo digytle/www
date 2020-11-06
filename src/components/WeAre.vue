@@ -5,7 +5,7 @@
         <div class="row">
           <h2>{{ title }}</h2>
         </div>
-        <div class="row" >
+        <div class="row">
           <p v-for="paragraph of text" :key="paragraph">{{ paragraph }}</p>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default {
   mounted() {
     this.text = weAre.text;
     this.title = weAre.title;
-    this.image = weAre.image;    
+    this.image = weAre.image;
   },
 };
 </script>
