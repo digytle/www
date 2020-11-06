@@ -11,7 +11,9 @@
       <img :src="contactsImage" />
       <div class="col-2">
         <div v-for="email in contacts" :key="email">
-          <p>{{ email }}</p>
+          <a :href="`mailto:${email}`">
+            <p>{{ email }}</p>
+          </a>
         </div>
       </div>
     </div>
