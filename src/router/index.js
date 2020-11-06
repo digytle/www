@@ -17,7 +17,7 @@ const routes = [{
     name: 'Featurette',
     component: Featurette
   }, {
-    path: '/feature/**',
+    path: '/featurettes/**',
     name: 'DesignPage',
     component: DesignPage
   },
