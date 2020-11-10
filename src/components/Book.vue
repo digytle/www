@@ -5,7 +5,9 @@
         <div class="row section">
           <div>
             <h2>{{ title }}</h2>
-            <p v-for="paragraph in description" :key="paragraph">{{ paragraph }}</p>
+            <p v-for="paragraph in description" :key="paragraph">
+              {{ paragraph }}
+            </p>
           </div>
           <img :src="image" />
         </div>
@@ -53,7 +55,7 @@ export default {
     };
   },
   mounted() {
-    this.data = require(`js-yaml-loader!../../content/book.yaml`);
+    this.data = require(`js-yaml-loader!../../content/featurettes/book.yaml`);
     this.description = this.data.description;
     this.title = this.data.title;
     this.image = this.data.image;
