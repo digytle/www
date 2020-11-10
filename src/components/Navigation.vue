@@ -83,10 +83,12 @@ export default {
   font-weight: 500;
   font-family: $font__public;
   font-weight: 700;
+  padding-top: 25px;
   .logo {
     align-items: center;
     display: flex;
     justify-content: flex-start;
+    margin-left: 60px;
   }
   a {
     text-decoration: none;
