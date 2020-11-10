@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Featurette from '../components/Featurette'
-import DesignPage from '../components/DesignPage'
+import Featurettes from '../components/Featurettes'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 import Book from '../components/Book'
 Vue.use(VueRouter)
@@ -13,13 +13,13 @@ const routes = [{
     component: MainPage
   },
   {
-    path: '/person/**',
+    path: '/featurettes/**',
     name: 'Featurette',
     component: Featurette
   }, {
-    path: '/feature/**',
-    name: 'DesignPage',
-    component: DesignPage
+    path: '/featurettes/**',
+    name: 'Featurettes',
+    component: Featurettes
   },
   {
     path: '/privacy-policy/**',

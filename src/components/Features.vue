@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Features from "js-yaml-loader!../../content/features.yaml";
+import Features from "js-yaml-loader!../../content/featurettes/featurettes.yaml";
 export default {
   name: "Features",
   data() {

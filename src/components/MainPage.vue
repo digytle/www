@@ -47,5 +47,7 @@ export default {
 @import "../assets/main.scss";
 .main-page {
   overflow-x: hidden;
+  max-width: 100%;
+  margin: auto;
 }
 </style>

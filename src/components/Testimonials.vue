@@ -14,32 +14,46 @@
           class="carousel-item"
           :class="{ active: index == 0 }"
         >
-          <div class="text">
-            <img :src="bigQuote" />
-            <p class="quote">{{ section.quote }}<img :src="smallQuote" /></p>
-            <h4>{{ section.name }}</h4>
-            <p class="position">{{ section.position }}</p>
+          <div class="row">
+            <div class="col-6 indicators">
+              <div class="carousel-indicators">
+                <div
+                  class="row buttons"
+                  v-for="(section, index) in quotes"
+                  :key="index"
+                  :class="{
+                    active: index == selectedIndex,
+                  }"
+                  @click="selectedIndex = index"
+                  data-target="#carouselExampleIndicators"
+                  :data-slide-to="index"
+                >
+                  <b-img
+                    data-target="#carouselExampleIndicators"
+                    :data-slide-to="index"
+                    class="button"
+                    :src="section.button"
+                    @click="selectedIndex = index"
+                  ></b-img>
+                  <div
+                    class="position"
+                    @click="selectedIndex = index"
+                    data-target="#carouselExampleIndicators"
+                    :data-slide-to="index"
+                  >
+                    <h4>{{ section.name }}</h4>
+                    <p>{{ section.position }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text col-6">
+              <img :src="bigQuote" />
+              <p class="quote">{{ section.quote }}<img :src="smallQuote" /></p>
+            </div>
           </div>
         </div>
       </div>
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-          :class="{ active: index == 0 }"
-        ></li>
-        <li
-          :class="{ active: index == 1 }"
-          data-target="#carouselExampleIndicators"
-          data-slide-to="1"
-        ></li>
-        <li
-          :class="{ active: index == 2 }"
-          data-target="#carouselExampleIndicators"
-          data-slide-to="2"
-        ></li>
-      </ol>
     </div>
   </div>
 </template>
@@ -54,6 +68,7 @@ export default {
       header: "",
       bigQuote: "",
       smallQuote: "",
+      selectedIndex: 0,
     };
   },
 
@@ -76,33 +91,64 @@ export default {
     .carousel-item {
       transition: none;
       .text {
-        margin-left: 290px;
         text-align: left;
+        height: 375px;
+        background-color: #2b2d42;
+        color: #ffffff;
+        padding: 50px 0 70px 100px;
         .quote {
           font-size: 20px;
-          width: 845px;
-        }
-        .position {
-          color: #8d99ae;
-        }
-        h4 {
-          margin-top: 40px;
+          width: 500px;
         }
       }
     }
   }
-  .carousel-indicators {
-    display: block;
-    margin-left: 115px;
-    margin-bottom: 115px;
-    li {
-      background-color: #8d99ae;
-      border-radius: 100%;
-      width: 10px;
-      height: 10px;
-      transition: none;
-      &.active {
-        background-color: #ef233c;
+  .indicators {
+    padding-right: 0;
+    .carousel-indicators {
+      display: contents;
+      .buttons {
+        justify-content: center;
+        padding-top: 35px;
+        opacity: 0.5;
+        width: 100%;
+        height: 125px;
+        margin-right: 0;
+        margin-left: 0;
+        .position {
+          text-align: left;
+          p {
+            color: #8d99ae;
+          }
+        }
+        .button {
+          background-color: #8d99ae;
+          border-radius: 100%;
+          width: 55px;
+          height: 55px;
+          margin-right: 30px;
+          transition: none;
+        }
+        &.active {
+          opacity: 1;
+          background-color: grey;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  #carouselExampleIndicators {
+    .carousel-inner {
+      .carousel-item {
+        transition: none;
+        .text {
+          padding: 50px 0 70px 50px;
+          .quote {
+            font-size: unset;
+            width: 100%;
+          }
+        }
       }
     }
   }
