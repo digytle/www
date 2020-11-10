@@ -137,4 +137,20 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  #carouselExampleIndicators {
+    .carousel-inner {
+      .carousel-item {
+        transition: none;
+        .text {
+          padding: 50px 0 70px 50px;
+          .quote {
+            font-size: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

@@ -1,16 +1,12 @@
 <template>
   <div class="header">
     <div class="row">
-      <div class="col-6">
-        <img class="rocket-image" :src="image" />
+      <div class=".col-6 .col-sm-6 .col-md-6 .col-lg-12 .col-xl-12">
+        <img class="rocket" :src="image" />
       </div>
-      <div class="col-6 text">
-        <div class="row">
-          <h1>{{ text }}</h1>
-        </div>
-        <div class="row">
-          <p>{{ description }}</p>
-        </div>
+      <div class="text">
+        <h1>{{ text }}</h1>
+        <p>{{ description }}</p>
         <img :src="arrow" />
       </div>
     </div>
@@ -42,29 +38,43 @@ export default {
 @import "../assets/main.scss";
 .header {
   margin-top: 100px;
-  .rocket-image {
+  .rocket {
     width: 650px;
     height: 325px;
+    margin-right: 65px;
+    margin-left: 30px;
   }
   .text {
-    margin-top: 105px;
     text-align: left;
     h1 {
       font-size: 52px;
       color: #d90429;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       font-weight: 500;
       max-width: 535px;
-      max-height: 135px;
     }
     p {
       font-weight: 400;
       font-size: 16px;
       color: #8d99ae;
-      margin-bottom: 25px;
+      margin-bottom: 55px;
       margin-top: 30px;
       max-width: 516px;
       max-height: 78px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    margin-top: 85px;
+    .row {
+      flex-direction: column-reverse;
+      .rocket {
+        margin: 0 auto;
+      }
+      .text {
+        margin: 0 auto;
+      }
     }
   }
 }

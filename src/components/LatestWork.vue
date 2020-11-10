@@ -7,7 +7,7 @@
       <div class="col-12 row header-text">
         <p>{{ description }}</p>
       </div>
-      <div class="col-12 row section">
+      <div class="col-4 col-md-4 col-lg-12 col-xl-12 row section">
         <div class="image-container" v-for="item in work" :key="item.text">
           <div class="image-box">
             <p>{{ item.title }}</p>
@@ -95,6 +95,15 @@ export default {
       .arrow-icon {
         color: #c971f3;
       }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section {
+    margin: 0 auto 50px;
+    justify-content: center;
+    .image-container {
+      margin: 0 auto 50px;
     }
   }
 }

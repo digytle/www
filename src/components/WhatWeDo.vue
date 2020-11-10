@@ -20,7 +20,7 @@
             alt="image1"
           />
           <div
-            class="col-4"
+            class="col-4 text"
             :class="{
               first: index == 0,
               second: index == 1,
@@ -230,7 +230,7 @@ export default {
         }
       }
     }
-    .col-4 {
+    .text {
       text-align: left;
       position: absolute;
       top: 195px;
@@ -292,6 +292,43 @@ export default {
       .progress {
         position: absolute;
         top: 585px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  #carouselExampleControls {
+    .carousel-inner {
+      .carousel-control-next {
+        position: absolute;
+        top: 440px;
+        left: 1235px;
+      }
+      .carousel-control-prev {
+        position: absolute;
+        top: 440px;
+        left: 1170px;
+      }
+      .numberOfStep {
+        position: absolute;
+        top: 440px;
+        left: 130px;
+      }
+      .progress {
+        position: absolute;
+        top: 460px;
+        left: 230px;
+      }
+      img {
+        height: 600px;
+      }
+      .text {
+        top: 135px;
+        left: 100px;
+        p {
+          max-height: 145px;
+          overflow: hidden;
+        }
       }
     }
   }
