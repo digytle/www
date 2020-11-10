@@ -21,18 +21,26 @@
                   class="row buttons"
                   v-for="(section, index) in quotes"
                   :key="index"
-                  @click="selectedIndex = index"
                   :class="{
                     active: index == selectedIndex,
                   }"
+                  @click="selectedIndex = index"
+                  data-target="#carouselExampleIndicators"
+                  :data-slide-to="index"
                 >
                   <b-img
                     data-target="#carouselExampleIndicators"
                     :data-slide-to="index"
                     class="button"
                     :src="section.button"
+                    @click="selectedIndex = index"
                   ></b-img>
-                  <div class="position">
+                  <div
+                    class="position"
+                    @click="selectedIndex = index"
+                    data-target="#carouselExampleIndicators"
+                    :data-slide-to="index"
+                  >
                     <h4>{{ section.name }}</h4>
                     <p>{{ section.position }}</p>
                   </div>
