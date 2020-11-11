@@ -84,6 +84,7 @@ export default {
   font-family: $font__public;
   font-weight: 700;
   padding-top: 25px;
+  max-width: 1366px;
   .logo {
     align-items: center;
     display: flex;
