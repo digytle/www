@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="we-are">
-    <div class="row items col-12">
+    <div class="row items">
       <div class="col-6 col-md-12 col-xl-6 text">
         <div class="row">
           <h2>{{ title }}</h2>
@@ -8,7 +8,7 @@
 
         <p v-for="paragraph of text" :key="paragraph">{{ paragraph }}</p>
       </div>
-      <div class="col-6 col-xl-6 image">
+      <div class="image">
         <img :src="image" />
       </div>
     </div>
@@ -40,11 +40,12 @@ export default {
   margin-right: 165px;
   .items {
     align-items: center;
-    margin-bottom: 190px;
-    margin-top: 185px;
-    margin-right: 0;
+    margin: 185px 0 190px 0;
   }
   .text {
+    max-width: 500px;
+    margin-left: 130px;
+    margin-right: 300px;
     h2 {
       color: #2b2d42;
       margin-bottom: 40px;
@@ -55,14 +56,13 @@ export default {
       font-size: 16px;
       font-weight: 400;
       text-align: left;
-      width: 500px;
-      margin-right: 0;
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
+    margin: 0 auto;
     .text {
       margin-left: 60px;
       text-align: left;

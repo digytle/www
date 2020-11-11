@@ -305,26 +305,29 @@ export default {
     .carousel-inner {
       .carousel-control-next {
         position: absolute;
-        top: 440px;
-        left: 1235px;
+        top: 415px;
+        left: 625px;
       }
       .carousel-control-prev {
         position: absolute;
-        top: 440px;
-        left: 1170px;
+        top: 415px;
+        left: 560px;
       }
       .numberOfStep {
         position: absolute;
-        top: 440px;
+        top: 415px;
         left: 130px;
       }
       .progress {
         position: absolute;
-        top: 460px;
+        top: 435px;
         left: 230px;
+        width: 300px;
       }
-      img {
-        height: 600px;
+      .carousel-item {
+        .d-block {
+          height: 600px;
+        }
       }
       .text {
         top: 135px;
@@ -332,6 +335,9 @@ export default {
         p {
           max-height: 145px;
           overflow: hidden;
+        }
+        h2 {
+          margin-bottom: 25px;
         }
       }
     }
