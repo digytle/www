@@ -88,7 +88,7 @@ export default {
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    margin-left: 60px;
+    padding-left: 60px;
   }
   a {
     text-decoration: none;

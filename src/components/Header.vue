@@ -37,7 +37,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .header {
-  margin-top: 100px;
+  margin-top: 130px;
   .rocket {
     width: 650px;
     height: 325px;

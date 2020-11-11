@@ -58,6 +58,14 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1367px) {
+  .container {
+    .text {
+      text-align: left;
+      margin-left: 130px;
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .container {
     .text {
