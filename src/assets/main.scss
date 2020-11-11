@@ -5,6 +5,10 @@ sans-serif;
 $font__title:'Fira Sans',
 sans-serif;
 
+.container {
+    max-width: 1366px;
+}
+
 h1 {
     font-family: $font__title;
     font-size: 52px;

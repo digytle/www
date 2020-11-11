@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Navigation></Navigation>
     <div class="row">
       <div class="image">
@@ -85,6 +85,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+
 .row {
   margin-right: 0;
 }
@@ -103,7 +104,7 @@ export default {
   }
   p {
     margin-top: 50px;
-    width: 590px;
+    width: 515px;
     color: #8d99ae;
     font-weight: 400;
   }
