@@ -12,7 +12,7 @@ features:
   link: leadership
   template: featurettes 
 - name: Scratch for Executives
-  description: "Software developers are required to think business, do Business Executives think code?"
+  description: "Software developers are required to think business, we think Business Executives should think code?"
   image: assets/maxresdefault.png
   template: featurettes 
   link: scratch-for-executives
