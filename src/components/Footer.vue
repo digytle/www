@@ -1,33 +1,37 @@
 <template>
   <div class="footer row">
     <img class="logo" :src="logo" />
-    <div class="row location">
-      <img :src="locationPoint" />
-      <div class="col-2">
-        <p>{{ address }}</p>
+    <div class="first row">
+      <div class="row location">
+        <img :src="locationPoint" />
+        <div class="col-2">
+          <p>{{ address }}</p>
+        </div>
       </div>
-    </div>
-    <div class="row contacts">
-      <img :src="contactsImage" />
-      <div class="emails col-2">
-        <div v-for="email in contacts" :key="email">
-          <a :href="`mailto:${email}`">
-            <p>{{ email }}</p>
-          </a>
+      <div class="row contacts">
+        <img :src="contactsImage" />
+        <div class="emails col-2">
+          <div v-for="email in contacts" :key="email">
+            <a :href="`mailto:${email}`">
+              <p>{{ email }}</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row privacy">
-      <router-link to="/privacy-policy/"
-        ><p>{{ privacy }}</p></router-link
-      >
-    </div>
-    <div class="copyright">
-      <div class="icons">
-        <img :src="twitter" />
-        <img :src="linkedin" />
+    <div class="second row">
+      <div class="row privacy">
+        <router-link to="/privacy-policy/"
+          ><p>{{ privacy }}</p></router-link
+        >
       </div>
-      <p>{{ copyright }}</p>
+      <div class="copyright">
+        <div class="icons row">
+          <img :src="twitter" />
+          <img :src="linkedin" />
+        </div>
+        <p>{{ copyright }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -118,9 +122,40 @@ p {
     margin-top: 15px;
   }
   .icons {
-    margin: 0 auto;
+    justify-content: center;
     img {
-      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    align-items: flex-start;
+    .first {
+      flex-direction: column;
+      .location {
+        margin-bottom: 40px;
+      }
+      .contacts {
+        margin-left: 0px;
+      }
+    }
+    .second {
+      flex-direction: column;
+      .privacy {
+        justify-content: flex-end;
+        margin-bottom: 65px;
+      }
+      .copyright {
+        margin-left: 0px;
+        .icons {
+          margin-right: 0;
+          justify-content: flex-end;
+        }
+      }
     }
   }
 }
