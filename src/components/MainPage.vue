@@ -1,5 +1,5 @@
 <template>
-  <div class="main-page">
+  <div class="main-page container">
     <Navigation></Navigation>
     <Header></Header>
     <WeAre></WeAre>
@@ -49,5 +49,8 @@ export default {
   overflow-x: hidden;
   max-width: 100%;
   margin: auto;
+}
+.container {
+  width: 1366px;
 }
 </style>
