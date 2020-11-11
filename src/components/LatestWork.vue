@@ -59,10 +59,11 @@ export default {
   }
 }
 .section {
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 170px;
   .image-container {
     height: 300px;
+    margin-right: 35px;
     .images {
       width: 300px;
       height: 300px;

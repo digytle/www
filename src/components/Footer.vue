@@ -1,6 +1,6 @@
 <template>
   <div class="footer row">
-    <h1>Digytle</h1>
+    <img class="logo" :src="logo" />
     <div class="row location">
       <img :src="locationPoint" />
       <div class="col-2">
@@ -9,7 +9,7 @@
     </div>
     <div class="row contacts">
       <img :src="contactsImage" />
-      <div class="col-2">
+      <div class="emails col-2">
         <div v-for="email in contacts" :key="email">
           <a :href="`mailto:${email}`">
             <p>{{ email }}</p>
@@ -38,6 +38,7 @@ export default {
   name: "Footer",
   data() {
     return {
+      logo: "",
       privacy: "",
       contact: "",
       social: "",
@@ -51,6 +52,7 @@ export default {
     };
   },
   mounted() {
+    this.logo = footer.logo;
     this.privacy = footer.privacy;
     this.contact = footer.contact;
     this.address = footer.address;
@@ -70,16 +72,15 @@ export default {
   background-color: #333333;
   height: 150px;
   align-items: center;
-  padding-right: 75px;
+  // padding-right: 75px;
 }
 .row {
   margin-right: 0;
+  margin-left: 0;
 }
-h1 {
+.logo {
   margin-left: 60px;
-  font-weight: 700;
-  font-size: 25px;
-  color: white;
+  margin-right: 70px;
 }
 p {
   text-align: left;
@@ -87,20 +88,24 @@ p {
   font-size: 14px;
   margin-bottom: 0;
   color: #edf2f4;
+  font-family: $font__title;
 }
 .location {
-  margin-left: 70px;
   p {
-    width: 235px;
+    width: 180px;
+    padding-right: 0;
   }
   img {
     margin-bottom: 30px;
   }
 }
 .contacts {
-  margin-left: 30px;
+  margin-left: 70px;
   img {
     margin-bottom: 30px;
+  }
+  .emails {
+    padding-right: 0;
   }
 }
 .privacy {
@@ -108,7 +113,7 @@ p {
   margin-bottom: 30px;
 }
 .copyright {
-  margin-left: 145px;
+  margin-left: 195px;
   p {
     margin-top: 15px;
   }
