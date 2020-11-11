@@ -1,12 +1,12 @@
 image: ../assets/
 title: Scratch for Executives
-description: 'Software developers are required to think business, do Business Executives think code? Scratch for Executives introduces Business Executives to the challenges facing software developers.'
+description: 'Software developers are required to think business, but do Business Executives think code? Scratch for Executives introduces Business Executives to the world of the software developers.'
 sections:
 - description:
     - >
-       Business Executives face the challenges of the digital transformation. These challenges are sometimes amplified by the distance between business and software.
+       Business Executives face the challenges of the digital transformation. These challenges are sometimes amplified by the presence of software.
     - >
-       Scratch for Executives brings Business Executives closer to software, helping them to understand it. Because only what one understands can one manage.
+       Scratch for Executives helps Business Executives feel comfortable around software.
   image: ../assets/
 - description:
     - >
