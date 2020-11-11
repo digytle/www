@@ -135,10 +135,14 @@ export default {
   margin: 70px auto 155px;
   position: relative;
   .carousel-inner {
-    height: 700px;
     h2 {
       margin-bottom: 50px;
       margin-top: 0;
+    }
+    .carousel-item {
+      .d-block {
+        height: 700px;
+      }
     }
     .carousel-control-next {
       position: absolute;
@@ -146,7 +150,7 @@ export default {
       width: 50px;
       height: 50px;
       top: 609px;
-      right: 130px;
+      left: 1185px;
       opacity: 1;
       z-index: 0;
     }
@@ -156,14 +160,14 @@ export default {
       width: 50px;
       height: 50px;
       top: 609px;
-      left: 1270px;
+      left: 1120px;
       opacity: 1;
       z-index: 0;
     }
     .numberOfStep {
       position: absolute;
       top: 610px;
-      left: 200px;
+      left: 130px;
       font-size: 40px;
       font-family: $font__public;
       .currentStep {
@@ -200,7 +204,7 @@ export default {
       width: 800px;
       position: absolute;
       top: 630px;
-      left: 330px;
+      left: 280px;
       &.firstBackground {
         background-color: #8d99ae;
       }
@@ -272,30 +276,30 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1367px) {
-  #carouselExampleControls {
-    .carousel-inner {
-      .carousel-control-next {
-        position: absolute;
-        top: 565px;
-        left: 1235px;
-      }
-      .carousel-control-prev {
-        position: absolute;
-        top: 565px;
-        left: 1170px;
-      }
-      .numberOfStep {
-        position: absolute;
-        top: 565px;
-      }
-      .progress {
-        position: absolute;
-        top: 585px;
-      }
-    }
-  }
-}
+// @media only screen and (max-width: 1367px) {
+//   #carouselExampleControls {
+//     .carousel-inner {
+//       .carousel-control-next {
+//         position: absolute;
+//         top: 565px;
+//         left: 1235px;
+//       }
+//       .carousel-control-prev {
+//         position: absolute;
+//         top: 565px;
+//         left: 1170px;
+//       }
+//       .numberOfStep {
+//         position: absolute;
+//         top: 565px;
+//       }
+//       .progress {
+//         position: absolute;
+//         top: 585px;
+//       }
+//     }
+//   }
+// }
 @media only screen and (max-width: 769px) {
   #carouselExampleControls {
     .carousel-inner {
