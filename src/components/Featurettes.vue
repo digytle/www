@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Navigation></Navigation>
     <div class="digytle">
       <div class="row">
@@ -139,7 +139,7 @@ export default {
     }
     p {
       margin-top: 50px;
-      width: 590px;
+      width: 515px;
       font-weight: 400;
     }
   }
