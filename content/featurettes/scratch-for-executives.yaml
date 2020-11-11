@@ -14,3 +14,14 @@ sections:
     - >
        An experienced tutor will help you sort your thoughts, identify your challenges and plan solutions.
   image: ../assets/scratch_title.png
+designTitle: Faces of Digytle
+faces:
+- image: /assets/viktoria_image.png
+  name: Viktoria Veleva
+  position: UI/UX Designer
+  text: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+- image: /assets/eli_image.png
+  name: Eliana Tsiparova
+  position: UI/UX Designer
+  text: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+work:
