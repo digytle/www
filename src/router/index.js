@@ -13,7 +13,7 @@ const routes = [{
     component: MainPage
   },
   {
-    path: '/featurettes/**',
+    path: '/featurette/**',
     name: 'Featurette',
     component: Featurette
   }, {
