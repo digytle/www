@@ -257,11 +257,13 @@ export default {
                 margin-top: 50px;
                 text-align: left;
                 font-size: 20px;
+                width: unset;
               }
               h4 {
                 text-align: left;
                 font-size: 20px;
                 color: red;
+                width: unset;
               }
               .amazon {
                 width: 175px;
