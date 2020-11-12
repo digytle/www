@@ -130,8 +130,8 @@ export default {
           transition: none;
         }
         &.active {
+          background-color: rgba(81, 88, 109, 0.06);
           opacity: 1;
-          background-color: grey;
         }
       }
     }
