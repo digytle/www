@@ -15,33 +15,73 @@
         <h2>{{ data.infoTitle }}</h2>
         <p>{{ data.infoDescription }}</p>
       </div>
-
-      <div
-        class="row section"
-        v-for="(section, index) in sections"
-        :key="index"
-        :class="{ 'row-reverse': index % 2 == 0 }"
-      >
-        <img class="image" :src="section.image" />
-        <div>
-          <h3>{{ section.title }}</h3>
-          <p>{{ section.description }}</p>
-          <h4>{{ section.subTitle }}</h4>
-          <p>{{ section.subDescription }}</p>
-          <div class="tools">
-            <h4>{{ section.tools }}</h4>
-            <img :src="section.xdImage" />
-            <img :src="section.aiImage" />
-          </div>
-          <button>
-            <div class="row">
-              <p>{{ section.button }}</p>
-              <img :src="section.buttonImage" />
-            </div>
-          </button>
+      <div v-if="data.quote" class="quote col-7">
+        <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
+          <img :src="paragraph.bigQuotes" />
+          <h2>
+            {{ paragraph.text }}
+            <img class="small" :src="paragraph.smallQuotes" />
+          </h2>
         </div>
       </div>
-      <div class="design">
+      <div v-if="data.discover" class="discover">
+        <div class="container">
+          <div
+            class="row"
+            v-for="(discover, index) in data.discover"
+            :key="index"
+            :class="{
+              left: index == 0,
+              right: index == 1,
+            }"
+          >
+            <div class="book">
+              <h2>{{ discover.title }}</h2>
+              <p v-for="paragraph in discover.infoText" :key="paragraph">
+                {{ paragraph }}
+              </p>
+              <div v-if="discover.question" class="buy-book row">
+                <div>
+                  <h3>{{ discover.question }}</h3>
+                  <router-link :to="discover.link">
+                    <h4>{{ discover.text }}</h4>
+                  </router-link>
+                </div>
+                <img class="amazon" :src="discover.imageAmazon" />
+              </div>
+            </div>
+            <img v-if="discover.image" :src="discover.image" />
+          </div>
+        </div>
+      </div>
+      <div v-if="sections">
+        <div
+          class="row section"
+          v-for="(section, index) in sections"
+          :key="index"
+          :class="{ 'row-reverse': index % 2 == 0 }"
+        >
+          <img class="image" :src="section.image" />
+          <div>
+            <h3>{{ section.title }}</h3>
+            <p>{{ section.description }}</p>
+            <h4>{{ section.subTitle }}</h4>
+            <p>{{ section.subDescription }}</p>
+            <div v-if="section.tools" class="tools">
+              <h4>{{ section.tools }}</h4>
+              <img :src="section.xdImage" />
+              <img :src="section.aiImage" />
+            </div>
+            <button v-if="section.button">
+              <div class="row">
+                <p>{{ section.button }}</p>
+                <img :src="section.buttonImage" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div v-if="faces" class="design">
         <h1>{{ data.designTitle }}</h1>
         <div class="row design-faces">
           <div class="row faces" v-for="face in faces" :key="face.image">
@@ -57,6 +97,7 @@
       <div
         class="work-with-us"
         :style="{ 'background-image': `url('${background}')` }"
+        v-if="data.work"
       >
         <div class="work" v-for="section in data.work" :key="section.question">
           <h2>{{ section.question }}</h2>
@@ -156,6 +197,80 @@ export default {
       p {
         width: 950px;
         margin: 0 auto;
+      }
+    }
+    .quote {
+      margin: 120px auto 135px;
+      position: relative;
+      h2 {
+        text-align: left;
+        width: 845px;
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+    .discover {
+      .container {
+        .row {
+          margin: 0 auto 130px;
+          align-items: center;
+        }
+        .left {
+          justify-content: center;
+          img {
+            margin-left: 85px;
+          }
+          p {
+            text-align: left;
+            max-width: 625px;
+            color: #8d99ae;
+          }
+          h1 {
+            text-align: left;
+          }
+        }
+        .right {
+          flex-direction: row-reverse;
+          justify-content: center;
+          img {
+            width: 300px;
+            height: 425px;
+            margin-right: 170px;
+          }
+          .book {
+            max-width: 625px;
+
+            p {
+              text-align: left;
+              max-width: 625px;
+              color: #8d99ae;
+            }
+            h2 {
+              text-align: left;
+              margin-bottom: 30px;
+              margin-top: 30px;
+              max-width: 625px;
+            }
+            .buy-book {
+              margin-right: 0;
+              h3 {
+                margin-top: 50px;
+                text-align: left;
+                font-size: 20px;
+              }
+              h4 {
+                text-align: left;
+                font-size: 20px;
+                color: red;
+              }
+              .amazon {
+                width: 175px;
+                height: 85px;
+                margin-right: 0;
+              }
+            }
+          }
+        }
       }
     }
     .row {
