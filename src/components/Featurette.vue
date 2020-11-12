@@ -17,37 +17,41 @@
     <div class="quote col-7">
       <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
         <img :src="paragraph.bigQuotes" />
-        <h2>{{ paragraph.text }}</h2>
-        <img class="small" :src="paragraph.smallQuotes" />
+        <h2>
+          {{ paragraph.text }}
+          <img class="small" :src="paragraph.smallQuotes" />
+        </h2>
       </div>
     </div>
-    <div class="row">
-      <div class="container">
-        <div
-          class="row"
-          v-for="(section, index) in data.sections"
-          :key="index"
-          :class="{
-            first: index == 0,
-            second: index == 1,
-          }"
-        >
-          <div class="book">
-            <h2>{{ section.title }}</h2>
-            <p v-for="paragraph in section.description" :key="paragraph">
-              {{ paragraph }}
-            </p>
-            <div v-if="section.question" class="buy-book row">
-              <div>
-                <h3>{{ section.question }}</h3>
-                <router-link :to="section.link">
-                  <h4>{{ section.text }}</h4>
-                </router-link>
+    <div class="discover">
+      <div class="row">
+        <div class="container">
+          <div
+            class="row"
+            v-for="(discover, index) in data.discover"
+            :key="index"
+            :class="{
+              left: index == 0,
+              right: index == 1,
+            }"
+          >
+            <div class="book">
+              <h2>{{ discover.title }}</h2>
+              <p v-for="paragraph in discover.infoText" :key="paragraph">
+                {{ paragraph }}
+              </p>
+              <div v-if="discover.question" class="buy-book row">
+                <div>
+                  <h3>{{ discover.question }}</h3>
+                  <router-link :to="discover.link">
+                    <h4>{{ discover.text }}</h4>
+                  </router-link>
+                </div>
+                <img class="amazon" :src="discover.imageAmazon" />
               </div>
-              <img class="amazon" :src="section.imageAmazon" />
             </div>
+            <img v-if="discover.image" :src="discover.image" />
           </div>
-          <img v-if="section.image" :src="section.image" />
         </div>
       </div>
     </div>
@@ -132,61 +136,68 @@ export default {
     line-height: 30px;
   }
 }
-.container {
-  .row {
-    margin: 0 auto 130px;
-    align-items: center;
-  }
-  .first {
-    img {
-      margin-left: 85px;
+.discover {
+  .container {
+    max-width: 1366px;
+    .row {
+      margin: 0 auto 130px;
+      align-items: center;
+      
+      justify-content: center;
     }
-    p {
-      text-align: left;
-      max-width: 625px;
-      color: #8d99ae;
-    }
-    h1 {
-      text-align: left;
-    }
-  }
-  .second {
-    flex-direction: row-reverse;
-    img {
-      width: 300px;
-      height: 425px;
-      margin-right: 170px;
-    }
-    .book {
-      max-width: 625px;
-
+    .left {
+      justify-content: center;
+      img {
+        margin-left: 85px;
+      }
       p {
         text-align: left;
         max-width: 625px;
         color: #8d99ae;
       }
-      h2 {
+      h1 {
         text-align: left;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        max-width: 625px;
       }
-      .buy-book {
-        margin-right: 0;
-        h3 {
-          margin-top: 50px;
+    }
+    .right {
+      justify-content: center;
+      flex-direction: row-reverse;
+      img {
+        width: 300px;
+        height: 425px;
+        margin-right: 170px;
+      }
+      .book {
+        max-width: 625px;
+
+        p {
           text-align: left;
-          font-size: 20px;
+          max-width: 625px;
+          color: #8d99ae;
         }
-        h4 {
+        h2 {
           text-align: left;
-          font-size: 20px;
-          color: red;
+          margin-bottom: 30px;
+          margin-top: 30px;
+          max-width: 625px;
         }
-        .amazon {
-          width: 175px;
-          height: 85px;
+        .buy-book {
           margin-right: 0;
+          h3 {
+            margin-top: 50px;
+            text-align: left;
+            font-size: 20px;
+          }
+          h4 {
+            text-align: left;
+            font-size: 20px;
+            color: red;
+          }
+          .amazon {
+            width: 175px;
+            height: 85px;
+            margin-right: 0;
+          }
         }
       }
     }
