@@ -2,17 +2,11 @@ image: ../assets/scratch_for_executives_header.png
 title: Scratch for Executives
 description: 'Software developers are required to think business, but do Business Executives think code? Scratch for Executives introduces Business Executives to the world of software development.'
 sections:
-- description:
-    - >
-       Digital transformation is one of the biggest challenges facing Business Executives. The communication between the Business Executives and the Software Developers is a major part of it.
-    - >
-       Scratch for Executives helps Business Executives tackle this challenge.
+- description: Digital transformation is one of the biggest challenges facing Business Executives. The communication between the Business Executives and the Software Developers is a major part of it.
+  subDescription: Scratch for Executives helps Business Executives tackle this challenge.
   image: ../assets/scratch_title.png
-- description:
-    - >
-       Several easy sessions (the 1st one for free) will put you at ease and will allow you to reflect on your challenges.
-    - >
-       An experienced tutor will help you sort your thoughts, identify your challenges and plan solutions.
+- description: Several easy sessions (the 1st one for free) will put you at ease and will allow you to reflect on your challenges.
+  subDescription: An experienced tutor will help you sort your thoughts, identify your challenges and plan solutions.
   image: ../assets/scratch_title.png
 designTitle: Faces of Digytle
 faces:
