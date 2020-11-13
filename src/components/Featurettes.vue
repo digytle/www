@@ -330,6 +330,7 @@ export default {
       }
     }
     .design {
+      margin-bottom: 270px;
       h1 {
         color: #6e44ff;
         text-align: center;
@@ -357,7 +358,6 @@ export default {
     }
     .work-with-us {
       // background-image: url("/assets/background_with_us.png");
-      margin-top: 270px;
       // background-color: #2b2d42;
       padding-top: 140px;
       padding-bottom: 140px;
