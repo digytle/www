@@ -6,87 +6,78 @@ title: Digytle Design
 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 # TODO
 # implement the sections and separators (they can be one or more! you need a cycle)
-sections:
+sections: 
 - type: introduction
-  separator: 
+  separator: mission & approach
   title: Title
   # TODO
   # The quote images are hardcoded
   quote: "Empower your senior team members: you can’t do it all, and you owe it to yourself as well as the team members that work for you to give them a chance to spread their wings and take on additional responsibility that — should their own careers progress — they will need to take on eventually themselves."
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 - type: main
-  separator: 
-  title:
-  description:
+  separator: projects
+  title: Title
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
   subsections:
   - title: "MKB Financiering: finance your business with ease"
     description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-    # TODO
-    # remove the path
     image: mkb_pc_image.png
     subtitle: "Challenge & Process"
     subdescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-    tools: Tools
-    - image: xd_image.png
-    - image: ai_image.png
-    button:
-    - title: Go to website
-    - link: URL
-    
-# TODO
-# make the sections the same way like above
-    
-- separator: 
-  title: "Blits ChatBots"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-  subTitle: "Challenge & Process"
-  subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-  image: /assets/blits_pc_image.png
-  tools: Tools
-  xdImage: /assets/xd_image.png
-  aiImage: /assets/ai_image.png
-  button: Go to website
-  buttonImage: /assets/button_arrow.svg
-- title: "Access App: Safe & queue-free visiting"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-  subTitle: "Challenge & Process"
-  subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-  image: /assets/access_pc_image.png
-  tools: Tools
-  xdImage: /assets/xd_image.png
-  aiImage: /assets/ai_image.png
-  button: Go to website
-  buttonImage: /assets/button_arrow.svg
-- title: "Green Atlas"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-  subTitle: "Challenge & Process"
-  subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
-  image: /assets/green_atlas_pc_image.png
-  tools: Tools
-  xdImage: /assets/xd_image.png
-  aiImage: /assets/ai_image.png
-  button: Go to website
-  buttonImage: /assets/button_arrow.svg
-
-# END OF TODO
-  
+    toolstitle: Tools
+    tools: 
+      - xd_image.png
+      - ai_image.png
+    button: Go to website
+    buttonlink: https://www.google.com/
+  - title: "Blits ChatBots"
+    description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et  
+    image: blits_pc_image.png
+    subtitle: "Challenge & Process"
+    subdescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+    toolstitle: Tools
+    tools: 
+      - xd_image.png
+      - ai_image.png
+    button: Go to website
+    buttonlink: https://www.google.com/
+  - title: "Access App: Safe & queue-free visiting"
+    description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+    image: access_pc_image.png    
+    subtitle: "Challenge & Process"
+    subdescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+    toolstitle: Tools
+    tools: 
+      - xd_image.png
+      - ai_image.png
+    button: Go to website
+    buttonlink: https://www.google.com/
+  - title: "Green Atlas"
+    description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+    image: green_atlas_pc_image.png
+    subtitle: "Challenge & Process"
+    subdescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+    toolstitle: Tools
+    tools: 
+      - xd_image.png
+      - ai_image.png
+    button: Go to website
+    buttonlink: https://www.google.com/
 - type: people
-  separator: 
+  separator: meet the designers
   title: Faces of Digytle
   people:
   - image: viktoria_image.png
     name: Viktoria Veleva
     role: UI/UX Designer
     description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-  - image: /assets/eli_image.png
+  - image: eli_image.png
     name: Eliana Tsiparova
     role: UI/UX Designer
     description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-
-— type: do
-# separator: TYPE do DOES NOT HAVE A SEPARATOR
-  - background: background_with_us.png
-    title: Are you interested in working with us?
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-    button: Book a consultation
-    link: /
+- type: do
+  background: background_with_us.png
+  title: Are you interested in working with us?
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+  button: Book a consultation
+  link: /
