@@ -1,5 +1,9 @@
 <template>
   <div class="container" id="latest-work">
+    <div v-if="separator" class="row separator">
+      <hr class="line" />
+      <p class="separator-text">{{ separator.toUpperCase() }}</p>
+    </div>
     <div class="row">
       <div class="col-12 row header-text">
         <h2>{{ title }}</h2>
@@ -36,6 +40,7 @@ export default {
     };
   },
   mounted() {
+    this.separator = LatestWork.separator;
     this.title = LatestWork.title;
     this.description = LatestWork.description;
     this.work = LatestWork.work;
@@ -45,6 +50,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/main.scss";
+.separator {
+  display: none;
+}
 .header-text {
   justify-content: center;
   h2 {
@@ -100,6 +108,16 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    text-align: left;
+    .line {
+      width: 40px;
+    }
+    .separator-text {
+      margin-left: 50px !important;
+    }
+  }
   .section {
     margin: 0 auto 50px;
     justify-content: center;
