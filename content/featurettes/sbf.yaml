@@ -4,7 +4,9 @@ description: Stichting Bedrijfsfinanciering is a Dutch non-profit foundation whi
 sections:
 - type: introduction
   title: Businesses and Financing
-  description: Businesses face a number of challenges when looking for financing. Innovation in the area of business financing makes it difficult to keep an overviw of all options. The options are so many, that it is difficult to selet the right one/s. And when selecting them, it is difficult to prepare and apply. Stichting Bedrijfsfinanciering solves all these three challenges in one simple digital platform.
+  description:
+  - Businesses face a number of challenges when looking for financing. Innovation in the area of business financing makes it difficult to keep an overviw of all options. The options are so many, that it is difficult to selet the right one/s. And when selecting them, it is difficult to prepare and apply. Stichting Bedrijfsfinanciering solves all these three challenges in one simple digital platform.
+  - How does it do that?
   subTitle: "Challenge & Process"
   subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   image: /assets/mkb_pc_image.png
