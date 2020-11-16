@@ -4,111 +4,106 @@
     <div class="digytle">
       <div class="row">
         <div class="logo">
-          <img :src="data.image" />
+          <img :src="`/assets/${data.image}`" />
         </div>
         <div class="info">
           <h1>{{ data.title }}</h1>
           <p>{{ data.description }}</p>
         </div>
       </div>
-      <div class="information">
-        <h2>{{ data.infoTitle }}</h2>
-        <p>{{ data.infoDescription }}</p>
-      </div>
-      <div v-if="data.quote" class="quote col-7">
-        <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
-          <img :src="paragraph.bigQuotes" />
-          <h2>
-            {{ paragraph.text }}
-            <img class="small" :src="paragraph.smallQuotes" />
-          </h2>
+      <div v-for="element in sections" :key="element">
+        <div v-if="element.separator" class="row separator">
+          <hr class="line" />
+          <p class="separator-text">{{ element.separator.toUpperCase() }}</p>
         </div>
-      </div>
-      <div v-if="data.discover" class="discover">
-        <div class="container">
+        <div v-if="element.type == 'introduction'">
+          <div class="information">
+            <h2>{{ element.title }}</h2>
+            <p>{{ element.description }}</p>
+          </div>
+          <div v-if="element.quote">
+            <div class="quote col-7">
+              <img src="/assets/big_quotes.svg" />
+              <h2>
+                {{ element.quote }}
+                <img class="small" src="/assets/small_quotes.svg" />
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div v-if="element.type == 'main'">
+          <div class="sectionTitle">
+            <h2>{{ element.title }}</h2>
+            <p>{{ element.description }}</p>
+          </div>
           <div
-            class="row"
-            v-for="(discover, index) in data.discover"
+            class="row section"
+            v-for="(subsection, index) in element.subsections"
             :key="index"
-            :class="{
-              left: index == 0,
-              right: index == 1,
+            :class="{ 'row-reverse': index % 2 == 0 }"
+          >
+            <img class="image" :src="`/assets/${subsection.image}`" />
+            <div>
+              <h3>{{ subsection.title }}</h3>
+              <p>{{ subsection.description }}</p>
+              <h4>{{ subsection.subtitle }}</h4>
+              <p>{{ subsection.subdescription }}</p>
+              <div v-if="subsection.tools" class="tools">
+                <h4>{{ subsection.toolstitle }}</h4>
+                <div class="row">
+                  <div v-for="image in subsection.tools" :key="image">
+                    <img :src="`/assets/${image}`" />
+                  </div>
+                </div>
+              </div>
+              <a :href="subsection.buttonlink" target="_blank">
+                <button v-if="subsection.button">
+                  <div class="row">
+                    <p>{{ subsection.button }}</p>
+                    <img src="/assets/button_arrow.svg" />
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div v-if="element.type == 'people'" class="design">
+          <h1>{{ element.title }}</h1>
+          <div class="row design-faces">
+            <div
+              class="row faces"
+              v-for="person in element.people"
+              :key="person.image"
+            >
+              <img :src="`/assets/${person.image}`" />
+              <div>
+                <h3>{{ person.name }}</h3>
+                <h4>{{ person.role }}</h4>
+                <p>{{ person.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="element.type === 'do'">
+          <div
+            class="work-with-us"
+            :style="{
+              'background-image': `url('/assets/${element.background}')`,
             }"
           >
-            <div class="book">
-              <h2>{{ discover.title }}</h2>
-              <p v-for="paragraph in discover.infoText" :key="paragraph">
-                {{ paragraph }}
+            <div class="work">
+              <h2>{{ element.title }}</h2>
+              <p class="text">
+                {{ element.description }}
               </p>
-              <div v-if="discover.question" class="buy-book row">
-                <div>
-                  <h3>{{ discover.question }}</h3>
-                  <router-link :to="discover.link">
-                    <h4>{{ discover.text }}</h4>
-                  </router-link>
-                </div>
-                <img class="amazon" :src="discover.imageAmazon" />
-              </div>
-            </div>
-            <img v-if="discover.image" :src="discover.image" />
-          </div>
-        </div>
-      </div>
-      <div v-if="sections">
-        <div
-          class="row section"
-          v-for="(section, index) in sections"
-          :key="index"
-          :class="{ 'row-reverse': index % 2 == 0 }"
-        >
-          <img class="image" :src="section.image" />
-          <div>
-            <h3>{{ section.title }}</h3>
-            <p>{{ section.description }}</p>
-            <h4>{{ section.subTitle }}</h4>
-            <p>{{ section.subDescription }}</p>
-            <div v-if="section.tools" class="tools">
-              <h4>{{ section.tools }}</h4>
-              <img :src="section.xdImage" />
-              <img :src="section.aiImage" />
-            </div>
-            <button v-if="section.button">
-              <div class="row">
-                <p>{{ section.button }}</p>
-                <img :src="section.buttonImage" />
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div v-if="faces" class="design">
-        <h1>{{ data.designTitle }}</h1>
-        <div class="row design-faces">
-          <div class="row faces" v-for="face in faces" :key="face.image">
-            <img :src="face.image" />
-            <div>
-              <h3>{{ face.name }}</h3>
-              <h4>{{ face.position }}</h4>
-              <p>{{ face.text }}</p>
+              <router-link :to="element.link">
+                <button v-if="element.button">
+                  <p>{{ element.button }}</p>
+                </button></router-link
+              >
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="work-with-us"
-        :style="{ 'background-image': `url('${background}')` }"
-        v-if="data.work"
-      >
-        <div class="work" v-for="section in data.work" :key="section.question">
-          <h2>{{ section.question }}</h2>
-          <p class="text">
-            {{ section.text }}
-          </p>
-          <router-link :to="section.link">
-            <button v-if="section.button">
-              <p>{{ section.button }}</p>
-            </button></router-link
-          >
         </div>
       </div>
     </div>
@@ -169,6 +164,7 @@ export default {
     }
     .logo {
       margin-left: 15px;
+      margin-bottom: 100px;
     }
     p {
       color: #8d99ae;
@@ -188,8 +184,9 @@ export default {
       }
     }
     .information {
-      margin-top: 175px;
+      margin-top: 60px;
       margin-bottom: 175px;
+
       h2 {
         color: #d90429;
         text-align: center;
@@ -209,72 +206,7 @@ export default {
         line-height: 30px;
       }
     }
-    .discover {
-      .container {
-        .row {
-          margin: 0 auto 130px;
-          align-items: center;
-        }
-        .left {
-          justify-content: center;
-          img {
-            margin-left: 85px;
-          }
-          p {
-            text-align: left;
-            max-width: 625px;
-            color: #8d99ae;
-          }
-          h1 {
-            text-align: left;
-          }
-        }
-        .right {
-          flex-direction: row-reverse;
-          justify-content: center;
-          img {
-            width: 300px;
-            height: 425px;
-            margin-right: 170px;
-          }
-          .book {
-            max-width: 625px;
 
-            p {
-              text-align: left;
-              max-width: 625px;
-              color: #8d99ae;
-            }
-            h2 {
-              text-align: left;
-              margin-bottom: 30px;
-              margin-top: 30px;
-              max-width: 625px;
-            }
-            .buy-book {
-              margin-right: 0;
-              h3 {
-                margin-top: 50px;
-                text-align: left;
-                font-size: 20px;
-                width: unset;
-              }
-              h4 {
-                text-align: left;
-                font-size: 20px;
-                color: red;
-                width: unset;
-              }
-              .amazon {
-                width: 175px;
-                height: 85px;
-                margin-right: 0;
-              }
-            }
-          }
-        }
-      }
-    }
     .row {
       margin-top: 0;
       &.row-reverse {
@@ -288,8 +220,11 @@ export default {
         }
       }
     }
+    .sectionTitle {
+      text-align: center;
+    }
     .section {
-      margin: 200px auto 200px;
+      margin: 105px auto 200px;
       max-width: 1366px;
       p {
         max-width: 500px;
@@ -299,11 +234,14 @@ export default {
         margin-right: 120px;
       }
       .tools {
-        img {
+        .row {
           margin-left: 0;
-          margin-right: 10px;
-          width: 30px;
-          height: 30px;
+          img {
+            margin-left: 0;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+          }
         }
         h4 {
           color: #51586d;
@@ -334,8 +272,8 @@ export default {
       h1 {
         color: #6e44ff;
         text-align: center;
-        margin-top: 300px;
-        margin-bottom: 100px;
+        margin-top: 60px;
+        margin-bottom: 105px;
       }
       .design-faces {
         justify-content: space-evenly;
@@ -386,6 +324,13 @@ export default {
           }
         }
       }
+    }
+  }
+}
+@media only screen and (max-width: 1367px) {
+  .separator {
+    .separator-text {
+      margin-left: 140px !important;
     }
   }
 }

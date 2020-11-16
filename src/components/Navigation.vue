@@ -2,11 +2,9 @@
   <div
     class="row navigation"
     :style="{
-      background:
-        this.$route.path.startsWith('/person') ||
-        this.$route.path.startsWith('/feature')
-          ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)'
-          : 'white',
+      background: this.$route.path.startsWith('/featurettes')
+        ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)'
+        : 'white',
     }"
     id="navigation"
   >
