@@ -1,5 +1,9 @@
 <template>
   <div id="testimonials">
+    <div v-if="separator" class="row separator">
+      <hr class="line" />
+      <p class="separator-text">{{ separator.toUpperCase() }}</p>
+    </div>
     <h2 class="header">{{ header }}</h2>
     <div
       id="carouselExampleIndicators"
@@ -64,6 +68,7 @@ export default {
   name: "WhatWeDo",
   data() {
     return {
+      separator: "",
       quotes: [],
       header: "",
       bigQuote: "",
@@ -73,6 +78,7 @@ export default {
   },
 
   mounted() {
+    this.separator = Testimonials.separator;
     this.quotes = Testimonials.quotes;
     this.header = Testimonials.header;
     this.bigQuote = Testimonials.bigQuote;
@@ -83,10 +89,14 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.separator {
+  display: none;
+}
 .header {
   margin-bottom: 70px;
 }
 #carouselExampleIndicators {
+  margin-bottom: 100px;
   .carousel-inner {
     .carousel-item {
       transition: none;
@@ -138,6 +148,16 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    text-align: left;
+    .line {
+      width: 40px;
+    }
+    .separator-text {
+      margin-left: 50px !important;
+    }
+  }
   #carouselExampleIndicators {
     .carousel-inner {
       .carousel-item {

@@ -19,6 +19,10 @@
             class="d-block w-100"
             alt="image1"
           />
+          <div v-if="separator" class="row separator">
+            <hr class="line" />
+            <p class="separator-text">{{ separator.toUpperCase() }}</p>
+          </div>
           <div
             class="col-4 text"
             :class="{
@@ -108,6 +112,7 @@ export default {
   name: "WhatWeDo",
   data() {
     return {
+      separator: "",
       sections: [],
       step: 1,
     };
@@ -124,6 +129,7 @@ export default {
   },
   mounted() {
     this.sections = WhatWeDo.sections;
+    this.separator = WhatWeDo.separator;
     console.log(this.step);
   },
 };
@@ -300,7 +306,21 @@ export default {
 //     }
 //   }
 // }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 120px;
+    .line {
+      width: 40px;
+      background-color: #ef233c;
+    }
+    .separator-text {
+      margin-left: 50px !important;
+      color: #ef233c !important;
+    }
+  }
   #carouselExampleControls {
     .carousel-inner {
       .carousel-control-next {

@@ -1,5 +1,9 @@
 <template>
   <div class="container" id="features">
+    <div v-if="separator" class="row separator">
+      <hr class="line" />
+      <p class="separator-text">{{ separator.toUpperCase() }}</p>
+    </div>
     <div class="row">
       <div class="col-12 row header-text">
         <h2>{{ headerText }}</h2>
@@ -32,12 +36,14 @@ export default {
   name: "Features",
   data() {
     return {
+      separator: "",
       headerText: "",
       headerDescription: "",
       features: [],
     };
   },
   mounted() {
+    this.separator = Features["separator"];
     this.headerText = Features["header-text"];
     this.headerDescription = Features["header-description"];
     this.features = Features.features;
@@ -47,6 +53,9 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.separator {
+  display: none;
+}
 .container {
   margin-bottom: 180px;
   .header-text {
@@ -90,6 +99,18 @@ export default {
     }
     img {
       width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    text-align: left;
+    .line {
+      width: 40px;
+    }
+    .separator-text {
+      margin-left: 50px !important;
     }
   }
 }

@@ -1,5 +1,9 @@
 <template>
   <div class="container" id="we-are">
+    <div v-if="separator" class="row separator">
+      <hr class="line" />
+      <p class="separator-text">{{ separator.toUpperCase() }}</p>
+    </div>
     <div class="row items">
       <div class="col-6 col-md-12 col-xl-6 text">
         <div class="row">
@@ -21,12 +25,14 @@ export default {
   name: "WeAre",
   data() {
     return {
+      separator: "",
       title: "",
       text: "",
       image: "",
     };
   },
   mounted() {
+    this.separator = weAre.separator;
     this.text = weAre.text;
     this.title = weAre.title;
     this.image = weAre.image;
@@ -36,11 +42,14 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.separator {
+  display: none;
+}
 .container {
   margin-right: 165px;
   .items {
     align-items: center;
-    margin: 185px 0 190px 0;
+    margin: 0 0 190px 0;
   }
   .text {
     max-width: 500px;
@@ -61,6 +70,16 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    text-align: left;
+    .line {
+      width: 40px;
+    }
+    .separator-text {
+      margin-left: 50px !important;
+    }
+  }
   .container {
     margin: 0 auto;
     .text {

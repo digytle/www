@@ -38,6 +38,7 @@ export default {
 @import "../assets/main.scss";
 .header {
   margin-top: 130px;
+  margin-bottom: 185px;
   .rocket {
     width: 650px;
     height: 325px;
@@ -65,6 +66,12 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
+  .separator {
+    display: block;
+    .line {
+      width: 40px;
+    }
+  }
   .header {
     margin-top: 85px;
     .row {
