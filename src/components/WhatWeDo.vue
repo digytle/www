@@ -137,6 +137,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+
 #carouselExampleControls {
   margin: 70px auto 155px;
   position: relative;
@@ -148,6 +149,9 @@ export default {
     .carousel-item {
       .d-block {
         height: 700px;
+      }
+      .separator {
+        display: none;
       }
     }
     .carousel-control-next {
