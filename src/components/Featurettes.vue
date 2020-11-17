@@ -333,11 +333,4 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1367px) {
-  .separator {
-    .separator-text {
-      margin-left: 140px !important;
-    }
-  }
-}
 </style>

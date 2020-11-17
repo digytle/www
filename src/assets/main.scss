@@ -40,20 +40,24 @@ p {
 }
 
 .separator {
+    margin-left: 0;
+    margin-right: 0;
 
     .line {
         width: 115px;
         border-radius: 10px;
-        position: absolute;
-        left: 0;
-        background-color: #8d99ae;
+        background-color: #8D99AE;
+        height: 1px;
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 13px;
+        
     }
 
     .separator-text {
-        margin-left: 70px !important;
         font-size: 12px !important;
         font-weight: 500 !important;
-        color: #8d99ae;
+        color: #8D99AE !important;
     }
 }
 

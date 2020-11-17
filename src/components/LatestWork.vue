@@ -111,8 +111,11 @@ export default {
   .separator {
     display: block;
     text-align: left;
+    position: absolute !important;
+    left: 0;
     .line {
       width: 40px;
+      position: absolute !important;
     }
     .separator-text {
       margin-left: 50px !important;

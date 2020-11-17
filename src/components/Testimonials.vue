@@ -148,25 +148,32 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
-  .separator {
-    display: block;
-    text-align: left;
-    .line {
-      width: 40px;
+  #testimonials {
+    padding-top: 50px;
+
+    .separator {
+      display: block;
+      text-align: left;
+      position: absolute !important;
+      left: 0;
+      .line {
+        width: 40px;
+        position: absolute !important;
+      }
+      .separator-text {
+        margin-left: 50px !important;
+      }
     }
-    .separator-text {
-      margin-left: 50px !important;
-    }
-  }
-  #carouselExampleIndicators {
-    .carousel-inner {
-      .carousel-item {
-        transition: none;
-        .text {
-          padding: 50px 0 70px 50px;
-          .quote {
-            font-size: unset;
-            width: 100%;
+    #carouselExampleIndicators {
+      .carousel-inner {
+        .carousel-item {
+          transition: none;
+          .text {
+            padding: 50px 0 70px 50px;
+            .quote {
+              font-size: unset;
+              width: 100%;
+            }
           }
         }
       }

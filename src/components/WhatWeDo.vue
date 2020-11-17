@@ -341,15 +341,15 @@ export default {
         .separator {
           display: block;
           text-align: left;
-          position: absolute;
+          position: absolute !important;
           top: 120px;
           .line {
             width: 40px;
-            background-color: #ef233c;
+            position: absolute !important;
           }
           .separator-text {
             margin-left: 50px !important;
-            color: #ef233c !important;
+            top: 120px;
           }
         }
       }
