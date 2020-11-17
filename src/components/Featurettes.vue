@@ -19,7 +19,12 @@
         <div v-if="element.type == 'introduction'">
           <div class="information">
             <h2>{{ element.title }}</h2>
-            <p>{{ element.description }}</p>
+            <div
+              v-for="paragraph in element.description"
+              :key="paragraph.description"
+            >
+              <p>{{ paragraph }}</p>
+            </div>
           </div>
           <div v-if="element.quote">
             <div class="quote col-7">
@@ -176,6 +181,7 @@ export default {
         color: #6e44ff;
         margin-top: 30px;
         z-index: 1;
+        width: 340px;
       }
       p {
         margin-top: 50px;

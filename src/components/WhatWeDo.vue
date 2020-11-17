@@ -311,20 +311,6 @@ export default {
 //   }
 // }
 @media only screen and (max-width: 768px) {
-  .separator {
-    display: block;
-    text-align: left;
-    position: absolute;
-    top: 120px;
-    .line {
-      width: 40px;
-      background-color: #ef233c;
-    }
-    .separator-text {
-      margin-left: 50px !important;
-      color: #ef233c !important;
-    }
-  }
   #carouselExampleControls {
     .carousel-inner {
       .carousel-control-next {
@@ -351,6 +337,20 @@ export default {
       .carousel-item {
         .d-block {
           height: 600px;
+        }
+        .separator {
+          display: block;
+          text-align: left;
+          position: absolute;
+          top: 120px;
+          .line {
+            width: 40px;
+            background-color: #ef233c;
+          }
+          .separator-text {
+            margin-left: 50px !important;
+            color: #ef233c !important;
+          }
         }
       }
       .text {

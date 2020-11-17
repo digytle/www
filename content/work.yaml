@@ -4,8 +4,6 @@ description: 'Digytle is working on a number of projects. Here are several of th
 work:
 - title: Blits ChatBots
   image: assets/blits.png
-# TODO
-# rename the template and the component to featurettes
   template: featurettes
   url: blits
 - title: Stichting Bedrijfsfinanciering
