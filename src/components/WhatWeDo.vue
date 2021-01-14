@@ -1,126 +1,124 @@
 <template>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div
-        v-for="(section, index) in firstSection"
-        :key="index"
-        class="carousel-item"
-        :class="{'active':index==0}"
-      >
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 first">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
+    <div id="what-we-do">
+        <div class="title">
+            <hr class="line">
+            <h2>What we do</h2>
         </div>
-      </div>
-      <div v-for="section in secondSection" :key="section.header" class="carousel-item">
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 second">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
+        <div class="container-fluid padding">
+            <div class="row padding element">
+                <div class="col-md-3 col-sm-10">
+                    <div class="card long">
+                        <img class="card-img-top first-image" src="/assets/what-we-do-long-1.svg" />
+                        <div class="card-body">
+                            <h2 class="right-text">{{headerFirst}}</h2>
+                            <p>{{descriptionFirst}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-10">
+                    <div class="card short">
+                        <img class="card-img-top first-image" src="/assets/what-we-do-short-1.svg" />
+                        <div class="card-body">
+                            <h2>{{headerSecond}}</h2>
+                            <p>{{descriptionSecond}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-10">
+                    <div class="card long">
+                        <img class="card-img-top first-image" src="/assets/what-we-do-long-2.svg" />
+                        <div class="card-body">
+                            <h2 class="right-text">{{headerThird}}</h2>
+                            <p>{{descriptionThird}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-10">
+                    <div class="card short">
+                        <img class="card-img-top first-image" src="/assets/what-we-do-short-2.svg" />
+                        <div class="card-body">
+                            <h2>{{headerForth}}</h2>
+                            <p>{{descriptionForth}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div v-for="section in thirdSection" :key="section.header" class="carousel-item">
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 third">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
-        </div>
-        <div class="col-5">
-          <img :src="section.image" alt="image2" />
-        </div>
-      </div>
-      <div v-for="section in fourthSection" :key="section.header" class="carousel-item">
-        <img :src="section.background" class="d-block w-100" alt="image1" />
-        <div class="col-4 fourth">
-          <h2>{{section.header}}</h2>
-          <p>{{section.description}}</p>
-        </div>
-        <div class="col-5">
-          <router-link to="/design/">
-            <img :src="section.image" alt="image2" />
-          </router-link>
-        </div>
-      </div>
-      <button class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev"></button>
-
-      <button class="carousel-control-next" href="#carouselExampleControls" data-slide="next"></button>
     </div>
-  </div>
 </template>
 
 <script>
 import WhatWeDo from "js-yaml-loader!../../content/what-we-do.yaml";
 export default {
-  name: "WhatWeDo",
+   name: "WhatWeDo",
   data() {
     return {
-      firstSection: [],
-      secondSection: [],
-      thirdSection: [],
-      fourthSection: [],
+      headerFirst: [],
+      descriptionFirst: [],
+
+      headerSecond: [],
+      descriptionSecond: [],
+
+      headerThird: [],
+      descriptionThird: [],
+
+      headerForth: [],
+      descriptionForth: [],
     };
   },
+
   mounted() {
-    this.firstSection = WhatWeDo.firstSection;
-    this.secondSection = WhatWeDo.secondSection;
-    this.thirdSection = WhatWeDo.thirdSection;
-    this.fourthSection = WhatWeDo.fourthSection;
+    this.headerFirst = WhatWeDo.headerFirst;
+    this.descriptionFirst = WhatWeDo.descriptionFirst;
+
+    this.headerSecond = WhatWeDo.headerSecond;
+    this.descriptionSecond = WhatWeDo.descriptionSecond;
+
+    this.headerThird = WhatWeDo.headerThird;
+    this.descriptionThird = WhatWeDo.descriptionThird;
+
+    this.headerForth = WhatWeDo.headerForth;
+    this.descriptionForth = WhatWeDo.descriptionForth;
   },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-#carouselExampleControls {
-  margin: 70px auto 155px;
-  position: relative;
-  .carousel-control-next {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-  }
-  .carousel-control-prev {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-  }
-  .col-4 {
-    text-align: left;
-    position: absolute;
-    bottom: 300px;
-    left: 130px;
-  }
-  .col-5 {
-    text-align: left;
-    position: absolute;
-    bottom: 200px;
-    right: 80px;
-  }
-  .first {
-    h2 {
-      color: #ef233c;
+.title{
+    margin-left: 3rem;
+    hr{
+        width: 200px;
+        border-bottom: 6px solid #2B2D42;
+        margin-left: 0px;
     }
-    p {
-      color: #edf2f4;
+    h2{
+        text-align: left;
+        margin-top: 0px;
     }
-  }
-  .second {
-    h2 {
-      color: #6e44ff;
+}
+.element{
+    padding: 2rem;
+    .long, .short{
+        border: none;
+        margin-top: 2rem;
+        h2{
+            margin-top: -4rem;
+            height: 5rem;
+            padding: 1rem;
+            font-size: 24px;
+            background-color: white;
+        }
+        .right-text{
+           margin-left: 2rem;
+           width: 100%;
+           text-align: left;
+        }
+        p {
+            font-size: 16px;
+            text-align: left;
+            margin-left: -1rem;
+        }
     }
-    p {
-      color: #edf2f4;
-    }
-  }
-  .third,
-  .fourth {
-    h2 {
-      color: #2b2d42;
-    }
-    p {
-      color: #8d99ae;
-    }
-  }
 }
 </style>

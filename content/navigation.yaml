@@ -1,6 +1,7 @@
-logo-text: Digytle
+logoBlack: /assets/logo.new.png
+logoWhite: /assets/logo.new.png
 firstComponent: HOME
-secondComponent: WHO WE ARE
-thirdComponent: WHAT WE DO
-fourthComponent: LATEST WORK
+secondComponent: GET TO KNOW US
+thirdComponent: OUR PRODUCTS
+fourthComponent: 2020 SUMMARISED
 fifthComponent: FEATURETTES

@@ -4,7 +4,9 @@
     <Header></Header>
     <WeAre></WeAre>
     <WhatWeDo></WhatWeDo>
+    <DigytleStory></DigytleStory>
     <LatestWork></LatestWork>
+    <YearSummarised></YearSummarised>
     <Features></Features>
     <Footer></Footer>
   </div>
@@ -15,7 +17,9 @@ import Navigation from "./Navigation";
 import Header from "./Header";
 import WeAre from "./WeAre";
 import WhatWeDo from "./WhatWeDo";
+import DigytleStory from "./DigytleStory";
 import LatestWork from "./LatestWork";
+import YearSummarised from "./YearSummarised";
 import Features from "./Features";
 import Footer from "./Footer";
 // import VueScrollTo from "vue-scrollto";
@@ -26,7 +30,9 @@ export default {
     Header,
     WeAre,
     WhatWeDo,
+    DigytleStory,
     LatestWork,
+    YearSummarised,
     Features,
     Footer
   }

@@ -1,15 +1,23 @@
 header-text: Featurettes
-header-description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+header-description: Here are a person, a book and a teaching course.
 features:
+- name: Distributed Leadership and Digital Innovation
+  description: 'A book before its time: Distributed Leadership and Digital Innovation is even more current now, when we are locked away and cannot meet, but has power to carry you beyond.'
+  image: assets/41v5mLXBRaL.png
+  link: leadership
+  template: person
 - name: Caterina Maniscalco
   description: Caterina Maniscalco is a partner in a London consulting firm, with 20 years of experience across several industries in digital transformation and innovation.
   image: assets/Caterina_AboutPage.png
   link: learn-more
-- name: Distributed Leadership
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-  image: assets/41v5mLXBRaL.png
-  link: leadership
-- name: Coding for executives
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+  template: person
+- name: Scratch for Executives
+  description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
   image: assets/maxresdefault.png
-  link: coding
+  link: scratch-for-executives
+  template: person
+- name: Caterina Maniscalco
+  description: Caterina Maniscalco is a partner in a London consulting firm, with 20 years of experience across several industries in digital transformation and innovation.
+  image: assets/Caterina_AboutPage.png
+  link: learn-more
+  template: person

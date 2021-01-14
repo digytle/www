@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
-$font__public: 'Public Sans',
+$font__menu: 'Public Sans',
 sans-serif;
-$font__title:'Fira Sans',
+$font__public: 'Fira Sans',
 sans-serif;
+$font__title:'Georgia',
+serif;
+
+.container {
+    max-width: 1366px;
+}
 
 h1 {
     font-family: $font__title;
@@ -15,6 +21,7 @@ h2 {
     font-family: $font__title;
     font-size: 40px;
     font-weight: 500;
+    margin-top: 60px;
 }
 
 h3 {
@@ -32,4 +39,45 @@ h4 {
 p {
     font-family: $font__public;
     line-height: 30px;
+}
+
+// .separator {
+//     margin-left: 0;
+//     margin-right: 0;
+
+//     .line {
+//         width: 115px;
+//         border-radius: 10px;
+//         background-color: #8D99AE;
+//         height: 1px;
+//         margin-left: 0;
+//         margin-right: 15px;
+//         margin-top: 13px;
+        
+//     }
+
+//     .separator-text {
+//         font-size: 12px !important;
+//         font-weight: 500 !important;
+//         color: #8D99AE !important;
+//     }
+// }
+
+h5 {
+    color: #8D99AE;
+    font-size: 12px;
+    font-family: $font__title;
+    font-weight: 500;
+}
+
+button {
+    border-radius: 10px;
+    border-color: transparent;
+    outline: none;
+    margin-bottom: 0;
+
+    p {
+        color: #FFFFFF;
+        margin: 0;
+    }
 }

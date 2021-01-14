@@ -4,6 +4,7 @@
     <div class="row">
       <div class="image">
         <img :src="data.image" />
+        <img class="tape" src="/assets/duck.tape.png">
       </div>
       <div class="info">
         <h1>{{ data.title }}</h1>
@@ -24,44 +25,34 @@
     <div class="row">
       <div class="container">
         <div
-          class="row first"
-          v-for="section in data.firstSection"
-          :key="section.description"
+          class="row"
+          v-for="(section, index) in data.sections"
+          :key="index"
+          :class="{
+            first: index == 0,
+            second: index == 1,
+          }"
         >
-          <p class="col-6">{{ section.description }}</p>
-          <img class="col-6" :src="section.image" />
-        </div>
-        <div
-          class="row second"
-          v-for="section in data.secondSection"
-          :key="section.subTitle"
-        >
-          <img class="second" :src="section.image" />
-          <div class="col-6">
-            <h2>{{ data.subTitle }}</h2>
-            <p>{{ section.description }}</p>
+          <div class="book">
+            <h2>{{ section.title }}</h2>
+            <p v-for="paragraph in section.description" :key="paragraph">
+              {{ paragraph }}
+            </p>
+            <div v-if="section.question" class="buy-book row">
+              <div>
+                <h3>{{ section.question }}</h3>
+                <router-link :to="section.link">
+                  <h4>{{ section.text }}</h4>
+                </router-link>
+              </div>
+              <img class="amazon" :src="section.imageAmazon" />
+            </div>
           </div>
+          <img v-if="section.image" :src="section.image" />
         </div>
       </div>
     </div>
-    <div class="buy-book">
-      <div class="container">
-        <div class="book" v-for="book in data.books" :key="book.question">
-          <h2>{{ book.question }}</h2>
-          <p>{{ book.text }}</p>
-        </div>
-        <div class="col-3">
-          <button v-if="data.button">
-            <p>{{ data.button }}</p></button
-          ><img
-            v-for="book in data.books"
-            :key="book.question"
-            :src="book.image"
-          />
-        </div>
-      </div>
-      <Footer></Footer>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -75,7 +66,7 @@ export default {
   data() {
     return {
       data: {},
-      logoText: "",
+      logoBlack: {},
       home: "",
       about: "",
       work: "",
@@ -84,7 +75,7 @@ export default {
   },
   mounted() {
     this.data = require(`js-yaml-loader!../../content/featurettes/${this.$route.params.pathMatch}.yaml`);
-    this.logoText = navigation["logo-text"];
+    this.logoBlack = navigation.logoBlack;
     this.home = navigation.home;
     this.about = navigation.about;
     this.work = navigation.work;
@@ -95,17 +86,26 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.row {
+  margin-right: 0;
+}
 .image {
   margin-left: 15px;
+  margin-top: 10rem;
+  .tape{
+    position: absolute;
+    margin-top: -1.3rem;
+    margin-left: -25rem;
+  }
 }
 .info {
   margin-top: 130px;
-  margin-left: 170px;
+  margin-left: 115px;
   text-align: left;
   h1 {
     color: #ef233c;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 17rem;
     z-index: 1;
   }
   p {
@@ -138,40 +138,15 @@ export default {
     line-height: 30px;
   }
 }
-.buy-book {
-  background-color: #edf2f4;
-  padding-top: 120px;
-  .book {
-    p {
-      color: #8d99ae;
-      text-align: left;
-      width: 687px;
-      margin: 30px auto 35px;
-    }
-  }
-  .col-3 {
-    margin: 0 auto;
-  }
-  button {
-    background-color: #ef233c;
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    border-color: transparent;
-    outline: none;
-    margin-bottom: 10px;
-    p {
-      color: #ffffff;
-      margin: 0;
-    }
-  }
-}
 .container {
   .row {
-    margin-bottom: 130px;
+    margin: 0 auto 130px;
     align-items: center;
   }
   .first {
+    img {
+      margin-left: 85px;
+    }
     p {
       text-align: left;
       max-width: 625px;
@@ -182,18 +157,44 @@ export default {
     }
   }
   .second {
+    flex-direction: row-reverse;
     img {
       width: 300px;
       height: 425px;
-      margin-right: 180px;
+      margin-right: 170px;
     }
-    p {
-      text-align: left;
+    .book {
       max-width: 625px;
-      color: #8d99ae;
-    }
-    h2 {
-      text-align: left;
+
+      p {
+        text-align: left;
+        max-width: 625px;
+        color: #8d99ae;
+      }
+      h2 {
+        text-align: left;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        max-width: 625px;
+      }
+      .buy-book {
+        margin-right: 0;
+        h3 {
+          margin-top: 50px;
+          text-align: left;
+          font-size: 20px;
+        }
+        h4 {
+          text-align: left;
+          font-size: 20px;
+          color: red;
+        }
+        .amazon {
+          width: 175px;
+          height: 85px;
+          margin-right: 0;
+        }
+      }
     }
   }
 }

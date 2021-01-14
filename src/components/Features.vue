@@ -1,19 +1,21 @@
 <template>
   <div class="container" id="features">
-    <div class="row">
-      <div class="col-12 row header-text">
-        <h1>{{headerText}}</h1>
-      </div>
-      <div class="col-12 row header-text">
-        <p>{{headerDescription}}</p>
+    <div class="col col-lg-12 col-sm-5">
+      <div class="title">
+        <hr class="line">
+        <h2>{{ headerText }}</h2>
       </div>
       <div class="row">
-        <div class="col-4 info-cards" v-for="feature in features" :key="feature.name">
-          <router-link :to="`featurette/${feature.link}`">
+        <div
+          class="col-md-3 info-cards"
+          v-for="feature in features"
+          :key="feature.name"
+        >
+          <router-link :to="`${feature.template}/${feature.link}`">
             <div>
               <img :src="feature.image" />
-              <h3>{{feature.name}}</h3>
-              <p>{{feature.description}}</p>
+              <h3>{{ feature.name }}</h3>
+              <p>{{ feature.description }}</p>
             </div>
           </router-link>
         </div>
@@ -44,18 +46,19 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
-  .header-text {
-    justify-content: center;
-    h1 {
-      margin-bottom: 40px;
-      color: #ef233c;
+  .title{
+    margin-right: auto;
+    margin-left: auto;
+    hr{
+        width: 250px;
+        border-bottom: 6px solid #2B2D42;
+        margin-top: 10rem;
     }
-    p {
-      width: 860px;
-      font-weight: 400;
-      font-size: 16px;
-      margin-bottom: 60px;
-      color: #7a7a7a;
+    h2{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0px;
+        margin-bottom: 3rem;
     }
   }
   .info-cards {
@@ -64,7 +67,7 @@ export default {
       padding: 25px;
     }
     &:hover div {
-      background-color: green;
+      background-color: #2b2d42;
       h3,
       p {
         color: white;
