@@ -38,7 +38,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .header {
-  margin-top: 15rem;
+  margin-top: 12rem;
   .text {
     text-align: left;
     margin-top: 5rem;

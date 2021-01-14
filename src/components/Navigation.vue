@@ -8,7 +8,7 @@
     }"
     id="navigation"
   >
-    <div class="col-6 logo">
+    <div class="col-md-6 logo">
       <router-link to="/">
         <img
           :src="
@@ -17,10 +17,36 @@
               ? logoWhite
               : logoBlack
           "
-          class="logo"
+          class="img-fluid logo"
       /></router-link>
     </div>
-    <div class="col-5 buttons">
+    <nav class="navbar navbar-expand-md navbar-light mainnav">
+      <div class="container-fluid asd">
+        <button class="navbar-toggler navbarsmall" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navlist" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+          <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
+            firstComponent
+          }}</router-link>
+          <router-link class="li" to="#WeAre" v-scroll-to="'#we-are'">{{
+            secondComponent
+          }}</router-link>
+          <router-link class="li" to="#latest-work" v-scroll-to="'#latest-work'">{{
+            thirdComponent
+          }}</router-link>
+          <router-link class="li" to="#YearSummarised" v-scroll-to="'#YearSummarised'">{{
+            fourthComponent
+          }}</router-link>
+          <router-link class="li" to="#featurette" v-scroll-to="'#features'">{{
+            fifthComponent
+          }}</router-link>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="col-md-5 buttons">
       <div class="row">
         <router-link to="/" v-scroll-to="'#navigation'">{{
           firstComponent
@@ -38,7 +64,7 @@
           fifthComponent
         }}</router-link>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -74,7 +100,6 @@ export default {
 .navigation {
   height: 60px;
   background-color: white;
-  width: 200%;
   color: #464646;
   margin-bottom: 100px;
   font-family: $font__menu;
@@ -83,6 +108,11 @@ export default {
     display: flex;
     padding-left: 35px;
     width: 330px;
+    margin-top: 1rem;
+    &:hover{
+      width: 310px;
+      transition: 0.4s;
+    }
   }
   a {
     text-decoration: none;
@@ -91,18 +121,23 @@ export default {
     border: none;
     margin: 0 10px;
     font-weight: 300;
-    padding-right: 3rem;
-    margin-left: 0.8rem;
   }
   .buttons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: -58%;
     margin-top: 12rem;
+    margin-left: -44rem;
     .router-link-exact-active {
       color: #2B2D42;
     }
+  }
+  .mainnav{
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 2.5rem;
+  }
+  .navbarsmall{
+    border: none;
+    margin-top: -11rem;
+    margin-left: 20rem;
   }
 }
 </style>
