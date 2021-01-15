@@ -6,7 +6,7 @@
         </div>
         <div class="container-fluid padding">
             <div class="row padding element">
-                <div class="col-md-3 col-sm-10">
+                <div class="col-lg-3 col-md-6 col-sm-10">
                     <div class="card long">
                         <img class="card-img-top first-image" src="/assets/what-we-do-long-1.svg" />
                         <div class="card-body">
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-10">
+                <div class="col-lg-3 col-md-6 col-sm-10">
                     <div class="card short">
                         <img class="card-img-top first-image" src="/assets/what-we-do-short-1.svg" />
                         <div class="card-body">
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-10">
+                <div class="col-lg-3 col-md-6 col-sm-10">
                     <div class="card long">
                         <img class="card-img-top first-image" src="/assets/what-we-do-long-2.svg" />
                         <div class="card-body">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-10">
+                <div class="col-lg-3 col-md-6 col-sm-10">
                     <div class="card short">
                         <img class="card-img-top first-image" src="/assets/what-we-do-short-2.svg" />
                         <div class="card-body">
@@ -94,7 +94,7 @@ export default {
     }
     h2{
         text-align: left;
-        margin-top: 0px;
+        margin-top: -1rem;
     }
 }
 .element{
@@ -120,5 +120,14 @@ export default {
             margin-left: -1rem;
         }
     }
+}
+@media only screen and (max-width: 1000px) {
+  .element{
+    .long, .short{
+        h2{
+            margin-bottom: 1rem;
+        }
+    }
+}
 }
 </style>

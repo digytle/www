@@ -2,11 +2,11 @@
   <div>
     <Navigation></Navigation>
     <div class="row">
-      <div class="image">
-        <img :src="data.image" />
+      <div class="col-lg-5 image">
+        <img class="img-fluid" :src="data.image" />
         <img class="tape" src="/assets/duck.tape.png">
       </div>
-      <div class="info">
+      <div class="col-lg-5 info">
         <h1>{{ data.title }}</h1>
         <p>{{ data.description }}</p>
       </div>
@@ -105,12 +105,10 @@ export default {
   h1 {
     color: #ef233c;
     text-align: center;
-    margin-top: 17rem;
-    z-index: 1;
   }
   p {
     margin-top: 50px;
-    width: 590px;
+    max-width: 590px;
     color: #8d99ae;
     font-weight: 400;
   }
@@ -119,12 +117,12 @@ export default {
   margin-top: 175px;
   margin-bottom: 55px;
   h2 {
-    color: #d90429;
+    color: #ef233c;
   }
   p {
     color: #8d99ae;
     text-align: left;
-    width: 950px;
+    max-width: 950px;
     margin: 0 auto;
   }
 }
@@ -151,6 +149,8 @@ export default {
       text-align: left;
       max-width: 625px;
       color: #8d99ae;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     h1 {
       text-align: left;
@@ -165,20 +165,25 @@ export default {
     }
     .book {
       max-width: 625px;
-
       p {
         text-align: left;
         max-width: 625px;
         color: #8d99ae;
+        padding-left: 2rem;
+        padding-right: 2rem;
       }
       h2 {
         text-align: left;
         margin-bottom: 30px;
         margin-top: 30px;
         max-width: 625px;
+        padding-left: 2rem;
+        padding-right: 2rem;
       }
       .buy-book {
         margin-right: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
         h3 {
           margin-top: 50px;
           text-align: left;
@@ -194,8 +199,31 @@ export default {
           height: 85px;
           margin-right: 0;
         }
+        img{
+        margin-left: 2rem;
+        padding-right: 2rem;
+        }
       }
     }
   }
+}
+@media only screen and (max-width: 576px) {
+  .info {
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .information {
+  margin-top: 20px;
+   padding-left: 2rem;
+    padding-right: 2rem;
+  p {
+    color: #8d99ae;
+    text-align: left;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
 }
 </style>

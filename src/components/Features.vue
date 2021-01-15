@@ -1,13 +1,13 @@
 <template>
   <div class="container" id="features">
-    <div class="col col-lg-12 col-sm-5">
+    <div class="col">
       <div class="title">
         <hr class="line">
         <h2>{{ headerText }}</h2>
       </div>
       <div class="row">
         <div
-          class="col-md-3 info-cards"
+          class="col-lg-3 col-md-6 col-sm-9 info-cards"
           v-for="feature in features"
           :key="feature.name"
         >
@@ -46,13 +46,14 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
+  margin-top: 8rem;
   .title{
     margin-right: auto;
     margin-left: auto;
     hr{
         width: 250px;
-        border-bottom: 6px solid #2B2D42;
-        margin-top: 10rem;
+        border-bottom: 4px solid #2B2D42;
+        border-top: none;
     }
     h2{
         text-align: center;
@@ -65,9 +66,10 @@ export default {
     text-align: left;
     div {
       padding: 25px;
+      transition: 0.6s;
     }
     &:hover div {
-      background-color: #2b2d42;
+      background-color: #cf2e79;
       h3,
       p {
         color: white;
@@ -89,6 +91,12 @@ export default {
     img {
       width: 100%;
     }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .info-cards{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 </style>

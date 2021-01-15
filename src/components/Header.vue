@@ -2,10 +2,10 @@
   <div class="header">
     <div class="container-fluid">
       <div class="row hero">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <img class="img-fluid rocket" :src="image" />
         </div>
-        <div class="col-md-6 text">
+        <div class="col-lg-6 col-md-12 col-sm-12 text">
           <h1>{{ text }}</h1>
           <p>{{ description }}</p>
         </div>
@@ -39,10 +39,10 @@ export default {
 @import "../assets/main.scss";
 .header {
   margin-top: 12rem;
+  overflow: x hidden;
   .text {
     text-align: left;
     margin-top: 5rem;
-    padding-left: 5rem;
     h1 {
       font-size: 52px;
       color:#EF233C;
@@ -54,6 +54,19 @@ export default {
       font-size: 20px;
       color: #8d99ae;
       max-width: 516px;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .text {
+    h1 {
+      margin-bottom: 8rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

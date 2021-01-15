@@ -5,7 +5,7 @@
       <hr class="two">
       </div>
       <div class="row we-are">
-        <div class="col-md-6 text">
+        <div class="col-lg-6 col-md-12 col-sm-12 text">
           <h1>{{ title }}</h1>
           <p v-for="paragraph of text" :key="paragraph">{{ paragraph }}</p>
         </div>
@@ -52,17 +52,18 @@ export default {
 @import "../assets/main.scss";
 .we-are {
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   margin-left: 1rem;
   .lines{
     margin-bottom: -9rem;
     hr{
       border-bottom: 2px solid #EF233C;
+      border-top: none;
     }
     .two{
       border-bottom: 7px solid #EF233C;
       width: 22rem;
-      margin-top: -1.2rem;
+      margin-top: -1.1rem;
       margin-left: 1.8rem;
       align-self: flex-start;
     }
@@ -84,6 +85,17 @@ export default {
       color: #8d99ae;
       max-width: 700px;
     }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .text {
+    p {
+      margin-left: 0;
+      margin-right: 2rem;
+    }
+  }
+  .image{
+    margin-left: -2rem;
   }
 }
 

@@ -11,7 +11,9 @@
                     <p>{{summary}}</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
+                    <router-link :to="`${feature.template}/${feature.link}`">
                     <img class="img-fluid" src="/assets/Digytle.stories.png" />
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -40,7 +42,7 @@ export default {
 @import "../assets/main.scss";
 .title{
     display: flex;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: 1rem;
     img{
         height: 107px;
@@ -56,6 +58,7 @@ export default {
     h2{
         text-align: left;
         max-width: 611px;
+        font-size: 35px;
     }
     p{
         text-align: left;
@@ -68,6 +71,10 @@ export default {
         width: 406px;
         height: auto;
         margin-top: -5rem;
+        transition: 0.3s;
+        &:hover{
+            width: 380px;
+        }
     }
 }
 </style>

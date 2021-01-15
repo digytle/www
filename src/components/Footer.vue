@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row-lg-12 footer">
     <img class="img-fluid logo" :src="logo" />
-    <div class="row-lg-12 first">
+    <div class="row-lg-12 row-sm-12 first">
       <div class="row location">
         <img :src="locationPoint" />
         <div class="col-2">
@@ -11,7 +11,7 @@
       </div>
       <div class="row contacts">
         <img :src="contactsImage" />
-        <div class="emails col-2">
+        <div class="emails">
           <div v-for="email in contacts" :key="email">
             <a :href="`mailto:${email}`">
               <p>{{ email }}</p>
@@ -22,8 +22,8 @@
     </div>
     <div class="row-lg-12 second">
       <div class="copyright">
-          <img :src="twitter" />
-          <img :src="linkedin" />
+        <img :src="twitter" />
+        <img :src="linkedin" />
         <p>{{ copyright }}</p>
          <router-link to="/privacy-policy/"
           ><p>{{ privacy }}</p></router-link
@@ -123,7 +123,9 @@ p {
     text-align: center;
   }
   img {
-      margin-left: 12px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
     }
 }
 

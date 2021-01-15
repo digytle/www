@@ -3,20 +3,19 @@
     <Navigation></Navigation>
     <div class="digytle">
       <div class="row">
-        <div class="logo">
-          <img :src="data.image" />
+        <div class="row-lg-6 row-md-6 logo">
+          <img class="img-fluid" :src="data.image" />
           <img class="tape" src="/assets/duck.tape.png">
         </div>
-        <div class="info">
+        <div class="row-lg-6 row-md-6 info">
           <h1>{{ data.title }}</h1>
           <p>{{ data.description }}</p>
         </div>
       </div>
-      <div class="information">
+      <div class="row-lg-12 information">
         <h2>{{ data.infoTitle }}</h2>
         <p>{{ data.infoDescription }}</p>
       </div>
-
 
       <p>
         <a class="drop-down" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -25,15 +24,15 @@
       </p>
       <hr>
       <hr class="second">
-      <div class="collapse drop-items" id="collapseExample">
+      <div class="col-lg-12 collapse drop-items" id="collapseExample">
         <div class="card card-body">
           <div
-              class="row section"
+              class="col-sm-12 col-lg-12 section"
               v-for="(section, index) in sections"
               :key="index"
               :class="{ 'row-reverse': index % 2 == 0 }"
             >
-              <img class="image" :src="section.image" />
+              <img class="img-fluid image" :src="section.image" />
               <div>
                 <h3>{{ section.title }}</h3>
                 <p>{{ section.description }}</p>
@@ -54,9 +53,7 @@
             </div>
         </div>
       </div>
-
-     
-      <div class="design">
+      <!-- <div class="design">
         <h1>{{ data.designTitle }}</h1>
         <div class="row design-faces">
           <div class="row faces" v-for="face in faces" :key="face.image">
@@ -84,7 +81,7 @@
             </button></router-link
           >
         </div>
-      </div>
+      </div> -->
     </div>
     <Footer></Footer>
   </div>
@@ -132,7 +129,7 @@ export default {
   }
   text-align: left;
   h4 {
-    width: 480px;
+    max-width: 480px;
     color: #ef233c;
   }
   h3 {
@@ -172,8 +169,10 @@ export default {
       text-align: center;
     }
     p {
-      width: 950px;
+      max-width: 950px;
       margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
   .row {
@@ -191,43 +190,37 @@ export default {
     }
   }
   .drop-down{
-    margin-left: 10rem;
+    margin-left: 5rem;
     color: black;
     text-decoration: none;
     font-size: 29px;
     font-family: Georgia, serif;
   }
   hr{
-    border-bottom: 1px solid #ef233c;
+    border-bottom: 2px solid #ef233c;
+     border-top: none;
   }
   .second{
     border-bottom: 6px solid #ef233c;
     width: 18rem;
     margin-top: -1.1rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
-  .drop-items{
-    margin-top: -1rem;
+  .card-body{
+    border: none;
   }
+
   .section {
-    margin-top: 200px;
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    display: flex;
     p {
       max-width: 500px;
     }
-    .image {
-      width: 600px;
-      margin-right: 120px;
-    }
-    .tools {
-      img {
-        margin-left: 0;
-        margin-right: 10px;
-        width: 30px;
-        height: 30px;
-      }
-      h4 {
-        color: #51586d;
+    .tools{
+      img{
+        padding-right: 0.5rem;
       }
     }
     button {
@@ -250,63 +243,13 @@ export default {
       }
     }
   }
-  // .design {
-  //   h1 {
-  //     color: #6e44ff;
-  //     text-align: center;
-  //     margin-top: 300px;
-  //     margin-bottom: 100px;
-  //   }
-  //   .design-faces {
-  //     justify-content: space-evenly;
-  //     .faces {
-  //       align-items: center;
-  //       h3 {
-  //         width: 250px;
-  //       }
-  //       h4 {
-  //         width: 140px;
-  //       }
-  //       p {
-  //         width: 320px;
-  //       }
-  //       img {
-  //         margin-right: 30px;
-  //       }
-  //     }
-  //   }
-  // }
-  // .work-with-us {
-  //   // background-image: url("/assets/background_with_us.png");
-  //   margin-top: 270px;
-  //   // background-color: #2b2d42;
-  //   padding-top: 140px;
-  //   padding-bottom: 140px;
-  //   background-position: top center;
-  //   .work {
-  //     text-align: center;
-  //     .text {
-  //       color: #edf2f4;
-  //       width: 685px;
-  //       margin: 40px auto 30px;
-  //     }
-  //     h2 {
-  //       color: #edf2f4;
-  //     }
-  //     button {
-  //       background-color: #ef233c;
-  //       border-radius: 10px;
-  //       width: 200px;
-  //       height: 50px;
-  //       border-color: transparent;
-  //       outline: none;
-  //       margin-bottom: 0;
-  //       p {
-  //         color: #ffffff;
-  //         margin: 0;
-  //       }
-  //     }
-  //   }
-  // }
+  @media only screen and (max-width: 1200px) {
+    .section{
+      display: block;
+      h3{
+        width: 70%;
+      }
+    }
+  }
 }
 </style>
