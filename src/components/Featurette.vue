@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-lg-5 image">
         <img class="img-fluid" :src="data.image" />
-        <img class="tape" src="/assets/duck.tape.png">
+        <img class="tape" src="/assets/duck.tape.png" />
       </div>
       <div class="col-lg-5 info">
         <h1>{{ data.title }}</h1>
@@ -45,10 +45,23 @@
                   <h4>{{ section.text }}</h4>
                 </router-link>
               </div>
-              <img class="amazon" :src="section.imageAmazon" />
             </div>
           </div>
-          <img v-if="section.image" :src="section.image" />
+        </div>
+      </div>
+      <div
+        class="row images-at-bot"
+        v-for="(section, index) in data.sections"
+        :key="index"
+        :class="{
+          first: index == 0,
+          second: index == 1,
+        }"
+      >
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="fluid" v-if="section.image" :src="section.image" />
+          </div>
         </div>
       </div>
     </div>
@@ -92,7 +105,7 @@ export default {
 .image {
   margin-left: 15px;
   margin-top: 10rem;
-  .tape{
+  .tape {
     position: absolute;
     margin-top: -1.3rem;
     margin-left: -25rem;
@@ -105,6 +118,7 @@ export default {
   h1 {
     color: #ef233c;
     text-align: center;
+    margin-top: 10rem;
   }
   p {
     margin-top: 50px;
@@ -122,7 +136,7 @@ export default {
   p {
     color: #8d99ae;
     text-align: left;
-    max-width: 950px;
+    max-width: 1250px;
     margin: 0 auto;
   }
 }
@@ -137,9 +151,9 @@ export default {
   }
 }
 .container {
+  margin-bottom: -10rem;
   .row {
     margin: 0 auto 130px;
-    align-items: center;
   }
   .first {
     img {
@@ -147,7 +161,6 @@ export default {
     }
     p {
       text-align: left;
-      max-width: 625px;
       color: #8d99ae;
       padding-left: 2rem;
       padding-right: 2rem;
@@ -157,26 +170,23 @@ export default {
     }
   }
   .second {
-    flex-direction: row-reverse;
+    margin-top: -7rem;
     img {
       width: 300px;
       height: 425px;
       margin-right: 170px;
     }
     .book {
-      max-width: 625px;
       p {
         text-align: left;
-        max-width: 625px;
         color: #8d99ae;
         padding-left: 2rem;
         padding-right: 2rem;
       }
       h2 {
-        text-align: left;
+        text-align: center;
         margin-bottom: 30px;
         margin-top: 30px;
-        max-width: 625px;
         padding-left: 2rem;
         padding-right: 2rem;
       }
@@ -186,6 +196,7 @@ export default {
         padding-right: 2rem;
         h3 {
           margin-top: 50px;
+          color: #8d99ae;
           text-align: left;
           font-size: 20px;
         }
@@ -199,31 +210,39 @@ export default {
           height: 85px;
           margin-right: 0;
         }
-        img{
-        margin-left: 2rem;
-        padding-right: 2rem;
+        img {
+          margin-left: 2rem;
+          padding-right: 2rem;
         }
       }
     }
   }
 }
-@media only screen and (max-width: 576px) {
+.images-at-bot {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 1000px) {
   .info {
     margin-left: 0px;
     margin-top: 20px;
     padding-left: 2rem;
     padding-right: 2rem;
+    h1 {
+      margin-top: 0rem;
+    }
   }
   .information {
-  margin-top: 20px;
-   padding-left: 2rem;
+    margin-top: 20px;
+    padding-left: 2rem;
     padding-right: 2rem;
-  p {
-    color: #8d99ae;
-    text-align: left;
-    max-width: 950px;
-    margin: 0 auto;
+    p {
+      color: #8d99ae;
+      text-align: left;
+      max-width: 950px;
+      margin: 0 auto;
+    }
   }
-}
 }
 </style>

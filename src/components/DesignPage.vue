@@ -16,7 +16,6 @@
         <h2>{{ data.infoTitle }}</h2>
         <p>{{ data.infoDescription }}</p>
       </div>
-
       <p>
         <a class="drop-down" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           {{ data.dropDownButton }}
@@ -139,6 +138,9 @@ export default {
   .logo {
     margin-left: 0rem;
     margin-top: 10rem;
+    img{
+      margin-left: 2rem;
+    }
     .tape{
     position: absolute;
     margin-top: -1.3rem;
@@ -153,7 +155,7 @@ export default {
     margin-left: 115px;
     h1 {
       color:  #ef233c;
-      margin-top: 17rem;
+      margin-top: 10rem;
       z-index: 1;
     }
     p {
@@ -166,7 +168,7 @@ export default {
     margin-top: 5rem;
     margin-bottom: 175px;
     h2 {
-      color: #d90429;
+      color: #ef233c;
       text-align: center;
     }
     p {
@@ -257,6 +259,13 @@ export default {
         width: 70%;
       }
     }
+  }
+  @media only screen and (max-width: 576px){
+    .info {
+    h1 {
+    margin-top: 0rem;
+  }
+  }
   }
 }
 </style>
