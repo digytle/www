@@ -38,22 +38,24 @@ export default {
 .title{
     margin-left: 3rem;
     hr{
-        width: 200px;
-        border-bottom: 6px solid #2B2D42;
+        width: 360px;
+        border-bottom: 4px solid #2B2D42;
         border-top: none;
         margin-left: 0px;
     }
     h2{
         text-align: left;
-        margin-top: 0px;
+        margin-top: -10px;
     }
 }
 .hero{
     width: 100vw;
     padding: 3rem;
+    margin-top: -2rem;
 }
 .description{
     margin-left: 3rem;
+    margin-top: -2rem;
     hr{
         width: 150px;
         border-bottom: 3px solid #2B2D42;

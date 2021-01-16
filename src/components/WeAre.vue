@@ -51,14 +51,15 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .we-are {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 6rem;
   margin-left: 1rem;
   .lines{
-    margin-bottom: -9rem;
+    margin-bottom: -4rem;
     hr{
       border-bottom: 2px solid #EF233C;
       border-top: none;
+      margin-left: -2rem;
     }
     .two{
       border-bottom: 7px solid #EF233C;

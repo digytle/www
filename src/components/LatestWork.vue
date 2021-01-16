@@ -72,7 +72,7 @@ export default {
   overflow: scroll;
   scroll-behavior: smooth;
   height: 665px;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 .bigsection{
   position: absolute;

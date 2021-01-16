@@ -57,7 +57,7 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 770px) {
   .text {
     h1 {
       margin-bottom: 8rem;
@@ -68,6 +68,9 @@ export default {
       margin-left: auto;
       margin-right: auto;
     }
+  }
+  .header{
+    margin-top: 0rem;
   }
 }
 // @media only screen and (max-width: 768px) {

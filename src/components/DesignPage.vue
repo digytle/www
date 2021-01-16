@@ -20,6 +20,7 @@
       <p>
         <a class="drop-down" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           {{ data.dropDownButton }}
+          <h3 class="arrow">↘</h3>
         </a>
       </p>
       <hr>
@@ -162,7 +163,7 @@ export default {
     }
   }
   .information {
-    margin-top: 175px;
+    margin-top: 5rem;
     margin-bottom: 175px;
     h2 {
       color: #d90429;
@@ -191,10 +192,17 @@ export default {
   }
   .drop-down{
     margin-left: 5rem;
+    margin-top: -5rem;
+    display: flex;
     color: black;
     text-decoration: none;
     font-size: 29px;
     font-family: Georgia, serif;
+    width: 50rem;
+    transition: 0.5s;
+  }
+  .arrow{
+    margin-left: 0.5rem;
   }
   hr{
     border-bottom: 2px solid #ef233c;
@@ -209,7 +217,6 @@ export default {
   .card-body{
     border: none;
   }
-
   .section {
     margin-top: 50px;
     margin-bottom: 50px;

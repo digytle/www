@@ -69,7 +69,7 @@ export default {
       transition: 0.6s;
     }
     &:hover div {
-      background-color: #cf2e79;
+      background-color: #5944AD;
       h3,
       p {
         color: white;

@@ -137,7 +137,19 @@ export default {
   .navbarsmall{
     border: none;
     margin-top: -11rem;
-    margin-left: 20rem;
   }
 }
+  @media only screen and (max-width: 770px) {
+  .navlist{
+    z-index: 1;
+    width: 100vw;
+    background-color: white;
+    margin-top: -2.5rem;
+    margin-left: -2rem;
+  }
+  .logo{
+    margin-left: 1rem;
+  }
+}
+
 </style>

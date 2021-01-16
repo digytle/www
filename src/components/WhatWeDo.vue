@@ -87,9 +87,10 @@ export default {
 @import "../assets/main.scss";
 .title{
     margin-left: 3rem;
+    margin-top: -2rem;
     hr{
         width: 200px;
-        border-bottom: 6px solid #2B2D42;
+        border-bottom: 4px solid #2B2D42;
         margin-left: 0px;
     }
     h2{
@@ -99,6 +100,7 @@ export default {
 }
 .element{
     padding: 2rem;
+    margin-top: -2rem;
     .long, .short{
         border: none;
         margin-top: 2rem;
