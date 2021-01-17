@@ -2,7 +2,7 @@
   <div class="main-page">
     <Navigation></Navigation>
     <Header></Header>
-    <WeAre></WeAre>
+    <!-- <WeAre></WeAre> -->
     <WhatWeDo></WhatWeDo>
     <DigytleStory></DigytleStory>
     <LatestWork></LatestWork>
@@ -15,7 +15,7 @@
 <script>
 import Navigation from "./Navigation";
 import Header from "./Header";
-import WeAre from "./WeAre";
+// import WeAre from "./WeAre";
 import WhatWeDo from "./WhatWeDo";
 import DigytleStory from "./DigytleStory";
 import LatestWork from "./LatestWork";
@@ -28,7 +28,7 @@ export default {
   components: {
     Navigation,
     Header,
-    WeAre,
+    // WeAre,
     WhatWeDo,
     DigytleStory,
     LatestWork,

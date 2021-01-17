@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <Navigation></Navigation>
+<div>
+  <Navigation></Navigation>
+  <div class="container">
     <div class="digytle">
       <div class="row">
-        <div class="row-lg-6 row-md-6 logo">
-          <img class="img-fluid" :src="data.image" />
-          <img class="tape" src="/assets/duck.tape.png">
-        </div>
+        <img class="img-fluid logo" :src="data.image" />
         <div class="row-lg-6 row-md-6 info">
           <h1>{{ data.title }}</h1>
           <p>{{ data.description }}</p>
@@ -19,7 +17,6 @@
       <p>
         <a class="drop-down" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           {{ data.dropDownButton }}
-          <h3 class="arrow">↘</h3>
         </a>
       </p>
       <hr>
@@ -83,8 +80,9 @@
         </div>
       </div> -->
     </div>
-    <Footer></Footer>
   </div>
+  <Footer></Footer>
+</div>
 </template>
 
 <script>
@@ -126,6 +124,9 @@ export default {
 .digytle {
   .row{
     margin-right:0;
+    .logo{
+      margin-top: 5rem;
+    }
   }
   text-align: left;
   h4 {
@@ -134,18 +135,6 @@ export default {
   }
   h3 {
     width: 480px;
-  }
-  .logo {
-    margin-left: 0rem;
-    margin-top: 10rem;
-    img{
-      margin-left: 2rem;
-    }
-    .tape{
-    position: absolute;
-    margin-top: -1.3rem;
-    margin-left: -25rem;
-    }
   }
   p {
     color: #8d99ae;
@@ -203,12 +192,9 @@ export default {
     width: 50rem;
     transition: 0.5s;
   }
-  .arrow{
-    margin-left: 0.5rem;
-  }
   hr{
     border-bottom: 2px solid #ef233c;
-     border-top: none;
+    border-top: none;
   }
   .second{
     border-bottom: 6px solid #ef233c;

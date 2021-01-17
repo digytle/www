@@ -1,4 +1,5 @@
 <template>
+<div class="container">
     <div id="YearSummarised">
         <div class="title">
             <hr>
@@ -11,6 +12,7 @@
             <h2>{{description}}</h2>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -36,7 +38,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .title{
-    margin-left: 3rem;
+    margin-bottom: 3rem;
     hr{
         width: 360px;
         border-bottom: 4px solid #2B2D42;
@@ -50,11 +52,10 @@ export default {
 }
 .hero{
     width: 100vw;
-    padding: 3rem;
     margin-top: -2rem;
+    margin-bottom: 3rem;
 }
 .description{
-    margin-left: 3rem;
     margin-top: -2rem;
     hr{
         width: 150px;

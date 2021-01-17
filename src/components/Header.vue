@@ -1,8 +1,9 @@
 <template>
+<div class="container">
   <div class="header">
     <div class="container-fluid">
       <div class="row hero">
-        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="col">
           <img class="img-fluid rocket" :src="image" />
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 text">
@@ -12,6 +13,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,7 +41,6 @@ export default {
 @import "../assets/main.scss";
 .header {
   margin-top: 12rem;
-  overflow: x hidden;
   .text {
     text-align: left;
     margin-top: 5rem;
@@ -47,30 +48,25 @@ export default {
       font-size: 52px;
       color:#EF233C;
       margin-bottom: 5rem;
-      max-width: 535px;
-      max-height: 135px;
     }
     p {
       font-size: 20px;
       color: #8d99ae;
-      max-width: 516px;
     }
   }
 }
-@media only screen and (max-width: 770px) {
-  .text {
-    h1 {
-      margin-bottom: 8rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    p {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+@media only screen and (max-width: 576px) {
   .header{
     margin-top: 0rem;
+    .text {
+      h1{
+        font-size: 40px;
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 }
 // @media only screen and (max-width: 768px) {

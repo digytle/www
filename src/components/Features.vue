@@ -6,16 +6,18 @@
         <h2>{{ headerText }}</h2>
       </div>
       <div class="row">
-        <div
+           <div
           class="col-lg-3 col-md-6 col-sm-9 info-cards"
           v-for="feature in features"
           :key="feature.name"
         >
           <router-link :to="`${feature.template}/${feature.link}`">
-            <div>
-              <img :src="feature.image" />
+            <div class="card">
+              <img class="card-img-top" :src="feature.image" />
+              <div class="card-body">
               <h3>{{ feature.name }}</h3>
               <p>{{ feature.description }}</p>
+              </div>
             </div>
           </router-link>
         </div>
@@ -58,29 +60,36 @@ export default {
     h2{
         text-align: center;
         font-size: 50px;
-        margin-top: 0px;
+        margin-top: -1rem;
         margin-bottom: 3rem;
     }
   }
   .info-cards {
     text-align: left;
-    div {
-      padding: 25px;
-      transition: 0.6s;
-    }
     &:hover div {
-      background-color: #5944AD;
-      h3,
-      p {
-        color: white;
+      h3{
+        background-color: transparent;
+        margin-top: 0rem;
+        padding-left: 0rem;
+        width: 100%;
       }
     }
     a:hover {
       text-decoration: none;
     }
+    .card{
+      border: none;
+    }
     h3 {
       color: #333333;
-      margin: 20px 0;
+      margin-top: -3.5rem;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+      width: 110%;
+      height: 3rem;
+      background-color: white;
+      margin-bottom: 2rem;
+      transition: 0.2s;
     }
     p {
       font-weight: 300;
@@ -94,9 +103,8 @@ export default {
   }
 }
 @media only screen and (max-width: 576px) {
-  .info-cards{
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .card{
+    margin-bottom: 2rem;
   }
 }
 </style>

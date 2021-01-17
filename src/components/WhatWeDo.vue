@@ -1,4 +1,5 @@
 <template>
+<div class="container">
     <div id="what-we-do">
         <div class="title">
             <hr class="line">
@@ -45,6 +46,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -86,8 +88,8 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .title{
-    margin-left: 3rem;
-    margin-top: -2rem;
+    margin-left: 1rem;
+    margin-top: 8rem;
     hr{
         width: 200px;
         border-bottom: 4px solid #2B2D42;
@@ -99,7 +101,6 @@ export default {
     }
 }
 .element{
-    padding: 2rem;
     margin-top: -2rem;
     .long, .short{
         border: none;

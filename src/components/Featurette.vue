@@ -1,29 +1,28 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <div class="row">
-      <div class="col-lg-5 image">
-        <img class="img-fluid" :src="data.image" />
-        <img class="tape" src="/assets/duck.tape.png" />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 image">
+          <img class="img-fluid" :src="data.image" />
+        </div>
+        <div class="col-lg-5 info">
+          <h1>{{ data.title }}</h1>
+          <p>{{ data.description }}</p>
+        </div>
       </div>
-      <div class="col-lg-5 info">
-        <h1>{{ data.title }}</h1>
-        <p>{{ data.description }}</p>
+      <div class="information">
+        <h2>{{ data.subTitle }}</h2>
+        <p>{{ data.subDescription }}</p>
       </div>
-    </div>
-    <div class="information">
-      <h2>{{ data.subTitle }}</h2>
-      <p>{{ data.subDescription }}</p>
-    </div>
-    <div class="quote col-7">
-      <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
-        <img :src="paragraph.bigQuotes" />
-        <h2>{{ paragraph.text }}</h2>
-        <img class="small" :src="paragraph.smallQuotes" />
+      <div class="quote col-7">
+        <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
+          <img :src="paragraph.bigQuotes" />
+          <h2>{{ paragraph.text }}</h2>
+          <img class="small" :src="paragraph.smallQuotes" />
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="container">
+      <div class="row">
         <div
           class="row"
           v-for="(section, index) in data.sections"
@@ -48,20 +47,16 @@
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="row images-at-bot"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="fluid" v-if="section.image" :src="section.image" />
-          </div>
+        <div
+          class="row images-at-bot"
+          v-for="(section, index) in data.sections"
+          :key="index"
+          :class="{
+            first: index == 0,
+            second: index == 1,
+          }"
+        >
+          <img class="img-fluid" v-if="section.image" :src="section.image" />
         </div>
       </div>
     </div>
@@ -99,17 +94,8 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-.row {
-  margin-right: 0;
-}
 .image {
-  margin-left: 15px;
   margin-top: 10rem;
-  .tape {
-    position: absolute;
-    margin-top: -1.3rem;
-    margin-left: -25rem;
-  }
 }
 .info {
   margin-top: 130px;
@@ -117,7 +103,6 @@ export default {
   text-align: left;
   h1 {
     color: #ef233c;
-    text-align: center;
     margin-top: 10rem;
   }
   p {
@@ -141,87 +126,57 @@ export default {
   }
 }
 .quote {
-  margin: 120px auto 135px;
+  margin: 20px auto 20px;
   position: relative;
   h2 {
     text-align: left;
-    width: 845px;
+    max-width: 845px;
     font-size: 17px;
     line-height: 30px;
   }
 }
-.container {
-  margin-bottom: -10rem;
-  .row {
-    margin: 0 auto 130px;
+.row {
+  margin: 0 auto 0px;
+}
+.first {
+  p {
+    text-align: left;
+    color: #8d99ae;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  .first {
-    img {
-      margin-left: 85px;
-    }
+  h1 {
+    text-align: left;
+  }
+}
+.second {
+  margin-top: -7rem;
+  .book {
     p {
       text-align: left;
       color: #8d99ae;
       padding-left: 2rem;
       padding-right: 2rem;
     }
-    h1 {
-      text-align: left;
+    h2 {
+      margin-top: 10rem;
     }
-  }
-  .second {
-    margin-top: -7rem;
-    img {
-      width: 300px;
-      height: 425px;
-      margin-right: 170px;
-    }
-    .book {
-      p {
-        text-align: left;
+    .buy-book {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      h3 {
+        margin-top: 50px;
         color: #8d99ae;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        text-align: left;
+        font-size: 20px;
       }
-      h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-      .buy-book {
-        margin-right: 0;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        h3 {
-          margin-top: 50px;
-          color: #8d99ae;
-          text-align: left;
-          font-size: 20px;
-        }
-        h4 {
-          text-align: left;
-          font-size: 20px;
-          color: red;
-        }
-        .amazon {
-          width: 175px;
-          height: 85px;
-          margin-right: 0;
-        }
-        img {
-          margin-left: 2rem;
-          padding-right: 2rem;
-        }
+      h4 {
+        text-align: left;
+        font-size: 20px;
+        color: red;
       }
     }
   }
-}
-.images-at-bot {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
 }
 @media only screen and (max-width: 1000px) {
   .info {

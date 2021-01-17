@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="element">
   <div class="row-lg-12 footer">
     <img class="img-fluid logo" :src="logo" />
     <div class="row-lg-12 row-sm-12 first">
@@ -70,14 +70,10 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-* {
-margin: 0;
-padding: 0;
-}
+
 .footer {
   background-color: #3A3C48;
   width: 100vw;
-  margin-left: -1rem;
   height: 600px;
   margin-top: 5rem;
 }
@@ -94,7 +90,7 @@ p {
   font-family: $font__title;
 }
 .location {
-  margin-left: 10rem;
+  margin-left: 5rem;
   img{
     margin-right: 1rem;
   }
@@ -103,7 +99,7 @@ p {
   }
 }
 .contacts {
-  margin-left: 10rem;
+  margin-left: 5rem;
   margin-top: 2rem;
   img {
     margin-right: 1rem;
@@ -116,7 +112,7 @@ p {
   }
 }
 .copyright {
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   p {

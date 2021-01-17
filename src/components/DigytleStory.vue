@@ -42,7 +42,7 @@ export default {
 @import "../assets/main.scss";
 .title{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 1rem;
     img{
         height: 107px;
