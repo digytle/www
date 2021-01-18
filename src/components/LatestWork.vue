@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="scroll col-lg-6">
-        <div class="col section" id="section">
+        <div class="col-lg-6 section" id="section">
           <div class="image-container" v-for="item in work" :key="item.text">
             <div class="image-box">
               <router-link :to="`${item.template}/${item.url}`">
@@ -33,14 +33,16 @@
             </div>
           </div>
         </div>
-        <div class="col section section1" id="section">
+        <div class="col-lg-6 section section1" id="section">
           <div
             class="image-container"
             v-for="item in workright"
             :key="item.text"
           >
             <div class="image-box">
+              <router-link :to="`${item.template}/${item.url}`">
               <img class="img-fluid" :src="item.image" />
+              </router-link>
               <p>{{ item.description }}</p>
               <hr />
               <h2>{{ item.title }}</h2>
@@ -147,10 +149,20 @@ export default {
   display: none;
 }
 @media only screen and (max-width: 450px) {
+  .ourwork{
+    padding: 0px;
+  }
   .scroll {
     display: block;
+    margin-left: 0px;
+    padding-left: 2.5rem;
+    .image-container{
+      width: 15rem;
+    }
   }
   .bigsection {
+    padding-left: 5.5rem;
+    padding-right: 5rem;
     .image-container {
       .card {
         width: 20rem;

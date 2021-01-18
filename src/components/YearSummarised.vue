@@ -56,12 +56,6 @@ export default {
 }
 .description{
     margin-top: -2rem;
-    hr{
-        width: 150px;
-        border-bottom: 3px solid #2B2D42;
-        border-top: none;
-        margin-left: 0px;
-    }
     h4{
         text-align: left;
     }
@@ -69,6 +63,18 @@ export default {
         text-align: left;
         max-width: 964px;
         margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .title{
+        hr{
+            width: 65%;
+        }
+    }
+    .description{
+        h2{
+            font-size: 30px;
+        }
     }
 }
 </style>

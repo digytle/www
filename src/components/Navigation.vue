@@ -168,11 +168,17 @@ export default {
     margin-left: 1rem;
   }
   .navigation {
+    margin-left: -5rem;
     .mainnav {
       position: absolute;
       margin-top: 10rem;
       margin-left: 2.5rem;
     }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation {
+    margin-left: -1rem;
   }
 }
 </style>
