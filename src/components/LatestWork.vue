@@ -41,7 +41,7 @@
           >
             <div class="image-box">
               <router-link :to="`${item.template}/${item.url}`">
-              <img class="img-fluid" :src="item.image" />
+                <img class="img-fluid" :src="item.image" />
               </router-link>
               <p>{{ item.description }}</p>
               <hr />
@@ -134,10 +134,10 @@ export default {
       margin-top: 0px;
       text-align: left;
     }
-    hr{
+    hr {
       width: 60%;
       margin-left: 0px;
-      border-bottom: 3px solid #EF233C;
+      border-bottom: 3px solid #ef233c;
       border-top: none;
     }
   }
@@ -148,15 +148,49 @@ export default {
 ::-webkit-scrollbar {
   display: none;
 }
+@media only screen and (max-width: 1100px) {
+  .scroll {
+    height: 30rem;
+  }
+  .bigsection {
+    .image-container {
+      .card {
+        .card-body {
+          p {
+            position: absolute;
+            margin-top: -25rem;
+            margin-left: -2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+          h2 {
+            position: relative;
+            margin-top: -10rem;
+          }
+          hr {
+            margin-top: -12rem;
+            margin-left: 7rem;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (orientation: landscape) {
+  .scroll {
+    height: 45rem;
+  }
+}
 @media only screen and (max-width: 450px) {
-  .ourwork{
+  .ourwork {
     padding: 0px;
   }
   .scroll {
     display: block;
     margin-left: 0px;
     padding-left: 2.5rem;
-    .image-container{
+    .image-container {
       width: 15rem;
     }
   }
@@ -181,35 +215,6 @@ export default {
           h2 {
             position: relative;
             margin-top: -10rem;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .scroll {
-    height: 35rem;
-  }
-  .bigsection {
-    .image-container {
-      .card {
-        .card-body {
-          p {
-            position: absolute;
-            margin-top: -25rem;
-            margin-left: -2rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-          }
-          h2 {
-            position: relative;
-            margin-top: -10rem;
-          }
-          hr {
-            margin-top: -12rem;
-            margin-left: 7rem;
-            position: absolute;
           }
         }
       }
