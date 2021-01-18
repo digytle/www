@@ -22,26 +22,43 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-light mainnav">
       <div class="container-fluid asd">
-        <button class="navbar-toggler navbarsmall" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler navbarsmall"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navlist" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-          <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
-            firstComponent
-          }}</router-link>
-          <router-link class="li" to="#WeAre" v-scroll-to="'#we-are'">{{
-            secondComponent
-          }}</router-link>
-          <router-link class="li" to="#latest-work" v-scroll-to="'#latest-work'">{{
-            thirdComponent
-          }}</router-link>
-          <router-link class="li" to="#YearSummarised" v-scroll-to="'#YearSummarised'">{{
-            fourthComponent
-          }}</router-link>
-          <router-link class="li" to="#featurette" v-scroll-to="'#features'">{{
-            fifthComponent
-          }}</router-link>
+            <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
+              firstComponent
+            }}</router-link>
+            <router-link class="li" to="#WeAre" v-scroll-to="'#we-are'">{{
+              secondComponent
+            }}</router-link>
+            <router-link
+              class="li"
+              to="#latest-work"
+              v-scroll-to="'#latest-work'"
+              >{{ thirdComponent }}</router-link
+            >
+            <router-link
+              class="li"
+              to="#YearSummarised"
+              v-scroll-to="'#YearSummarised'"
+              >{{ fourthComponent }}</router-link
+            >
+            <router-link
+              class="li"
+              to="#featurette"
+              v-scroll-to="'#features'"
+              >{{ fifthComponent }}</router-link
+            >
           </ul>
         </div>
       </div>
@@ -109,14 +126,14 @@ export default {
     padding-left: 35px;
     width: 330px;
     margin-top: 1rem;
-    &:hover{
+    &:hover {
       width: 310px;
       transition: 0.4s;
     }
   }
   a {
     text-decoration: none;
-    color: #8D99AE;
+    color: #8d99ae;
     font-size: 17px;
     border: none;
     margin: 0 10px;
@@ -126,30 +143,36 @@ export default {
     margin-top: 12rem;
     margin-left: -44rem;
     .router-link-exact-active {
-      color: #2B2D42;
+      color: #2b2d42;
     }
   }
-  .mainnav{
+  .mainnav {
     position: absolute;
-    margin-top: 9rem;
+    margin-top: 8rem;
     margin-left: 2.5rem;
   }
-  .navbarsmall{
+  .navbarsmall {
     border: none;
-    margin-top: -11rem;
+    margin-top: -13rem;
   }
 }
-  @media only screen and (max-width: 770px) {
-  .navlist{
+@media only screen and (max-width: 768px) {
+  .navlist {
     z-index: 1;
     width: 100vw;
     background-color: white;
     margin-top: -2.5rem;
     margin-left: -2rem;
   }
-  .logo{
+  .logo {
     margin-left: 1rem;
   }
+  .navigation {
+    .mainnav {
+      position: absolute;
+      margin-top: 10rem;
+      margin-left: 2.5rem;
+    }
+  }
 }
-
 </style>

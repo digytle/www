@@ -50,16 +50,14 @@ export default {
 .container {
   margin-top: 8rem;
   .title{
-    margin-right: auto;
-    margin-left: auto;
     hr{
-        width: 250px;
+        width: 200px;
         border-bottom: 4px solid #2B2D42;
         border-top: none;
+        margin-left: 0px;
     }
     h2{
-        text-align: center;
-        font-size: 50px;
+        text-align: left;
         margin-top: -1rem;
         margin-bottom: 3rem;
     }
@@ -105,6 +103,16 @@ export default {
 @media only screen and (max-width: 576px) {
   .card{
     margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .container{
+  .info-cards{
+    h3{
+      margin-bottom: 4rem;
+      width: 130%;
+    }
+  }
   }
 }
 </style>

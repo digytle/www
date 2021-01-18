@@ -41,6 +41,7 @@ export default {
 @import "../assets/main.scss";
 .header {
   margin-top: 12rem;
+  
   .text {
     text-align: left;
     margin-top: 5rem;
@@ -69,24 +70,12 @@ export default {
     }
   }
 }
-// @media only screen and (max-width: 768px) {
-//   .separator {
-//     display: block;
-//     .line {
-//       width: 40px;
-//     }
-//   }
-//   .header {
-//     margin-top: 85px;
-//     .row {
-//       flex-direction: column-reverse;
-//       .rocket {
-//         margin: 0 auto;
-//       }
-//       .text {
-//         margin: 0 auto;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 1100px) {
+  .col{
+    img{
+      margin-top: 8rem;
+    }
+  }
+}
+
 </style>

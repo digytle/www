@@ -124,11 +124,11 @@ export default {
         }
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .element{
     .long, .short{
         h2{
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
         }
     }
 }

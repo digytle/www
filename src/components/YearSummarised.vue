@@ -7,7 +7,6 @@
         </div>
         <img class="img-fluid hero" src="/assets/yearSummarised.png" />
         <div class="description">
-            <hr>
             <h4>{{date}}</h4>
             <h2>{{description}}</h2>
         </div>

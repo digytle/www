@@ -70,10 +70,9 @@ export default {
     img{
         width: 406px;
         height: auto;
-        margin-top: -5rem;
         transition: 0.3s;
         &:hover{
-            width: 380px;
+            transform: scale(0.9);
         }
     }
 }
