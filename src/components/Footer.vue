@@ -1,15 +1,14 @@
 <template>
-<div class="element">
-  <div class="row-lg-12 footer">
-    <img class="img-fluid logo" :src="logo" />
-    <div class="row-lg-12 row-sm-12 first">
-      <div class="row location">
-        <img :src="locationPoint" />
-        <div class="col-2">
-          <p>{{ address }}</p>
-        </div>
+  <div class="element">
+    <div class="row-lg-12 footer">
+      <div class="col-lg-4">
+        <img class=" logo" :src="logo" />
       </div>
-      <div class="row contacts">
+      <div class="col-lg-4 location">
+        <img :src="locationPoint" />
+        <p>{{ address }}</p>
+      </div>
+      <div class="col-lg-4 contacts">
         <img :src="contactsImage" />
         <div class="emails">
           <div v-for="email in contacts" :key="email">
@@ -19,19 +18,16 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row-lg-12 second">
-      <div class="copyright">
+      <div class="col-lg-4 copyright">
         <img :src="twitter" />
         <img :src="linkedin" />
-        <p>{{ copyright }}</p>
-         <router-link to="/privacy-policy/"
+        <router-link to="/privacy-policy/"
           ><p>{{ privacy }}</p></router-link
         >
+        <p>{{ copyright }}</p>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -72,14 +68,14 @@ export default {
 @import "../assets/main.scss";
 
 .footer {
-  background-color: #3A3C48;
+  background-color: #3a3c48;
   width: 100vw;
-  height: 600px;
   margin-top: 5rem;
 }
-.logo{
+.logo {
   margin-top: 5rem;
-  width: 80%;
+  margin-left: 5rem;
+  max-width: 25rem;
 }
 p {
   text-align: left;
@@ -91,38 +87,64 @@ p {
 }
 .location {
   margin-left: 5rem;
-  img{
-    margin-right: 1rem;
+  margin-top: 5rem;
+  img {
+    width: 1.3rem;
+    margin-right: 50rem;
   }
   p {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 .contacts {
   margin-left: 5rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
   img {
-    margin-right: 1rem;
+    width: 1.3rem;
+    margin-right: 50rem;
   }
   .emails {
     padding-right: 0;
-    p{
-      font-size: 15px;
+    p {
+      font-size: 17px;
     }
   }
 }
 .copyright {
-  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5rem;
   p {
     text-align: center;
+    font-size: 17px;
   }
   img {
-      margin-left: 1rem;
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-    }
+    padding: 1rem;
+    width: 3.5rem;
+  }
 }
-
+// @media only screen and (min-width: 1600px) {
+//   .logo {
+//   margin-left: -15rem;
+//   }
+// }
+@media only screen and (max-width: 800px) {
+  .logo {
+  margin-left: -11rem;
+  width: 80%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .location {
+    margin-left: 0rem;
+  }
+  .contacts {
+    margin-left: 0rem;
+  }
+  .logo {
+  margin-left: 0rem;
+  width: 80%;
+  }
+}
 </style>

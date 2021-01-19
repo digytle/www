@@ -51,7 +51,7 @@ export default {
     }
     p {
       font-size: 20px;
-      color: #8d99ae;
+      color: #51586D;
     }
   }
 }

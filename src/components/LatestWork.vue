@@ -1,8 +1,9 @@
 <template>
   <div class="container" id="latest-work">
-    <div class="col-12 row header-text">
-      <h2>{{ title }}</h2>
-    </div>
+    <div class="title">
+        <hr class="line" />
+         <h2>{{ title }}</h2>
+      </div>
 
     <div class="row ourwork">
       <div class="col-lg-6 bigsection">
@@ -79,14 +80,21 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/main.scss";
-.header-text {
-  justify-content: center;
+.title {
+  margin-top: 5rem;
+  hr {
+    width: 220px;
+    border-bottom: 4px solid #2B2D42;
+    margin-left: 0px;
+  }
   h2 {
-    color: #2b2d42;
+    color: #2B2D42;
+    text-align: left;
+    margin-top: -1rem;
   }
 }
 .ourwork {
-  padding: 5rem;
+  padding: 0, 5rem;
 }
 .bigsection {
   .image-container {
@@ -119,7 +127,7 @@ export default {
 .scroll {
   overflow-y: scroll;
   display: flex;
-  height: 95vh;
+  height: 51.8rem;
   .image-container {
     margin-bottom: 4rem;
     p {
@@ -150,7 +158,7 @@ export default {
 }
 @media only screen and (max-width: 1100px) {
   .scroll {
-    height: 30rem;
+    height: 37.5rem;
   }
   .bigsection {
     .image-container {
@@ -177,9 +185,9 @@ export default {
     }
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 1100px) and (orientation: landscape) {
   .scroll {
-    height: 45rem;
+    height: 120vh;
   }
 }
 @media only screen and (max-width: 450px) {

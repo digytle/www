@@ -52,6 +52,7 @@ export default {
         margin-top: 3rem;
         margin-left: 1rem;
         font-size: 25px;
+        font-family: $font__menu;
     }
 }
 .element{
@@ -71,9 +72,6 @@ export default {
         width: 406px;
         height: auto;
         transition: 0.3s;
-        &:hover{
-            transform: scale(0.9);
-        }
     }
 }
 @media only screen and (max-width: 576px) {

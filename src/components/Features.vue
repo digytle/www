@@ -7,7 +7,7 @@
       </div>
       <div class="row">
            <div
-          class="col-lg-3 col-md-6 col-sm-9 info-cards"
+          class="col-lg-3 col-md-6 col-sm-12 info-cards"
           v-for="feature in features"
           :key="feature.name"
         >
@@ -57,21 +57,13 @@ export default {
         margin-left: 0px;
     }
     h2{
-        text-align: left;
-        margin-top: -1rem;
-        margin-bottom: 3rem;
+      color: #2B2D42;
+      text-align: left;
+      margin-top: -1rem;
     }
   }
   .info-cards {
     text-align: left;
-    &:hover div {
-      h3{
-        background-color: transparent;
-        margin-top: 0rem;
-        padding-left: 0rem;
-        width: 100%;
-      }
-    }
     a:hover {
       text-decoration: none;
     }
@@ -87,11 +79,10 @@ export default {
       height: 3rem;
       background-color: white;
       margin-bottom: 2rem;
-      transition: 0.2s;
     }
     p {
       font-weight: 300;
-      color: #7a7a7a;
+      color: #51586D;
       font-size: 16px;
       line-height: 25px;
     }

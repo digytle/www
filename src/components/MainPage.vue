@@ -22,7 +22,6 @@ import LatestWork from "./LatestWork";
 import YearSummarised from "./YearSummarised";
 import Features from "./Features";
 import Footer from "./Footer";
-// import VueScrollTo from "vue-scrollto";
 export default {
   name: "Home",
   components: {
@@ -48,4 +47,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.main-page{
+  overflow: hidden;
+}
 </style>

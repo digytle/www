@@ -1,29 +1,36 @@
 <template>
-<div>
-  <Navigation></Navigation>
-  <div class="container">
-    <div class="digytle">
-      <div class="row">
-        <img class="img-fluid logo" :src="data.image" />
-        <div class="row-lg-6 row-md-6 info">
-          <h1>{{ data.title }}</h1>
-          <p>{{ data.description }}</p>
+  <div class="des">
+    <Navigation></Navigation>
+    <div class="container">
+      <div class="digytle">
+        <div class="row">
+          <img class="img-fluid logo" :src="data.image" />
+          <div class="row-lg-6 row-md-6 info">
+            <h1>{{ data.title }}</h1>
+            <p>{{ data.description }}</p>
+          </div>
         </div>
-      </div>
-      <div class="row-lg-12 information">
-        <h2>{{ data.infoTitle }}</h2>
-        <p>{{ data.infoDescription }}</p>
-      </div>
-      <p>
-        <a class="drop-down" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          {{ data.dropDownButton }}
-        </a>
-      </p>
-      <hr>
-      <hr class="second">
-      <div class="col-lg-12 collapse drop-items" id="collapseExample">
-        <div class="card card-body">
-          <div
+        <div class="row-lg-12 information">
+          <h2>{{ data.infoTitle }}</h2>
+          <p>{{ data.infoDescription }}</p>
+        </div>
+        <p>
+          <a
+            class="drop-down"
+            data-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            {{ data.dropDownButton }}
+          </a>
+        </p>
+        <hr />
+        <hr class="second" />
+        <div class="col-lg-12 collapse drop-items" id="collapseExample">
+          <div class="card card-body">
+            <div
               class="col-sm-12 col-lg-12 section"
               v-for="(section, index) in sections"
               :key="index"
@@ -48,9 +55,9 @@
                 </button>
               </div>
             </div>
+          </div>
         </div>
-      </div>
-      <!-- <div class="design">
+        <!-- <div class="design">
         <h1>{{ data.designTitle }}</h1>
         <div class="row design-faces">
           <div class="row faces" v-for="face in faces" :key="face.image">
@@ -79,10 +86,10 @@
           >
         </div>
       </div> -->
+      </div>
     </div>
+    <Footer></Footer>
   </div>
-  <Footer></Footer>
-</div>
 </template>
 
 <script>
@@ -121,11 +128,15 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.des {
+  overflow: hidden;
+}
 .digytle {
-  .row{
-    margin-right:0;
-    .logo{
+  .row {
+    margin-right: 0;
+    .logo {
       margin-top: 5rem;
+      widows: 80%;
     }
   }
   text-align: left;
@@ -143,7 +154,7 @@ export default {
     margin-top: 130px;
     margin-left: 115px;
     h1 {
-      color:  #ef233c;
+      color: #ef233c;
       margin-top: 10rem;
       z-index: 1;
     }
@@ -181,28 +192,24 @@ export default {
       }
     }
   }
-  .drop-down{
-    margin-left: 5rem;
+  .drop-down {
     margin-top: -5rem;
     display: flex;
     color: black;
     text-decoration: none;
     font-size: 29px;
-    font-family: Georgia, serif;
-    width: 50rem;
-    transition: 0.5s;
   }
-  hr{
+  hr {
     border-bottom: 2px solid #ef233c;
     border-top: none;
   }
-  .second{
+  .second {
     border-bottom: 6px solid #ef233c;
     width: 18rem;
     margin-top: -1.1rem;
-    margin-left: 5rem;
+    margin-left: 0rem;
   }
-  .card-body{
+  .card-body {
     border: none;
   }
   .section {
@@ -213,8 +220,8 @@ export default {
     p {
       max-width: 500px;
     }
-    .tools{
-      img{
+    .tools {
+      img {
         padding-right: 0.5rem;
       }
     }
@@ -238,20 +245,36 @@ export default {
       }
     }
   }
-  @media only screen and (max-width: 1200px) {
-    .section{
+  @media only screen and (max-width: 1100px) {
+    .info {
+      margin-top: 130px;
+      margin-left: 115px;
+      h1 {
+        color: #ef233c;
+        margin-top: -3rem;
+        z-index: 1;
+      }
+      p {
+        margin-top: 50px;
+        width: 590px;
+        font-weight: 400;
+      }
+    }
+    .section {
       display: block;
-      h3{
+      h3 {
         width: 70%;
       }
     }
   }
-  @media only screen and (max-width: 576px){
+  @media only screen and (max-width: 576px) {
     .info {
-    h1 {
-    margin-top: 0rem;
-  }
-  }
+      h1 {
+        color: #ef233c;
+        margin-top: -5rem;
+        z-index: 1;
+      }
+    }
   }
 }
 </style>

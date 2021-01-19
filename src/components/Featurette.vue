@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fea">
     <Navigation></Navigation>
     <div class="container">
       <div class="row">
@@ -94,8 +94,11 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.fea{
+  overflow: hidden;
+}
 .image {
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 .info {
   margin-top: 130px;
@@ -103,7 +106,7 @@ export default {
   text-align: left;
   h1 {
     color: #ef233c;
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
   p {
     margin-top: 50px;
@@ -113,7 +116,7 @@ export default {
   }
 }
 .information {
-  margin-top: 175px;
+  margin-top: 5rem;
   margin-bottom: 55px;
   h2 {
     color: #ef233c;
@@ -178,14 +181,12 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .info {
     margin-left: 0px;
     margin-top: 20px;
-    padding-left: 2rem;
-    padding-right: 2rem;
     h1 {
-      margin-top: 0rem;
+      margin-top: 15rem;
     }
   }
   .information {
@@ -197,6 +198,27 @@ export default {
       text-align: left;
       max-width: 950px;
       margin: 0 auto;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .info {
+    margin-left: 2rem;
+    margin-top: 20px;
+    h1 {
+      margin-top: 0rem;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .image {
+  margin-top: 5rem;
+}
+.info {
+    margin-left: 0px;
+    margin-top: 20px;
+    h1 {
+      margin-top: 0rem;
     }
   }
 }

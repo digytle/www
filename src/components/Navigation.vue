@@ -1,13 +1,5 @@
 <template>
-  <div
-    class="row navigation"
-    :style="{
-      background: this.$route.path.startsWith('/featurettes')
-        ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)'
-        : 'white',
-    }"
-    id="navigation"
-  >
+  <div class="row navigation">
     <div class="col-md-6 logo">
       <router-link to="/">
         <img
@@ -121,15 +113,10 @@ export default {
   margin-bottom: 100px;
   font-family: $font__menu;
   .logo {
-    align-items: center;
     display: flex;
     padding-left: 35px;
     width: 330px;
     margin-top: 1rem;
-    &:hover {
-      width: 310px;
-      transition: 0.4s;
-    }
   }
   a {
     text-decoration: none;
@@ -148,12 +135,17 @@ export default {
   }
   .mainnav {
     position: absolute;
-    margin-top: 8rem;
+    margin-top: 9.5rem;
     margin-left: 2.5rem;
   }
   .navbarsmall {
     border: none;
     margin-top: -13rem;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .navigation{
+    margin-left: 10rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -165,14 +157,14 @@ export default {
     margin-left: -2rem;
   }
   .logo {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
   .navigation {
     margin-left: -5rem;
     .mainnav {
       position: absolute;
       margin-top: 10rem;
-      margin-left: 2.5rem;
+      margin-left: 3rem;
     }
   }
 }

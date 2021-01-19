@@ -7,7 +7,7 @@
       </div>
       <div class="container-fluid padding">
         <div class="row padding element">
-          <div class="col-lg-3 col-md-6 col-sm-10">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card long">
               <img
                 class="card-img-top first-image"
@@ -19,7 +19,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-10">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card short">
               <img
                 class="card-img-top first-image"
@@ -31,11 +31,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-10">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card long">
               <img
                 class="card-img-top first-image"
-                src="/assets/what-we-do-long-2.svg"
+                src="/assets/what-we-do-long-2.png"
               />
               <div class="card-body">
                 <h2 class="right-text">{{ headerThird }}</h2>
@@ -43,7 +43,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-10">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card short">
               <img
                 class="card-img-top first-image"
@@ -108,6 +108,7 @@ export default {
     margin-left: 0px;
   }
   h2 {
+    color: #2B2D42;
     text-align: left;
     margin-top: -1rem;
   }
@@ -131,6 +132,7 @@ export default {
       text-align: left;
     }
     p {
+      color: #51586D;
       font-size: 16px;
       text-align: left;
       margin-left: -1rem;
