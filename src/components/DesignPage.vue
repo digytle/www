@@ -113,7 +113,7 @@ export default {
     };
   },
   mounted() {
-    this.data = require(`js-yaml-loader!../../content/design/${this.$route.params.pathMatch}.yaml`);
+    // this.data = require(`js-yaml-loader!../../content/design/${this.$route.params.pathMatch}.yaml`);
     this.logoBlack = navigation.logoBlack;
     this.home = navigation.home;
     this.about = navigation.about;
