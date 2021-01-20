@@ -30,7 +30,7 @@
           <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
             firstComponent
           }}</router-link>
-          <router-link class="li" to="#WeAre" v-scroll-to="'#we-are'">{{
+          <router-link class="li" to="#we-are" v-scroll-to="'#we-are'">{{
             secondComponent
           }}</router-link>
           <router-link class="li" to="#latest-work" v-scroll-to="'#latest-work'">{{
@@ -39,7 +39,7 @@
           <router-link class="li" to="#YearSummarised" v-scroll-to="'#YearSummarised'">{{
             fourthComponent
           }}</router-link>
-          <router-link class="li" to="#featurette" v-scroll-to="'#features'">{{
+          <router-link class="li" to="#features" v-scroll-to="'#features'">{{
             fifthComponent
           }}</router-link>
           </ul>
@@ -84,6 +84,8 @@ export default {
     };
   },
   mounted() {
+    let scrollto = this.$router.history.current.hash;
+    document.getElementById(scrollto.replace('#', ''))?.scrollIntoView();
     this.logoBlack = navigation.logoBlack;
     this.logoWhite = navigation.logoWhite;
     this.firstComponent = navigation.firstComponent;
