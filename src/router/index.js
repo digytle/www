@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
-import Template from '../components/Template'
-// import DesignPage from '../components/DesignPage'
+import Featurette from '../components/Featurette'
+import DigytleStory from '../components/DigytleStory'
+import DesignPage from '../components/DesignPage'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 import Book from '../components/Book'
 Vue.use(VueRouter)
@@ -13,15 +14,28 @@ const routes = [{
     component: MainPage
   },
   {
-    path: '/person/**',
+    path: '/featurettes',
+    redirect: '/'
+  },
+  {
+    path: '/featurettes/**',
     name: 'Featurette',
-    component: Template
-  }, 
-  // {
-  //   path: '/feature/**',
-  //   name: 'DesignPage',
-  //   component: DesignPage
-  // },
+    component: Featurette
+  },
+  {
+    path: '/stories',
+    redirect: '/'
+  },
+  {
+    path: '/stories/**',
+    name: 'DigytleStory',
+    component: DigytleStory
+  },
+  {
+    path: '/feature/**',
+    name: 'DesignPage',
+    component: DesignPage
+  },
   {
     path: '/privacy-policy/**',
     name: 'PrivacyPolicy',

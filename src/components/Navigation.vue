@@ -1,5 +1,13 @@
 <template>
-  <div class="row navigation">
+  <div
+    class="row navigation"
+    :style="{
+      background: this.$route.path.startsWith('/featurettes')
+        ? 'linear-gradient(90deg, transparent 48%, #FFFFFF 41%)'
+        : 'white',
+    }"
+    id="navigation"
+  >
     <div class="col-md-6 logo">
       <router-link to="/">
         <img
@@ -14,47 +22,49 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-light mainnav">
       <div class="container-fluid asd">
-        <button
-          class="navbar-toggler navbarsmall"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler navbarsmall" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navlist" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
-              firstComponent
-            }}</router-link>
-            <router-link class="li" to="#what-we-do" v-scroll-to="'#what-we-do'">{{
-              secondComponent
-            }}</router-link>
-            <router-link
-              class="li"
-              to="#latest-work"
-              v-scroll-to="'#latest-work'"
-              >{{ thirdComponent }}</router-link
-            >
-            <router-link
-              class="li"
-              to="#YearSummarised"
-              v-scroll-to="'#YearSummarised'"
-              >{{ fourthComponent }}</router-link
-            >
-            <router-link
-              class="li"
-              to="#features"
-              v-scroll-to="'#features'"
-              >{{ fifthComponent }}</router-link
-            >
+          <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
+            firstComponent
+          }}</router-link>
+          <router-link class="li" to="#we-are" v-scroll-to="'#we-are'">{{
+            secondComponent
+          }}</router-link>
+          <router-link class="li" to="#latest-work" v-scroll-to="'#latest-work'">{{
+            thirdComponent
+          }}</router-link>
+          <router-link class="li" to="#YearSummarised" v-scroll-to="'#YearSummarised'">{{
+            fourthComponent
+          }}</router-link>
+          <router-link class="li" to="#features" v-scroll-to="'#features'">{{
+            fifthComponent
+          }}</router-link>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- <div class="col-md-5 buttons">
+      <div class="row">
+        <router-link to="/" v-scroll-to="'#navigation'">{{
+          firstComponent
+        }}</router-link>
+        <router-link to="#WeAre" v-scroll-to="'#we-are'">{{
+          secondComponent
+        }}</router-link>
+        <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{
+          thirdComponent
+        }}</router-link>
+        <router-link to="#YearSummarised" v-scroll-to="'#YearSummarised'">{{
+          fourthComponent
+        }}</router-link>
+        <router-link to="#featurette" v-scroll-to="'#features'">{{
+          fifthComponent
+        }}</router-link>
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -96,14 +106,19 @@ export default {
   margin-bottom: 100px;
   font-family: $font__menu;
   .logo {
+    align-items: center;
     display: flex;
     padding-left: 35px;
     width: 330px;
     margin-top: 1rem;
+    &:hover{
+      width: 310px;
+      transition: 0.4s;
+    }
   }
   a {
     text-decoration: none;
-    color: #8d99ae;
+    color: #8D99AE;
     font-size: 17px;
     border: none;
     margin: 0 10px;
@@ -113,47 +128,30 @@ export default {
     margin-top: 12rem;
     margin-left: -44rem;
     .router-link-exact-active {
-      color: #2b2d42;
+      color: #2B2D42;
     }
   }
-  .mainnav {
+  .mainnav{
     position: absolute;
-    margin-top: 9.5rem;
+    margin-top: 9rem;
     margin-left: 2.5rem;
   }
-  .navbarsmall {
+  .navbarsmall{
     border: none;
-    margin-top: -13rem;
+    margin-top: -11rem;
   }
 }
-@media only screen and (min-width: 1700px) {
-  .navigation{
-    margin-left: 10rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .navlist {
+  @media only screen and (max-width: 770px) {
+  .navlist{
     z-index: 1;
     width: 100vw;
     background-color: white;
     margin-top: -2.5rem;
     margin-left: -2rem;
   }
-  .logo {
-    margin-left: 1.5rem;
-  }
-  .navigation {
-    margin-left: -5rem;
-    .mainnav {
-      position: absolute;
-      margin-top: 10rem;
-      margin-left: 3rem;
-    }
+  .logo{
+    margin-left: 1rem;
   }
 }
-@media only screen and (max-width: 500px) {
-  .navigation {
-    margin-left: -1rem;
-  }
-}
+
 </style>

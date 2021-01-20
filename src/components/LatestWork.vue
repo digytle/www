@@ -1,53 +1,36 @@
 <template>
   <div class="container" id="latest-work">
-    <div class="title">
-        <hr class="line" />
-         <h2>{{ title }}</h2>
-      </div>
-
-    <div class="row ourwork">
-      <div class="col-lg-6 bigsection">
+    <div class="col-12 row header-text">
+        <h2>{{ title }}</h2>
+    </div>
+    <div class="row-lg-12 ourwork">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 row bigsection">
         <div class="image-container" v-for="item in bigWork" :key="item.text">
           <div class="image-box">
-            <div class="card">
-              <router-link :to="`${item.template}/${item.url}`">
-                <img class="card-img-top" :src="item.image" />
-              </router-link>
-              <div class="card-body">
-                <p>{{ item.description }}</p>
-                <h2>{{ item.title }}</h2>
-              </div>
-            </div>
+            <img class="images" :src="item.image" />
+            <p>{{ item.description }}</p>
+            <hr>
+            <h2>{{ item.title }}</h2>
+            <router-link :to="`${item.template}/${item.link}`">
+              <button>
+                <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
+              </button>
+            </router-link>
           </div>
         </div>
       </div>
-      <div class="scroll col-lg-6">
-        <div class="col-lg-6 section" id="section">
-          <div class="image-container" v-for="item in work" :key="item.text">
-            <div class="image-box">
-              <router-link :to="`${item.template}/${item.url}`">
-                <img class="img-fluid" :src="item.image" />
-              </router-link>
-              <p>{{ item.description }}</p>
-              <hr />
-              <h2>{{ item.title }}</h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 section section1" id="section">
-          <div
-            class="image-container"
-            v-for="item in workright"
-            :key="item.text"
-          >
-            <div class="image-box">
-              <router-link :to="`${item.template}/${item.url}`">
-                <img class="img-fluid" :src="item.image" />
-              </router-link>
-              <p>{{ item.description }}</p>
-              <hr />
-              <h2>{{ item.title }}</h2>
-            </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 row section" id="section">
+        <div class="image-container" v-for="item in work" :key="item.text">
+          <div class="image-box">
+            <img class="images" :src="item.image" />
+            <p>{{ item.description }}</p>
+            <hr>
+            <h2>{{ item.title }}</h2>
+            <router-link :to="`${item.template}/${item.url}`">
+              <button>
+                <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
+              </button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -64,7 +47,6 @@ export default {
       title: "",
       description: "",
       work: [],
-      workright: [],
       bigWork: [],
     };
   },
@@ -72,7 +54,6 @@ export default {
     this.title = LatestWork.title;
     this.description = LatestWork.description;
     this.work = LatestWork.work;
-    this.workright = LatestWork.workright;
     this.bigWork = LatestWork.bigWork;
   },
 };
@@ -80,153 +61,118 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/main.scss";
-.title {
-  margin-top: 2rem;
-  hr {
-    width: 220px;
-    border-bottom: 4px solid #2B2D42;
-    margin-left: 0px;
-  }
+.header-text {
+  justify-content: center;
   h2 {
-    color: #2B2D42;
-    text-align: left;
-    margin-top: -1rem;
+    color: #2b2d42;
+    margin-bottom: 40px;
   }
 }
-.ourwork {
-  padding: 0, 5rem;
+.ourwork{
+  overflow: scroll;
+  scroll-behavior: smooth;
+  height: 665px;
+  margin-bottom: 7rem;
 }
-.bigsection {
+.bigsection{
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 170px;
   .image-container {
-    .card {
-      width: 100%;
-      border: none;
-      .card-body {
-        p {
-          position: absolute;
-          margin-top: -30rem;
-          padding-left: 1rem;
-          padding-right: 2rem;
-        }
-        h2 {
-          position: relative;
-          margin-top: -20rem;
-        }
-      }
+  height: 300px;
+  margin-right: 35px;
+    .images {
+    width: 536px;
+    height: 665px;
+    margin-left: -6rem;
     }
-    p {
-      color: white;
-      font-size: 14px;
-    }
-    h2 {
-      color: white;
-      font-size: 30px;
-    }
-  }
-}
-.scroll {
-  overflow-y: scroll;
-  display: flex;
-  height: 51.8rem;
-  .image-container {
-    margin-bottom: 4rem;
-    p {
-      color: black;
-      font-size: 14px;
-      text-align: left;
-    }
-    h2 {
+    p{
+      margin-top: -30rem;
       max-width: 315px;
-      color: black;
-      font-size: 20px;
-      margin-top: 0px;
-      text-align: left;
-    }
-    hr {
-      width: 60%;
-      margin-left: 0px;
-      border-bottom: 3px solid #ef233c;
-      border-top: none;
-    }
-  }
-}
-// .section1 {
-//   margin-top: 5rem;
-// }
-::-webkit-scrollbar {
-  display: none;
-}
-@media only screen and (max-width: 1100px) {
-  .scroll {
-    height: 37.5rem;
-  }
-  .bigsection {
-    .image-container {
-      .card {
-        .card-body {
-          p {
-            position: absolute;
-            margin-top: -25rem;
-            margin-left: -2rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-          }
-          h2 {
-            position: relative;
-            margin-top: -10rem;
-          }
-          hr {
-            margin-top: -12rem;
-            margin-left: 7rem;
-            position: absolute;
-          }
-        }
+      color: white;
       }
+    h2{
+      max-width: 315px;
+      color: white;
     }
   }
 }
-@media only screen and (max-width: 1100px) and (orientation: landscape) {
-  .scroll {
-    height: 120vh;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .ourwork {
-    padding: 0px;
-  }
-  .scroll {
-    display: block;
-    margin-left: 0px;
-    padding-left: 2.5rem;
+.section{
+  margin-left: 40rem;
     .image-container {
+      margin-right: 70px;
       width: 15rem;
-    }
-  }
-  .bigsection {
-    padding-left: 5.5rem;
-    padding-right: 5rem;
-    .image-container {
-      .card {
-        width: 20rem;
-        border: none;
-        margin-left: -4.5rem;
-        margin-right: auto;
-        .card-body {
-          padding: 2rem;
-          p {
-            position: absolute;
-            margin-top: -25rem;
-            margin-left: -2rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-          }
-          h2 {
-            position: relative;
-            margin-top: -10rem;
-          }
-        }
+      .images {
+        width: 250px;
+        height: 250px;
       }
+      p{
+        max-width: 315px;
+        color: black;
+        font-size: 14px;
+      }
+      h2{
+        max-width: 315px;
+        color: black;
+        font-size: 15px;
+        margin-top: 0px;
+      }
+  }
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+// .section {
+//   justify-content: center;
+//   margin-bottom: 170px;
+//   .image-container {
+//     height: 300px;
+//     margin-right: 35px;
+//     .images {
+//       width: 300px;
+//       height: 300px;
+//     }
+//     &:hover {
+//       background-color: #ef233c;
+//       .images {
+//         visibility: hidden;
+//       }
+//       .image-box {
+//         display: block;
+//       }
+//     }
+//   }
+//   .image-box {
+//     display: none;
+//     color: white;
+//     max-width: 300px;
+//     max-height: 300px;
+//     p {
+//       margin: 100px auto 30px;
+//       font-weight: 700;
+//       font-size: 40px;
+//     }
+//     button {
+//       border-radius: 100%;
+//       padding: 20px 23px;
+//       border: none;
+//       background-color: white;
+//       .arrow-icon {
+//         color: #c971f3;
+//       }
+//     }
+//   }
+// }
+@media only screen and (max-width: 576px) {
+  .section {
+    margin: 0 auto 50px;
+    justify-content: center;
+    .image-container {
+      margin: 0 auto 50px;
     }
   }
 }
+
 </style>

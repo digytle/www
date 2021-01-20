@@ -5,33 +5,22 @@ description: We have offices in Dundee (Scotland), London (England), Amsterdam, 
 bigWork:
 - title: Blits ChatBots
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/blits.bot.png
-  template: person
-  url: blits
+  image: assets/blits.png
+  template: featurettes
+  link: blits2
 work:
 - title: Blits ChatBots
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png
-  template: person
-  url: blits
+  template: featurettes
+  link: blits
 - title: Stichting Bedrijfsfinanciering
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/sbf.png
-  template: person
-  url: sbf
-workright:
-- title: Blits ChatBots
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/blits.png
-  template: person
-  url: blits
-- title: Stichting Bedrijfsfinanciering
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/sbf.png
-  template: person
-  url: sbf
+  template: featurettes
+  link: sbf
 - title: AUXTA
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/auxta.png
-  template: person
-  url: auxta
+  template: featurettes
+  link: auxta
