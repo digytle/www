@@ -93,6 +93,13 @@ export default {
 }
 @media only screen and (max-width: 576px) {
   .card{
+    h3{
+      max-width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 605px) {
+  .card{
     margin-bottom: 2rem;
   }
 }

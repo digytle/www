@@ -128,7 +128,7 @@ p {
 }
 @media only screen and (max-width: 1300px) {
   .logo {
-  margin-left: 2rem;
+  margin-left: 4rem;
   }
   .location {
   margin-left: 4rem;

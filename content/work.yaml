@@ -5,10 +5,21 @@ description: We have offices in Dundee (Scotland), London (England), Amsterdam, 
 bigWork:
 - title: Blits ChatBots
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
+  image: assets/blits.bot.png
+  template: featurettes
+  link: blits
+work:
+- title: Blits ChatBots
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png
   template: featurettes
-  link: blits2
-work:
+  link: blits
+- title: Stichting Bedrijfsfinanciering
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
+  image: assets/sbf.png
+  template: featurettes
+  link: sbf
+workright:
 - title: Blits ChatBots
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png

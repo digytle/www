@@ -1,5 +1,4 @@
 <template>
-    <router-link :to="`/${storyBase.template}/${storyBase.link}`">
         <div class="container" id="story" >
             <div class="row-md-12 title">
                 <img class="img-fluid logo" src="/assets/logo.png" />
@@ -8,16 +7,19 @@
             <div class="container">
                 <div class="row padding element">
                     <div class="col-md-6">
+                        <router-link :to="`/${storyBase.template}/${storyBase.link}`">
                         <h2>{{story.title}}</h2>
                         <p>{{story.summary}}</p>
+                        </router-link>
                     </div>
                     <div class="col-md-6 col-sm-12">
+                        <router-link :to="`/${storyBase.template}/${storyBase.link}`">
                         <img class="img-fluid" src="/assets/Digytle.stories.png" />
+                        </router-link>
                     </div>
                 </div>
             </div>
         </div>
-    </router-link>
 </template>
 
 <script>
@@ -59,10 +61,14 @@ export default {
     }
 }
 .element{
+    a:hover {
+      text-decoration: none;
+    }
     h2{
         text-align: left;
         max-width: 611px;
         font-size: 35px;
+        color: #2B2D42;
     }
     p{
         text-align: left;
@@ -70,15 +76,13 @@ export default {
         margin-top: 2rem;
         margin-bottom: 6rem;
         font-size: 18px;
+        color: #2B2D42;
     }
     img{
         width: 406px;
         height: auto;
         margin-top: -5rem;
         transition: 0.3s;
-        &:hover{
-            width: 380px;
-        }
     }
 }
 @media only screen and (max-width: 576px) {
