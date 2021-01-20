@@ -48,7 +48,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
-  margin-top: 8rem;
+  margin-top: 5rem;
   .title{
     hr{
         width: 200px;

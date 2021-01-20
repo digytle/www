@@ -81,7 +81,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/main.scss";
 .title {
-  margin-top: 5rem;
+  margin-top: 2rem;
   hr {
     width: 220px;
     border-bottom: 4px solid #2B2D42;
@@ -150,9 +150,9 @@ export default {
     }
   }
 }
-.section1 {
-  margin-top: 5rem;
-}
+// .section1 {
+//   margin-top: 5rem;
+// }
 ::-webkit-scrollbar {
   display: none;
 }

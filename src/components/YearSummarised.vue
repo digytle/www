@@ -40,7 +40,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .title{
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     hr{
         width: 330px;

@@ -2,7 +2,7 @@
   <div class="element">
     <div class="row-lg-12 footer">
       <div class="col-lg-4">
-        <img class=" logo" :src="logo" />
+        <img class="img-fluid logo" :src="logo" />
       </div>
       <div class="col-lg-4 location">
         <img :src="locationPoint" />
@@ -66,16 +66,20 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-
+.element{
+   background-color: #3a3c48;
+}
 .footer {
-  background-color: #3a3c48;
-  width: 100vw;
+  max-width: 1400px;
   margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .logo {
   margin-top: 5rem;
-  margin-left: 5rem;
-  max-width: 25rem;
+  max-width: 80%;
+  margin-left: -5rem;
 }
 p {
   text-align: left;
@@ -86,8 +90,8 @@ p {
   font-family: $font__title;
 }
 .location {
-  margin-left: 5rem;
   margin-top: 5rem;
+  max-width: 20rem;
   img {
     width: 1.3rem;
     margin-right: 50rem;
@@ -97,7 +101,6 @@ p {
   }
 }
 .contacts {
-  margin-left: 5rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
   img {
@@ -114,37 +117,44 @@ p {
 .copyright {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   p {
     text-align: center;
     font-size: 17px;
   }
   img {
     padding: 1rem;
-    width: 3.5rem;
   }
 }
-// @media only screen and (min-width: 1600px) {
-//   .logo {
-//   margin-left: -15rem;
-//   }
-// }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1300px) {
   .logo {
-  margin-left: -11rem;
-  width: 80%;
+  margin-left: 2rem;
   }
-}
-@media only screen and (max-width: 450px) {
   .location {
-    margin-left: 0rem;
+  margin-left: 4rem;
   }
   .contacts {
-    margin-left: 0rem;
+  margin-left: 4rem;
   }
+}
+@media only screen and (max-width: 1000px) {
+  .logo {
+  margin-left: -5rem;
+  width: 80%;
+  }
+  .location {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  }
+  .contacts {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+}
+@media only screen and (max-width: 450px) {
   .logo {
   margin-left: 0rem;
-  width: 80%;
   }
 }
 </style>

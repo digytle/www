@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="what-we-do">
     <div id="what-we-do">
       <div class="title">
         <hr class="line" />
@@ -101,7 +101,7 @@ export default {
 @import "../assets/main.scss";
 .title {
   margin-left: 1rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
   hr {
     width: 200px;
     border-bottom: 4px solid #2b2d42;

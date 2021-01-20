@@ -30,7 +30,7 @@
             <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
               firstComponent
             }}</router-link>
-            <router-link class="li" to="#WeAre" v-scroll-to="'#we-are'">{{
+            <router-link class="li" to="#what-we-do" v-scroll-to="'#what-we-do'">{{
               secondComponent
             }}</router-link>
             <router-link
@@ -47,7 +47,7 @@
             >
             <router-link
               class="li"
-              to="#featurette"
+              to="#features"
               v-scroll-to="'#features'"
               >{{ fifthComponent }}</router-link
             >
@@ -55,25 +55,6 @@
         </div>
       </div>
     </nav>
-    <!-- <div class="col-md-5 buttons">
-      <div class="row">
-        <router-link to="/" v-scroll-to="'#navigation'">{{
-          firstComponent
-        }}</router-link>
-        <router-link to="#WeAre" v-scroll-to="'#we-are'">{{
-          secondComponent
-        }}</router-link>
-        <router-link to="#latest-work" v-scroll-to="'#latest-work'">{{
-          thirdComponent
-        }}</router-link>
-        <router-link to="#YearSummarised" v-scroll-to="'#YearSummarised'">{{
-          fourthComponent
-        }}</router-link>
-        <router-link to="#featurette" v-scroll-to="'#features'">{{
-          fifthComponent
-        }}</router-link>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -93,6 +74,8 @@ export default {
     };
   },
   mounted() {
+    let scrollto = this.$router.history.current.hash;
+    document.getElementById(scrollto.replace('#', ''))?.scrollIntoView();
     this.logoBlack = navigation.logoBlack;
     this.logoWhite = navigation.logoWhite;
     this.firstComponent = navigation.firstComponent;

@@ -6,7 +6,8 @@ infoDescription: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di
 dropDownButton: Our other products 
 sections:
 - title: "MKB Financiering: finance your business with ease"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+  description: 
+  - DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
   subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   image: /assets/mkb_pc_image.png
@@ -16,7 +17,8 @@ sections:
   button: Go to website
   buttonImage: /assets/button_arrow.svg
 - title: "Blits ChatBots"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+  description: 
+  - DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
   subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   image: /assets/blits_pc_image.png
@@ -26,7 +28,8 @@ sections:
   button: Go to website
   buttonImage: /assets/button_arrow.svg
 - title: "Access App: Safe & queue-free visiting"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+  description: 
+  - DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
   subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   image: /assets/access_pc_image.png
@@ -36,7 +39,8 @@ sections:
   button: Go to website
   buttonImage: /assets/button_arrow.svg
 - title: "Green Atlas"
-  description: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+  description: 
+  - DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   subTitle: "Challenge & Process"
   subDescription: DESCRIPTION TEXT Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
   image: /assets/green_atlas_pc_image.png
