@@ -7,20 +7,20 @@ bigWork:
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png
   template: featurettes
-  url: blits
+  link: blits
 work:
 - title: Blits ChatBots
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png
-  template: feature
-  url: blits
+  template: featurettes
+  link: blits
 - title: Stichting Bedrijfsfinanciering
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/sbf.png
-  template: feature
-  url: sbf
+  template: featurettes
+  link: sbf
 - title: AUXTA
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/auxta.png
-  template: feature
-  url: auxta
+  template: featurettes
+  link: auxta

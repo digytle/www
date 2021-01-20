@@ -13,10 +13,15 @@ const routes = [{
     component: MainPage
   },
   {
-    path: '/person/**',
+    path: '/featurettes',
+    redirect: '/'
+  },
+  {
+    path: '/featurettes/**',
     name: 'Featurette',
     component: Featurette
-  }, {
+  },
+  {
     path: '/feature/**',
     name: 'DesignPage',
     component: DesignPage

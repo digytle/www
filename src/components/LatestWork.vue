@@ -11,7 +11,7 @@
             <p>{{ item.description }}</p>
             <hr>
             <h2>{{ item.title }}</h2>
-            <router-link :to="`${item.template}/${item.url}`">
+            <router-link :to="`${item.template}/${item.link}`">
               <button>
                 <b-icon class="arrow-icon" icon="arrow-right"></b-icon>
               </button>
