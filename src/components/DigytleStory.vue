@@ -1,39 +1,20 @@
 <template>
-    <div class="container" id="story">
-        <div class="row-md-12 title">
-            <img class="img-fluid logo" src="/assets/logo.png" />
-            <p>Stories</p>
-        </div>
-        <div class="container">
-            <div class="row padding element">
-                <div class="col-md-6">
-                    <h2>{{title}}</h2>
-                    <p>{{summary}}</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <img class="img-fluid" src="/assets/Digytle.stories.png" />
-                </div>
-            </div>
-        </div>
+    <div>
+        {{data}}
     </div>
 </template>
 
 <script>
-import Stories from "js-yaml-loader!../../content/stories.yaml";
 export default {
-   name: "Stories",
+   name: "DigytleStory",
   data() {
     return {
-      title: [],
-      summary: [],
-        features: [],
+        data: {}
     };
   },
 
   mounted() {
-    this.title = Stories.title;
-    this.summary = Stories.summary;
-    this.features = Stories.features;
+    this.data = require(`js-yaml-loader!../../content/stories/${this.$route.params.pathMatch}.yaml`);
   },
 };
 </script>

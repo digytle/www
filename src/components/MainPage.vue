@@ -4,7 +4,7 @@
     <Header></Header>
     <WeAre></WeAre>
     <WhatWeDo></WhatWeDo>
-    <DigytleStory></DigytleStory>
+    <DigytleStoryPreview></DigytleStoryPreview>
     <LatestWork></LatestWork>
     <YearSummarised></YearSummarised>
     <Features></Features>
@@ -17,7 +17,7 @@ import Navigation from "./Navigation";
 import Header from "./Header";
 import WeAre from "./WeAre";
 import WhatWeDo from "./WhatWeDo";
-import DigytleStory from "./DigytleStory";
+import DigytleStoryPreview from "./DigytleStoryPreview";
 import LatestWork from "./LatestWork";
 import YearSummarised from "./YearSummarised";
 import Features from "./Features";
@@ -30,7 +30,7 @@ export default {
     Header,
     WeAre,
     WhatWeDo,
-    DigytleStory,
+    DigytleStoryPreview,
     LatestWork,
     YearSummarised,
     Features,

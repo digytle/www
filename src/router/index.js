@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Featurette from '../components/Featurette'
+import DigytleStory from '../components/DigytleStory'
 import DesignPage from '../components/DesignPage'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 import Book from '../components/Book'
@@ -20,6 +21,15 @@ const routes = [{
     path: '/featurettes/**',
     name: 'Featurette',
     component: Featurette
+  },
+  {
+    path: '/stories',
+    redirect: '/'
+  },
+  {
+    path: '/stories/**',
+    name: 'DigytleStory',
+    component: DigytleStory
   },
   {
     path: '/feature/**',
