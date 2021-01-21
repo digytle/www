@@ -81,8 +81,6 @@ export default {
     img{
         width: 406px;
         height: auto;
-        margin-top: -5rem;
-        transition: 0.3s;
     }
 }
 @media only screen and (max-width: 576px) {

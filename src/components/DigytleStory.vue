@@ -1,12 +1,19 @@
 <template>
-    <div>
-        {{data}}
+    <div class="fea">
+    <Navigation></Navigation>
+    <div class="container">
+      {{data}}
     </div>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 export default {
    name: "DigytleStory",
+   components: { Navigation, Footer },
   data() {
     return {
         data: {}

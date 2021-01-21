@@ -1,12 +1,14 @@
 <template>
   <div class="privacy-policy">
     <Navigation></Navigation>
+    <div class="container">
     <h1 class="title">{{ data.title }}</h1>
     <div class="row privacy">
-      <div class="content" v-for="section in data.content" :key="section.text">
+      <div class="col-lg-12 content" v-for="section in data.content" :key="section.text">
         <h2>{{ section.sectionTitle }}</h2>
         <p>{{ section.text }}</p>
       </div>
+    </div>
     </div>
     <Footer></Footer>
   </div>
@@ -36,18 +38,19 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.privacy-policy{
+  overflow: hidden;
+}
 .privacy-policy {
   .row {
     margin-right: 0;
   }
   .title{
-    margin-top: 20rem;
+    margin-top: 10rem;
   }
   .privacy {
-    margin-left: 170px;
     text-align: left;
     h1 {
-      margin-top: 100px;
       color: #2b2d42;
       margin-bottom: 100px;
     }

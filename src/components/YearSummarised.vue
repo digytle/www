@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div id="YearSummarised">
+    <div class="YearSummarised" id="YearSummarised">
         <div class="title">
             <hr>
             <h2>{{title}}</h2>
@@ -39,6 +39,9 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
+.YearSummarised{
+    padding: 1rem;
+}
 .title{
     margin-top: 3rem;
     margin-bottom: 3rem;

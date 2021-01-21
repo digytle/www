@@ -1,9 +1,7 @@
 <template>
   <div class="element">
     <div class="row-lg-12 footer">
-      <div class="col-lg-4">
-        <img class="img-fluid logo" :src="logo" />
-      </div>
+      <img class="logo" :src="logo" />
       <div class="col-lg-4 location">
         <img :src="locationPoint" />
         <p>{{ address }}</p>
@@ -74,12 +72,13 @@ export default {
   margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
-
 }
 .logo {
   margin-top: 5rem;
-  max-width: 80%;
-  margin-left: -5rem;
+  margin-bottom: 2rem;
+  max-width: 30%;
+  float: left;
+  margin-left: 1rem;
 }
 p {
   text-align: left;
@@ -126,35 +125,34 @@ p {
     padding: 1rem;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 700px) {
   .logo {
-  margin-left: 4rem;
-  }
-  .location {
-  margin-left: 4rem;
-  }
-  .contacts {
-  margin-left: 4rem;
+  max-width: 40%;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 400px) {
   .logo {
-  margin-left: -5rem;
-  width: 80%;
-  }
-  .location {
-  margin-top: 5rem;
-  margin-left: 2rem;
-  }
-  .contacts {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  margin-left: 2rem;
-}
-}
-@media only screen and (max-width: 450px) {
-  .logo {
-  margin-left: 0rem;
+  max-width: 60%;
   }
 }
+// @media only screen and (max-width: 1000px) {
+//   .logo {
+//   margin-left: -5rem;
+//   width: 80%;
+//   }
+//   .location {
+//   margin-top: 5rem;
+//   margin-left: 2rem;
+//   }
+//   .contacts {
+//   margin-top: 2rem;
+//   margin-bottom: 5rem;
+//   margin-left: 2rem;
+// }
+// }
+// @media only screen and (max-width: 450px) {
+//   .logo {
+//   margin-left: 0rem;
+//   }
+// }
 </style>
