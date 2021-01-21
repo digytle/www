@@ -11,12 +11,12 @@
           <div class="image-box">
             <div class="card">
               <router-link :to="`${item.template}/${item.link}`">
-                <img class="card-img-top" :src="item.image" />
-              </router-link>
+                <img class="card-img-top img" :src="item.image" />
               <div class="card-body">
                 <p>{{ item.description }}</p>
                 <h2>{{ item.title }}</h2>
               </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default {
 @import "../assets/main.scss";
 .container {
   padding: 1.8rem;
-  // scroll-snap-type: y;
+  scroll-snap-type: y;
 }
 .title {
   hr {
@@ -99,17 +99,22 @@ export default {
 .ourwork{
   overflow-y: scroll;
   scroll-snap-type: y;
-  // scroll-snap-type: center;
-  height: 100vh;
+  max-height: 100vh;
 }
 .bigsection {
-  scroll-snap-type: start;
-  scroll-snap-type: end;
+  scroll-snap-type: start mandatory;
+  scroll-snap-type: end mandatory;
   position: sticky;
   top: 0px;
+  max-height: 100vh;
+  a:hover {
+      text-decoration: none;
+    }
   .image-container {
+    .img{
+      height: 120%;
+    }
     .card {
-      width: 100%;
       border: none;
       .card-body {
         p {
@@ -166,11 +171,20 @@ export default {
 ::-webkit-scrollbar {
   display: none;
 }
-@media only screen and (max-width: 1100px) {
-  .scroll {
-    height: 10rem;
+@media only screen and (min-width: 1600px) {
+  .ourwork {
+    height: 73vh;
   }
   .bigsection {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .ourwork {
+    height: 43vh;
+  }
+  .bigsection {
+    height: 40vh;
     .image-container {
       .card {
         .card-body {
@@ -181,38 +195,40 @@ export default {
             padding-left: 2rem;
             padding-right: 2rem;
           }
-          h2 {
-            position: relative;
-            margin-top: -10rem;
-          }
-          hr {
-            margin-top: -12rem;
-            margin-left: 7rem;
-            position: absolute;
-          }
         }
       }
     }
   }
 }
-@media only screen and (max-width: 1100px) and (orientation: landscape) {
-  .scroll {
-    height: 64vh;
+@media only screen and (max-width: 1367px) and (orientation: landscape) {
+  .ourwork {
+    height: 78vh;
+  }
+  .bigsection {
+    height: 50vh;
   }
 }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-  .scroll {
-    height: 65vh;
+  .ourwork {
+    height: 76vh;
   }
+  .bigsection {
+  height: 20vh;
+}
 }
 @media only screen and (max-width: 991.5px) {
+  .ourwork {
+    height: 100vh;
+  }
   .bigsection {
   position: relative;
+  height: 90vh;
 }
 }
 @media only screen and (max-width: 450px) {
   .ourwork {
     padding: 0px;
+    height: 100vh;
   }
   .scroll {
     display: block;
@@ -222,6 +238,7 @@ export default {
     }
   }
   .bigsection {
+    height: 70vh;
     .image-container {
       .card {
         border: none;
