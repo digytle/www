@@ -2,11 +2,11 @@
   <div class="container" id="features">
     <div class="col">
       <div class="title">
-        <hr class="line">
+        <hr class="line" />
         <h2>{{ headerText }}</h2>
       </div>
       <div class="row">
-           <div
+        <div
           class="col-lg-3 col-md-6 col-sm-12 info-cards"
           v-for="feature in features"
           :key="feature.name"
@@ -15,8 +15,8 @@
             <div class="card">
               <img class="card-img-top" :src="feature.image" />
               <div class="card-body">
-              <h3>{{ feature.name }}</h3>
-              <p>{{ feature.description }}</p>
+                <h3>{{ feature.name }}</h3>
+                <p>{{ feature.description }}</p>
               </div>
             </div>
           </router-link>
@@ -49,15 +49,15 @@ export default {
 @import "../assets/main.scss";
 .container {
   margin-top: 5rem;
-  .title{
-    hr{
-        width: 200px;
-        border-bottom: 4px solid #2B2D42;
-        border-top: none;
-        margin-left: 0px;
+  .title {
+    hr {
+      width: 200px;
+      border-bottom: 4px solid #2b2d42;
+      border-top: none;
+      margin-left: 0px;
     }
-    h2{
-      color: #2B2D42;
+    h2 {
+      color: #2b2d42;
       text-align: left;
       margin-top: -1rem;
     }
@@ -67,7 +67,7 @@ export default {
     a:hover {
       text-decoration: none;
     }
-    .card{
+    .card {
       border: none;
     }
     h3 {
@@ -81,7 +81,7 @@ export default {
     }
     p {
       font-weight: 300;
-      color: #51586D;
+      color: #51586d;
       font-size: 16px;
       line-height: 25px;
     }
@@ -90,26 +90,35 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 320px) {
+  .container {
+    .info-cards {
+      h3 {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 576px) {
-  .card{
-    h3{
+  .card {
+    h3 {
       max-width: 100%;
     }
   }
 }
 @media only screen and (max-width: 605px) {
-  .card{
+  .card {
     margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 1100px) {
-  .container{
-  .info-cards{
-    h3{
-      margin-bottom: 4rem;
-      width: 100%;
+  .container {
+    .info-cards {
+      h3 {
+        margin-bottom: 4rem;
+        width: 100%;
+      }
     }
-  }
   }
 }
 </style>
