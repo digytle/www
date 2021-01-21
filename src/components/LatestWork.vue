@@ -97,20 +97,14 @@ export default {
   }
 }
 .ourwork{
-  overflow-y: scroll;
-  scroll-snap-type: y;
-  max-height: 100vh;
 }
 .bigsection {
-  scroll-snap-type: start mandatory;
-  scroll-snap-type: end mandatory;
-  position: sticky;
-  top: 0px;
-  max-height: 100vh;
   a:hover {
       text-decoration: none;
     }
   .image-container {
+    position: sticky;
+    top: 5px;
     .img{
       height: 120%;
     }
@@ -134,7 +128,6 @@ export default {
 }
 .scroll {
   display: flex;
-  height: 20rem;
   .image-container {
     p {
       color: black;
