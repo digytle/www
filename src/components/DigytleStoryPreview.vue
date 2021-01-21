@@ -52,7 +52,6 @@ export default {
     margin-left: 1rem;
     img{
         height: 107px;
-        width: auto;
     }
     p{
         margin-top: 3rem;
@@ -83,20 +82,27 @@ export default {
     //     height: auto;
     // }
 }
+// @media only screen and (max-width: 576px) {
+//   .title{
+//     display: block;
+//      p{
+//         margin-top: 1rem;
+//         margin-left: 0rem;
+//     }
+//     }
+// }
 @media only screen and (max-width: 576px) {
   .title{
     display: block;
-     p{
+    p{
         margin-top: 1rem;
         margin-left: 0rem;
+        padding-right: 2rem;
     }
-    }
-}
-@media only screen and (max-width: 576px) {
-  .title{
     img{
         height: auto;
         width: auto;
+        padding-right: 2rem;
     }
 }
 }

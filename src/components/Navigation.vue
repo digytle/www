@@ -94,6 +94,7 @@ export default {
   background-color: white;
   color: #464646;
   margin-bottom: 100px;
+  width: 100%;
   font-family: $font__menu;
   .logo {
     display: flex;

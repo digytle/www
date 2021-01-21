@@ -149,4 +149,20 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 800px) {
+  .title {
+  margin-left: 1rem;
+  margin-top: 7rem;
+  hr {
+    width: 200px;
+    border-bottom: 4px solid #2b2d42;
+    margin-left: 0px;
+  }
+  h2 {
+    color: #2B2D42;
+    text-align: left;
+    margin-top: -1rem;
+  }
+}
+}
 </style>

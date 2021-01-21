@@ -47,5 +47,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/main.scss";
-
+// .main-page{
+//   overflow: hidden;
+// }
 </style>

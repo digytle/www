@@ -66,6 +66,7 @@ export default {
 @import "../assets/main.scss";
 .element{
    background-color: #3a3c48;
+   overflow: hidden;
 }
 .footer {
   max-width: 1400px;
@@ -93,7 +94,7 @@ p {
   max-width: 20rem;
   img {
     width: 1.3rem;
-    margin-right: 50rem;
+    margin-right: 20rem;
   }
   p {
     font-size: 17px;
@@ -102,9 +103,11 @@ p {
 .contacts {
   margin-top: 2rem;
   margin-bottom: 5rem;
+  max-width: 20rem;
   img {
     width: 1.3rem;
-    margin-right: 50rem;
+    margin-left: 0px;
+    margin-right: 20rem;
   }
   .emails {
     padding-right: 0;

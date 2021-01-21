@@ -75,7 +75,6 @@ export default {
       margin-top: -3.5rem;
       padding-left: 1rem;
       padding-top: 0.5rem;
-      width: 110%;
       height: 3rem;
       background-color: white;
       margin-bottom: 2rem;
@@ -108,7 +107,7 @@ export default {
   .info-cards{
     h3{
       margin-bottom: 4rem;
-      width: 130%;
+      width: 100%;
     }
   }
   }

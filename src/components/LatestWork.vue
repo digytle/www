@@ -12,10 +12,10 @@
             <div class="card">
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="card-img-top img" :src="item.image" />
-              <div class="card-body">
-                <p>{{ item.description }}</p>
-                <h2>{{ item.title }}</h2>
-              </div>
+                <div class="card-body">
+                  <p>{{ item.description }}</p>
+                  <h2>{{ item.title }}</h2>
+                </div>
               </router-link>
             </div>
           </div>
@@ -96,18 +96,13 @@ export default {
     margin-top: -1rem;
   }
 }
-.ourwork{
-}
 .bigsection {
   a:hover {
-      text-decoration: none;
-    }
+    text-decoration: none;
+  }
   .image-container {
     position: sticky;
-    top: 5px;
-    .img{
-      height: 120%;
-    }
+    top: 0px;
     .card {
       border: none;
       .card-body {
@@ -164,64 +159,27 @@ export default {
 ::-webkit-scrollbar {
   display: none;
 }
-@media only screen and (min-width: 1600px) {
-  .ourwork {
-    height: 73vh;
-  }
-  .bigsection {
-    height: 60vh;
-  }
-}
 @media only screen and (max-width: 1100px) {
-  .ourwork {
-    height: 43vh;
-  }
   .bigsection {
-    height: 40vh;
     .image-container {
       .card {
         .card-body {
           p {
-            position: absolute;
             margin-top: -25rem;
-            margin-left: -2rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
           }
         }
       }
     }
   }
 }
-@media only screen and (max-width: 1367px) and (orientation: landscape) {
-  .ourwork {
-    height: 78vh;
-  }
-  .bigsection {
-    height: 50vh;
-  }
-}
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
-  .ourwork {
-    height: 76vh;
-  }
-  .bigsection {
-  height: 20vh;
-}
-}
 @media only screen and (max-width: 991.5px) {
-  .ourwork {
-    height: 100vh;
-  }
   .bigsection {
-  position: relative;
-  height: 90vh;
-}
+    position: relative;
+  }
 }
 @media only screen and (max-width: 450px) {
   .ourwork {
     padding: 0px;
-    height: 100vh;
   }
   .scroll {
     display: block;
@@ -231,25 +189,78 @@ export default {
     }
   }
   .bigsection {
-    height: 70vh;
     .image-container {
       .card {
         border: none;
         .card-body {
           p {
-            margin-left: -2rem;
             margin-top: -20rem;
           }
           h2 {
             margin-top: 0px;
-            color: black;
+            color: white;
           }
         }
       }
     }
   }
   .section1 {
-  margin-left: 0rem;
+    margin-left: 0rem;
+  }
 }
+@media only screen and (max-width: 376px) {
+  .bigsection {
+    .image-container {
+      .card {
+        .card-body {
+          h2 {
+            margin-top: 0px;
+            color: black;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .ourwork {
+    padding: 0px;
+  }
+  .scroll {
+    display: block;
+    margin-left: 0px;
+    .image-container {
+      width: 105%;
+    }
+  }
+  .bigsection {
+    .image-container {
+      .card {
+        .card-body {
+          h2 {
+            margin-top: 0px;
+            color: black;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bigsection {
+    .image-container {
+      .card {
+        .card-body {
+          h2 {
+            margin-top: 0px;
+            color: black;
+            margin-top: -5rem;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
