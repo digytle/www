@@ -168,7 +168,7 @@ export default {
     .mainnav {
       position: absolute;
       margin-top: 10rem;
-      margin-left: -5rem;
+      margin-left: 0rem;
     }
   }
 }

@@ -97,7 +97,7 @@ export default {
 }
 .ourwork{
   overflow-y: scroll;
-  scroll-snap-align: start ;
+  scroll-snap-stop: start ;
   height: 100vh;
 }
 .bigsection {
@@ -125,8 +125,7 @@ export default {
 }
 .scroll {
   display: flex;
-  height: 5rem;
-  height: 100vh;
+  height: 20rem;
   .image-container {
     p {
       color: black;
@@ -199,7 +198,7 @@ export default {
 }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .scroll {
-    height: 75vh;
+    height: 65vh;
   }
 }
 @media only screen and (max-width: 991.5px) {
