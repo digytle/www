@@ -82,6 +82,7 @@ export default {
 @import "../assets/main.scss";
 .container {
   padding: 1.8rem;
+  // scroll-snap-type: y;
 }
 .title {
   hr {
@@ -97,10 +98,13 @@ export default {
 }
 .ourwork{
   overflow-y: scroll;
-  scroll-snap-stop: start ;
+  scroll-snap-type: y;
+  // scroll-snap-type: center;
   height: 100vh;
 }
 .bigsection {
+  scroll-snap-type: start;
+  scroll-snap-type: end;
   position: sticky;
   top: 0px;
   .image-container {

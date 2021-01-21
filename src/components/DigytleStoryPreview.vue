@@ -78,10 +78,10 @@ export default {
         font-size: 18px;
         color: #2B2D42;
     }
-    img{
-        width: 406px;
-        height: auto;
-    }
+    // img{
+    //     width: 406px;
+    //     height: auto;
+    // }
 }
 @media only screen and (max-width: 576px) {
   .title{
@@ -91,5 +91,13 @@ export default {
         margin-left: 0rem;
     }
     }
+}
+@media only screen and (max-width: 576px) {
+  .title{
+    img{
+        height: auto;
+        width: auto;
+    }
+}
 }
 </style>
