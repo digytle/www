@@ -74,6 +74,7 @@ export default {
       margin-top: -3.5rem;
       h3 {
         color: #333333;
+        margin-bottom: 1rem;
         padding-left: 0.5rem;
         padding-top: 0.5rem;
         background-color: white;

@@ -129,6 +129,7 @@ export default {
       font-size: 14px;
       text-align: left;
       margin-top: 1rem;
+      padding-right: 0.7rem;
     }
     h2 {
       max-width: 315px;
@@ -175,6 +176,12 @@ export default {
 @media only screen and (max-width: 991.5px) {
   .bigsection {
     position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  
+    .section1 {
+    margin-right: -1rem;
   }
 }
 @media only screen and (max-width: 450px) {

@@ -121,7 +121,6 @@ export default {
     margin-top: 2rem;
     h2 {
       margin-top: -4rem;
-      height: 5rem;
       padding: 1rem;
       font-size: 24px;
       background-color: white;
@@ -140,14 +139,7 @@ export default {
   }
 }
 @media only screen and (max-width: 1100px) {
-  .element {
-    .long,
-    .short {
-      h2 {
-        margin-bottom: 3rem;
-      }
-    }
-  }
+  
 }
 @media only screen and (max-width: 800px) {
   .title {

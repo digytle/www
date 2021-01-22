@@ -131,6 +131,7 @@ export default {
 @media only screen and (min-width: 1700px) {
   .navigation{
     margin-left: 10rem;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 768px) {
