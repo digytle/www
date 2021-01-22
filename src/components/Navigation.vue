@@ -1,6 +1,6 @@
 <template>
   <div class="row navigation">
-    <div class="col-md-6 logo">
+    <div class="logo">
       <router-link to="/">
         <img
           :src="
