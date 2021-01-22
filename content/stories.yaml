@@ -1,4 +1,4 @@
 stories:
   - name: AccessApp
-    template: stories
+    template: featurettes
     link: accessapp

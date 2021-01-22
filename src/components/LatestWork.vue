@@ -179,8 +179,7 @@ export default {
   }
 }
 @media only screen and (max-width: 768px) {
-  
-    .section1 {
+  .section1 {
     margin-right: -1rem;
   }
 }

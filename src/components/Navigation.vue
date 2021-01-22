@@ -10,7 +10,8 @@
               : logoBlack
           "
           class="img-fluid logo"
-      /></router-link>
+        />
+      </router-link>
     </div>
     <nav class="navbar navbar-expand-md navbar-light mainnav">
       <div class="container-fluid asd">
