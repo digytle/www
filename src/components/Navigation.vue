@@ -123,6 +123,12 @@ export default {
     position: absolute;
     margin-top: 9.5rem;
     margin-left: 2.5rem;
+    .navlist{
+      ul{
+        white-space: nowrap;
+        white-space: pre;
+      }
+    }
   }
   .navbarsmall {
     border: none;
