@@ -6,6 +6,7 @@ bigWork:
 - title: Blits ChatBots
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.bot.png
+  imagePad: assets/blits.bot.half.png
   template: featurettes
   link: blits
 work:

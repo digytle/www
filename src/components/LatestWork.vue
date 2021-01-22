@@ -11,6 +11,7 @@
           <div class="image-box">
             <div class="card">
               <router-link :to="`${item.template}/${item.link}`">
+                <img class="card-img-top img-pad" :src="item.imagePad" />
                 <img class="card-img-top img" :src="item.image" />
                 <div class="card-body">
                   <p>{{ item.description }}</p>
@@ -105,6 +106,12 @@ export default {
     top: 0px;
     .card {
       border: none;
+      .img-pad {
+        display: none;
+      }
+      img {
+        display: block;
+      }
       .card-body {
         p {
           margin-top: -40rem;
@@ -176,11 +183,69 @@ export default {
 @media only screen and (max-width: 991.5px) {
   .bigsection {
     position: relative;
+    .image-container {
+      position: sticky;
+      top: 0px;
+      .card {
+        border: none;
+        .img-pad {
+          display: block;
+        }
+        img {
+          display: none;
+        }
+        .card-body {
+          p {
+            margin-top: -20rem;
+            color: white;
+            font-size: 14px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+          h2 {
+            color: white;
+            font-size: 30px;
+          }
+        }
+      }
+    }
   }
+  
 }
 @media only screen and (max-width: 768px) {
   .section1 {
     margin-right: -1rem;
+  }
+  .bigsection {
+    a:hover {
+      text-decoration: none;
+    }
+    .image-container {
+      position: sticky;
+      top: 0px;
+      .card {
+        border: none;
+        .img-pad {
+          display: block;
+        }
+        img {
+          display: none;
+        }
+        .card-body {
+          p {
+            margin-top: -20rem;
+            color: white;
+            font-size: 14px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+          h2 {
+            color: white;
+            font-size: 30px;
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 450px) {
@@ -198,6 +263,12 @@ export default {
     .image-container {
       .card {
         border: none;
+        .img-pad {
+          display: none;
+        }
+        img {
+          display: block;
+        }
         .card-body {
           p {
             margin-top: -20rem;
