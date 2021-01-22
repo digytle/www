@@ -8,6 +8,7 @@
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 text">
             <h1>{{ text }}</h1>
+            <h1>test to see if acceptance updates</h1>
             <p>{{ description }}</p>
           </div>
         </div>
