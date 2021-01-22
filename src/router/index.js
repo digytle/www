@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Template from '../components/Template'
-import DigytleStory from '../components/DigytleStory'
+// import DigytleStory from '../components/DigytleStory'
 // import DesignPage from '../components/DesignPage'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 import Book from '../components/Book'
@@ -26,11 +26,11 @@ const routes = [{
     path: '/stories',
     redirect: '/'
   },
-  {
-    path: '/stories/**',
-    name: 'DigytleStory',
-    component: DigytleStory
-  },
+  // {
+  //   path: '/stories/**',
+  //   name: 'DigytleStory',
+  //   component: DigytleStory
+  // },
   // {
   //   path: '/feature/**',
   //   name: 'DesignPage',
