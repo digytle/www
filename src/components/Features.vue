@@ -70,54 +70,23 @@ export default {
     .card {
       border: none;
     }
-    h3 {
-      color: #333333;
+    .card-body{
       margin-top: -3.5rem;
-      padding-left: 1rem;
-      padding-top: 0.5rem;
-      height: 3rem;
-      background-color: white;
-      margin-bottom: 2rem;
-    }
-    p {
-      font-weight: 300;
-      color: #51586d;
-      font-size: 16px;
-      line-height: 25px;
+      h3 {
+        color: #333333;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        background-color: white;
+      }
+      p {
+        margin-top: 0rem;
+        color: #51586d;
+        font-size: 16px;
+        line-height: 25px;
+      }
     }
     img {
       width: 100%;
-    }
-  }
-}
-@media only screen and (max-width: 320px) {
-  .container {
-    .info-cards {
-      h3 {
-        margin-bottom: 5rem;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 576px) {
-  .card {
-    h3 {
-      max-width: 100%;
-    }
-  }
-}
-@media only screen and (max-width: 605px) {
-  .card {
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .container {
-    .info-cards {
-      h3 {
-        margin-bottom: 4rem;
-        width: 100%;
-      }
     }
   }
 }
