@@ -11,7 +11,7 @@ features:
   image: assets/Caterina_AboutPage.png
   link: learn-more
   template: featurettes
-- name: Scratch for Executives
+- name: Coding for Executives
   description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
   image: assets/maxresdefault.png
   link: scratch-for-executives
