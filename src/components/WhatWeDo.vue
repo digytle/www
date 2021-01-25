@@ -114,7 +114,7 @@ export default {
   }
 }
 .element {
-  margin-top: -2rem;
+  margin-top: -1rem;
   .long,
   .short {
     border: none;

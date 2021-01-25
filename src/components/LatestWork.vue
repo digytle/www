@@ -29,9 +29,9 @@
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
               </router-link>
-              <p>{{ item.description }}</p>
-              <hr />
               <h2>{{ item.title }}</h2>
+              <p>{{ item.description }}</p>
+              <!-- <hr /> -->
             </div>
           </div>
         </div>
@@ -45,9 +45,9 @@
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
               </router-link>
-              <p>{{ item.description }}</p>
-              <hr />
               <h2>{{ item.title }}</h2>
+              <p>{{ item.description }}</p>
+              <!-- <hr /> -->
             </div>
           </div>
         </div>
@@ -86,6 +86,8 @@ export default {
   scroll-snap-type: y;
 }
 .title {
+  margin-top: -4rem;
+  margin-bottom: 1.5rem;
   hr {
     width: 220px;
     border-bottom: 4px solid #2b2d42;
@@ -132,26 +134,31 @@ export default {
   display: flex;
   .image-container {
     p {
-      color: black;
-      font-size: 14px;
+      color: #51586D;
+      font-size: 16px;
       text-align: left;
-      margin-top: 1rem;
+      margin-bottom: 2rem;
       padding-right: 0.7rem;
     }
     h2 {
-      max-width: 315px;
+      position: relative;
+      max-width: 250px;
       color: black;
-      font-size: 20px;
-      margin-top: 0px;
+      font-size: 24px;
       text-align: left;
-      margin-bottom: 3rem;
+      margin-top: -2rem;
+      margin-left: 4rem;
+      margin-bottom: 1.5rem;
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+      background-color: white;
     }
-    hr {
-      width: 60%;
-      margin-left: 0px;
-      border-bottom: 3px solid #ef233c;
-      border-top: none;
-    }
+    // hr {
+    //   width: 60%;
+    //   margin-left: 0px;
+    //   border-bottom: 3px solid #ef233c;
+    //   border-top: none;
+    // }
   }
 }
 .section {
@@ -163,6 +170,7 @@ export default {
 }
 .section1 {
   margin-left: 1rem;
+  
 }
 ::-webkit-scrollbar {
   display: none;

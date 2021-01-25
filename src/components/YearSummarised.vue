@@ -43,7 +43,7 @@ export default {
     padding: 1rem;
 }
 .title{
-    margin-top: 3rem;
+    margin-top: -1.5rem;
     margin-bottom: 3rem;
     hr{
         width: 330px;
@@ -63,7 +63,7 @@ export default {
     margin-bottom: 3rem;
 }
 .description{
-    border-left: 2px solid black;
+    // border-left: 2px solid black;
     height: 5rem;
     margin: 0 auto;
     margin-left: 13rem;
@@ -74,6 +74,7 @@ export default {
         padding-top: 1rem;
         padding-left: 1rem;
         font-style: italic;
+        border-left: 2px solid black;
     }
 }
 @media only screen and (max-width: 1000px){

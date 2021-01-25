@@ -87,7 +87,8 @@ p {
   font-size: 14px;
   margin-bottom: 0;
   color: #edf2f4;
-  font-family: $font__title;
+  font-family: $font__menu;
+  font-weight: 300;
 }
 .location {
   margin-top: 5rem;

@@ -74,23 +74,28 @@ export default {
         max-width: 517px;
         margin-top: 2rem;
         margin-bottom: 6rem;
-        font-size: 18px;
-        color: #2B2D42;
+        font-size: 16px;
+        color: #51586D;
     }
-    // img{
-    //     width: 406px;
-    //     height: auto;
-    // }
+    img{
+        margin-top: -7rem;
+    }
 }
-// @media only screen and (max-width: 576px) {
-//   .title{
-//     display: block;
-//      p{
-//         margin-top: 1rem;
-//         margin-left: 0rem;
-//     }
-//     }
-// }
+@media only screen and (max-width: 900px) {
+  .element{
+        img{
+            margin-top: -2rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+  .element{
+        img{
+            margin-top: -5rem;
+        }
+    }
+}
 @media only screen and (max-width: 576px) {
   .title{
     display: block;

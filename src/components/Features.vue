@@ -48,8 +48,9 @@ export default {
 <style scoped lang="scss">
 @import "../assets/main.scss";
 .container {
-  margin-top: 5rem;
+  margin-top: 3rem;
   .title {
+    margin-bottom: 1rem;
     hr {
       width: 200px;
       border-bottom: 4px solid #2b2d42;
@@ -81,7 +82,7 @@ export default {
       }
       p {
         margin-top: 0rem;
-        color: #51586d;
+        color: #51586D;
         font-size: 16px;
         line-height: 25px;
       }
