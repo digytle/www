@@ -3,35 +3,35 @@ description: We have offices in Dundee (Scotland), London (England), Amsterdam, 
     Darmstadt and Müncich (Germany) and Sofia (Bulgaria) and specialises in cutting edge technology and digital products in the FinTech,
     RegTech and GeoSpacial areas of expertise. Here are some of our latest victories.
 bigWork:
-- title: Blits ChatBots
+- title: 
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.bot.png
   imagePad: assets/blits.bot.half.png
   template: featurettes
   link: blits
 work:
-- title: Blits ChatBots
+- title: Blits.ai
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png
   template: featurettes
   link: blits
-- title: Stichting Bedrijfsfinanciering
+- title: greenaltas.earth
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/sbf.png
   template: featurettes
   link: sbf
 workright:
-- title: Blits ChatBots
+- title: Stichting Bedrijfsfinanciering
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/blits.png
   template: featurettes
   link: blits
-- title: Stichting Bedrijfsfinanciering
+- title: Solidvest
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/sbf.png
   template: featurettes
   link: sbf
-- title: AUXTA
+- title: Thomas Lloyd
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
   image: assets/auxta.png
   template: featurettes
