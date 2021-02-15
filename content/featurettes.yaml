@@ -6,8 +6,8 @@ features:
   image: assets/41v5mLXBRaL.png
   link: leadership
   template: featurettes
-- name: Caterina Maniscalco
-  description: Caterina Maniscalco is a partner in a London consulting firm, with 20 years of experience across several industries in digital transformation and innovation.
+- name: Conversational Bots
+  description: Blits.ai is ...
   image: assets/Caterina_AboutPage.png
   link: learn-more
   template: featurettes
@@ -16,8 +16,8 @@ features:
   image: assets/maxresdefault.png
   link: scratch-for-executives
   template: featurettes
-- name: Caterina Maniscalco
-  description: Caterina Maniscalco is a partner in a London consulting firm, with 20 years of experience across several industries in digital transformation and innovation.
+- name: Automated Deep Quality And Compliance Monitoring
+  description: We offer peace of mind.
   image: assets/Caterina_AboutPage.png
   link: learn-more
   template: featurettes
