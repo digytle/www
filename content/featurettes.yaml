@@ -9,7 +9,7 @@ features:
 - name: Conversational Bots
   description: Blits.ai is ...
   image: assets/Caterina_AboutPage.png
-  link: learn-more
+  link: conversational-chatbots
   template: featurettes
 - name: Coding for Executives
   description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
