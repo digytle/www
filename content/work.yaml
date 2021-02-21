@@ -1,10 +1,10 @@
-title: Latest Work
-description: We have offices in Dundee (Scotland), London (England), Amsterdam, Rotterdam and Delft (The Netherlands),
-    Darmstadt and Müncich (Germany) and Sofia (Bulgaria) and specialises in cutting edge technology and digital products in the FinTech,
-    RegTech and GeoSpacial areas of expertise. Here are some of our latest victories.
+# TODO
+# The count does not work.
+# Do the left and right w/ the mechanics of the site.
+title: Latest Workл
 bigWork:
 - title: 
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
+  description: Blits.ai is a chatbot management system.
   image: assets/blits.bot.png
   imagePad: assets/blits.bot.half.png
   template: featurettes
@@ -22,7 +22,7 @@ work:
   link: sbf
 workright:
 - title: Stichting Bedrijfsfinanciering
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
+  description: A complex marketplace for informing, educating SMES, and helping them prepare and choose a financing product.
   image: assets/blits.png
   template: featurettes
   link: blits
