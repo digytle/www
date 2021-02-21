@@ -15,6 +15,11 @@ sections:
 # TODO
 # impement the action to allow one or more buttons w/ url and image
 action:
-  - button:
-      - url:
-      - image:
+  - background:
+  - buttons:
+      - button:
+          - url:
+          - image:
+      - button:
+          - url:
+          - image:
