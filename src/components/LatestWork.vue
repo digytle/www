@@ -7,11 +7,10 @@
 
     <div class="row ourwork">
       <div class="col-lg-6 bigsection">
-        <div class="image-container" v-for="item in bigWork" :key="item.text">
+        <div class="image-container" v-for="item in big" :key="item.text">
           <div class="image-box">
             <div class="card">
               <router-link :to="`${item.template}/${item.link}`">
-                <img class="card-img-top img-pad" :src="item.imagePad" />
                 <img class="card-img-top img" :src="item.image" />
                 <div class="card-body">
                   <p>{{ item.description }}</p>
@@ -24,21 +23,19 @@
       </div>
       <div class="scroll col-lg-6">
         <div class="col-lg-6 section" id="section">
-          <div class="image-container" v-for="item in work" :key="item.text">
-            <div class="image-box" v-for="item in work" :key="item.text">
+          <div class="image-container" v-for="item in left" :key="item.text">
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
               </router-link>
               <h2>{{ item.title }}</h2>
               <p>{{ item.description }}</p>
               <!-- <hr /> -->
-            </div>
           </div>
         </div>
         <div class="col-lg-6 section section1" id="section">
           <div
             class="image-container"
-            v-for="item in workright"
+            v-for="item in right"
             :key="item.text"
           >
             <div class="image-box">
@@ -64,17 +61,17 @@ export default {
     return {
       title: "",
       description: "",
-      work: [],
-      workright: [],
-      bigWork: [],
+      left: [],
+      right: [],
+      big: [],
     };
   },
   mounted() {
     this.title = LatestWork.title;
     this.description = LatestWork.description;
-    this.work = LatestWork.work;
-    this.workright = LatestWork.workright;
-    this.bigWork = LatestWork.bigWork;
+    this.left = LatestWork.left;
+    this.right = LatestWork.right;
+    this.big = LatestWork.big;
   },
 };
 </script>

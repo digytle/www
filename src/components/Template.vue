@@ -57,7 +57,26 @@
           }"
         >
           <img class="img-fluid" v-if="section.image" :src="section.image" />
+          <img class="img-fluid" v-if="section.image" :src="section.image2" />
+          <img class="img-fluid" v-if="section.image" :src="section.image3" />
         </div>
+      </div>
+    </div>
+    <div
+      class="work-with-us"
+      :style="{ 'background-image': `url('${background}')` }"
+    >
+      <div class="work" v-for="section in data.action" :key="section.question">
+        <h2>{{ section.question }}</h2>
+        <p class="text">
+          {{ section.description }}
+        </p>
+        <a href="section.url" class="link1" :style="{ 'background-image': `url('${ section.image }')` }">{{ section.button }}</a>
+        <a href="section.url2" class="link1" :style="{ 'background-image': `url('${ section.image2 }')` }">{{ section.button2 }}</a>
+        <a href="section.url3" class="link2" :style="{ 'background-image': `url('${ section.image3 }')` }">{{ section.button3 }}</a>
+        <a href="section.url4" class="link2" :style="{ 'background-image': `url('${ section.image4 }')` }">{{ section.button4 }}</a>
+        <a href="section.url5" class="link2" :style="{ 'background-image': `url('${ section.image5 }')` }">{{ section.button5 }}</a>
+        <a href="section.url6" class="link2" :style="{ 'background-image': `url('${ section.image6 }')` }">{{ section.button6 }}</a>
       </div>
     </div>
     <Footer></Footer>
@@ -77,8 +96,11 @@ export default {
       logoBlack: {},
       home: "",
       about: "",
-      work: "",
+      action: "",
       contacts: "",
+      sections: [],
+      faces: [],
+      background: {},
     };
   },
   mounted() {
@@ -86,8 +108,11 @@ export default {
     this.logoBlack = navigation.logoBlack;
     this.home = navigation.home;
     this.about = navigation.about;
-    this.work = navigation.work;
+    this.action = navigation.action;
     this.contacts = navigation.contacts;
+    this.sections = this.data.sections;
+    this.faces = this.data.faces;
+    this.background = this.data.background;
   },
 };
 </script>
@@ -180,6 +205,40 @@ export default {
       }
     }
   }
+}
+.images-at-bot{
+  img{
+    padding: 1rem;
+  }
+}
+.work-with-us{
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-position: top;
+  h2, p {
+    color: white;
+    width: 50%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.link{
+  background-repeat: no-repeat;
+  text-decoration: none;
+  background-color: #ef233c;
+  color: white;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: 20px;
+}
+.link1{
+  padding: 2% 8% 2% 8%;
+  background-repeat: no-repeat;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1100px) {
   .info {
