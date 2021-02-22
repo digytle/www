@@ -1,14 +1,16 @@
 <template>
 <div class="container">
     <div class="YearSummarised" id="YearSummarised">
-        <div class="title">
-            <hr>
-            <h2>{{title}}</h2>
-        </div>
-            <img class="img-fluid hero" :src="image" />
-        <div class="description">
-            <h2>{{description}}</h2>
-        </div>
+        <router-link :to="`${template}/${link}`">
+            <div class="title">
+                <hr>
+                <h2>{{title}}</h2>
+            </div>
+                <img class="img-fluid hero" :src="image" />
+            <div class="description">
+                <h2>{{description}}</h2>
+            </div>
+        </router-link>
     </div>
 </div>
 </template>
@@ -41,6 +43,16 @@ export default {
 @import "../assets/main.scss";
 .YearSummarised{
     padding: 1rem;
+    h2{
+        color:#2B2D42;
+    }
+    a:hover {
+      text-decoration: none;
+      color: #2B2D42;
+    }
+    h2:hover {
+      text-decoration: none;
+    }
 }
 .title{
     margin-top: -1.5rem;
