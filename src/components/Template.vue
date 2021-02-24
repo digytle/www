@@ -2,12 +2,13 @@
   <div class="fea">
     <Navigation></Navigation>
     <div class="container">
-      <div class="row">
+      <div class="row head">
         <div class="col-lg-5 image">
           <img class="img-fluid" :src="data.image" />
         </div>
         <div class="col-lg-5 header">
           <h1>{{ data.title }}</h1>
+          <hr>
           <p>{{ data.description }}</p>
         </div>
       </div>
@@ -159,21 +160,28 @@ export default {
 }
 .image {
   margin-top: 10rem;
+  margin-left: auto;
 }
 .header {
-  margin-top: 0px;
-  margin-left: 0px;
+  margin-top: 10%;
+  margin-right: auto;
   text-align: left;
   h1 {
     color: #ef233c;
-    margin-top: 15rem;
+    margin-top: 11rem;
   }
   p {
     margin-top: 0px;
-    max-width: 618px;
+    max-width: 500px;
     color: #2B2D42;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
+    font-family:  $font__menu;
+  }
+  hr{
+    border-top: 3px solid red;
+    width: 40%;
+    margin-left: 0px;
+    margin-top: 3rem;
   }
 }
 .sub-info {
@@ -330,6 +338,9 @@ export default {
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  p{
+    font-family: $font__menu;
   }
   .link{
   background-repeat: no-repeat;
