@@ -1,3 +1,27 @@
+# header:
+#   image:
+#   title:
+#     title:
+#     colour:
+#   description:
+# sections:
+#   - section:
+#     title:
+#       title:
+#       colour:
+#     image:
+#       url:
+#       title:
+#       description:
+#     text:
+#       - (paragraph)
+#       - (paragraph)
+#     quote:
+#       - (paragraph)
+#       - (paragraph)
+# THIS SECTION CAN BE REPEATED MANY TIMES
+# IF WE WANT 3 IMAGES AFTER ANOTHER WE REPEAT THREE SECTIONS THAT CONTAIN ONLY IMAGES
+
 image: ../assets/caterina.png
 color: "#ffffff"
 title: Distributed Leadership
