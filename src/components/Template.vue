@@ -2,20 +2,37 @@
   <div class="fea">
     <Navigation></Navigation>
     <div class="container">
-      <div class="row">
+      <div class="row head">
         <div class="col-lg-5 image">
           <img class="img-fluid" :src="data.image" />
         </div>
-        <div class="col-lg-5 info">
+        <div class="col-lg-5 header">
           <h1>{{ data.title }}</h1>
+          <hr>
           <p>{{ data.description }}</p>
         </div>
       </div>
-      <div class="information">
+      <div class="sub-info">
         <h2>{{ data.subTitle }}</h2>
         <p>{{ data.subDescription }}</p>
       </div>
-      <div class="quote col-7">
+      <div
+        class="images"
+        v-for="(section, index) in data.sections"
+        :key="index"
+        :class="{
+          first: index == 0,
+          second: index == 1,
+        }"
+      >
+        <img class="img-fluid" v-if="section.image" :src="section.image" />
+        <div class="image-title">
+          <h3>{{ section.imageTitle }}</h3>
+          <span>{{ section.imageDescription }}</span>
+          <hr>
+        </div>
+      </div>
+      <div class="col-7 quote">
         <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
           <img :src="paragraph.bigQuotes" />
           <h2>{{ paragraph.text }}</h2>
@@ -47,18 +64,37 @@
             </div>
           </div>
         </div>
-        <div
-          class="row images-at-bot"
-          v-for="(section, index) in data.sections"
-          :key="index"
-          :class="{
-            first: index == 0,
-            second: index == 1,
-          }"
-        >
-          <img class="img-fluid" v-if="section.image" :src="section.image" />
-          <img class="img-fluid" v-if="section.image" :src="section.image2" />
-          <img class="img-fluid" v-if="section.image" :src="section.image3" />
+      </div>
+      <div
+        class="images-left"
+        v-for="(section, index) in data.sections"
+        :key="index"
+        :class="{
+          first: index == 0,
+          second: index == 1,
+        }"
+      >
+        <div class="image-title">
+          <h3>{{ section.imageTitle2 }}</h3>
+          <span>{{ section.imageDescription2 }}</span>
+          <hr>
+        </div>
+        <img class="img-fluid" v-if="section.image2" :src="section.image2" />
+      </div>
+      <div
+        class="images-right"
+        v-for="(section, index) in data.sections"
+        :key="index"
+        :class="{
+          first: index == 0,
+          second: index == 1,
+        }"
+      >
+        <img class="img-fluid" v-if="section.image3" :src="section.image2" />
+        <div class="image-title">
+          <h3>{{ section.imageTitle3 }}</h3>
+          <span>{{ section.imageDescription3 }}</span>
+          <hr>
         </div>
       </div>
     </div>
@@ -123,66 +159,79 @@ export default {
   overflow: hidden;
 }
 .image {
-  margin-top: 15rem;
+  margin-top: 10rem;
+  margin-left: auto;
 }
-.info {
-  margin-top: 130px;
-  margin-left: 115px;
+.header {
+  margin-top: 10%;
+  margin-right: auto;
   text-align: left;
   h1 {
     color: #ef233c;
-    margin-top: 15rem;
+    margin-top: 11rem;
   }
   p {
-    margin-top: 50px;
-    max-width: 590px;
-    color: #8d99ae;
-    font-weight: 400;
+    margin-top: 0px;
+    max-width: 500px;
+    color: #2B2D42;
+    font-size: 15px;
+    font-family:  $font__menu;
+  }
+  hr{
+    border-top: 3px solid red;
+    width: 40%;
+    margin-left: 0px;
+    margin-top: 3rem;
   }
 }
-.information {
-  margin-top: 5rem;
+.sub-info {
+  margin-top: 4rem;
   margin-bottom: 55px;
   h2 {
     color: #ef233c;
   }
   p {
-    color: #8d99ae;
+    color: #2B2D42;
     text-align: left;
-    max-width: 1250px;
+    max-width: 618px;
     margin: 0 auto;
+    font-size: 18px;
   }
 }
 .quote {
   margin: 20px auto 20px;
   position: relative;
+  max-width: 618px;
+  margin-top: 3rem;
   h2 {
     text-align: left;
-    max-width: 845px;
     font-size: 17px;
     line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .row {
   margin: 0 auto 0px;
 }
 .first {
+  margin-bottom: 2rem;
   p {
     text-align: left;
-    color: #8d99ae;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    color: #2B2D42;
+    max-width: 618px;
+    font-size: 18px;
   }
   h1 {
     text-align: left;
   }
 }
 .second {
-  margin-top: -7rem;
+  margin-top: -4rem;
   .book {
     p {
       text-align: left;
-      color: #8d99ae;
+      color: #2B2D42;
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -206,13 +255,81 @@ export default {
     }
   }
 }
-.images-at-bot{
+.images{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: fit-content;
+  .image-title{
+    max-width: 205px;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 20%;
+    text-align: left;
+    h3{
+      font-size: 16px;
+    }
+    span{
+      font-size: 12px;
+    }
+    hr{
+      border-top: #ef233c solid 3px;
+    }
+  }
+}
+.images-left{
+  margin-left: 150px;
+  margin-right: auto;
+  display: flex;
+  width: fit-content;
   img{
-    padding: 1rem;
+    width: 618px;
+    margin-left: 0px;
+  }
+  .image-title{
+    max-width: 205px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 10%;
+    text-align: left;
+    h3{
+      font-size: 16px;
+    }
+    span{
+      font-size: 12px;
+    }
+    hr{
+      border-top: #ef233c solid 3px;
+    }
+  }
+}
+.images-right{
+  margin-left: auto;
+  margin-right: 150px;
+  display: flex;
+  width: fit-content;
+  img{
+    width: 618px;
+  }
+  .image-title{
+    max-width: 205px;
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 20px;
+    text-align: left;
+    h3{
+      font-size: 16px;
+    }
+    span{
+      font-size: 12px;
+    }
+    hr{
+      border-top: #ef233c solid 3px;
+    }
   }
 }
 .work-with-us{
-  padding-top: 140px;
+  padding-top: 3rem;
   padding-bottom: 140px;
   background-position: top;
   h2, p {
@@ -222,8 +339,10 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
-}
-.link{
+  p{
+    font-family: $font__menu;
+  }
+  .link{
   background-repeat: no-repeat;
   text-decoration: none;
   background-color: #ef233c;
@@ -234,12 +353,14 @@ export default {
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: 20px;
+  }
+  .link1{
+    padding: 2% 8% 2% 8%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+  }
 }
-.link1{
-  padding: 2% 8% 2% 8%;
-  background-repeat: no-repeat;
-  text-decoration: none;
-}
+
 @media only screen and (max-width: 1100px) {
   .info {
     margin-left: 0px;

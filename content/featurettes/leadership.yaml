@@ -1,8 +1,33 @@
-image: ../assets/Caterina.png
-title: Distributed Leadership
-description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  
-subTitle: Title
-subDescription: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+# header:
+#   image:
+#   title:
+#     title:
+#     colour:
+#   description:
+# sections:
+#   - section:
+#     title:
+#       title:
+#       colour:
+#     image:
+#       url:
+#       title:
+#       description:
+#     text:
+#       - (paragraph)
+#       - (paragraph)
+#     quote:
+#       - (paragraph)
+#       - (paragraph)
+# THIS SECTION CAN BE REPEATED MANY TIMES
+# IF WE WANT 3 IMAGES AFTER ANOTHER WE REPEAT THREE SECTIONS THAT CONTAIN ONLY IMAGES
+
+image: ../assets/caterina.png
+color: "#ffffff"
+title: Distributed Leadership and Digital Innovation
+description: There are books one should read after one has lived a bit. Or shall I say—suffered.
+subTitle: Caterina Maniscalco
+subDescription: My restlessness has been stretching my personal and business relationships for four decades, so "distributed" drew my attention immediately. Followed by the plurality, even though I would not limit leadership to two, but two is a good starting point for the weak at heart. And eventually—by the "there are no heroes" approach, which one comes across time and again in the book. An approach I have been embracing since I read Elliott Jaques' Executive Leadership, and have been practicing during the last years as part of the highly egalitarian and entrepreneurial Dutch culture, in which I could participate. /// Great book for those hungry for concise and academically well founded literature—to confirm, encourage, challenge and shape their worldview and thought process.
 quote:
 - bigQuotes: ../assets/big_quotes.svg
   text: "Empower your senior team members: you can’t do it all, and you owe it to yourself as well as the team members that work for you to give them a chance to spread their wings and take on additional responsibility that — should their own careers progress — they will need to take on eventually themselves."
@@ -14,12 +39,17 @@ sections:
   - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
   - At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 
-  image: ../assets/youtube_image.png
-  image2: ../assets/youtube_image.png
-  image3: ../assets/youtube_image.png
+  image: ../assets/test.png
+  imageTitle: This is a photo of our project
+  imageDescription:  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  
+  image2: ../assets/dolce.png
+  imageTitle2: This is a second wide photo of our project
+  imageDescription2:  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
 
-# TODO
-# impement the action to allow one or more buttons w/ url and image
+  image3: ../assets/dolce.png
+  imageTitle3: This is a third wide photo of our project
+  imageDescription3:  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
 action:
 - question: Are you interested in working with us?
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam

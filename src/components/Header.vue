@@ -25,14 +25,12 @@ export default {
       text: "",
       description: "",
       image: {},
-      arrow: {},
     };
   },
   mounted() {
     this.text = header.text;
     this.description = header.description;
     this.image = header.image;
-    this.arrow = header.arrow;
   },
 };
 </script>
@@ -43,7 +41,7 @@ export default {
   margin-top: 12rem;
   .text {
     text-align: left;
-    margin-top: 5rem;
+    margin-top: 3rem;
     h1 {
       font-size: 52px;
       color: #ef233c;
