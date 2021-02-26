@@ -11,7 +11,7 @@
             <div class="card long">
               <img
                 class="card-img-top first-image"
-                src="/assets/what-we-do-long-1.svg" 
+                src="/assets/what-we-do-long-1.jpg" 
               />
               <div class="card-body">
                 <h2 class="right-text">{{ headerFirst }}</h2>
@@ -23,7 +23,7 @@
             <div class="card short">
               <img
                 class="card-img-top first-image"
-                src="/assets/what-we-do-short-1.svg"
+                src="/assets/what-we-do-short-1.png"
               />
               <div class="card-body">
                 <h2>{{ headerSecond }}</h2>
@@ -47,7 +47,7 @@
             <div class="card short">
               <img
                 class="card-img-top first-image"
-                src="/assets/what-we-do-short-2.svg" 
+                src="/assets/what-we-do-short-2.png" 
               />
               <div class="card-body">
                 <h2>{{ headerForth }}</h2>
