@@ -108,7 +108,6 @@
           {{ section.description }}
         </p>
         <div class="cta">
-          <h2>{{ section.cta }}:</h2>
           <a href="section.url"><img :src="section.image" class="button"></a>
           <a href="section.url"><img :src="section.image2" class="button"></a>
           <a href="section.url"><img :src="section.image3" class="button"></a>
@@ -187,6 +186,10 @@ export default {
 .sub-info {
   margin-top: 4rem;
   margin-bottom: 55px;
+  text-align: left;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   h2 {
     color: #ef233c;
     font-family:  $font__menu;
@@ -325,7 +328,7 @@ export default {
   }
   .button{
     width: 17%;
-    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
