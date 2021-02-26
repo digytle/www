@@ -107,12 +107,12 @@
         <p class="text">
           {{ section.description }}
         </p>
-        <a href="section.url" class="link1" :style="{ 'background-image': `url('${ section.image }')` }">{{ section.button }}</a>
-        <a href="section.url2" class="link1" :style="{ 'background-image': `url('${ section.image2 }')` }">{{ section.button2 }}</a>
-        <a href="section.url3" class="link2" :style="{ 'background-image': `url('${ section.image3 }')` }">{{ section.button3 }}</a>
-        <a href="section.url4" class="link2" :style="{ 'background-image': `url('${ section.image4 }')` }">{{ section.button4 }}</a>
-        <a href="section.url5" class="link2" :style="{ 'background-image': `url('${ section.image5 }')` }">{{ section.button5 }}</a>
-        <a href="section.url6" class="link2" :style="{ 'background-image': `url('${ section.image6 }')` }">{{ section.button6 }}</a>
+        <div class="cta">
+          <h2>{{ section.cta }}:</h2>
+          <a href="section.url"><img :src="section.image" class="button"></a>
+          <a href="section.url"><img :src="section.image2" class="button"></a>
+          <a href="section.url"><img :src="section.image3" class="button"></a>
+        </div>
       </div>
     </div>
     <Footer></Footer>
@@ -226,35 +226,7 @@ export default {
     text-align: left;
   }
 }
-.second {
-  margin-top: -4rem;
-  .book {
-    p {
-      text-align: left;
-      color: #2B2D42;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    h2 {
-      margin-top: 10rem;
-    }
-    .buy-book {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      h3 {
-        margin-top: 50px;
-        color: #8d99ae;
-        text-align: left;
-        font-size: 20px;
-      }
-      h4 {
-        text-align: left;
-        font-size: 20px;
-        color: red;
-      }
-    }
-  }
-}
+
 .images{
   margin-left: auto;
   margin-right: auto;
@@ -342,33 +314,36 @@ export default {
   p{
     font-family: $font__menu;
   }
-  .link{
-  background-repeat: no-repeat;
-  text-decoration: none;
-  background-color: #ef233c;
-  color: white;
-  border-radius: 10px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: 20px;
+  .cta{
+    background-color: white;
+    h2{
+      color: black;
+    }
   }
-  .link1{
-    padding: 2% 8% 2% 8%;
-    background-repeat: no-repeat;
-    text-decoration: none;
+  .button{
+    width: 17%;
+    margin-left: 2rem;
   }
 }
 
 @media only screen and (max-width: 1100px) {
-  .info {
-    margin-left: 0px;
-    margin-top: 20px;
-    h1 {
-      margin-top: 15rem;
-    }
+  .header {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  h1 {
+    margin-top: 0rem;
   }
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  hr{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
   .information {
     margin-top: 20px;
     padding-left: 2rem;
@@ -380,13 +355,58 @@ export default {
       margin: 0 auto;
     }
   }
+  .images-right, .images{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+    .image-title{
+      padding:0px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5%;
+      text-align: left;
+      h3{
+        font-size: 16px;
+      }
+      span{
+        font-size: 12px;
+      }
+      hr{
+        border-top: #ef233c solid 3px;
+      }
+    }
+  }
+  .images-left{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  -webkit-flex-flow: column-reverse;
+  flex-flow: column-reverse;
+    .image-title{
+      padding:0px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5%;
+      text-align: left;
+      h3{
+        font-size: 16px;
+      }
+      span{
+        font-size: 12px;
+      }
+      hr{
+        border-top: #ef233c solid 3px;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 800px) {
-  .info {
-    margin-left: 2rem;
-    margin-top: 20px;
-    h1 {
-      margin-top: 0rem;
+  .work-with-us{
+    .button{
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
     }
   }
 }
