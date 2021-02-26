@@ -76,6 +76,7 @@ export default {
         margin-bottom: 6rem;
         font-size: 16px;
         color: #51586D;
+        font-family:  $font__menu;
     }
     img{
         margin-top: -7rem;

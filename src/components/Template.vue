@@ -189,6 +189,7 @@ export default {
   margin-bottom: 55px;
   h2 {
     color: #ef233c;
+    font-family:  $font__menu;
   }
   p {
     color: #2B2D42;
@@ -209,6 +210,8 @@ export default {
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family:  $font__menu;
+    font-weight: 400;
   }
 }
 .row {

@@ -149,13 +149,9 @@ export default {
       padding-top: 0.5rem;
       padding-left: 1rem;
       background-color: white;
+      font-family:  $font__menu;
+      font-weight: 400;
     }
-    // hr {
-    //   width: 60%;
-    //   margin-left: 0px;
-    //   border-bottom: 3px solid #ef233c;
-    //   border-top: none;
-    // }
   }
 }
 .section {
