@@ -129,6 +129,7 @@ export default {
     text-align: left;
     max-width: 618px;
     margin: 0 auto;
+    margin-top: 1rem;
     font-size: 18px;
   }
 }
