@@ -2,115 +2,47 @@
   <div class="fea">
     <Navigation></Navigation>
     <div class="container">
-      <div class="row head">
+     <div class="row head">
         <div class="col-lg-5 image">
-          <img class="img-fluid" :src="data.image" />
+          <img class="img-fluid" :src="header.image" />
         </div>
-        <div class="col-lg-5 header">
-          <h1>{{ data.title }}</h1>
-          <hr>
-          <p>{{ data.description }}</p>
-        </div>
-      </div>
-      <div class="sub-info">
-        <h2>{{ data.subTitle }}</h2>
-        <p>{{ data.subDescription }}</p>
-      </div>
-      <div
-        class="images"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <img class="img-fluid" v-if="section.image" :src="section.image" />
-        <div class="image-title">
-          <h3>{{ section.imageTitle }}</h3>
-          <span>{{ section.imageDescription }}</span>
-          <hr>
+        <div class="col-lg-5 header" >
+          <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
+          <hr :style="{ color: header.title.colour }">
+          <p>{{ header.title.description }}</p>
         </div>
       </div>
-      <div class="col-7 quote">
-        <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
-          <img :src="paragraph.bigQuotes" />
-          <h2>{{ paragraph.text }}</h2>
-          <img class="small" :src="paragraph.smallQuotes" />
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="row"
-          v-for="(section, index) in data.sections"
-          :key="index"
-          :class="{
-            first: index == 0,
-            second: index == 1,
-          }"
-        >
-          <div class="book">
-            <h2>{{ section.title }}</h2>
-            <p v-for="paragraph in section.description" :key="paragraph">
-              {{ paragraph }}
-            </p>
-            <div v-if="section.question" class="buy-book row">
-              <div>
-                <h3>{{ section.question }}</h3>
-                <router-link :to="section.link">
-                  <h4>{{ section.text }}</h4>
-                </router-link>
-              </div>
-            </div>
+      <div class="sub-info" v-for="(section, index) in sections"
+        :key="index">
+        <h2 :style="{ color: section.title.colour }">{{ section.title.title }}</h2>
+        <p>{{ section.text }}</p>
+        <div class="images">
+          <img class="img-fluid" v-if="section.image" :src="section.image.url" />
+          <div class="image-title">
+            <span>{{ section.image.description }}</span>
+            <hr :style="{ color: section.image.colour }">
           </div>
         </div>
-      </div>
-      <div
-        class="images-left"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <div class="image-title">
-          <h3>{{ section.imageTitle2 }}</h3>
-          <span>{{ section.imageDescription2 }}</span>
-          <hr>
-        </div>
-        <img class="img-fluid" v-if="section.image2" :src="section.image2" />
-      </div>
-      <div
-        class="images-right"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <img class="img-fluid" v-if="section.image3" :src="section.image2" />
-        <div class="image-title">
-          <h3>{{ section.imageTitle3 }}</h3>
-          <span>{{ section.imageDescription3 }}</span>
-          <hr>
+        <div class="col-7 quote">
+          <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour}"/>
+          <h2>{{ section.quote.text }}</h2>
+          <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
         </div>
       </div>
     </div>
     <div
       class="work-with-us"
-      :style="{ 'background-image': `url('${background}')` }"
+      :style="{ 'background-image': `url('${action.text.background}')` }"
     >
-      <div class="work" v-for="section in data.action" :key="section.question">
-        <h2>{{ section.question }}</h2>
+      <div class="work">
+        <h2>{{ action.text.question }}</h2>
         <p class="text">
-          {{ section.description }}
+          {{ action.text.description }}
         </p>
-        <div class="cta">
-          <a href="section.url"><img :src="section.image" class="button"></a>
-          <a href="section.url"><img :src="section.image2" class="button"></a>
-          <a href="section.url"><img :src="section.image3" class="button"></a>
+        <div class="buttons">
+          <div class="cta" >
+            <a :href="button.link" v-for="(button, index) in buttons" :key="index"><img :src="button.image" class="button"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -119,7 +51,7 @@
 </template>
 
 <script>
-import navigation from "js-yaml-loader!../../content/navigation.yaml";
+// import navigation from "js-yaml-loader!../../content/navigation.yaml";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 export default {
@@ -128,26 +60,20 @@ export default {
   data() {
     return {
       data: {},
-      logoBlack: {},
-      home: "",
-      about: "",
-      action: "",
-      contacts: "",
-      sections: [],
-      faces: [],
       background: {},
+      header: {},
+      sections: [],
+      action: [],
+      buttons: [],
     };
   },
   mounted() {
     this.data = require(`js-yaml-loader!../../content/featurettes/${this.$route.params.pathMatch}.yaml`);
-    this.logoBlack = navigation.logoBlack;
-    this.home = navigation.home;
-    this.about = navigation.about;
-    this.action = navigation.action;
-    this.contacts = navigation.contacts;
-    this.sections = this.data.sections;
-    this.faces = this.data.faces;
     this.background = this.data.background;
+    this.header = this.data.header;
+    this.sections = this.data.sections;
+    this.action = this.data.action;
+    this.buttons = this.data.buttons;
   },
 };
 </script>
@@ -177,7 +103,7 @@ export default {
     font-family:  $font__menu;
   }
   hr{
-    border-top: 3px solid red;
+    border-top: 3px solid;
     width: 40%;
     margin-left: 0px;
     margin-top: 3rem;
@@ -191,7 +117,6 @@ export default {
   margin-left: auto;
   margin-right: auto;
   h2 {
-    color: #ef233c;
     font-family:  $font__menu;
   }
   p {
@@ -204,15 +129,14 @@ export default {
 }
 .quote {
   margin: 20px auto 20px;
-  position: relative;
   max-width: 618px;
   margin-top: 3rem;
   h2 {
+    color: #2B2D42;
     text-align: left;
     font-size: 17px;
     line-height: 30px;
     margin-top: 20px;
-    margin-bottom: 20px;
     font-family:  $font__menu;
     font-weight: 400;
   }
@@ -238,6 +162,7 @@ export default {
   margin-right: auto;
   display: flex;
   width: fit-content;
+  margin-top: 2rem;
   .image-title{
     max-width: 205px;
     height: fit-content;
@@ -251,65 +176,16 @@ export default {
       font-size: 12px;
     }
     hr{
-      border-top: #ef233c solid 3px;
+      border-top: solid 3px;
     }
   }
 }
-.images-left{
-  margin-left: 150px;
-  margin-right: auto;
-  display: flex;
-  width: fit-content;
-  img{
-    width: 618px;
-    margin-left: 0px;
-  }
-  .image-title{
-    max-width: 205px;
-    padding: 20px;
-    margin-right: 20px;
-    margin-top: 10%;
-    text-align: left;
-    h3{
-      font-size: 16px;
-    }
-    span{
-      font-size: 12px;
-    }
-    hr{
-      border-top: #ef233c solid 3px;
-    }
-  }
-}
-.images-right{
-  margin-left: auto;
-  margin-right: 150px;
-  display: flex;
-  width: fit-content;
-  img{
-    width: 618px;
-  }
-  .image-title{
-    max-width: 205px;
-    padding: 20px;
-    margin-top: 10%;
-    margin-left: 20px;
-    text-align: left;
-    h3{
-      font-size: 16px;
-    }
-    span{
-      font-size: 12px;
-    }
-    hr{
-      border-top: #ef233c solid 3px;
-    }
-  }
-}
+
 .work-with-us{
   padding-top: 3rem;
   padding-bottom: 140px;
   background-position: top;
+  background-color: rgba(109, 109, 109, 0.685);
   h2, p {
     color: white;
     width: 50%;
@@ -320,16 +196,16 @@ export default {
   p{
     font-family: $font__menu;
   }
-  .cta{
+  .buttons{
+    display: flex;
     background-color: white;
-    h2{
-      color: black;
+    .cta{
+      margin: auto;
+      .button{
+        width: 20rem;
+      }
     }
-  }
-  .button{
-    width: 17%;
-    margin-right: 2rem;
-  }
+  } 
 }
 
 @media only screen and (max-width: 1100px) {
