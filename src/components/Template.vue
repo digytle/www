@@ -15,7 +15,9 @@
       <div class="sub-info" v-for="(section, index) in sections"
         :key="index">
         <h2 :style="{ color: section.title.colour }">{{ section.title.title }}</h2>
-        <p>{{ section.text }}</p>
+        <p v-for="(text, index) in section.text" :key="index">
+          {{ text }}
+        </p>
         <div class="images">
           <img class="img-fluid" v-if="section.image" :src="section.image.url" />
           <div class="image-title">
@@ -64,6 +66,7 @@ export default {
       background: {},
       header: {},
       sections: [],
+      text: [],
       action: [],
       buttons: [],
     };
@@ -73,6 +76,7 @@ export default {
     this.background = this.data.background;
     this.header = this.data.header;
     this.sections = this.data.sections;
+    this.text = this.sections.section;
     this.action = this.data.action;
     this.buttons = this.data.buttons;
   },

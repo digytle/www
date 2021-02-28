@@ -42,7 +42,6 @@ sections:
       bigQuotes: ../assets/big_quotes.svg
       text: "Empower your senior team members: you can’t do it all, and you owe it to yourself as well as the team members that work for you to give them a chance to spread their wings and take on additional responsibility that — should their own careers progress — they will need to take on eventually themselves."
       smallQuotes: ../assets/small_quotes.svg
-  - section:
     image:
       url: ../assets/book-img.png
       title: This is a photo of our project
