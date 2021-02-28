@@ -62,7 +62,7 @@ sections:
     quote:
       colour: "#6E44FF"
       bigQuotes: ../assets/big_quotes.svg
-      text: "."
+      text: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
       smallQuotes: ../assets/small_quotes.svg
 action:
   text:
