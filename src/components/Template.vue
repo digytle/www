@@ -19,6 +19,7 @@
         <div class="images">
           <img class="img-fluid" v-if="section.image" :src="section.image.url" />
           <div class="image-title">
+            <h3>{{ section.image.title }}</h3>
             <span>{{ section.image.description }}</span>
             <hr :style="{ color: section.image.colour }">
           </div>
