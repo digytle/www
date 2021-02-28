@@ -14,11 +14,15 @@
 #       title:
 #       description:
 #     text:
-#       (paragraph)
-#       (paragraph)
+#       - (paragraph)
+#       - (paragraph)
 #     quote:
-#       (paragraph)
-#       (paragraph)
+#       text:
+#         - (paragraph)
+#         - (paragraph)
+#       author:
+#         name:
+#         organisation:
 # THIS SECTION CAN BE REPEATED MANY TIMES
 # IF WE WANT 3 IMAGES AFTER ANOTHER WE REPEAT THREE SECTIONS THAT CONTAIN ONLY IMAGES
 
@@ -37,20 +41,33 @@ sections:
       - T. E. Shaw co-founded AuxCode in 2013, while based in Germany. One of the co-founders was in Canada and one in Bulgaria.
       - AuxCode has not had defined C-level roles for the first seven years. The three co-founders took the decisions in a unnanimous, distributed manner.
       - When T. E. saw the book, he shouted "We have been doing this for years!" And the connection with Caterina Maniscalco worked from the first moment.
+  - section:
+    title:
+      title: Solid Science
+      colour: "#EF233C"
+    text:
+      - Caterina Maniscalco's book is rich in scientific research.
+      - It not only informs, instructs and inspires—but also convinces.
+  - section:
+    image:
+      url: ../assets/book-img.png
+      title: Solid Science
+      description: Written like a PhD, the book has the rare power to instruct and convince.
+      colour: "#EF233C"
+  - section:
+    text:
+      - Caterina Maniscalco is part of Digytle.
+      - Digytle is inspired by the book.
+      - Caterina is available as a consultant, lecturer and speaker.
     quote:
       colour: "#6E44FF"
       bigQuotes: ../assets/big_quotes.svg
-      text: "Empower your senior team members: you can’t do it all, and you owe it to yourself as well as the team members that work for you to give them a chance to spread their wings and take on additional responsibility that — should their own careers progress — they will need to take on eventually themselves."
+      text: "."
       smallQuotes: ../assets/small_quotes.svg
-    image:
-      url: ../assets/book-img.png
-      title: This is a photo of our project
-      description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-      colour: "#EF233C"
 action:
   text:
-    question: Are you interested in working with us?
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+    question: Would you like to read the book?
+    description: Order it from one of these selected bookstores.
     background: 
 buttons:
   - button:
