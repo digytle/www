@@ -1,31 +1,3 @@
-# header:
-#   image:
-#   title:
-#     title:
-#     colour:
-#     description:
-# sections:
-#   - section:
-#     title:
-#       title:
-#       colour:
-#     image:
-#       url:
-#       title:
-#       description:
-#     text:
-#       - (paragraph)
-#       - (paragraph)
-#     quote:
-#       text:
-#         - (paragraph)
-#         - (paragraph)
-#       author:
-#         name:
-#         organisation:
-# THIS SECTION CAN BE REPEATED MANY TIMES
-# IF WE WANT 3 IMAGES AFTER ANOTHER WE REPEAT THREE SECTIONS THAT CONTAIN ONLY IMAGES
-
 header:
   image: ../assets/caterina.png
   title:
