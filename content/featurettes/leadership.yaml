@@ -27,25 +27,27 @@ header:
   title:
     title: Distributed Leadership and Digital Innovation
     colour: "#EF233C"
-    description: There are books one should read after one has lived a bit. Or shall I say—suffered.
+    description: T. E. Shaw of Digytle discovered Distributed Learership and Digital Innovation and met the author Caerina Maniscalco.
 sections:
   - section:
     title:
-      title: Caterina Maniscalco
-      colour: "#EF233C"
-    image:
-      url: ../assets/book-img.png
-      title: This is a photo of our project
-      description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+      title: Distributed Leadership
       colour: "#EF233C"
     text:
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      - T. E. Shaw co-founded AuxCode in 2013, while based in Germany. One of the co-founders was in Canada and one in Bulgaria.
+      - AuxCode has not had defined C-level roles for the first seven years. The three co-founders took the decisions in a unnanimous, distributed manner.
+      - When T. E. saw the book, he shouted "We have been doing this for years!" And the connection with Caterina Maniscalco worked from the first moment.
     quote:
       colour: "#6E44FF"
       bigQuotes: ../assets/big_quotes.svg
       text: "Empower your senior team members: you can’t do it all, and you owe it to yourself as well as the team members that work for you to give them a chance to spread their wings and take on additional responsibility that — should their own careers progress — they will need to take on eventually themselves."
       smallQuotes: ../assets/small_quotes.svg
+  - section:
+    image:
+      url: ../assets/book-img.png
+      title: This is a photo of our project
+      description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+      colour: "#EF233C"
 action:
   text:
     question: Are you interested in working with us?
