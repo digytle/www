@@ -2,40 +2,47 @@
   <div class="fea">
     <Navigation></Navigation>
     <div class="container">
-     <div class="row head">
+      <div class="row head">
         <div class="col-lg-5 image">
           <img class="img-fluid" :src="header.image" />
         </div>
-        <div class="col-lg-5 header" >
+        <div class="col-lg-5 header">
           <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
           <hr :style="{ color: header.title.colour }">
           <p>{{ header.title.description }}</p>
         </div>
       </div>
+
       <div class="sub-info" v-for="(section, index) in sections"
         :key="index">
-        <h2 :style="{ color: section.title.colour }">{{ section.title.title }}</h2>
-        <p v-for="(text, index) in section.text" :key="index">
-          {{ text }}
-        </p>
-        <div class="images">
-          <img class="img-fluid" v-if="section.image" :src="section.image.url" />
+        <h2 v-if="section.title" :style="{ color: section.title.colour }">{{ section.title.title }}</h2>
+        <div v-if="section.text">
+          <p v-for="(text, index) in section.text" :key="index">
+            {{ text }}
+          </p>
+        </div>
+
+        <div class="images" v-if="section.image">
+          <img class="img-fluid" :src="section.image.url" />
           <div class="image-title">
             <h3>{{ section.image.title }}</h3>
             <span>{{ section.image.description }}</span>
             <hr :style="{ color: section.image.colour }">
           </div>
         </div>
-        <div class="col-7 quote">
+        
+        <div class="col-7 quote" v-if="section.quote">
           <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour}"/>
           <h2>{{ section.quote.text }}</h2>
           <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
         </div>
       </div>
+
     </div>
     <div
       class="work-with-us"
       :style="{ 'background-image': `url('${action.text.background}')` }"
+      v-if="action.text.question"
     >
       <div class="work">
         <h2>{{ action.text.question }}</h2>
@@ -44,7 +51,7 @@
         </p>
         <div class="buttons">
           <div class="cta" >
-            <a :href="button.link" v-for="(button, index) in buttons" :key="index"><img :src="button.image" class="button"></a>
+            <a :href="button.link" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
           </div>
         </div>
       </div>
@@ -118,7 +125,7 @@ export default {
   margin-top: 4rem;
   margin-bottom: 55px;
   text-align: left;
-  width: fit-content;
+  max-width: 618px;
   margin-left: auto;
   margin-right: auto;
   h2 {
