@@ -136,6 +136,7 @@ export default {
       font-size: 16px;
       text-align: left;
       margin-left: -1rem;
+      font-family:  $font__menu;
     }
   }
 }

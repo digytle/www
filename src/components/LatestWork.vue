@@ -118,6 +118,7 @@ export default {
           font-size: 14px;
           padding-left: 2rem;
           padding-right: 2rem;
+          font-family:  $font__menu;
         }
         h2 {
           color: white;
@@ -136,6 +137,7 @@ export default {
       text-align: left;
       margin-bottom: 2rem;
       padding-right: 0.7rem;
+      font-family:  $font__menu;
     }
     h2 {
       position: relative;
@@ -149,7 +151,6 @@ export default {
       padding-top: 0.5rem;
       padding-left: 1rem;
       background-color: white;
-      font-family:  $font__menu;
       font-weight: 400;
     }
   }

@@ -85,6 +85,7 @@ export default {
         color: #51586D;
         font-size: 16px;
         line-height: 25px;
+        font-family:  $font__menu;
       }
     }
     img {

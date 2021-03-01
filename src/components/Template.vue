@@ -111,7 +111,7 @@ export default {
     margin-top: 0px;
     max-width: 500px;
     color: #2B2D42;
-    font-size: 15px;
+    font-size: 18px;
     font-family:  $font__menu;
   }
   hr{
@@ -122,28 +122,29 @@ export default {
   }
 }
 .sub-info {
-  margin-top: 4rem;
+  margin-top: -2.5rem;
   margin-bottom: 55px;
   text-align: left;
   max-width: 618px;
   margin-left: auto;
   margin-right: auto;
   h2 {
-    font-family:  $font__menu;
+    font-family:  $font__title;
   }
   p {
     color: #2B2D42;
     text-align: left;
     max-width: 618px;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 0.4rem;
     font-size: 18px;
+    font-family:  $font__menu;
   }
 }
 .quote {
   margin: 20px auto 20px;
   max-width: 618px;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   h2 {
     color: #2B2D42;
     text-align: left;
@@ -195,10 +196,10 @@ export default {
 }
 
 .work-with-us{
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 140px;
   background-position: top;
-  background-color: rgba(109, 109, 109, 0.685);
+  background-color: #101742;
   h2, p {
     color: white;
     width: 50%;

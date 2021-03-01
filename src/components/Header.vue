@@ -45,9 +45,10 @@ export default {
     h1 {
       font-size: 52px;
       color: #ef233c;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
     p {
+      font-family: $font__menu;
       font-size: 20px;
       color: #51586D;
     }

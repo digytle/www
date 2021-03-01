@@ -17,8 +17,8 @@
         </div>
       </div>
       <div class="col-lg-4 copyright">
-        <img :src="twitter" />
-        <img :src="linkedin" />
+        <a href="https://www.linkedin.com/company/digytle/"><img :src="linkedin" /></a>
+         <a href="https://twitter.com/digytle"><img :src="twitter" /></a>
         <router-link to="/privacy-policy/"
           ><p>{{ privacy }}</p></router-link
         >

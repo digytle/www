@@ -3,7 +3,7 @@ header-description: Here are a person, a book and a teaching course.
 features:
 - name: Distributed Leadership and Digital Innovation
   description: 'A book before its time: Distributed Leadership and Digital Innovation is even more current now, when we are locked away and cannot meet, but has power to carry you beyond.'
-  image: assets/leadership.png
+  image: assets/book.featurettes.png
   link: leadership
   template: featurettes
 - name: Conversational Bots
@@ -13,7 +13,7 @@ features:
   template: featurettes
 - name: Coding for Executives
   description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
-  image: assets/coding.png
+  image: assets/code.featurettes.png
   link: scratch-for-executives
   template: featurettes
 - name: Automated Deep Quality And Compliance Monitoring
