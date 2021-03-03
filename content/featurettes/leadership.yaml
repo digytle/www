@@ -27,7 +27,11 @@ sections:
       description: Written like a PhD, the book has the rare power to instruct and convince.
       colour: "#EF233C"
   - section:
+    title: Caterina Maniscalco
+  - section:
     text:
+      - Caterina was born in New York and spent the last 20 years consulting digitle strategy.
+      — Caterina is one of the Digytle partners, an elite guild.
       - Caterina is available as a consultant, lecturer and speaker.
     quote:
       colour: "#6E44FF"
