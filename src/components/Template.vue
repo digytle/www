@@ -45,6 +45,7 @@
       v-if="action.text.question"
     >
       <div class="work">
+        <hr class="one">
         <h2>{{ action.text.question }}</h2>
         <p class="text">
           {{ action.text.description }}
@@ -54,6 +55,7 @@
             <a :href="button.link" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
           </div>
         </div>
+        <hr class="two">
       </div>
     </div>
     <Footer></Footer>
@@ -96,11 +98,10 @@ export default {
   overflow: hidden;
 }
 .image {
-  margin-top: 10rem;
-  margin-left: auto;
+  margin-top: 5rem;
+  margin-left: 4.2rem;
 }
 .header {
-  margin-top: 10%;
   margin-right: auto;
   text-align: left;
   h1 {
@@ -111,7 +112,7 @@ export default {
     margin-top: 0px;
     max-width: 500px;
     color: #2B2D42;
-    font-size: 18px;
+    font-size: 16px;
     font-family:  $font__menu;
   }
   hr{
@@ -122,7 +123,7 @@ export default {
   }
 }
 .sub-info {
-  margin-top: -2.5rem;
+  margin-top: 2rem;
   margin-bottom: 55px;
   text-align: left;
   max-width: 618px;
@@ -136,27 +137,23 @@ export default {
     text-align: left;
     max-width: 618px;
     margin: 0 auto;
-    margin-top: 0.4rem;
-    font-size: 18px;
+    margin-top: 1rem;
+    font-size: 16px;
     font-family:  $font__menu;
   }
 }
 .quote {
-  margin: 20px auto 20px;
   max-width: 618px;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   h2 {
     color: #2B2D42;
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
     margin-top: 20px;
     font-family:  $font__menu;
     font-weight: 400;
   }
-}
-.row {
-  margin: 0 auto 0px;
 }
 .first {
   margin-bottom: 2rem;
@@ -164,7 +161,7 @@ export default {
     text-align: left;
     color: #2B2D42;
     max-width: 618px;
-    font-size: 18px;
+    font-size: 16px;
   }
   h1 {
     text-align: left;
@@ -176,7 +173,7 @@ export default {
   margin-right: auto;
   display: flex;
   width: fit-content;
-  margin-top: 2rem;
+  margin-top: 3rem;
   .image-title{
     max-width: 205px;
     height: fit-content;
@@ -197,18 +194,28 @@ export default {
 
 .work-with-us{
   padding-top: 1rem;
-  padding-bottom: 140px;
+  padding-bottom: 5rem;
   background-position: top;
-  background-color: #101742;
-  h2, p {
-    color: white;
+  h2 {
+    color: #2B2D42;
     width: 50%;
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -3.3rem;
+    background-color: white;
+    max-width: 500px;
+    font-size: 30px;
   }
   p{
     font-family: $font__menu;
+    margin-top: -1.5rem;
+  }
+  .one, .two{
+    border-top: 2px solid #2B2D42;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .buttons{
     display: flex;
@@ -216,7 +223,7 @@ export default {
     .cta{
       margin: auto;
       .button{
-        width: 20rem;
+        width: 15rem;
       }
     }
   } 
