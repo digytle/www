@@ -123,7 +123,7 @@ export default {
   }
 }
 .sub-info {
-  margin-top: 2rem;
+  margin-top: -2rem;
   margin-bottom: 55px;
   text-align: left;
   max-width: 618px;
@@ -137,7 +137,8 @@ export default {
     text-align: left;
     max-width: 618px;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
+    line-height: 1.5rem;
     font-size: 16px;
     font-family:  $font__menu;
   }
@@ -220,6 +221,7 @@ export default {
   .buttons{
     display: flex;
     background-color: white;
+    margin-bottom: 1rem;
     .cta{
       margin: auto;
       .button{
