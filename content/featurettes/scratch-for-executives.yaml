@@ -48,17 +48,5 @@ action:
     background: 
   buttons:
     - button:
-      link:
-        https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31
-      image: 
-        ../assets/amazon.png
-    - button:
-      link:
-        https://www.routledge.com/Distributed-Leadership-and-Digital-Innovation-The-Argument-For-Couple-Leadership/Maniscalco/p/book/9780367361488
-      image: 
-        ../assets/Routledge.png
-    - button:
-      link:
-        https://www.waterstones.com/book/distributed-leadership-and-digital-innovation/caterina-maniscalco//9780367361488
-      image: 
-        ../assets/Waterstones.png
+      link: https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31
+      image: ../assets/amazon.png
