@@ -21,8 +21,8 @@ sections:
       colour: "#EF233C"
     text:
       - MIT Scratch is a methaphore.
-      - Another mathaphores are the sail of the ship.
-      - Reading it, T.E. felt many direct comparison to his journey with Aux and Digytle, reinforcing all the benefits he had found working in close partnerships with shared roles and distant locations.
+      - Another mathaphores are the sail of the ship, being in the battle or standing on the hill, a hypeman.
+      - "T.E.'s long international experience and successes are brought on a local, personal level, to help you be happier and more successful."
   - section:
     image:
       url: ../assets/book-img.png
@@ -31,13 +31,11 @@ sections:
       colour: "#EF233C"
   - section:
     title:
-      title: Caterina Maniscalco
+      title: Psychoanalysis for Executives
       colour: "#EF233C"
   - section:
     text:
-      - Caterina was born in New York and spent the last 20 years consulting digitle strategy.
-      - Caterina is one of the Digytle partners, an elite guild.
-      - Caterina is available as a consultant, lecturer and speaker.
+      - You can talk or listen.
     quote:
       colour: "#6E44FF"
       bigQuotes: ../assets/big_quotes.svg
@@ -45,8 +43,8 @@ sections:
       smallQuotes: ../assets/small_quotes.svg
 action:
   text:
-    question: Would you like to read the book?
-    description: Order it from one of these selected bookstores.
+    question: Would you like to taste T.E.'s unique style?
+    description: Book a free appointment.
     background: 
   buttons:
     - button:
