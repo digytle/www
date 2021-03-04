@@ -1,10 +1,66 @@
-image: ../assets/
-title: Coding for Executives
-description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+header:
+  image: ../assets/Caterina_AboutPage.png
+  title:
+    title: Distributed Leadership and Digital Innovation
+    colour: "#EF233C"
+    description: T. E. Shaw of Digytle discovered Distributed Learership and Digital Innovation and met the author Caerina Maniscalco.
 sections:
-- description:
-  - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-  image: ../assets/
-- description:
-  - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-  image: ../assets/
+  - section:
+    title:
+      title: Aux and Digytle, Ahead of Our Time
+      colour: "#EF233C"
+    text:
+      - When T.E. Shaw co-founded Aux in 2013, he was based in Germany with one of the co-founders in Canada and the other in Bulgaria.
+      - In addition to that Aux has never had defined C-level roles. The three co-founders take decisions unnanimously and share the workload as needed.
+      - When Charie Cox and Aux co-founded Digytle in London in 2020 they followed the same distributed route, building on Aux' successful and harmoneous model, adding a lovely British flavour.
+      - For this reason when T.E. Shaw saw Distributed Leadership and Digital Innovation, he "Bang! That's what we have been doing for years!". And he made it his mission to meet Caterina Maniscalco, which he eventually did in the early 2020.
+      - Caterina and T.E. hit it off and decided that their deep understanding of their share values, both in practical and highly descriptive way, are a nice base for a long and productive cooperation. So Caterina joined Digytle and Digytle adopted Caterina's book.
+  - section:
+    title:
+      title: A Seminal Work
+      colour: "#EF233C"
+    text:
+      - Caterina Maniscalco's book is rich in scientific research.
+      - It not only informs, instructs and inspires, but also convinces.
+      - Reading it, T.E. felt many direct comparison to his journey with Aux and Digytle, reinforcing all the benefits he had found working in close partnerships with shared roles and distant locations.
+  - section:
+    image:
+      url: ../assets/book-img.png
+      title: Solid Science
+      description: Written like a PhD, the book has the rare power to instruct and convince.
+      colour: "#EF233C"
+  - section:
+    title:
+      title: Caterina Maniscalco
+      colour: "#EF233C"
+  - section:
+    text:
+      - Caterina was born in New York and spent the last 20 years consulting digitle strategy.
+      - Caterina is one of the Digytle partners, an elite guild.
+      - Caterina is available as a consultant, lecturer and speaker.
+    quote:
+      colour: "#6E44FF"
+      bigQuotes: ../assets/big_quotes.svg
+      text: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
+      smallQuotes: ../assets/small_quotes.svg
+action:
+  text:
+    question: Would you like to read the book?
+    description: Order it from one of these selected bookstores.
+    background: 
+  buttons:
+    - button:
+      link:
+        https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31
+      image: 
+        ../assets/amazon.png
+    - button:
+      link:
+        https://www.routledge.com/Distributed-Leadership-and-Digital-Innovation-The-Argument-For-Couple-Leadership/Maniscalco/p/book/9780367361488
+      image: 
+        ../assets/Routledge.png
+    - button:
+      link:
+        https://www.waterstones.com/book/distributed-leadership-and-digital-innovation/caterina-maniscalco//9780367361488
+      image: 
+        ../assets/Waterstones.png
