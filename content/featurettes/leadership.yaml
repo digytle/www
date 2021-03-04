@@ -21,7 +21,8 @@ sections:
       colour: "#EF233C"
     text:
       - Caterina Maniscalco's book is rich in scientific research.
-      - It not only informs, instructs and inspires—but also convinces.
+      - It not only informs, instructs and inspires, but also convinces.
+      - Reading it, T.E. felt many direct comparison to his journey with Aux and Digytle, reinforcing all the benefits he had found working in close partnerships with shared roles and distant locations.
   - section:
     image:
       url: ../assets/book-img.png
