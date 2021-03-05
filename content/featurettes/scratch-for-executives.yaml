@@ -25,7 +25,7 @@ sections:
       - "T.E.'s long international experience and successes are brought on a local, personal level, to help you be happier and more successful."
   - section:
     image:
-      url: ../assets/book-img.png
+      url: ../assets/sail.png
       title: Solid Science
       description: The triangle front sail of the ship is attached at three points. When these points are the right ones, the sail is full of wind and the ship sails.
       colour: "#EF233C"
