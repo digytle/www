@@ -214,7 +214,7 @@ export default {
   }
   .one, .two{
     border-top: 2px solid #2B2D42;
-    max-width: 950px;
+    max-width: 62%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -237,18 +237,21 @@ export default {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  h1 {
-    margin-top: 0rem;
+    h1 {
+      margin-top: 0rem;
+    }
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    hr{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-  p {
+  .image {
     margin-left: auto;
-    margin-right: auto;
   }
-  hr{
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
   .information {
     margin-top: 20px;
     padding-left: 2rem;
@@ -260,50 +263,21 @@ export default {
       margin: 0 auto;
     }
   }
-  .images-right, .images{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-    .image-title{
-      padding:0px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 5%;
-      text-align: left;
-      h3{
-        font-size: 16px;
-      }
-      span{
-        font-size: 12px;
-      }
-      hr{
-        border-top: #ef233c solid 3px;
-      }
+  
+}
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
+  .header {
+  margin-left: 0px;
+  text-align: left;
+    h1 {
+      font-size: 35px;
+      margin-top: 5rem;
+    }
+    hr{
+      margin-left: 0px;
     }
   }
-  .images-left{
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  -webkit-flex-flow: column-reverse;
-  flex-flow: column-reverse;
-    .image-title{
-      padding:0px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 5%;
-      text-align: left;
-      h3{
-        font-size: 16px;
-      }
-      span{
-        font-size: 12px;
-      }
-      hr{
-        border-top: #ef233c solid 3px;
-      }
-    }
-  }
+  
 }
 @media only screen and (max-width: 800px) {
   .work-with-us{
@@ -317,14 +291,38 @@ export default {
 }
 @media only screen and (max-width: 500px) {
   .image {
-  margin-top: 5rem;
-}
-.info {
+    margin-top: 0rem;
+  } 
+  .info {
     margin-left: 0px;
     margin-top: 20px;
     h1 {
       margin-top: 0rem;
     }
   }
+  .images{
+  display: block;
+  .image-title{
+    padding: 20px 20px 0px 0px;
+    margin-top: 5px;
+    h3{
+      font-size: 16px;
+    }
+    span{
+      font-size: 12px;
+    }
+    hr{
+      border-top: solid 3px;
+    }
+  }
 }
+  .work-with-us{
+    h2 {
+      width: 60%;
+    }
+    .one, .two{
+      max-width: 80%;
+    } 
+  }
+} 
 </style>

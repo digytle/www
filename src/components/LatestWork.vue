@@ -182,6 +182,17 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
+  .scroll {
+    .image-container {
+      h2 {
+        font-size: 22px;
+        margin-left: 1rem;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 991.5px) {
   .bigsection {
     position: relative;
