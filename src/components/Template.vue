@@ -234,19 +234,12 @@ export default {
 @media only screen and (max-width: 1100px) {
   .header {
   margin-top: 30px;
-  margin-right: auto;
+  text-align: left;
+  max-width: 618px;
   margin-left: auto;
-  text-align: center;
+  margin-right: auto;
     h1 {
       margin-top: 0rem;
-    }
-    p {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    hr{
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   .image {
@@ -293,6 +286,11 @@ export default {
   }
 }
 @media only screen and (max-width: 500px) {
+   .header {
+    h1 {
+      font-size: 40px;
+    }
+  }
   .image {
     margin-top: 0rem;
   } 
