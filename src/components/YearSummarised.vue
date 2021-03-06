@@ -89,6 +89,12 @@ export default {
         border-left: 2px solid black;
     }
 }
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
+    .description{
+        margin-left: 0rem;
+        height: 8rem;
+    }
+}
 @media only screen and (max-width: 1000px){
     .description{
         margin-left: 0rem;

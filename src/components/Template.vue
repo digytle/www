@@ -199,7 +199,7 @@ export default {
   background-position: top;
   h2 {
     color: #2B2D42;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -214,7 +214,7 @@ export default {
   }
   .one, .two{
     border-top: 2px solid #2B2D42;
-    max-width: 62%;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -281,6 +281,9 @@ export default {
 }
 @media only screen and (max-width: 800px) {
   .work-with-us{
+    .one, .two{
+      max-width: 80%;
+    }
     .button{
       width: 40%;
       margin-left: auto;
@@ -301,21 +304,21 @@ export default {
     }
   }
   .images{
-  display: block;
-  .image-title{
-    padding: 20px 20px 0px 0px;
-    margin-top: 5px;
-    h3{
-      font-size: 16px;
-    }
-    span{
-      font-size: 12px;
-    }
-    hr{
-      border-top: solid 3px;
+    display: block;
+    .image-title{
+      padding: 20px 20px 0px 0px;
+      margin-top: 5px;
+      h3{
+        font-size: 16px;
+      }
+      span{
+        font-size: 12px;
+      }
+      hr{
+        border-top: solid 3px;
+      }
     }
   }
-}
   .work-with-us{
     h2 {
       width: 60%;
