@@ -36,8 +36,16 @@
           <h2>{{ section.quote.text }}</h2>
           <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
         </div>
-      </div>
 
+        <div class="images-wide" v-if="section.imageWide">
+          <img class="img-fluid" :src="section.imageWide.url" />
+          <div class="image-title">
+            <h3>{{ section.imageWide.title }}</h3>
+            <span>{{ section.imageWide.description }}</span>
+            <hr :style="{ color: section.imageWide.colour }">
+          </div>
+        </div>
+      </div>
     </div>
     <div
       class="work-with-us"
@@ -192,6 +200,31 @@ export default {
     }
   }
 }
+
+.images-wide{
+margin-left: 0px;
+margin-right: 0px;
+display: flex;
+flex-direction: row-reverse;
+margin-top: 3rem;
+width: fit-content;
+  .image-title{
+    text-align: left;
+    margin: 10%;
+    h3{
+      font-size: 16px;
+      width: 170px !important;
+      margin-top: 50%;
+    }
+    span{
+      font-size: 12px;
+    }
+    hr{
+      border-top: solid 3px;
+    }
+  }
+}
+
 
 .work-with-us{
   padding-top: 1rem;
