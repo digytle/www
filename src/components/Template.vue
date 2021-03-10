@@ -32,7 +32,7 @@
         </div>
         
         <div class="col-7 quote" v-if="section.quote">
-          <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour}"/>
+          <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour }"/>
           <h2>{{ section.quote.text }}</h2>
           <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
         </div>
@@ -210,11 +210,11 @@ margin-top: 3rem;
 width: fit-content;
   .image-title{
     text-align: left;
-    margin: 10%;
+    margin-right: 10%;
     h3{
       font-size: 16px;
       width: 170px !important;
-      margin-top: 50%;
+      margin-top: 70%;
     }
     span{
       font-size: 12px;
@@ -289,8 +289,29 @@ width: fit-content;
       margin: 0 auto;
     }
   }
-  
+  .images-wide{
+    display: block;
+    .image-title{
+    text-align: left;
+    margin: 0px;
+      h3{
+        font-size: 16px;
+        width: 170px !important;
+        margin-top: 20px;
+      }
+      span{
+        font-size: 12px;
+      }
+      hr{
+        border-top: solid 3px;
+        width: 40%;
+        margin-left: 0px;
+      }
+    }
+  }
 }
+  
+
 @media only screen and (max-width: 1025px) and (orientation: landscape) {
   .header {
   margin-left: 0px;

@@ -125,6 +125,7 @@ export default {
       padding: 1rem;
       font-size: 24px;
       background-color: white;
+      // box-shadow: -5px -1px 17px 8px rgba(0,0,0,0.1);
     }
     .right-text {
       margin-left: 2rem;
