@@ -5,7 +5,6 @@ import Template from '../components/Template'
 // import DigytleStory from '../components/DigytleStory'
 // import DesignPage from '../components/DesignPage'
 import PrivacyPolicy from '../components/PrivacyPolicy'
-import Book from '../components/Book'
 Vue.use(VueRouter)
 
 const routes = [{
