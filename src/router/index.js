@@ -39,12 +39,7 @@ const routes = [{
     path: '/privacy-policy/**',
     name: 'PrivacyPolicy',
     component: PrivacyPolicy
-  },
-  {
-    path: '/book/**',
-    name: 'Book',
-    component: Book
-  },
+  }
 ]
 
 const router = new VueRouter({
