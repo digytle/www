@@ -8,13 +8,13 @@
                 <div class="row padding element">
                     <div class="col-md-6">
                         <router-link :to="`/${storyBase.template}/${storyBase.link}`">
-                        <h2>{{story.title}}</h2>
-                        <p>{{story.summary}}</p>
+                            <h2>{{ text }}</h2>
+                            <p>{{ description }}</p>
                         </router-link>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <router-link :to="`/${storyBase.template}/${storyBase.link}`">
-                        <img class="img-fluid" src="/assets/Digytle.stories.png" />
+                            <img class="img-fluid" src="/assets/Digytle.stories.png" />
                         </router-link>
                     </div>
                 </div>
@@ -32,7 +32,9 @@ export default {
         summary: [],
         features: [],
         story: {},
-        storyBase: {}
+        storyBase: {},
+        text: "",
+        description: "",
     };
   },
 
@@ -40,6 +42,8 @@ export default {
     this.storyBase = data.stories[0];
     this.story = require(`js-yaml-loader!../../content/${this.storyBase.template}/${this.storyBase.link}.yaml`);
     console.log(this.story)
+    this.text = data.text;
+    this.description = data.description;
   },
 };
 </script>
