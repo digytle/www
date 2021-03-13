@@ -3,7 +3,7 @@ header:
   title:
     title: Blits, Conversational Bots Management Ecosystem
     colour: "#EF233C"
-    description: It is a rare chance and a priviledge to work with a true inventor.
+    description: It is a rare chance and a priviledge to work with a true inventor. Working with Blits you can work with the person who invented it and with the people who built it.
 sections:
 - section:
   title:
@@ -12,20 +12,20 @@ sections:
 - section:
   text:
   - When T.E. met Len Debets at KPMG in Amsterdam, Len was wearing sneakers in a building full of suits and white collars.
-  - But that was not the most interesting thing about Len. It was the air of determination, which led to briefness and swiftness, to focus and no spare time.
+  - But that was not the most interesting thing about Len. The most interesting thing was the air of determination, which led to briefness and swiftness, to focus and no spare time.
 - section:
   title:
-    title: A Seminal Book for Digital Innovators 
+    title: A Dream Made True
     colour: "#EF233C"
 - section:
   text:
-  - So it was his passion for digital innovation and his natural interest in distributed leadership that brought T.E. Shaw to Caterina Maniscalco's book. 
-  - It not only informs, instructs and inspires, but also convinces and is rich in both scientific research and real life examples of distributed leadership giving companies the edge in highly competitive spaces.
+  - Dreams do not come ture, they are made.
+  - Blits was dreamt into existance, then developed, spun off and made successful, all by the same people.
 - section:
   quote:
     colour: "#6E44FF"
     bigQuotes: ../assets/big_quotes.svg
-    text: "No man will make a great leader who wants to do it all himself, or to get all the credit for doing it."
+    text: "I often have long conversations all by myself, and I am so clever that sometimes I don't understand a single word of what I am saying."
     smallQuotes: ../assets/small_quotes.svg
 - section:
   text:
@@ -34,17 +34,17 @@ sections:
 - section:
   image:
     url: ../assets/book-img.png
-    title: Solid Science
+    title: Different is Better than Better
     description: Written like a PhD, the book has the rare power to instruct and convince.
     colour: "#EF233C"
 - section:
   title:
-    title: Caterina Maniscalco
+    title: Different is Better than Better
     colour: "#EF233C"
 - section:
   text:
-    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice 
-    - Caterina is one of our Digytle Partners, our highly specialised assemble of digital leaders and innovators as well as trusted partner organisations.
+    - Blits is not only better, it is different.
+    - "Unlike the majority of chatbots, Blits is unlimited: it can be connecte to a unlimited Natural Language Processing (NLP) languages, to a unlimited number of conversation channels (web, app, voice) and to a unlimited number of SME or Enterprise IT systems and landscapes."
 - section:
   imageWide:
     url: ../assets/the-crew.png
@@ -57,16 +57,10 @@ sections:
     - Caterina is available as a consultant, lecturer and speaker.
 action:
   text:
-    question: Would you like to read the book?
-    description: Order it from one of these selected bookstores.
+    question: Would you like to learn more about Blits?
+    description: Book a free conversation :)
     background: 
   buttons:
   - button:
     link: https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31
     image: ../assets/amazon.png
-  - button:
-    link: https://www.routledge.com/Distributed-Leadership-and-Digital-Innovation-The-Argument-For-Couple-Leadership/Maniscalco/p/book/9780367361488
-    image: ../assets/Routledge.png
-  - button:
-    link: https://www.waterstones.com/book/distributed-leadership-and-digital-innovation/caterina-maniscalco//9780367361488
-    image: ../assets/Waterstones.png

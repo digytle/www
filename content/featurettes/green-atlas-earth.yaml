@@ -2,13 +2,13 @@ header:
   image: ../assets/Caterina_AboutPage.png
   title:
     title: Green Atlas
-    colour: "#EF233C"
+    colour: "#567d46"
     description: The most innovative approach to informing, educating and helping green energy enthusiasts and site owners to evaluate and understand the potential of their sites and engage into viable green energy projects.
 sections:
 - section:
   title:
     title: A Most Potent Partnership
-    colour: "#EF233C"
+    colour: "#567d46"
 - section:
   text:
   - Jaap van Dijk turned his back to a career of energy trader and world class consultant and decided to follow a dream. T. E. was scouting for talent. And found Jaap.
@@ -16,7 +16,7 @@ sections:
 - section:
   title:
     title: Endless Innovation 
-    colour: "#EF233C"
+    colour: "#567d46"
 - section:
   text:
   - Green Atlas is the product of an endless industry experience and an endless technology experience. Combined in search for perfection.
@@ -34,11 +34,11 @@ sections:
     url: ../assets/book-img.png
     title: Solid Science
     description: Written like a PhD, the book has the rare power to instruct and convince.
-    colour: "#EF233C"
+    colour: "#567d46"
 - section:
   title:
     title: Worldwide
-    colour: "#EF233C"
+    colour: "#567d46"
 - section:
   text:
     - Green Atlas began in the Netherlands and is preparing for international use.
@@ -47,7 +47,7 @@ sections:
     url: ../assets/the-crew.png
     title: Solid Science
     description: Written like a PhD, the book has the rare power to instruct and convince.
-    colour: "#EF233C"
+    colour: "#567d46"
 - section:
   text:
     - Interested?
