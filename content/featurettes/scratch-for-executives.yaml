@@ -2,13 +2,13 @@ header:
   image: ../assets/teaching.png
   title:
     title: Scratch for Executives
-    colour: "#2970ff"
+    colour: "#DAA520"
     description: "Even in the midst of the digital transformation, or better put, especially there, one needs guidance: a light house, or a solid rock. Scratch for Executive helps digital executives to make better sense of the world surrounding them."
 sections:
   - section:
     title:
       title: Talent Scouting & Nurseries
-      colour: "#2970ff"
+      colour: "#DAA520"
     text:
       - When T.E. Shaw has been discovering and nursing talent for more than 40 years.
       - The executive talent is among of the most underreated types of talent.
@@ -18,7 +18,7 @@ sections:
   - section:
     title:
       title: Scratch-like
-      colour: "#2970ff"
+      colour: "#DAA520"
     text:
       - MIT Scratch is a methaphore.
       - Another mathaphores are the sail of the ship, being in the battle or standing on the hill, a hypeman.
@@ -28,16 +28,16 @@ sections:
       url: ../assets/sail.png
       title: Solid Science
       description: The triangle front sail of the ship is attached at three points. When these points are the right ones, the sail is full of wind and the ship sails.
-      colour: "#2970ff"
+      colour: "#DAA520"
   - section:
     title:
       title: Psychoanalysis for Executives
-      colour: "#2970ff"
+      colour: "#DAA520"
   - section:
     text:
       - You can talk or listen.
     quote:
-      colour: "#2970ff"
+      colour: "#DAA520"
       bigQuotes: ../assets/big_quotes.svg
       text: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
       smallQuotes: ../assets/small_quotes.svg
