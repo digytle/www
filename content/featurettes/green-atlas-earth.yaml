@@ -1,0 +1,63 @@
+header:
+  image: ../assets/Caterina_AboutPage.png
+  title:
+    title: Green Atlas
+    colour: "#EF233C"
+    description: The most innovative approach to site origination and matchmaking in the field of renuable energy.
+sections:
+- section:
+  title:
+    title: A Most Potent Partnership
+    colour: "#EF233C"
+- section:
+  text:
+  - Jaap van Dijk turned his back to a career of energy trader and world class consultant and decided to follow a dream. T. E. was scouting for talent. And found Jaap.
+  - A most misunderstood point about talent is that it need not be young or inexperienced. People reach turning points in their career and need as much help to figure out what they want and can do next, as the smallest child.
+- section:
+  title:
+    title: Endless Innovation 
+    colour: "#EF233C"
+- section:
+  text:
+  - Green Atlas is the product of an endless industry experience and an endless technology experience. Combined in search for perfection.
+- section:
+  quote:
+    colour: "#6E44FF"
+    bigQuotes: ../assets/big_quotes.svg
+    text: "Take my advice and live for a long, long time. Because the maddest thing a man can do in this life is to let himself die."
+    smallQuotes: ../assets/small_quotes.svg
+- section:
+  text:
+  - Green Atlas is relentlessly business and relentlessly green. It is a powerful busienss tool and a powerful tool of ecological transformation.
+- section:
+  image:
+    url: ../assets/book-img.png
+    title: Solid Science
+    description: Written like a PhD, the book has the rare power to instruct and convince.
+    colour: "#EF233C"
+- section:
+  title:
+    title: Worldwide
+    colour: "#EF233C"
+- section:
+  text:
+    - Green Atlas began in the Netherlands and is preparing for international use.
+- section:
+  imageWide:
+    url: ../assets/the-crew.png
+    title: Solid Science
+    description: Written like a PhD, the book has the rare power to instruct and convince.
+    colour: "#EF233C"
+- section:
+  text:
+    - Interested?
+    - Join Green Atlas.
+action:
+  text:
+    question: Would you like to learn more about Green Atlas?
+    description: Visit the website.
+    background: 
+  buttons:
+  - button:
+    link: https://greenatlas.earth/
+    image: ../assets/amazon.png
