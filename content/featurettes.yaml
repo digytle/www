@@ -7,15 +7,15 @@ features:
   template: featurettes
   link: distributed-leadership-and-digital-innovation-by-caterina-maniscalco
 - name: Conversational Bots
-  description: Blits.ai is a conversational bot.
+  description: The Conversational Bots (colloquially known as chatbots) are a fascinating discipline. Fortunately for you, we not only know how to help you implement them, but we have built the most advanced Conversational Bots Management Ecosystem.
   image: assets/bot.featurette.png
   template: featurettes
-  link: conversational-chatbots
-- name: Coding for Executives
-  description: 'Software developers are required to think business, but can Executives think code? In between one and three fun sessions, Scratch for Executives will help you open your mind and reach the Holy Graal of collaboration: empathy.'
+  link: conversational-bots
+- name: Digytle for Executives
+  description: Software engineers must understand business people, but do business people understand software engineers? Between one and three fun sessions of Digytle for Executives will help you better understand each other.
   image: assets/code.featurettes.png
   template: featurettes
-  link: scratch-for-executives
+  link: digytle-for-executives
 - name: Automated Deep Quality And Compliance Monitoring
   description: We offer peace of mind.
   image: assets/ta.featurette.png
