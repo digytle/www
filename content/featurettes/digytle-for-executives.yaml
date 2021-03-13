@@ -3,18 +3,18 @@ header:
   title:
     title: Digytle for Executives
     colour: "#DAA520"
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long, not even four sentences. It begins with: "Individuals and interactions..."''
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
 sections:
   - section:
     title:
       title: Talent Scouting & Nurseries
       colour: "#DAA520"
     text:
-      - When T.E. Shaw has been discovering and nursing talent for more than 40 years.
-      - The executive talent is among of the most underreated types of talent.
-      - Executives are expected to be strong, to know it all, to manage and survive. And they should.
+      - T.E. Shaw has been scouting & nursing undiscovered and lost talent for over 40 years.
+      - The executive talent is one of the most underreated.
+      - Executives are expected to be strong, to know all and everything, to manage and survive. And they should.
       - But not without help.
-      - "T.E.'s concise style of nursing helps executives understand the world around them and be more successful."
+      - T.E.'s concise style of nursing helps executives make sense of the world around them and be successful.
   - section:
     title:
       title: Scratch-like
