@@ -34,6 +34,7 @@
         <div class="col-7 quote" v-if="section.quote">
           <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour }"/>
           <h2>{{ section.quote.text }}</h2>
+          <h3>{{ section.quote.author }}</h3>
           <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
         </div>
 
@@ -160,6 +161,13 @@ export default {
     font-size: 16px;
     line-height: 30px;
     margin-top: 20px;
+    font-family:  $font__menu;
+    font-weight: 400;
+  }
+  h3 {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 1rem;
     font-family:  $font__menu;
     font-weight: 400;
   }
