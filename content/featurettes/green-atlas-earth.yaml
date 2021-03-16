@@ -1,5 +1,5 @@
 header:
-  image: ../assets/Caterina_AboutPage.png
+  image: ../assets/ga.e.featurette.png
   title:
     title: Green Atlas
     colour: "#567d46"
@@ -60,4 +60,4 @@ action:
   buttons:
   - button:
     link: https://greenatlas.earth/
-    image: ../assets/amazon.png
+    image: ../assets/ga.e.button.png

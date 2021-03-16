@@ -19,7 +19,7 @@ left:
   link: blits-conversational-bots-management-ecosystem
 - title: greenaltas.earth
   description: A complex marketplace for informing, educating, preparing and matching players in the green energy marketplace, as well as providing them with rich data and tools for and beyond the matchmaking.
-  image: assets/sbf.png
+  image: assets/ga.e.png
   template: featurettes
   link: green-atlas-earth
 # TODO
@@ -27,7 +27,7 @@ left:
 right:
 - title: Stichting Bedrijfsfinanciering
   description: A complex marketplace for informing, educating SMES, and helping them prepare and choose a financing product.
-  image: assets/blits.png
+  image: assets/stichting.png
   template: featurettes
   link: stichting-bedrijfsfinanciering
 - title: Solidvest
