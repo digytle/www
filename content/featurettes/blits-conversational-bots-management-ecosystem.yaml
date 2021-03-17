@@ -26,7 +26,7 @@ sections:
     colour: "#855c9c"
     bigQuotes: ../assets/big_quotes.svg
     text: "I often have long conversations all by myself, and I am so clever that sometimes I don't understand a single word of what I am saying."
-    author: "- Oscac Wilde"
+    author: "Oscac Wilde"
     smallQuotes: ../assets/small_quotes.svg
 - section:
   text:
