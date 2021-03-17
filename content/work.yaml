@@ -14,7 +14,7 @@ big:
 left:
 - title: Blits.ai
   description: Blits can power all your company’s internal and external chatbots and voicebots. Offering a no code, drag and drop interface to make creating, comparing and deploying bots across your whole company fast and easy. Compatible with any AI engine, comms channel and connectors to build smart bots that will save your organisation time and resources.
-  image: assets/blits.png
+  image: assets/blits-ai.png
   template: featurettes
   link: blits-conversational-bots-management-ecosystem
 - title: greenaltas.earth
@@ -32,11 +32,11 @@ right:
   link: stichting-bedrijfsfinanciering
 - title: Solidvest
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/sbf.png
+  image: assets/solidvest.png
   template: featurettes
   link: dje-kapital-ag-solidvest
 - title: Thomas Lloyd
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/auxta.png
+  image: assets/thomas-lloyd.png
   template: featurettes
   link: thomas-lloyd

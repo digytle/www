@@ -192,6 +192,17 @@ export default {
       }
     }
   }
+  .bigsection {
+    .image-container {
+      .card {
+        .card-body {
+          p {
+            margin-top: -30rem;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 991.5px) {
   .bigsection {
@@ -201,12 +212,6 @@ export default {
       top: 0px;
       .card {
         border: none;
-        .img-pad {
-          display: block;
-        }
-        img {
-          display: none;
-        }
         .card-body {
           p {
             margin-top: -20rem;
@@ -238,15 +243,9 @@ export default {
       top: 0px;
       .card {
         border: none;
-        .img-pad {
-          display: block;
-        }
-        img {
-          display: none;
-        }
         .card-body {
           p {
-            margin-top: -20rem;
+            margin-top: -45rem;
             color: white;
             font-size: 14px;
             padding-left: 2rem;
@@ -276,12 +275,6 @@ export default {
     .image-container {
       .card {
         border: none;
-        .img-pad {
-          display: none;
-        }
-        img {
-          display: block;
-        }
         .card-body {
           p {
             margin-top: -20rem;
