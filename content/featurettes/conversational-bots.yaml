@@ -54,9 +54,8 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
-    - Caterina is available as a consultant, lecturer and speaker.
-action:
+    - You can now test our Digytle trained bot by clicking on the bot below you can also find a link to our page about Blits   
+    action:
   text:
     question: Would you like to read the book?
     description: Order it from one of these selected bookstores.
