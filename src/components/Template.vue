@@ -34,8 +34,8 @@
         <div class="col-7 quote" v-if="section.quote">
           <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour }"/>
           <h2>{{ section.quote.text }}</h2>
-          <h3>{{ section.quote.author }}</h3>
           <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
+          <h3>{{ section.quote.author }}</h3>
         </div>
 
         <div class="images-wide" v-if="section.imageWide">
