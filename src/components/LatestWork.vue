@@ -13,8 +13,8 @@
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="card-img-top img" :src="item.image" />
                 <div class="card-body">
-                  <p>{{ item.description }}</p>
                   <h2>{{ item.title }}</h2>
+                  <p>{{ item.description }}</p>
                 </div>
               </router-link>
             </div>
@@ -113,16 +113,16 @@ export default {
       }
       .card-body {
         p {
-          margin-top: -40rem;
-          color: white;
+          color: black;
           font-size: 14px;
           padding-left: 2rem;
           padding-right: 2rem;
           font-family:  $font__menu;
         }
         h2 {
-          color: white;
+          color: black;
           font-size: 30px;
+           margin-top: -40rem;
         }
       }
     }

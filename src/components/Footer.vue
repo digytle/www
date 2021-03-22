@@ -75,11 +75,11 @@ export default {
   margin-right: auto;
 }
 .logo {
-  margin-top: 5rem;
+  margin-top: 0rem;
   margin-bottom: 2rem;
   max-width: 30%;
   float: left;
-  margin-left: 1rem;
+  margin-left: 0.8rem;
 }
 p {
   text-align: left;

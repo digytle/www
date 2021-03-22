@@ -108,8 +108,9 @@ export default {
         }
     }
     .description{
-         margin-left: 0rem;
-          height: 8rem;
+        margin-left: 0rem;
+        margin-top: 1.5rem;
+        height: 8rem;
         h2{
             font-size: 30px;
         }
