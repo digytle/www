@@ -2,41 +2,46 @@ title: Latest Work
 # TODO
 # rename to big:
 big:
-- title: 
-  description: Blits.ai is a chatbot management system.
+- title: AUXTA Testing Automation
+  description: AUXTA performs Deep Automated Quality Assurance of your online or mobile application. It can perform tens of thousands of steps every hour, imitating human visitor, and comparing the result fixed or dynamic values. AUXTA also performs compliance supervision such as European Securities and Markets Authority (ESMA) monitoring.
   image: assets/blits.bot.png
   # TODO
   # remove
   template: featurettes
-  link: blits
+  link: auxta
 # TODO
 # rename to left: and see why does it repeat
 left:
-- title: Blits
+- title: Blits.ai
   description: Blits can power all your company’s internal and external chatbots and voicebots. Offering a no code, drag and drop interface to make creating, comparing and deploying bots across your whole company fast and easy. Compatible with any AI engine, comms channel and connectors to build smart bots that will save your organisation time and resources.
-  image: assets/blits.png
+  image: assets/blits-ai.png
   template: featurettes
-  link: blits
+  link: blits-conversational-bots-management-ecosystem
 - title: greenaltas.earth
   description: A complex marketplace for informing, educating, preparing and matching players in the green energy marketplace, as well as providing them with rich data and tools for and beyond the matchmaking.
-  image: assets/sbf.png
+  image: assets/ga.e.png
   template: featurettes
-  link: sbf
+  link: green-atlas-earth
+- title: Leasingly
+  description: Plug-n-Play Financing Solution.
+  image: assets/leasingly.png
+  template: featurettes
+  link: leasingly
 # TODO
 # rename to right: 
 right:
 - title: Stichting Bedrijfsfinanciering
   description: A complex marketplace for informing, educating SMES, and helping them prepare and choose a financing product.
-  image: assets/blits.png
+  image: assets/stichting.png
   template: featurettes
-  link: blits
+  link: stichting-bedrijfsfinanciering
 - title: Solidvest
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/sbf.png
+  image: assets/solidvest.png
   template: featurettes
-  link: sbf
+  link: dje-kapital-ag-solidvest
 - title: Thomas Lloyd
   description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era
-  image: assets/auxta.png
+  image: assets/thomas-lloyd.png
   template: featurettes
-  link: auxta
+  link: thomas-lloyd

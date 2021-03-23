@@ -1,0 +1,67 @@
+header:
+  image: ../assets/blits-featurette.png
+  title:
+    title: Blits, Conversational Bots Management Ecosystem
+    colour: "#855c9c"
+    description: It is a rare chance and a priviledge to work with a true inventor. Working with Blits you can work with the person who invented it and with the people who built it.
+sections:
+- section:
+  title:
+    title: The Long Way to Blits
+    colour: "#855c9c"
+- section:
+  text:
+  - When T.E. met Len Debets at KPMG in Amsterdam, Len was wearing sneakers in a building full of suits and white collars.
+  - But that was not the most interesting thing about Len. The most interesting thing was the air of determination, which led to briefness and swiftness, to focus and no spare time.
+- section:
+  title:
+    title: A Dream Made True
+    colour: "#855c9c"
+- section:
+  text:
+  - Dreams do not come ture, they are made.
+  - Blits was dreamt into existance, then developed, spun off and made successful, all by the same people.
+- section:
+  quote:
+    colour: "#855c9c"
+    bigQuotes: ../assets/big_quotes.svg
+    text: "I often have long conversations all by myself, and I am so clever that sometimes I don't understand a single word of what I am saying."
+    author: "Oscac Wilde"
+    smallQuotes: ../assets/small_quotes.svg
+- section:
+  text:
+  - Reading it, T.E. felt many direct comparisons to his journey with Aux and Digytle, reinforcing all the benefits he had found working in close partnerships with shared roles and distant locations.
+  - Thomas, maybe an example of a lesson learned from book or your experience of dist lead.
+- section:
+  image:
+    url: ../assets/book-img.png
+    title: Different is Better than Better
+    description: Written like a PhD, the book has the rare power to instruct and convince.
+    colour: "#855c9c"
+- section:
+  title:
+    title: Different is Better than Better
+    colour: "#855c9c"
+- section:
+  text:
+    - Blits is not only better, it is different.
+    - "Unlike the majority of chatbots, Blits is unlimited: it can be connecte to a unlimited Natural Language Processing (NLP) languages, to a unlimited number of conversation channels (web, app, voice) and to a unlimited number of SME or Enterprise IT systems and landscapes."
+- section:
+  imageWide:
+    url: ../assets/the-crew.png
+    title: Solid Science
+    description: Written like a PhD, the book has the rare power to instruct and convince.
+    colour: "#855c9c"
+- section:
+  text:
+    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
+    - Caterina is available as a consultant, lecturer and speaker.
+action:
+  text:
+    question: Would you like to learn more about Blits?
+    description: Book a free conversation :)
+    background: 
+  buttons:
+  - button:
+    link: https://calendly.com/
+    image: ../assets/Calendly.png

@@ -1,0 +1,71 @@
+header:
+  image: ../assets/Caterina_AboutPage.png
+  title:
+    title: Conversational Chatbots
+    colour: "#EF233C"
+    description: Here at Digytle we are not only experts in Conversational Chatbots, we literally invent and build them for scratch.
+sections:
+- section:
+  title:
+    title: Aux and Digytle, Ahead of Our Time
+    colour: "#EF233C"
+- section:
+  text:
+  - Whether it be qualifying leads, collecting information or directing their visitors to the right part of their website, large corporates saved an average of £300,000 in 2019 by using chatbots within their sales and support teams.    
+  - According to a recent business survey most chatbots (41%) are used in a sales function of one form or another and with the speeding up the essential response times by an average of 4x you can see why the business leaders reported an increase in customer satisfaction scores by 24% and an average sales increase of 67%.
+  quote:
+    colour: "#6E44FF"
+    bigQuotes: ../assets/big_quotes.svg
+    text: "26% of all sales in survey started with a chatbot interaction."
+    smallQuotes: ../assets/small_quotes.svg
+- section:
+  text:
+  - If those figures have made automating part or all of your sales and marketing team sound like the way forward the sobering reality is that, across the board, the vast majority of consumers still want to have a human interaction and they attach much greater value to a conversation if they believe they are talking to a 'real' person – even if they are not!
+  - It is for that reason the ultimate accolade within the bot management realm, the mark of excellence, is when the customer cannot tell they are speaking with a bot or that the experience is so seamless they do not care.It might not pass the Turing test but it may convert a browsing bystander into a hot prospect! 
+  - Whether it be through clever software or by the diligent training of an experienced sales and marketing team, the power of a bot is only reached through optimisation. The greater the optimisation, the greater the result.
+  - A lot of this optimisation is in the form training and learnings but as more vendors and platforms have come to market, more choice has been given to optimise your offering by cherry picking the best Natural Language Processing (NLP) engines and optimising them dependent on local language or industry segment served
+- section:
+  title:
+    title: Aux and Digytle, Ahead of Our Time
+    colour: "#EF233C"
+- section:
+  text:
+  - Digytle is fortunate enough to have Blits.ai as a sister company within its Aux family and we are delighted to announce ourselves as their UK partners and suppliers.(better word?!) and look forward to bringing their exciting chat and voice bot management and optimisation platform to the UK market and beyond.
+  - What sets Blits apart? Blah blah
+- section:
+  image:
+    url: ../assets/book-img.png
+    title: Solid Science
+    description: Written like a PhD, the book has the rare power to instruct and convince.
+    colour: "#EF233C"
+- section:
+  title:
+    title: Aux and Digytle, Ahead of Our Time
+    colour: "#EF233C"
+- section:
+  text:
+    - Whys is NLP so important? Blah blah
+    - (button at bottom takes to Blits internal page)
+- section:
+  imageWide:
+    url: ../assets/the-crew.png
+    title: Solid Science
+    description: Written like a PhD, the book has the rare power to instruct and convince.
+    colour: "#EF233C"
+- section:
+  text:
+    - You can now test our Digytle trained bot by clicking on the bot below you can also find a link to our page about Blits  
+action: 
+  text:
+    question: Would you like to read the book?
+    description: Order it from one of these selected bookstores.
+  buttons:
+  - button:
+    link: https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31
+    image: ../assets/amazon.png
+  - button:
+    link: https://www.routledge.com/Distributed-Leadership-and-Digital-Innovation-The-Argument-For-Couple-Leadership/Maniscalco/p/book/9780367361488
+    image: ../assets/Routledge.png
+  - button:
+    link: https://www.waterstones.com/book/distributed-leadership-and-digital-innovation/caterina-maniscalco//9780367361488
+    image: ../assets/Waterstones.png

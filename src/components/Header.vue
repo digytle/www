@@ -7,7 +7,7 @@
             <img class="img-fluid rocket" :src="image" />
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 text">
-            <h1>{{ text }}</h1>
+            <h1 :style="{ color: colour }">{{ text }}</h1>
             <p>{{ description }}</p>
           </div>
         </div>
@@ -25,12 +25,14 @@ export default {
       text: "",
       description: "",
       image: {},
+      colour: "",
     };
   },
   mounted() {
     this.text = header.text;
     this.description = header.description;
     this.image = header.image;
+    this.colour = header.colour;
   },
 };
 </script>
@@ -44,10 +46,10 @@ export default {
     margin-top: 3rem;
     h1 {
       font-size: 52px;
-      color: #ef233c;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
     p {
+      font-family: $font__menu;
       font-size: 20px;
       color: #51586D;
     }
@@ -83,11 +85,12 @@ export default {
   .header {
     margin-top: 0rem;
     .rocket{
-      margin-top: 1rem;
+      margin-top: -2.5rem;
     }
     .text {
       h1 {
         font-size: 40px;
+        margin-top: -3.5rem;
       }
       p {
         margin-left: auto;

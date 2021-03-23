@@ -1,9 +1,9 @@
 header:
-  image: ../assets/Caterina_AboutPage.png
+  image: ../assets/Test.automation.png
   title:
-    title: AccessApp
+    title: Automation of Quality, Functional and Compliance
     colour: "#EF233C"
-    description: T. E. Shaw of Digytle discovered Distributed Leadership and Digital Innovation and met the author Caterina Maniscalco.
+    description: We at Digytle and Aux have developed Software Product Quality Assurance Control Frameworks for KPMG and AUXTA.
 sections:
 - section:
   title:

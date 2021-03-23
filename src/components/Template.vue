@@ -4,115 +4,67 @@
     <div class="container">
       <div class="row head">
         <div class="col-lg-5 image">
-          <img class="img-fluid" :src="data.image" />
+          <img class="img-fluid" :src="header.image" />
         </div>
         <div class="col-lg-5 header">
-          <h1>{{ data.title }}</h1>
-          <hr>
-          <p>{{ data.description }}</p>
+          <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
+          <hr :style="{ color: header.title.colour }">
+          <p>{{ header.title.description }}</p>
         </div>
       </div>
-      <div class="sub-info">
-        <h2>{{ data.subTitle }}</h2>
-        <p>{{ data.subDescription }}</p>
-      </div>
-      <div
-        class="images"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <img class="img-fluid" v-if="section.image" :src="section.image" />
-        <div class="image-title">
-          <h3>{{ section.imageTitle }}</h3>
-          <span>{{ section.imageDescription }}</span>
-          <hr>
+
+      <div class="sub-info" v-for="(section, index) in sections"
+        :key="index">
+        <h2 v-if="section.title" :style="{ color: section.title.colour }">{{ section.title.title }}</h2>
+        <div v-if="section.text">
+          <p v-for="(text, index) in section.text" :key="index">
+            {{ text }}
+          </p>
         </div>
-      </div>
-      <div class="col-7 quote">
-        <div class="row" v-for="paragraph in data.quote" :key="paragraph.text">
-          <img :src="paragraph.bigQuotes" />
-          <h2>{{ paragraph.text }}</h2>
-          <img class="small" :src="paragraph.smallQuotes" />
-        </div>
-      </div>
-      <div class="row">
-        <div
-          class="row"
-          v-for="(section, index) in data.sections"
-          :key="index"
-          :class="{
-            first: index == 0,
-            second: index == 1,
-          }"
-        >
-          <div class="book">
-            <h2>{{ section.title }}</h2>
-            <p v-for="paragraph in section.description" :key="paragraph">
-              {{ paragraph }}
-            </p>
-            <div v-if="section.question" class="buy-book row">
-              <div>
-                <h3>{{ section.question }}</h3>
-                <router-link :to="section.link">
-                  <h4>{{ section.text }}</h4>
-                </router-link>
-              </div>
-            </div>
+
+        <div class="images" v-if="section.image">
+          <img class="img-fluid" :src="section.image.url" />
+          <div class="image-title">
+            <h3>{{ section.image.title }}</h3>
+            <span>{{ section.image.description }}</span>
+            <hr :style="{ color: section.image.colour }">
           </div>
         </div>
-      </div>
-      <div
-        class="images-left"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <div class="image-title">
-          <h3>{{ section.imageTitle2 }}</h3>
-          <span>{{ section.imageDescription2 }}</span>
-          <hr>
+        
+        <div class="col-7 quote" v-if="section.quote">
+          <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour }"/>
+          <h2>{{ section.quote.text }}</h2>
+          <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
+          <h3>{{ section.quote.author }}</h3>
         </div>
-        <img class="img-fluid" v-if="section.image2" :src="section.image2" />
-      </div>
-      <div
-        class="images-right"
-        v-for="(section, index) in data.sections"
-        :key="index"
-        :class="{
-          first: index == 0,
-          second: index == 1,
-        }"
-      >
-        <img class="img-fluid" v-if="section.image3" :src="section.image2" />
-        <div class="image-title">
-          <h3>{{ section.imageTitle3 }}</h3>
-          <span>{{ section.imageDescription3 }}</span>
-          <hr>
+
+        <div class="images-wide" v-if="section.imageWide">
+          <img class="img-fluid" :src="section.imageWide.url" />
+          <div class="image-title">
+            <h3>{{ section.imageWide.title }}</h3>
+            <span>{{ section.imageWide.description }}</span>
+            <hr :style="{ color: section.imageWide.colour }">
+          </div>
         </div>
       </div>
     </div>
     <div
       class="work-with-us"
-      :style="{ 'background-image': `url('${background}')` }"
+      :style="{ 'background-image': `url('${action.text.background}')` }"
+      v-if="action.text.question"
     >
-      <div class="work" v-for="section in data.action" :key="section.question">
-        <h2>{{ section.question }}</h2>
+      <div class="work">
+        <hr class="one">
+        <h2>{{ action.text.question }}</h2>
         <p class="text">
-          {{ section.description }}
+          {{ action.text.description }}
         </p>
-        <a href="section.url" class="link1" :style="{ 'background-image': `url('${ section.image }')` }">{{ section.button }}</a>
-        <a href="section.url2" class="link1" :style="{ 'background-image': `url('${ section.image2 }')` }">{{ section.button2 }}</a>
-        <a href="section.url3" class="link2" :style="{ 'background-image': `url('${ section.image3 }')` }">{{ section.button3 }}</a>
-        <a href="section.url4" class="link2" :style="{ 'background-image': `url('${ section.image4 }')` }">{{ section.button4 }}</a>
-        <a href="section.url5" class="link2" :style="{ 'background-image': `url('${ section.image5 }')` }">{{ section.button5 }}</a>
-        <a href="section.url6" class="link2" :style="{ 'background-image': `url('${ section.image6 }')` }">{{ section.button6 }}</a>
+        <div class="buttons">
+          <div class="cta" >
+            <a :href="button.link" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
+          </div>
+        </div>
+        <hr class="two">
       </div>
     </div>
     <Footer></Footer>
@@ -120,7 +72,7 @@
 </template>
 
 <script>
-import navigation from "js-yaml-loader!../../content/navigation.yaml";
+// import navigation from "js-yaml-loader!../../content/navigation.yaml";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 export default {
@@ -129,26 +81,22 @@ export default {
   data() {
     return {
       data: {},
-      logoBlack: {},
-      home: "",
-      about: "",
-      action: "",
-      contacts: "",
-      sections: [],
-      faces: [],
       background: {},
+      header: {},
+      sections: [],
+      text: [],
+      action: [],
+      buttons: [],
     };
   },
   mounted() {
     this.data = require(`js-yaml-loader!../../content/featurettes/${this.$route.params.pathMatch}.yaml`);
-    this.logoBlack = navigation.logoBlack;
-    this.home = navigation.home;
-    this.about = navigation.about;
-    this.action = navigation.action;
-    this.contacts = navigation.contacts;
-    this.sections = this.data.sections;
-    this.faces = this.data.faces;
     this.background = this.data.background;
+    this.header = this.data.header;
+    this.sections = this.data.sections;
+    this.text = this.sections.section;
+    this.action = this.data.action;
+    this.buttons = this.data.buttons;
   },
 };
 </script>
@@ -159,11 +107,10 @@ export default {
   overflow: hidden;
 }
 .image {
-  margin-top: 10rem;
-  margin-left: auto;
+  margin-top: 5rem;
+  margin-left: 4.2rem;
 }
 .header {
-  margin-top: 10%;
   margin-right: auto;
   text-align: left;
   h1 {
@@ -174,45 +121,56 @@ export default {
     margin-top: 0px;
     max-width: 500px;
     color: #2B2D42;
-    font-size: 15px;
+    font-size: 16px;
     font-family:  $font__menu;
   }
   hr{
-    border-top: 3px solid red;
+    border-top: 3px solid;
     width: 40%;
     margin-left: 0px;
     margin-top: 3rem;
   }
 }
 .sub-info {
-  margin-top: 4rem;
+  margin-top: -2rem;
   margin-bottom: 55px;
+  text-align: left;
+  max-width: 618px;
+  margin-left: auto;
+  margin-right: auto;
   h2 {
-    color: #ef233c;
+    font-family:  $font__title;
   }
   p {
     color: #2B2D42;
     text-align: left;
     max-width: 618px;
     margin: 0 auto;
-    font-size: 18px;
+    margin-top: 0.7rem;
+    line-height: 1.5rem;
+    font-size: 16px;
+    font-family:  $font__menu;
   }
 }
 .quote {
-  margin: 20px auto 20px;
-  position: relative;
   max-width: 618px;
   margin-top: 3rem;
   h2 {
+    color: #2B2D42;
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    font-family:  $font__menu;
+    font-weight: 400;
   }
-}
-.row {
-  margin: 0 auto 0px;
+  h3 {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 1rem;
+    font-family:  $font__menu;
+    font-weight: 400;
+  }
 }
 .first {
   margin-bottom: 2rem;
@@ -220,46 +178,19 @@ export default {
     text-align: left;
     color: #2B2D42;
     max-width: 618px;
-    font-size: 18px;
+    font-size: 16px;
   }
   h1 {
     text-align: left;
   }
 }
-.second {
-  margin-top: -4rem;
-  .book {
-    p {
-      text-align: left;
-      color: #2B2D42;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    h2 {
-      margin-top: 10rem;
-    }
-    .buy-book {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      h3 {
-        margin-top: 50px;
-        color: #8d99ae;
-        text-align: left;
-        font-size: 20px;
-      }
-      h4 {
-        text-align: left;
-        font-size: 20px;
-        color: red;
-      }
-    }
-  }
-}
+
 .images{
   margin-left: auto;
   margin-right: auto;
   display: flex;
   width: fit-content;
+  margin-top: 3rem;
   .image-title{
     max-width: 205px;
     height: fit-content;
@@ -273,101 +204,87 @@ export default {
       font-size: 12px;
     }
     hr{
-      border-top: #ef233c solid 3px;
+      border-top: solid 3px;
     }
-  }
-}
-.images-left{
-  margin-left: 150px;
-  margin-right: auto;
-  display: flex;
-  width: fit-content;
-  img{
-    width: 618px;
-    margin-left: 0px;
-  }
-  .image-title{
-    max-width: 205px;
-    padding: 20px;
-    margin-right: 20px;
-    margin-top: 10%;
-    text-align: left;
-    h3{
-      font-size: 16px;
-    }
-    span{
-      font-size: 12px;
-    }
-    hr{
-      border-top: #ef233c solid 3px;
-    }
-  }
-}
-.images-right{
-  margin-left: auto;
-  margin-right: 150px;
-  display: flex;
-  width: fit-content;
-  img{
-    width: 618px;
-  }
-  .image-title{
-    max-width: 205px;
-    padding: 20px;
-    margin-top: 10%;
-    margin-left: 20px;
-    text-align: left;
-    h3{
-      font-size: 16px;
-    }
-    span{
-      font-size: 12px;
-    }
-    hr{
-      border-top: #ef233c solid 3px;
-    }
-  }
-}
-.work-with-us{
-  padding-top: 3rem;
-  padding-bottom: 140px;
-  background-position: top;
-  h2, p {
-    color: white;
-    width: 50%;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  p{
-    font-family: $font__menu;
-  }
-  .link{
-  background-repeat: no-repeat;
-  text-decoration: none;
-  background-color: #ef233c;
-  color: white;
-  border-radius: 10px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: 20px;
-  }
-  .link1{
-    padding: 2% 8% 2% 8%;
-    background-repeat: no-repeat;
-    text-decoration: none;
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  .info {
-    margin-left: 0px;
-    margin-top: 20px;
-    h1 {
-      margin-top: 15rem;
+.images-wide{
+margin-left: 0px;
+margin-right: 0px;
+display: flex;
+flex-direction: row-reverse;
+margin-top: 3rem;
+width: fit-content;
+  .image-title{
+    text-align: left;
+    margin-right: 10%;
+    h3{
+      font-size: 16px;
+      width: 170px !important;
+      margin-top: 70%;
     }
+    span{
+      font-size: 12px;
+    }
+    hr{
+      border-top: solid 3px;
+    }
+  }
+}
+
+
+.work-with-us{
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-position: top;
+  h2 {
+    color: #2B2D42;
+    width: 60%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3.3rem;
+    background-color: white;
+    max-width: 500px;
+    font-size: 30px;
+  }
+  p{
+    font-family: $font__menu;
+    margin-top: -1.5rem;
+  }
+  .one, .two{
+    border-top: 2px solid #2B2D42;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttons{
+    display: flex;
+    background-color: white;
+    margin-bottom: 1rem;
+    .cta{
+      margin: auto;
+      .button{
+        width: 15rem;
+      }
+    }
+  } 
+}
+
+@media only screen and (max-width: 1100px) {
+  .header {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 618px;
+  margin-left: auto;
+  margin-right: auto;
+    h1 {
+      margin-top: 0rem;
+    }
+  }
+  .image {
+    margin-left: auto;
   }
   .information {
     margin-top: 20px;
@@ -380,26 +297,95 @@ export default {
       margin: 0 auto;
     }
   }
+  .images-wide{
+    display: block;
+    .image-title{
+    text-align: left;
+    margin: 0px;
+      h3{
+        font-size: 16px;
+        width: 170px !important;
+        margin-top: 20px;
+      }
+      span{
+        font-size: 12px;
+      }
+      hr{
+        border-top: solid 3px;
+        width: 40%;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+  
+
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
+  .header {
+  margin-left: 0px;
+  text-align: left;
+    h1 {
+      font-size: 35px;
+      margin-top: 5rem;
+    }
+    hr{
+      margin-left: 0px;
+    }
+  }
+  
 }
 @media only screen and (max-width: 800px) {
-  .info {
-    margin-left: 2rem;
-    margin-top: 20px;
-    h1 {
-      margin-top: 0rem;
+  .work-with-us{
+    .one, .two{
+      max-width: 80%;
+    }
+    .button{
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
     }
   }
 }
 @media only screen and (max-width: 500px) {
+   .header {
+    h1 {
+      font-size: 40px;
+    }
+  }
   .image {
-  margin-top: 5rem;
-}
-.info {
+    margin-top: 0rem;
+  } 
+  .info {
     margin-left: 0px;
     margin-top: 20px;
     h1 {
       margin-top: 0rem;
     }
   }
-}
+  .images{
+    display: block;
+    .image-title{
+      padding: 20px 20px 0px 0px;
+      margin-top: 5px;
+      h3{
+        font-size: 16px;
+      }
+      span{
+        font-size: 12px;
+      }
+      hr{
+        border-top: solid 3px;
+      }
+    }
+  }
+  .work-with-us{
+    h2 {
+      width: 60%;
+    }
+    .one, .two{
+      max-width: 80%;
+    } 
+  }
+} 
 </style>

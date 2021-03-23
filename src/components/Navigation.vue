@@ -31,24 +31,24 @@
             <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
               firstComponent
             }}</router-link>
-            <router-link class="li" to="#what-we-do" v-scroll-to="'#what-we-do'">{{
+            <router-link class="li" to="/#what-we-do" v-scroll-to="'#what-we-do'">{{
               secondComponent
             }}</router-link>
             <router-link
               class="li"
-              to="#latest-work"
+              to="/#latest-work"
               v-scroll-to="'#latest-work'"
               >{{ thirdComponent }}</router-link
             >
             <router-link
               class="li"
-              to="#YearSummarised"
+              to="/#YearSummarised"
               v-scroll-to="'#YearSummarised'"
               >{{ fourthComponent }}</router-link
             >
             <router-link
               class="li"
-              to="#features"
+              to="/#features"
               v-scroll-to="'#features'"
               >{{ fifthComponent }}</router-link
             >
