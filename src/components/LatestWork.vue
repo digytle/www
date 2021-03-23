@@ -113,16 +113,17 @@ export default {
       }
       .card-body {
         p {
-          color: black;
+          color: white;
+          text-align: left;
           font-size: 14px;
           padding-left: 2rem;
           padding-right: 2rem;
           font-family:  $font__menu;
         }
         h2 {
-          color: black;
+          color: white;
           font-size: 30px;
-           margin-top: -40rem;
+          margin-top: -40rem;
         }
       }
     }
