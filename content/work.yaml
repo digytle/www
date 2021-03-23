@@ -13,7 +13,7 @@ big:
 # rename to left: and see why does it repeat
 left:
 - title: Conversational Chatbots Management
-  description: Blits powers all your company’s internal and external chatbots and voicebots. Offering a no code, drag and drop interface to make creating, comparing and deploying bots across your whole company fast and easy. Compatible with any AI engine, comms channel and connectors to build smart bots that will save your organisation time and resources.
+  description: One of our partner projects Blits powers all your company’s internal and external chatbots and voicebots. Offering a no code, drag and drop interface to make creating, comparing and deploying bots across your whole company fast and easy. Compatible with any AI engine, comms channel and connectors to build smart bots that will save your organisation time and resources.
   image: assets/blits-ai.png
   template: featurettes
   link: blits-conversational-bots-management-ecosystem
