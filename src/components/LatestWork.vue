@@ -201,6 +201,9 @@ export default {
       .card {
         .card-body {
           p {
+            margin-top: 0rem;
+          }
+          h2{
             margin-top: -30rem;
           }
         }
@@ -234,7 +237,7 @@ export default {
   }
   
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .section1 {
     margin-right: -1rem;
   }
@@ -249,7 +252,7 @@ export default {
         border: none;
         .card-body {
           p {
-            margin-top: -45rem;
+            margin-top: 0rem;
             color: white;
             font-size: 14px;
             padding-left: 2rem;
@@ -281,11 +284,14 @@ export default {
         border: none;
         .card-body {
           p {
-            margin-top: -20rem;
+            color: black;
+            width: 360px;
+            margin-left: -15%;
           }
           h2 {
-            margin-top: 0px;
-            color: white;
+          background-color: white;
+          color: black;
+          margin-top: -2%;
           }
         }
       }
@@ -296,19 +302,19 @@ export default {
   }
 }
 @media only screen and (max-width: 376px) {
-  .bigsection {
-    .image-container {
-      .card {
-        .card-body {
-          h2 {
-            margin-top: 0px;
-            color: black;
-            margin-top: 2rem;
-          }
-        }
-      }
-    }
-  }
+  // .bigsection {
+  //   .image-container {
+  //     .card {
+  //       .card-body {
+  //         h2 {
+  //           margin-top: 0px;
+  //           color: black;
+  //           margin-top: 2rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 @media only screen and (max-width: 360px) {
   .ourwork {
@@ -321,33 +327,33 @@ export default {
       width: 105%;
     }
   }
-  .bigsection {
-    .image-container {
-      .card {
-        .card-body {
-          h2 {
-            margin-top: 0px;
-            color: black;
-            margin-top: 2rem;
-          }
-        }
-      }
-    }
-  }
+  // .bigsection {
+  //   .image-container {
+  //     .card {
+  //       .card-body {
+  //         h2 {
+  //           margin-top: 0px;
+  //           color: black;
+  //           margin-top: 2rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 @media only screen and (max-width: 320px) {
-  .bigsection {
-    .image-container {
-      .card {
-        .card-body {
-          h2 {
-            margin-top: 0px;
-            color: black;
-            margin-top: -5rem;
-          }
-        }
-      }
-    }
-  }
+  // .bigsection {
+  //   .image-container {
+  //     .card {
+  //       .card-body {
+  //         h2 {
+  //           margin-top: 0px;
+  //           color: black;
+  //           margin-top: -5rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 </style>
