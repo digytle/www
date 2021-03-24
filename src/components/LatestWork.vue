@@ -115,7 +115,7 @@ export default {
         p {
           color: white;
           text-align: left;
-          font-size: 14px;
+          font-size: 16px;
           padding-left: 2rem;
           padding-right: 2rem;
           font-family:  $font__menu;
@@ -124,6 +124,9 @@ export default {
           color: white;
           font-size: 30px;
           margin-top: -40rem;
+          text-align: left;
+          padding-left: 2.1rem;
+          margin-bottom: 1.5rem;
         }
       }
     }

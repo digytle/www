@@ -32,9 +32,9 @@
         </div>
         
         <div class="col-7 quote" v-if="section.quote">
-          <img :src="section.quote.bigQuotes" :style="{ fill: section.quote.colour }"/>
+          <i class="fas fa-quote-left" :style="{ color: section.quote.colour }"></i>
           <h2>{{ section.quote.text }}</h2>
-          <img class="small" :src="section.quote.smallQuotes" :style="{ fill: section.quote.colour }" />
+          <i class="fas fa-quote-right" :style="{ color: section.quote.colour }"></i>
           <h3>{{ section.quote.author }}</h3>
         </div>
 
@@ -102,6 +102,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 @import "../assets/main.scss";
 .fea{
   overflow: hidden;
@@ -170,6 +171,9 @@ export default {
     margin-top: 1rem;
     font-family:  $font__menu;
     font-weight: 400;
+  }
+  .fa-quote-left {
+    font-size: 40px;
   }
 }
 .first {
