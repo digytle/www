@@ -26,7 +26,7 @@ sections:
   - It not only informs, instructs and inspires, but also convinces and is rich in both scientific research and real life examples of distributed leadership giving companies the edge in highly competitive spaces.
 - section:
   quote:
-    colour: "#6E44FF"
+    colour: "#EF233C"
     bigQuotes: ../assets/big_quotes.svg
     text: "No man will make a great leader who wants to do it all himself, or to get all the credit for doing it."
     smallQuotes: ../assets/small_quotes.svg

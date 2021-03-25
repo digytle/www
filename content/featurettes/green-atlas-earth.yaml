@@ -22,7 +22,7 @@ sections:
   - Green Atlas is the product of an endless industry experience and an endless technology experience. Combined in search for perfection.
 - section:
   quote:
-    colour: "#6E44FF"
+    colour: "#567d46"
     bigQuotes: ../assets/big_quotes.svg
     text: "Take my advice and live for a long, long time. Because the maddest thing a man can do in this life is to let himself die."
     smallQuotes: ../assets/small_quotes.svg
