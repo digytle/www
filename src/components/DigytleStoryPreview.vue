@@ -83,7 +83,7 @@ export default {
         font-family:  $font__menu;
     }
     img{
-        margin-top: -7rem;
+        margin-top: -9rem;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -107,6 +107,7 @@ export default {
     p{
         margin-top: 1rem;
         margin-left: 0rem;
+        margin-bottom: -1rem;
         padding-right: 2rem;
     }
     img{

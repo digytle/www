@@ -285,7 +285,7 @@ export default {
         .card-body {
           p {
             color: black;
-            width: 360px;
+            width: 300px;
             margin-left: -15%;
           }
           h2 {
