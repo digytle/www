@@ -98,15 +98,25 @@
       <div class="form-group" style="text-align: start;">
         <textarea class="description" id="inputDescription" type="text" placeholder="Description"></textarea>
       </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            I agree with blah blah.......
-          </label>
+      <div class="last-row">
+        <div class="col send">
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                I agree with blah blah.......
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send my inquiry</button>
+        </div>
+        <div class="col social">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/digytle/www"><i class="fab fa-github"></i></a>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Send my inquiry</button>
     </form> 
     <Footer></Footer>
   </div>
@@ -343,6 +353,22 @@ width: fit-content;
     border: none;
     border-bottom: 2px solid #000;
   }
+  .send{
+    text-align: start;
+    padding: 0;
+  }
+  .social{
+    font-size: 30px;
+    text-align: end;
+    padding: 0;
+    .fab{
+      margin-left: 1rem;
+      color: #007bff;
+    }
+  }
+  .last-row{
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -477,6 +503,13 @@ width: fit-content;
         margin: 0 !important;
         margin-bottom: 2rem !important;
       }
+    }
+    .last-row{
+    display: block;
+    }
+    .send, .social{
+      text-align: center;
+      margin-bottom: 1rem;
     }
   }
 }
