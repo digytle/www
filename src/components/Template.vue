@@ -67,6 +67,47 @@
         <hr class="two">
       </div>
     </div>
+    
+    <form class="contact">
+      <h2>Do you want to work with us</h2>
+      <p>Lets get in touch:</p>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin: 3rem 0 3rem 0;" >
+          <div class="input-group">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="col" style="margin: 3rem 0 3rem 0;">
+          <div class="form-group" style="text-align: start;">
+            <select class="form-control" >
+              <option>Contact us for Caterina</option>
+              <option>Contact us for a Conversational chatbot</option>
+              <option>Contact us for a Digytle for executives</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group" style="text-align: start;">
+        <textarea class="description" id="inputDescription" type="text" placeholder="Description"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            I agree with blah blah.......
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Send my inquiry</button>
+    </form> 
     <Footer></Footer>
   </div>
 </template>
@@ -237,10 +278,9 @@ width: fit-content;
   }
 }
 
-
 .work-with-us{
   padding-top: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   background-position: top;
   h2 {
     color: #2B2D42;
@@ -274,6 +314,35 @@ width: fit-content;
       }
     }
   } 
+}
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  margin-bottom: 5rem;
+  h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  p{
+    font-family: $font__menu;
+  }
+  .form-control{
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+  }
+  .btn{
+    border-radius: 0;
+    
+  }
+  .description{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -350,6 +419,9 @@ width: fit-content;
       display: flex;
     }
   }
+  .contact{
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 500px) {
    .header {
@@ -392,4 +464,20 @@ width: fit-content;
     } 
   }
 } 
+@media only screen and (max-width: 400px) {
+  .contact{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 5rem;
+    .row{
+      display: flex;
+      flex-direction: column;
+      .col{
+        margin: 0 !important;
+        margin-bottom: 2rem !important;
+      }
+    }
+  }
+}
 </style>
