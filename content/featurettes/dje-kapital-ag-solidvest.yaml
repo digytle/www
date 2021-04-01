@@ -70,3 +70,17 @@ action:
   - button:
     link: https://www.waterstones.com/book/distributed-leadership-and-digital-innovation/caterina-maniscalco//9780367361488
     image: ../assets/Waterstones.png
+contact:
+  text:
+    heading: Do you want to work with us
+    subheading: Lets get in touch
+    color: "#EF233C"
+  options:
+  - option:
+    text: Contact us for Caterina
+  - option:
+    text: Contact us for a Conversational chatbot
+  - option:
+    text: Contact us for a Digytle for executives
+  confirm:
+    text: I agree to recieve news from Digytle
