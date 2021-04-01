@@ -223,6 +223,7 @@ export default {
       .card {
         .img {
           left: 8%;
+          width: 90%;
         }
         .img-bg{
           position: relative;
@@ -233,6 +234,7 @@ export default {
         }
         .img-bot{
           left: 8%;
+          width: 80%;
         }
       }
     }
@@ -293,7 +295,7 @@ export default {
         }
         .img-bg{
           position: relative;
-          height: 120vh;
+          height: 50rem;
           width: 100%;
           margin-top: 0px;
           z-index: 0;
