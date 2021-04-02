@@ -124,14 +124,14 @@ export default {
       .img-bot{
         position: absolute;
         left: 0;
-        bottom: 5rem;
+        bottom: 3rem;
         width: 100%;
       }
       .card-body {
         p {
           position: absolute;
-          top: 25%;
-          color: white;
+          top: 13rem;
+          color: black;
           text-align: left;
           font-size: 16px;
           padding-left: 2rem;
@@ -140,7 +140,7 @@ export default {
         }
         h2 {
           position: absolute;
-          color: white;
+          color: black;
           font-size: 30px;
           top: 10%;
           padding-left: 2.1rem;
