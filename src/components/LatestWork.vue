@@ -264,7 +264,7 @@ export default {
         }
         .img-bg{
           position: relative;
-          height: 100vh;
+          height: 50rem;
           width: 100%;
           margin-top: 0px;
           z-index: 0;
