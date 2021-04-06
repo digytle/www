@@ -6,6 +6,11 @@ features:
   image: assets/book.featurette.png
   template: featurettes
   link: distributed-leadership-and-digital-innovation-by-caterina-maniscalco
+- name: Automated Deep Quality And Compliance Monitoring
+  description: We offer peace of mind.
+  image: assets/ta.featurette.png
+  template: featurettes
+  link: automation-of-quality
 - name: Conversational Bots
   description: The Conversational Bots (colloquially known as chatbots) are a fascinating discipline. Fortunately for you, we not only know how to help you implement them, but we have built the most advanced Conversational Bots Management Ecosystem.
   image: assets/bot.featurette.png
@@ -16,8 +21,3 @@ features:
   image: assets/code.featurettes.png
   template: featurettes
   link: digytle-for-executives
-- name: Automated Deep Quality And Compliance Monitoring
-  description: We offer peace of mind.
-  image: assets/ta.featurette.png
-  template: featurettes
-  link: automation-of-quality
