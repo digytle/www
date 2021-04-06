@@ -10,7 +10,7 @@
           <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
           <hr :style="{ color: header.title.colour }">
           <p>{{ header.title.description }}</p>
-          <div class="addthis_inline_share_toolbox"></div>
+          <div class="addthis_inline_share_toolbox_nj2o"></div>
         </div>
       </div>
 
