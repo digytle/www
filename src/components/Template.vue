@@ -10,6 +10,7 @@
           <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
           <hr :style="{ color: header.title.colour }">
           <p>{{ header.title.description }}</p>
+          <script type="application/javascript" defer src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-606cd3781f8387e0"></script>
           <div class="addthis_inline_share_toolbox_nj2o"></div>
         </div>
       </div>
