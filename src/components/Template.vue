@@ -10,6 +10,8 @@
           <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
           <hr :style="{ color: header.title.colour }">
           <p>{{ header.title.description }}</p>
+           <hr class="second-line" :style="{ color: header.title.colour }">
+           <span>Share this story:</span>
           <script type="application/javascript" defer src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-606cd3781f8387e0"></script>
           <div class="addthis_inline_share_toolbox_nj2o"></div>
         </div>
@@ -46,6 +48,18 @@
             <h3>{{ section.imageWide.title }}</h3>
             <span>{{ section.imageWide.description }}</span>
             <hr :style="{ color: section.imageWide.colour }">
+          </div>
+        </div>
+
+        <div class="images-wide" v-if="section.video">
+          <video width="100%" autoplay loop muteds>
+            <source :src="section.video.url" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="image-title">
+            <h3>{{ section.video.title }}</h3>
+            <span>{{ section.video.description }}</span>
+            <hr :style="{ color: section.video.colour }">
           </div>
         </div>
       </div>
@@ -171,7 +185,7 @@ export default {
   text-align: left;
   h1 {
     color: #ef233c;
-    margin-top: 11rem;
+    margin-top: 7rem;
   }
   p {
     margin-top: 0px;
@@ -185,6 +199,16 @@ export default {
     width: 40%;
     margin-left: 0px;
     margin-top: 3rem;
+  }
+  .second-line{
+    margin-top: 0rem;
+  }
+  span{
+    font-size: 13px;
+    margin-left: 0.2rem;
+  }
+  .addthis_inline_share_toolbox_nj2o{
+    margin-top: 5px;
   }
 }
 .sub-info {
