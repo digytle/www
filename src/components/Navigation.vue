@@ -1,6 +1,7 @@
 <template>
-  <div class="row navigation">
-    <div class="col-md-6 logo">
+<div class="container">
+  <div class="column navigation">
+    <div class="logo">
       <router-link to="/">
         <img
           :src="
@@ -14,7 +15,6 @@
       </router-link>
     </div>
     <nav class="navbar navbar-expand-md navbar-light mainnav">
-      <div class="container-fluid asd">
         <button
           class="navbar-toggler navbarsmall"
           type="button"
@@ -27,7 +27,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navlist" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav">
             <router-link class="li" to="/" v-scroll-to="'#navigation'">{{
               firstComponent
             }}</router-link>
@@ -53,10 +53,10 @@
               >{{ fifthComponent }}</router-link
             >
           </ul>
-        </div>
       </div>
     </nav>
   </div>
+</div>
 </template>
 
 <script>
@@ -85,6 +85,7 @@ export default {
     this.fourthComponent = navigation.fourthComponent;
     this.fifthComponent = navigation.fifthComponent;
   },
+  
 };
 </script>
 
@@ -98,19 +99,21 @@ export default {
   width: 100%;
   font-family: $font__menu;
   .logo {
-    display: flex;
-    padding-left: 35px;
-    width: 330px;
+    width: fit-content;
     margin-top: 1rem;
+    margin-left: 0px;
+    img{
+      width: 330px;
+    }
   }
   a {
     text-decoration: none;
-    padding-right: -1rem;
     color: #8d99ae;
     font-size: 17px;
     border: none;
-    margin: 0 10px;
+    padding-right: 1.5rem;
     font-weight: 300;
+    margin-top: 1rem;
   }
   .buttons {
     margin-top: 12rem;
@@ -120,9 +123,7 @@ export default {
     }
   }
   .mainnav {
-    position: absolute;
-    margin-top: 9.5rem;
-    margin-left: 2.5rem;
+    padding: 0rem;
     .navlist{
       ul{
         white-space: nowrap;
@@ -135,62 +136,28 @@ export default {
     margin-top: -13rem;
   }
 }
-@media only screen and (min-width: 1700px) {
-  .navigation{
-    margin-left: 10rem;
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 765px) {
   .navlist {
     z-index: 1;
     width: 100vw;
+    height: 15rem;
+    margin-top: -4rem;
     background-color: white;
-    margin-top: -2.5rem;
-    margin-left: -2rem;
-  }
-  .logo {
-    margin-left: -1.5rem;
   }
   .navigation {
     margin-left: 0rem;
     .mainnav {
-      position: absolute;
-      margin-top: 10rem;
-      margin-left: -5rem;
-    }
-  }
-}
-@media only screen and (max-width: 767px) {
-  .navlist {
-    z-index: 1;
-    width: 100vw;
-    background-color: white;
-    margin-top: -2.5rem;
-    margin-left: -2rem;
-  }
-  .logo {
-    margin-left: 0rem;
-  }
-  .navigation {
-    margin-left: 0rem;
-    .mainnav {
-      position: absolute;
-      margin-top: 10rem;
+      width: 100vw;
+      margin-top: 4rem;
       margin-left: 0rem;
+      margin-right: 5rem;
     }
-  }
-}
-@media only screen and (max-width: 500px) {
     .logo{
-    margin-left: -0.2rem;
-  }
-  .navigation {
-    margin-left: 0rem;
-    .mainnav {
-      position: absolute;
-      margin-top: 10rem;
-      margin-left: 0rem;
+      img{
+        width: 70%;
+        margin-left: 11%;
+      }
     }
   }
 }

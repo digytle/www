@@ -53,6 +53,12 @@ sections:
     description: Written like a PhD, the book has the rare power to instruct and convince.
     colour: "#855c9c"
 - section:
+  video:
+    url: ../assets/Blits-Engine.mp4
+    title: Video title
+    description: This is a video
+    colour: "#855c9c"
+- section:
   text:
     - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
     - Caterina is available as a consultant, lecturer and speaker.
@@ -65,3 +71,17 @@ action:
   - button:
     link: https://calendly.com/
     image: ../assets/Calendly.png
+contact:
+  text:
+    heading: Do you want to work with us
+    subheading: Lets get in touch
+    color: "#855c9c"
+  options:
+  - option:
+    text: Contact us for Caterina
+  - option:
+    text: Contact us for a Conversational chatbot
+  - option:
+    text: Contact us for a Digytle for executives
+  confirm:
+    text: I agree to recieve news from Digytle

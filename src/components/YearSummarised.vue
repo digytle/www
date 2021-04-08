@@ -82,8 +82,9 @@ export default {
     max-width: 1000px;
     h2{
         text-align: left;
-        margin-top: -3rem;
+        margin-top: -2rem;
         padding-top: 1rem;
+        padding-bottom: 1rem;
         padding-left: 1rem;
         font-style: italic;
         border-left: 2px solid black;

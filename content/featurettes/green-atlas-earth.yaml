@@ -43,8 +43,14 @@ sections:
   text:
     - Green Atlas began in the Netherlands and is preparing for international use.
 - section:
+  video:
+    url: ../assets/ga.e.mp4
+    title: Video title
+    description: This is a video
+    colour: "#567d46"
+- section:
   imageWide:
-    url: ../assets/the-crew.png
+    url: ../assets/ga.e-img.jpg
     title: Solid Science
     description: Written like a PhD, the book has the rare power to instruct and convince.
     colour: "#567d46"
@@ -61,3 +67,17 @@ action:
   - button:
     link: https://greenatlas.earth/
     image: ../assets/ga.e.button.png
+contact:
+  text:
+    heading: Do you want to work with us
+    subheading: Lets get in touch
+    color: "#567d46"
+  options:
+  - option:
+    text: Contact us for Caterina
+  - option:
+    text: Contact us for a Conversational chatbot
+  - option:
+    text: Contact us for a Digytle for executives
+  confirm:
+    text: I agree to recieve news from Digytle

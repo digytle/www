@@ -10,6 +10,10 @@
           <h1 :style="{ color: header.title.colour }">{{ header.title.title }}</h1>
           <hr :style="{ color: header.title.colour }">
           <p>{{ header.title.description }}</p>
+           <hr class="second-line" :style="{ color: header.title.colour }">
+           <span>Share this story:</span>
+          <script type="application/javascript" defer src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-606cd3781f8387e0"></script>
+          <div class="addthis_inline_share_toolbox_nj2o"></div>
         </div>
       </div>
 
@@ -46,6 +50,18 @@
             <hr :style="{ color: section.imageWide.colour }">
           </div>
         </div>
+
+        <div class="images-wide" v-if="section.video">
+          <video width="100%" autoplay loop muteds>
+            <source :src="section.video.url" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="image-title">
+            <h3>{{ section.video.title }}</h3>
+            <span>{{ section.video.description }}</span>
+            <hr :style="{ color: section.video.colour }">
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -67,6 +83,55 @@
         <hr class="two">
       </div>
     </div>
+    
+    <form class="contact" v-if="contact.text.heading">
+      <h2>{{ contact.text.heading }}</h2>
+      <p>{{ contact.text.subheading }}</p>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin: 3rem 0 3rem 0;" >
+          <div class="input-group">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="col" style="margin: 3rem 0 3rem 0;">
+          <div class="form-group" style="text-align: start;">
+            <select class="form-control" >
+              <option v-for="(option, index) in contact.options" :key="index"><h2>{{ option.text }}</h2></option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group" style="text-align: start;">
+        <textarea class="description" id="inputDescription" type="text" placeholder="Description"></textarea>
+      </div>
+      <div class="last-row">
+        <div class="col send">
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                {{ contact.confirm.text }}
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" :style="{ background: contact.text.color }">Send my inquiry</button>
+        </div>
+        <div class="col social">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
+          <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
+          <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
+          <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
+        </div>
+      </div>
+    </form> 
     <Footer></Footer>
   </div>
 </template>
@@ -87,6 +152,8 @@ export default {
       text: [],
       action: [],
       buttons: [],
+      contact: [],
+      options: [],
     };
   },
   mounted() {
@@ -97,6 +164,8 @@ export default {
     this.text = this.sections.section;
     this.action = this.data.action;
     this.buttons = this.data.buttons;
+    this.contact = this.data.contact;
+    this.options = this.data.options;
   },
 };
 </script>
@@ -116,7 +185,7 @@ export default {
   text-align: left;
   h1 {
     color: #ef233c;
-    margin-top: 11rem;
+    margin-top: 7rem;
   }
   p {
     margin-top: 0px;
@@ -130,6 +199,16 @@ export default {
     width: 40%;
     margin-left: 0px;
     margin-top: 3rem;
+  }
+  .second-line{
+    margin-top: 0rem;
+  }
+  span{
+    font-size: 13px;
+    margin-left: 0.2rem;
+  }
+  .addthis_inline_share_toolbox_nj2o{
+    margin-top: 5px;
   }
 }
 .sub-info {
@@ -237,10 +316,9 @@ width: fit-content;
   }
 }
 
-
 .work-with-us{
   padding-top: 1rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   background-position: top;
   h2 {
     color: #2B2D42;
@@ -274,6 +352,51 @@ width: fit-content;
       }
     }
   } 
+}
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  margin-bottom: 5rem;
+  h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  p{
+    font-family: $font__menu;
+  }
+  .form-control{
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+  }
+  .btn{
+    border-radius: 0;
+    
+  }
+  .description{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+  }
+  .send{
+    text-align: start;
+    padding: 0;
+  }
+  .social{
+    font-size: 30px;
+    text-align: end;
+    padding: 0;
+    .fab{
+      margin-left: 1rem;
+      color: #007bff;
+    }
+  }
+  .last-row{
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -350,6 +473,9 @@ width: fit-content;
       display: flex;
     }
   }
+  .contact{
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 500px) {
    .header {
@@ -392,4 +518,27 @@ width: fit-content;
     } 
   }
 } 
+@media only screen and (max-width: 400px) {
+  .contact{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 5rem;
+    .row{
+      display: flex;
+      flex-direction: column;
+      .col{
+        margin: 0 !important;
+        margin-bottom: 2rem !important;
+      }
+    }
+    .last-row{
+    display: block;
+    }
+    .send, .social{
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
 </style>
