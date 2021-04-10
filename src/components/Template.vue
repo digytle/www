@@ -84,7 +84,7 @@
       </div>
     </div>
     
-    <form class="contact" v-if="contact.text.heading">
+    <form class="contact" name="contact" method="POST" data-netlify="true">
       <h2>{{ contact.text.heading }}</h2>
       <p>{{ contact.text.subheading }}</p>
       <div class="row">
