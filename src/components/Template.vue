@@ -84,7 +84,7 @@
       </div>
     </div>
     
-    <form name="contact" method="POST" data-netlify="true" action="/">
+    <form name="contact" method="POST" netlify action="/">
       <p>
         <label>Your Name: <input type="text" name="name" /></label>   
       </p>
