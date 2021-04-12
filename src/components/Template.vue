@@ -90,21 +90,12 @@
       For example the yaml page name.
       -->
 
-    <form name="contact12" method="POST" data-netlify="true">
+    <form name="newsletter" action=/thank-you.vue netlify>
       <p>
-        <label>Your Name: <input type="text" name="name123" /></label>   
+        <label>Name <input type="text" name="name" /></label>
       </p>
       <p>
-        <label>Your Email: <input type="email" name="email123" /></label>
-      </p>
-      <p>
-        <label>Your Role: <select name="role[]" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message123"></textarea></label>
+        <label>Email <input type="email" name="email" /></label>
       </p>
       <p>
         <button type="submit">Send</button>
