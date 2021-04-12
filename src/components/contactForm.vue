@@ -1,6 +1,6 @@
 <template>
     <div class="asd">
-        <form name="asdasd" method="post" data-netlify="true">
+        <form name="asdasd" method="post" data-netlify="true" action=./Template.vue>
             <input type="hidden" name="form-name1" />
             <input type="hidden" name="form-name2" />
             <ul>
