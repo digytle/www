@@ -1,8 +1,7 @@
 <template>
     <div class="asd">
-        <form name="asdasd" method="post" data-netlify="true" action=./Template.vue>
-            <input type="hidden" name="form-name1" />
-            <input type="hidden" name="form-name2" />
+        <form name="Contact-us" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact-us" />
             <ul>
                 <li>
                     <input type="text" class="form-control1" placeholder="First name">
