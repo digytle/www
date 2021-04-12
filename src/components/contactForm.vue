@@ -1,6 +1,7 @@
 <template>
     <div class="Contact">
         <form name="Contact-us" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact-us" />
             <input type="text" name="form-control1" placeholder="First name">
             <input type="email" name="form-control2" placeholder="Email">
             <input type="description" name="form-control3" placeholder="description">
