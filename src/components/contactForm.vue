@@ -2,9 +2,9 @@
     <div class="Contact">
         <form name="Contact-us" method="post" data-netlify="true">
             <input type="hidden" name="form-name" value="Contact-us" />
-            <input type="text" name="name" placeholder="First name">
-            <input type="email" name="Email" placeholder="Email">
-            <input type="description" name="Message" placeholder="description">
+            <input name="name" placeholder="First name">
+            <input name="Email" placeholder="Email">
+            <input name="Message" placeholder="description">
             <button type="submit">go</button>
         </form>
     </div>

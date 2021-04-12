@@ -2,7 +2,6 @@
   <div class="main-page">
     <Navigation></Navigation>
     <Header></Header>
-    <contactForm></contactForm>
     <!-- <WeAre></WeAre> -->
     <WhatWeDo></WhatWeDo>
     <DigytleStoryPreview></DigytleStoryPreview>
@@ -16,7 +15,6 @@
 <script>
 import Navigation from "./Navigation";
 import Header from "./Header";
-import contactForm from "./contactForm";
 // import WeAre from "./WeAre";
 import WhatWeDo from "./WhatWeDo";
 import DigytleStoryPreview from "./DigytleStoryPreview";
@@ -29,7 +27,6 @@ export default {
   components: {
     Navigation,
     Header,
-    contactForm,
     // WeAre,
     WhatWeDo,
     DigytleStoryPreview,
