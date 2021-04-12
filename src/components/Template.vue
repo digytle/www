@@ -89,7 +89,30 @@
       If you inclue it in mutiple pages (which you do)——you must add something to the name.
       For example the yaml page name.
       -->
-    <form class="contact" name="contact" method="POST" data-netlify="true">
+
+    <form name="contact12" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name123" /></label>   
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email123" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message123"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    
+    <!-- <form class="contact" name="contact" method="POST" data-netlify="true">
       <h2>{{ contact.text.heading }}</h2>
       <p>{{ contact.text.subheading }}</p>
       <div class="row">
@@ -136,7 +159,7 @@
       <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
       <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
       <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
-    </div>
+    </div> -->
     <Footer></Footer>
   </div>
 </template>
