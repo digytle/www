@@ -8,6 +8,7 @@
     </form> -->
 
     <form class="email-form" name="Contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="Contact-us" />
         <div hidden aria-hidden="true">
             <label>
             Don’t fill this out if you're human: 
