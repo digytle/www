@@ -90,16 +90,16 @@
       For example the yaml page name.
       -->
 
-    <form name="newsletter" action=/thank-you.vue netlify>
-      <p>
-        <label>Name <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Email <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+    <form
+    name="yanny-v-laurel" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" />
+      <ul>
+        <li>
+           <input type="text" class="form-control" placeholder="First name">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </li>
+      </ul>
+      <button type="submit">go</button>
     </form>
 
     
