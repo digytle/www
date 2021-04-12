@@ -1,9 +1,10 @@
 <template>
     <div class="Contact">
-        <form name="Contact-us" method="post" data-netlify="true">  <input type="hidden" name="form-name" value="Contact-us" />
-            <input type="hidden" name="signup-form" value="Contact-us" />
-            <input type="text" name="name" placeholder="Your Name*" required />
-            <input type="text" name="email" placeholder="Your Email*" required />
+        <form name="Contact-us" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact-us" />
+            <input type="text" name="name" placeholder="First name">
+            <input type="text" name="Email" placeholder="Email">
+            <input type="text" name="Message" placeholder="description">
             <button type="submit">go</button>
         </form>
     </div>
