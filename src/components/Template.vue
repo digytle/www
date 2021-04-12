@@ -141,7 +141,7 @@
       <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
       <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
     </div> -->
-    <contactForm></contactForm>
+    
     <Footer></Footer>
   </div>
 </template>
@@ -150,10 +150,10 @@
 // import navigation from "js-yaml-loader!../../content/navigation.yaml";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import contactForm from "./contactForm";
+
 export default {
   name: "Featurette",
-  components: { Navigation, Footer, contactForm },
+  components: { Navigation, Footer, },
   data() {
     return {
       data: {},
