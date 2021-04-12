@@ -1,5 +1,5 @@
 <template>
-    <div class="asd">
+    <div class="Contact">
         <form name="Contact-us" method="post" data-netlify="true">
             <input type="hidden" name="form-name" value="Contact-us" />
             <ul>
