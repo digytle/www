@@ -90,13 +90,13 @@
       For example the yaml page name.
       -->
 
-    <form
-    name="yanny-v-laurel" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" />
+    <form name="asdasd" method="post" data-netlify="true">
+      <input type="hidden" name="form-name1" />
+      <input type="hidden" name="form-name2" />
       <ul>
         <li>
-           <input type="text" class="form-control" placeholder="First name">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <input type="text" class="form-control1" placeholder="First name">
+            <input type="email" class="form-control2" placeholder="Email">
         </li>
       </ul>
       <button type="submit">go</button>
