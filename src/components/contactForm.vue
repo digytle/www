@@ -128,4 +128,33 @@ export default Vue.extend({
     display: flex;
   }
 }
+@media only screen and (max-width: 800px) {
+
+  .contact{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 5rem;
+    .row{
+      display: flex;
+      flex-direction: column;
+      .col{
+        margin: 0 !important;
+        margin-bottom: 2rem !important;
+      }
+    }
+    .last-row{
+    display: block;
+    }
+    .send, .social{
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
 </style>
