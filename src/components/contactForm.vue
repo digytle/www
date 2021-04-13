@@ -19,7 +19,7 @@
         </div>
         <div class="col" style="margin: 3rem 0 3rem 0;">
           <div class="form-group" style="text-align: start;">
-            <select class="form-control" name="for[]">
+            <select class="form-control" name="here for">
               <option v-for="(option, index) in contact.options" :key="index"><h2>{{ option.text }}</h2></option>
             </select>
           </div>
@@ -32,7 +32,7 @@
         <div class="col send">
           <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <input class="form-check-input" type="checkbox" id="gridCheck" name="news">
               <label class="form-check-label" for="gridCheck">
                 {{ contact.confirm.text }}
               </label>
