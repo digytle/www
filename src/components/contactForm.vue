@@ -5,32 +5,29 @@
       <p>{{ contact.text.subheading }}</p>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="First name">
+          <input type="text" class="form-control" placeholder="First name" name="name">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Last name">
+          <input type="text" class="form-control" placeholder="Last name" name="surname">
         </div>
       </div>
       <div class="row">
         <div class="col" style="margin: 3rem 0 3rem 0;" >
           <div class="input-group">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
           </div>
         </div>
         <div class="col" style="margin: 3rem 0 3rem 0;">
           <div class="form-group" style="text-align: start;">
-            <select class="form-control" >
+            <select class="form-control" name="for[]">
               <option v-for="(option, index) in contact.options" :key="index"><h2>{{ option.text }}</h2></option>
             </select>
           </div>
         </div>
       </div>
       <div class="form-group" style="text-align: start;">
-        <textarea class="description" id="inputDescription" type="text" placeholder="Description"></textarea>
+        <textarea class="description" id="inputDescription" type="text" placeholder="Description" name="text"></textarea>
       </div>
-      
-
-
       <div class="last-row">
         <div class="col send">
           <div class="form-group">
@@ -41,18 +38,15 @@
               </label>
             </div>
           </div>
-         <button type="submit" class="btn btn-primary" :style="{ background: contact.text.color }">Submit my request</button>
+          <button type="submit" class="btn btn-primary" :style="{ background: contact.text.color }">Submit my request</button>
         </div>
         <div class="col social">
-      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
-      <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
-      <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
-      <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
-    </div>
-      </div>
-
-
-        
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
+          <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
+          <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
+          <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
+        </div>
+      </div> 
     </form>
 </template>
 
