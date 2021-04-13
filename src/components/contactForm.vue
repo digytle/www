@@ -5,16 +5,16 @@
       <p>{{ contact.text.subheading }}</p>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="First name" name="name">
+          <input type="text" class="form-control" placeholder="First name" name="name" required>
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" name="surname">
+          <input type="text" class="form-control" placeholder="Last name" name="surname" required>
         </div>
       </div>
       <div class="row">
         <div class="col" style="margin: 3rem 0 3rem 0;" >
           <div class="input-group">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required>
           </div>
         </div>
         <div class="col" style="margin: 3rem 0 3rem 0;">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="form-group" style="text-align: start;">
-        <textarea class="description" id="inputDescription" type="text" placeholder="Description" name="text"></textarea>
+        <textarea class="description" id="inputDescription" type="text" placeholder="Description" name="text" required></textarea>
       </div>
       <div class="last-row">
         <div class="col send">
