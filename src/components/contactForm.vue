@@ -1,5 +1,5 @@
 <template>
-    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="./TemplateAfterForm.vue">
+    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="/TemplateAfterForm.vue">
       <input type="hidden" name="form-name" value="Contact-us" />
       <h2>{{ contact.text.heading }}</h2>
       <p>{{ contact.text.subheading }}</p>
