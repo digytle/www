@@ -2,12 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Template from '../components/Template'
-// import DigytleStory from '../components/DigytleStory'
-// import DesignPage from '../components/DesignPage'
+import TemplateAfterForm from '../components/TemplateAfterForm'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+  {
     path: '/',
     name: 'MainPage',
     component: MainPage
@@ -25,20 +25,15 @@ const routes = [{
     path: '/stories',
     redirect: '/'
   },
-  // {
-  //   path: '/stories/**',
-  //   name: 'DigytleStory',
-  //   component: DigytleStory
-  // },
-  // {
-  //   path: '/feature/**',
-  //   name: 'DesignPage',
-  //   component: DesignPage
-  // },
   {
     path: '/privacy-policy/**',
     name: 'PrivacyPolicy',
     component: PrivacyPolicy
+  },
+  {
+    path: '/submited',
+    name: 'TemplateAfterForm',
+    component: TemplateAfterForm
   }
 ]
 
