@@ -18,7 +18,7 @@
               <a href="https://github.com/digytle/www"><i class="fab fa-github" ></i></a>
             </div>
             <router-link to="/" class="btn">
-              <button class="btn btn-primary">Or explore our main page</button>
+              <button class="btn btn-success">Or explore our main page</button>
             </router-link>
           </div>
         </div>
@@ -100,14 +100,14 @@ export default {
       margin-bottom: 3rem;
       text-align: left;
       max-width: 600px;
-      color:  #007bff;
+      color:  #28a745;
       font-size: 34px;
     }
     hr{
       margin-left: auto;
       margin-right: auto;
       width: 200px;
-      border-top: 3px solid #007bff;
+      border-top: 3px solid #28a745;
     }
   }
   .title {
@@ -154,7 +154,7 @@ export default {
       width: 100%;
     }
   }
-    .explore{
+  .explore{
       margin-top: 2rem;
       margin-left: 0;
       .social{
@@ -163,11 +163,12 @@ export default {
       .fab{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-        color: #007bff;
+        color: #28a745;
       }
-      .btn{
-        margin-top: 10rem;
-      }
+      
+    }
+    .btn{
+      margin-top: 0rem;
     }
   }
 </style>
