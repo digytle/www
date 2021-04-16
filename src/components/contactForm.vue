@@ -1,6 +1,6 @@
 <template>
 <div>
-    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="/submited" netlify-honeypot="bot-field">
+    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="src\components\submited.vue" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="Contact-us" />
       <h2>{{ contact.text.heading }}</h2>
       <p>{{ contact.text.subheading }}</p>
