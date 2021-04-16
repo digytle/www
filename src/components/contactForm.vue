@@ -1,11 +1,14 @@
 <template>
 <div>
-    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="/submited" data-netlify-recaptcha="true">
+    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="/submited" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="Contact-us" />
       <h2>{{ contact.text.heading }}</h2>
       <p>{{ contact.text.subheading }}</p>
       <div class="row">
         <div class="col">
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
           <input type="text" class="form-control" placeholder="First name" name="name" required>
         </div>
         <div class="col">
@@ -151,6 +154,9 @@ export default Vue.extend({
     width: 100%;
     border: none;
     border-bottom: 2px solid #000;
+  }
+  .hidden{
+    display: none;
   }
   .send{
     text-align: start;
