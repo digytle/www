@@ -1,5 +1,6 @@
 <template>
-    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="/submited">
+<div>
+    <form name="Contact-us" method="post" data-netlify="true" class="contact" action="/submited" data-netlify-recaptcha="true">
       <input type="hidden" name="form-name" value="Contact-us" />
       <h2>{{ contact.text.heading }}</h2>
       <p>{{ contact.text.subheading }}</p>
@@ -38,6 +39,7 @@
               </label>
             </div>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit" class="btn btn-primary" :style="{ background: contact.text.color }">Submit my request</button>
         </div>
         <div class="col social">
@@ -46,8 +48,27 @@
           <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
           <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
         </div>
-      </div> 
+      </div>
     </form>
+    <div class="contact">
+      <hr>
+      <h2>Or email us personaly</h2>
+      <p>Shoot us an email</p>
+      <div class="flex">
+        <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">Charlie Cox <br>/Co-founder and UK representative/</a>
+        <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">Thomas Shaw <br>/Co-founder and DE representative/</a>
+      </div>
+    </div>
+    <div class="contact">
+      <hr>
+      <h2>Or contact us by phone</h2>
+      <p>Call us and lets discuss it personaly</p>
+      <div class="flex">
+        <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">123456789 <br>(Charlie Cox)</a>
+        <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106 <br>(Thomas Shaw)</a>
+      </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -96,6 +117,26 @@ export default Vue.extend({
   p{
     font-family: $font__menu;
   }
+  hr{
+    border-top: 2px solid black;
+    margin-bottom: 5rem;
+  }
+  .flex{
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    .clickable{
+      text-decoration: none;
+      width: fit-content;
+      font-size: 18px;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .form-control{
     border: none;
     border-bottom: 2px solid #000;
@@ -103,7 +144,7 @@ export default Vue.extend({
   }
   .btn{
     border-radius: 0;
-    
+
   }
   .description{
     height: 40px;
@@ -129,7 +170,6 @@ export default Vue.extend({
   }
 }
 @media only screen and (max-width: 800px) {
-
   .contact{
     width: 80%;
   }

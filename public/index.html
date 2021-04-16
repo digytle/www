@@ -33,14 +33,15 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <form name="Contact-us" netlify  hidden action="/submited">
-    <label>Your Name: <input type="text" name="name" /></label> 
-    <label>Your Surname: <input type="text" name="surname" /></label>  
+    <label>Your Name: <input type="text" name="name" /></label>
+    <label>Your Surname: <input type="text" name="surname" /></label>
     <label>Your Email: <input type="email" name="email" /></label>
     <label>Here for:  <select name="here for"></select></label>
     <label>Message: <textarea name="text"></textarea></label>
     <label>Newsletter: <input type="checkbox" name="news"></label>
+    <div data-netlify-recaptcha="true"></div>
     <button type="submit">Submit my request</button>
-  </form> 
+  </form>
 </body>
 
 </html>
