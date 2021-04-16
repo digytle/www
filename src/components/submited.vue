@@ -18,7 +18,7 @@
               <a href="https://github.com/digytle/www"><i class="fab fa-github" ></i></a>
             </div>
             <router-link to="/" class="btn">
-              <button class="btn btn-success">Or explore our main page</button>
+              <button class="btn btn-success">Explore our main page</button>
             </router-link>
           </div>
         </div>
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-     
+
     </div>
   </div>
   <Footer></Footer>
@@ -59,7 +59,7 @@ import navigation from "js-yaml-loader!../../content/navigation.yaml";
 import Features from "js-yaml-loader!../../content/featurettes.yaml";
 import Footer from "./Footer";
 export default {
-  name: "TemplateAfterForm",
+  name: "submited",
   components: { Navigation, Footer },
   data() {
     return {
@@ -100,14 +100,14 @@ export default {
       margin-bottom: 3rem;
       text-align: left;
       max-width: 600px;
-      color:  #28a745;
+      color:  #5ec476;
       font-size: 34px;
     }
     hr{
       margin-left: auto;
       margin-right: auto;
       width: 200px;
-      border-top: 3px solid #28a745;
+      border-top: 3px solid #5ec476;
     }
   }
   .title {
@@ -158,17 +158,20 @@ export default {
       margin-top: 2rem;
       margin-left: 0;
       .social{
-      font-size: 35px;
+      font-size: 40px;
       padding: 0;
       .fab{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-        color: #28a745;
+        color: #5ec476;
       }
-      
+
     }
     .btn{
       margin-top: 0rem;
+      .btn-success{
+        background-color: #5ec476;
+      }
     }
   }
 </style>

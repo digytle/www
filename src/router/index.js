@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Template from '../components/Template'
-import TemplateAfterForm from '../components/TemplateAfterForm'
+import submited from '../components/submited'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 Vue.use(VueRouter)
 
@@ -32,8 +32,8 @@ const routes = [
   },
   {
     path: '/submited',
-    name: 'TemplateAfterForm',
-    component: TemplateAfterForm
+    name: 'submited',
+    component: submited
   }
 ]
 
