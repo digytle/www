@@ -57,8 +57,8 @@
       <h2>Or email us personaly</h2>
       <p>Shoot us an email</p>
       <div class="flex">
-        <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">Charlie Cox <br>/Co-founder and UK representative/</a>
-        <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">Thomas Shaw <br>/Co-founder and DE representative/</a>
+        <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">Charlie Cox <br>/UK representative/</a>
+        <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">Thomas Shaw <br>/DE representative/</a>
       </div>
     </div>
     <div class="contact">
@@ -66,8 +66,8 @@
       <h2>Or contact us by phone</h2>
       <p>Call us and lets discuss it personaly</p>
       <div class="flex">
-        <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">123456789 <br>(Charlie Cox)</a>
-        <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106 <br>(Thomas Shaw)</a>
+        <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">+ 12 345 6789 1011<br>(Charlie Cox)</a>
+        <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106<br>(Thomas Shaw)</a>
       </div>
     </div>
 </div>
