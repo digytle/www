@@ -6,6 +6,8 @@ import {
   BootstrapVueIcons
 } from 'bootstrap-vue'
 import VueScrollTo from 'vue-scrollto'
+// TODO
+// We do not like bootstrap.
 import 'bootstrap'
 
 Vue.use(BootstrapVue)
