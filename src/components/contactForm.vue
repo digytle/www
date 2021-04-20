@@ -74,6 +74,9 @@
 </template>
 
 <script>
+// TODO
+// Is this impot Vue needed here?
+// No other component has it.
 import Vue from 'vue'
 export default Vue.extend({
     data() {
