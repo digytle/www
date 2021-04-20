@@ -4,6 +4,10 @@ import MainPage from '../components/MainPage'
 import Template from '../components/Template'
 import submited from '../components/submited'
 import PrivacyPolicy from '../components/PrivacyPolicy'
+// Google Analytics
+// https://matteo-gabriele.gitbook.io/vue-gtag/
+import VueGtag from "vue-gtag";
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -54,5 +58,11 @@ const router = new VueRouter({
     }
   }
 })
+
+// Auto tracking
+// https://matteo-gabriele.gitbook.io/vue-gtag/auto-tracking
+Vue.use(VueGtag, {
+  config: { id: "G-WXBKHYSJCZ" }
+}, router);
 
 export default router
