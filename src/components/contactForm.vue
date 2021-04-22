@@ -54,15 +54,23 @@
     </form>
     <div class="contact">
       <hr>
-      <h2>Or contact us personaly</h2>
+      <h2>Contact us personaly</h2>
       <p>Shoot us an email or call us</p>
-      <div class="flex">
-        <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">Charlie Cox <br>/UK representative/</a>
-        <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">Thomas Shaw <br>/DE representative/</a>
-      </div>
-      <div class="flex">
-        <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">+ 12 345 6789 1011<br>(Charlie Cox)</a>
-        <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106<br>(Thomas Shaw)</a>
+      <div class="contacts">
+        <div class="item">
+          <h2 :style="{ color: contact.text.color }">Charlie Cox</h2>
+          <div class="flex">
+            <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">cc@digytle.com <br>/Marketing and UK representative/</a>
+            <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">+ 12 345 6789 1011</a>
+          </div>
+        </div>
+        <div class="item">
+          <h2 :style="{ color: contact.text.color }">Thomas Shaw</h2>
+          <div class="flex">
+            <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">t.e.shaw@digytle.com <br>/CTO and DE representative/</a>
+            <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106</a>
+          </div>
+        </div>
       </div>
       <hr class="two">
     </div>
@@ -125,20 +133,30 @@ export default Vue.extend({
   .two{
     margin-top: 5rem;
   }
-  .flex{
+  .contacts{
     display: flex;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    .clickable{
-      text-decoration: none;
-      width: fit-content;
-      font-size: 18px;
-      margin-top: 2rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      display: flex;
-      flex-direction: column;
+    margin-top: 5rem;
+    .item{
+      margin-right: 2rem;
+      margin-left: 2rem;
+      .flex{
+        flex-direction: column;
+        width: fit-content;
+        margin-right: auto;
+        h2{
+          font-size: 20px;
+        }
+        .clickable{
+          text-decoration: none;
+          font-size: 18px;
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
   }
   .form-control{
