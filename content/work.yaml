@@ -14,7 +14,7 @@ big:
 left:
 - title: Conversational Chatbots Management
   description: One of our partner projects Blits powers all your company’s internal and external chatbots and voicebots. Offering a no code, drag and drop interface to make creating, comparing and deploying bots across your whole company fast and easy. Compatible with any AI engine, comms channel and connectors to build smart bots that will save your organisation time and resources.
-  image: assets/blits-ai.png
+  image: assets/blitts.gif
   template: featurettes
   link: blits-conversational-bots-management-ecosystem
 - title: Assisted Marketplace for Renewable Energy
@@ -28,14 +28,14 @@ left:
   template: featurettes
   link: leasingly
 # TODO
-# rename to right: 
+# rename to right:
 right:
 - title: SME Re-Financing and Discovery Marketplace
   description: A complex marketplace for informing, educating, and helping SMEs discover, prepare and choose a re-financing soluion as well as other innovative finanance, income and employee retention solutions.
   image: assets/stichting.png
   template: featurettes
   link: stichting-bedrijfsfinanciering
-- title: Digitising a 40-Years-Old German Investment Fund 
+- title: Digitising a 40-Years-Old German Investment Fund
   description: Prior to that one had to go with a suitcase with half a million Euro to München. Now one can begin with €10 000 from the comfort of their home.
   image: assets/solidvest.png
   template: featurettes

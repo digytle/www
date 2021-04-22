@@ -29,10 +29,9 @@
           <div class="image-container" v-for="item in left" :key="item.text">
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
+                <h2>{{ item.title }}</h2>
               </router-link>
-              <h2>{{ item.title }}</h2>
               <p>{{ item.description }}</p>
-              <!-- <hr /> -->
           </div>
         </div>
         <div class="col-lg-6 section section1" id="section">
@@ -44,8 +43,8 @@
             <div class="image-box">
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
+                <h2>{{ item.title }}</h2>
               </router-link>
-              <h2>{{ item.title }}</h2>
               <p>{{ item.description }}</p>
               <!-- <hr /> -->
             </div>
@@ -175,6 +174,9 @@ export default {
       background-color: white;
       font-weight: 400;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 .section {
@@ -197,7 +199,7 @@ export default {
         word-wrap: break-word;
       }
     }
-  } 
+  }
   .bigsection {
     .image-container {
       .card {
