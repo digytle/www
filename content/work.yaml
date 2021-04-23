@@ -24,7 +24,7 @@ left:
   link: green-atlas-earth
 - title: Plug-n-Play Financing Solution
   description: Leasingly allows small and large merchants to provide their customers with a point of sale financing. The solution is plug-and-play and can be purchased as a SaaS or on premise. A configurator allows a complete replication of the merchant's business processes and pricing logic.
-  image: assets/leasingly.png
+  image: assets/leasingly.gif
   template: featurettes
   link: leasingly
 # TODO
