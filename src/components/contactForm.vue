@@ -36,7 +36,7 @@
         <div class="col send">
           <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" name="news">
+              <input class="form-check-input" type="checkbox" checked id="gridCheck" name="news">
               <label class="form-check-label" for="gridCheck">
                 {{ contact.confirm.text }}
               </label>
