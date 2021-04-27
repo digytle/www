@@ -64,7 +64,7 @@
             <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">+ 12 345 6789 1011</a>
           </div>
         </div>
-        <div class="item">
+        <div class="item one">
           <h2 :style="{ color: contact.text.color }">Thomas Shaw</h2>
           <div class="flex">
             <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">t.e.shaw@digytle.com <br>/CTO and DE representative/</a>
@@ -205,6 +205,13 @@ export default Vue.extend({
   margin-right: auto;
   width: 80%;
   margin-bottom: 5rem;
+    .contacts{
+      display: flex;
+      flex-direction: column;
+      .one{
+        margin-top: 4rem;
+      }
+    }
     .row{
       display: flex;
       flex-direction: column;
