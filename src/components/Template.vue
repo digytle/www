@@ -34,7 +34,7 @@
             <hr :style="{ color: section.image.colour }">
           </div>
         </div>
-        
+
         <div class="col-7 quote" v-if="section.quote">
           <i class="fas fa-quote-left" :style="{ color: section.quote.colour }"></i>
           <h2>{{ section.quote.text }}</h2>
@@ -77,7 +77,7 @@
         </p>
         <div class="buttons">
           <div class="cta" >
-            <a :href="button.link" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
+            <a :href="button.link" target="_blank" rel="noopener noreferrer" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
           </div>
         </div>
         <hr class="two">
@@ -304,7 +304,7 @@ width: fit-content;
         width: 15rem;
       }
     }
-  } 
+  }
 }
 
 
@@ -354,7 +354,7 @@ width: fit-content;
     }
   }
 }
-  
+
 
 @media only screen and (max-width: 1025px) and (orientation: landscape) {
   .header {
@@ -368,7 +368,7 @@ width: fit-content;
       margin-left: 0px;
     }
   }
-  
+
 }
 @media only screen and (max-width: 800px) {
   .work-with-us{
@@ -391,7 +391,7 @@ width: fit-content;
   }
   .image {
     margin-top: 0rem;
-  } 
+  }
   .info {
     margin-left: 0px;
     margin-top: 20px;
@@ -421,7 +421,7 @@ width: fit-content;
     }
     .one, .two{
       max-width: 80%;
-    } 
+    }
   }
-} 
+}
 </style>
