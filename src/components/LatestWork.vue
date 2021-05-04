@@ -123,7 +123,7 @@ export default {
       .img-bot{
         position: absolute;
         left: 0;
-        bottom: 3rem;
+        bottom: 2rem;
         width: 100%;
       }
       .card-body {
