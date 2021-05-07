@@ -130,7 +130,7 @@ export default {
         p {
           position: absolute;
           top: 13rem;
-          color: black;
+          color: white;
           text-align: left;
           font-size: 16px;
           padding-left: 2rem;
@@ -139,7 +139,7 @@ export default {
         }
         h2 {
           position: absolute;
-          color: black;
+          color: white;
           font-size: 30px;
           top: 10%;
           padding-left: 2.1rem;
