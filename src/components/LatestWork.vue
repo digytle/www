@@ -14,6 +14,7 @@
                 <!-- <img class="card-img-top img" :src="item.image" /> -->
                 <img src="/assets/auxta.logo.png" class="img">
                 <img src="/assets/blits.bot.bg.png" class="img-bg">
+                <img src="/assets/qa.gif" class="img-bot">
                 <img src="/assets/auxta.work.png" class="img-bot">
                 <div class="card-body">
                   <h2>{{ item.title }}</h2>
