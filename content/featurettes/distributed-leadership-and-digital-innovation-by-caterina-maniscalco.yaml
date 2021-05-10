@@ -1,14 +1,25 @@
 header:
+# TODO
+# remove ../assets/
   image: ../assets/Caterina_AboutPage.png
   title:
     title: Distributed Leadership and Digital Innovation
     colour: "#EF233C"
-    description: T. E. Shaw of Digytle discovered Distributed Leadership and Digital Innovation and met the author Caterina Maniscalco.
+    description: T. E. Shaw of Digytle saw/recognised himself and the past 40 years of his life in Distributed Leadership and Digital Innovation and met the author Caterina Maniscalco.
 sections:
 - section:
   title:
     title: Aux and Digytle, Ahead of Our Time
     colour: "#EF233C"
+- section:
+  quote:
+    colour: "#EF233C"
+    # TODO
+    # Remove the quotes from the yaml leave in the template
+    bigQuotes: ../assets/big_quotes.svg
+    text: "No man will make a great leader who wants to do it all himself, or to get all the credit for doing it."
+    smallQuotes: ../assets/small_quotes.svg
+    author: Andrew Carnegie
 - section:
   text:
   - These words of Andrew Carnegie could not have been more true. The Talent scout T.E. Shaw had wanted to create a company, where he could nurse the scouted talent—for a very long time. But something was missing.
@@ -24,12 +35,6 @@ sections:
   text:
   - So it was his passion for digital innovation and his natural interest in distributed leadership that brought T.E. Shaw to Caterina Maniscalco's book. 
   - It not only informs, instructs and inspires, but also convinces and is rich in both scientific research and real life examples of distributed leadership giving companies the edge in highly competitive spaces.
-- section:
-  quote:
-    colour: "#EF233C"
-    bigQuotes: ../assets/big_quotes.svg
-    text: "No man will make a great leader who wants to do it all himself, or to get all the credit for doing it."
-    smallQuotes: ../assets/small_quotes.svg
 - section:
   text:
   - Reading it, T.E. felt many direct comparisons to his journey with Aux and Digytle, reinforcing all the benefits he had found working in close partnerships with shared roles and distant locations.
