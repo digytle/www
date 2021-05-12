@@ -1,28 +1,41 @@
 header:
+# TODO
+# Remove the path.
   image: ../assets/teaching.png
   title:
-    title: Digytle for Executives
+    title: Scratch for Executives
     colour: "#DAA520"
     description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
 sections:
   - section:
     title:
-      title: Talent Scouting & Nurseries
+      title: Scratch for Executives
       colour: "#DAA520"
     text:
-      - T.E. Shaw has been scouting & nursing undiscovered and lost talent for over 40 years.
-      - The executive talent is one of the most underreated.
-      - Executives are expected to be strong, to know all and everything, to manage and survive. And they should.
-      - But not without help.
-      - T.E.'s concise style of nursing helps executives make sense of the world around them and be successful.
+      - A common cliche says, that the difference between boys and men is the price of the toys.
+      - Sexism aside, this chliche is built one a major misconception and the misconception is "toys".
+      - What we, the adults, see as childhood and play, the children see as dead serious.
+      - The babies do not spend their time being sweet, cute and cuddly, but adapting to a world they have never seen and learning with all their being.
+      - The same applies to the Executives.
+      - They are expected to be strong, to know everything, to manage, succeed and survive.
+      - And they need help.
+      - T. E. Shaw has spent decades discovering and developing executive talent, helping individuals to cross the threshold, to make sense of the world they have arrived into, to be content and to be successful.
   - section:
     title:
-      title: Scratch-like
+      title: Toys
       colour: "#DAA520"
     text:
       - MIT Scratch is a methaphore.
       - Another mathaphores are the sail of the ship, being in the battle or standing on the hill, a hypeman.
       - "T.E.'s long international experience and successes are brought on a local, personal level, to help you be happier and more successful."
+  - section:
+      title:
+        title: 1-[1-1-1)-1
+        colour: "#DAA520"
+      text:
+        - There is a group of individuals, who are not a 100% enterpreneural type, but who are not the employee type either.
+        - This group needs most help.
+        - The 1-[1-1-1)-1 model is a potent key to realisation, while providing the needed stability.
   - section:
     image:
       url: ../assets/sail.png
@@ -41,7 +54,15 @@ sections:
       bigQuotes: ../assets/big_quotes.svg
       text: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
       smallQuotes: ../assets/small_quotes.svg
-action:
+  - section:
+    title:
+      title: Why and How
+      colour: "#DAA520"
+  - section:
+    text:
+      - T. E. Shaw is passionate about discovering and developing talent. His craft cannot sacale and is not suitable for industrialisation. This is why he is rather selective.
+      - The main condition to be chosen is to be brave and persistant.
+action: 
   text:
     question: Would you like to taste T.E.'s unique style?
     description: Book a free appointment.
