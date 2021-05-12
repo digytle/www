@@ -36,8 +36,8 @@ sections:
   - section:
     image:
       url: ../assets/sail.png
-      title: Solid Science
-      description: The triangle front sail of the ship is attached at three points. When these points are the right ones, the sail is full of wind and the ship sails.
+      title: The Jib of Pareto
+      description: The 20/80 principle of Pareto is good, but frequently too complex, especially for people with little experience or under stress. The jib methhor is much stronger and more helpful. The jib is the front sail of a ship, which is attached at three points. When these points are the right ones, the sail is full of wind and the ship sails.
       colour: "#DAA520"
   - section:
     title:
