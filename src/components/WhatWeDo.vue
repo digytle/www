@@ -9,48 +9,65 @@
         <div class="row padding element">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card long">
-              <img
-                class="card-img-top first-image"
-                src="/assets/Progressive-Products.png" 
-              />
+              <router-link :to="`${templateFirst}/${linkFirst}`">
+                <img
+                  class="card-img-top first-image"
+                  src="/assets/Progressive-Products.png"
+                />
+              </router-link>
               <div class="card-body">
-                <h2 class="right-text">{{ headerFirst }}</h2>
+                <router-link :to="`${templateFirst}/${linkFirst}`">
+                  <h2 class="right-text">{{ headerFirst }}</h2>
+                </router-link>
                 <p>{{ descriptionFirst }}</p>
               </div>
+
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card short">
-              <img
-                class="card-img-top first-image"
-                src="/assets/talent-scouting.png"
-              />
+              <router-link :to="`${templateSecond}/${linkSecond}`">
+                <img
+                  class="card-img-top first-image"
+                  src="/assets/talent-scouting.png"
+                />
+              </router-link>
               <div class="card-body">
-                <h2>{{ headerSecond }}</h2>
+                <router-link :to="`${templateSecond}/${linkSecond}`">
+                  <h2>{{ headerSecond }}</h2>
+                </router-link>
                 <p>{{ descriptionSecond }}</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card long">
-              <img
-                class="card-img-top first-image"
-                src="/assets/testing-automation.png"
-              />
+              <router-link :to="`${templateThird}/${linkThird}`">
+                <img
+                  class="card-img-top first-image"
+                  src="/assets/testing-automation.png"
+                />
+              </router-link>
               <div class="card-body">
-                <h2 class="right-text">{{ headerThird }}</h2>
+                <router-link :to="`${templateThird}/${linkThird}`">
+                  <h2 class="right-text">{{ headerThird }}</h2>
+                </router-link>
                 <p>{{ descriptionThird }}</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card short">
-              <img
-                class="card-img-top first-image"
-                src="/assets/pioner-thinking.png" 
-              />
+              <router-link :to="`${templateForth}/${linkForth}`">
+                <img
+                  class="card-img-top first-image"
+                  src="/assets/pioner-thinking.png"
+                />
+              </router-link>
               <div class="card-body">
-                <h2>{{ headerForth }}</h2>
+                <router-link :to="`${templateForth}/${linkForth}`">
+                  <h2>{{ headerForth }}</h2>
+                </router-link>
                 <p>{{ descriptionForth }}</p>
               </div>
             </div>
@@ -69,30 +86,46 @@ export default {
     return {
       headerFirst: [],
       descriptionFirst: [],
+      linkFirst: [],
+      templateFirst: [],
 
       headerSecond: [],
       descriptionSecond: [],
+      linkSecond: [],
+      templateSecond: [],
 
       headerThird: [],
       descriptionThird: [],
+      linkThird: [],
+      templateThird: [],
 
       headerForth: [],
       descriptionForth: [],
+      linkForth: [],
+      templateForth: [],
     };
   },
 
   mounted() {
     this.headerFirst = WhatWeDo.headerFirst;
     this.descriptionFirst = WhatWeDo.descriptionFirst;
+    this.linkFirst = WhatWeDo.linkFirst;
+    this.templateFirst = WhatWeDo.templateFirst;
 
     this.headerSecond = WhatWeDo.headerSecond;
     this.descriptionSecond = WhatWeDo.descriptionSecond;
+    this.linkSecond = WhatWeDo.linkSecond;
+    this.templateSecond = WhatWeDo.templateSecond;
 
     this.headerThird = WhatWeDo.headerThird;
     this.descriptionThird = WhatWeDo.descriptionThird;
+    this.linkThird = WhatWeDo.linkThird;
+    this.templateThird = WhatWeDo.templateThird;
 
     this.headerForth = WhatWeDo.headerForth;
     this.descriptionForth = WhatWeDo.descriptionForth;
+    this.linkForth = WhatWeDo.linkForth;
+    this.templateForth = WhatWeDo.templateForth;
   },
 };
 </script>
@@ -120,6 +153,12 @@ export default {
   .short {
     border: none;
     margin-top: 2rem;
+    a{
+      color: #2B2D42;
+    }
+    a:hover {
+      text-decoration: none;
+    }
     h2 {
       margin-top: -4rem;
       padding: 1rem;
@@ -142,7 +181,7 @@ export default {
   }
 }
 @media only screen and (max-width: 1100px) {
-  
+
 }
 @media only screen and (max-width: 800px) {
   .title {
