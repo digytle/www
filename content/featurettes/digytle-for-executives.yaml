@@ -3,21 +3,18 @@ header:
 # Remove the path.
   image: ../assets/teaching.png
   title:
-    title: Scratch for Executives
+    title: Digytle for Executives
     colour: "#DAA520"
     description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
 sections:
   - section:
     title:
-      title: Scratch for Executives
+      title: Digytle for Executives
       colour: "#DAA520"
     text:
-      - A common cliche says, that the difference between boys and men is the price of the toys.
-      - Sexism aside, this chliche is built one a major misconception and the misconception is "toys".
-      - What we, the adults, see as childhood and play, the children see as dead serious.
-      - The babies do not spend their time being sweet, cute and cuddly, but adapting to a world they have never seen and learning with all their being.
-      - The same applies to the Executives.
-      - They are expected to be strong, to know everything, to manage, succeed and survive.
+      - A common cliche says, that the difference between boys and men is the price of the toys. Sexism aside, this chliche is built one a major misconception and the misconception is, that there are no "toys".
+      - What we, the adults, see as childhood and play, the children see as dead serious. The babies do not spend their time being sweet, cute and cuddly, but adapting to a world they have never seen and learning with all their beimg.
+      - The same applies to the Executives. They are expected to be strong, to know everything, to manage, survive and succeed.
       - And they need help.
       - T. E. Shaw has spent decades discovering and developing executive talent, helping individuals to cross the threshold, to make sense of the world they have arrived into, to be content and to be successful.
   - section:
