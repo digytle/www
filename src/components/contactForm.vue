@@ -52,28 +52,6 @@
         </div>
       </div>
     </form>
-    <div class="contact">
-      <hr>
-      <h2>Contact us personaly</h2>
-      <p>Shoot us an email or call us</p>
-      <div class="contacts">
-        <div class="item">
-          <h2 :style="{ color: contact.text.color }">Charlie Cox</h2>
-          <div class="flex">
-            <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">cc@digytle.com <br>/Marketing and UK representative/</a>
-            <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">+ 12 345 6789 1011</a>
-          </div>
-        </div>
-        <div class="item one">
-          <h2 :style="{ color: contact.text.color }">Thomas Shaw</h2>
-          <div class="flex">
-            <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">t.e.shaw@digytle.com <br>/CTO and DE representative/</a>
-            <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106</a>
-          </div>
-        </div>
-      </div>
-      <hr class="two">
-    </div>
 </div>
 </template>
 

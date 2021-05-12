@@ -84,18 +84,42 @@
       </div>
     </div>
     <contactForm></contactForm>
-    <Footer></Footer>
+    <div class="row-lg-12 footer">
+      <div class="head">
+        <img class="logo" :src="logo" />
+        <p>We build the future</p>
+      </div>
+      <div class="col-lg-4 location">
+        <img :src="locationPoint" />
+        <p>{{ address }}</p>
+      </div>
+      <div class="col-lg-4 contacts">
+        <img :src="contactsImage" />
+        <div class="emails">
+          <div v-for="email in contacts" :key="email">
+            <a :href="`mailto:${email}`">
+              <p>{{ email }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 copyright">
+        <router-link to="/privacy-policy/"
+          ><p>{{ privacy }}</p></router-link
+        >
+        <p>{{ copyright }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// import navigation from "js-yaml-loader!../../content/navigation.yaml";
 import Navigation from "./Navigation";
-import Footer from "./Footer";
 import contactForm from "./contactForm";
+import footer from "js-yaml-loader!../../content/footer.yaml";
 export default {
   name: "Featurette",
-  components: { Navigation, Footer, contactForm },
+  components: { Navigation, contactForm },
   data() {
     return {
       data: {},
@@ -107,6 +131,16 @@ export default {
       buttons: [],
       contact: [],
       options: [],
+      logo: "",
+      privacy: "",
+      social: "",
+      copyright: "",
+      locationPoint: "",
+      address: "",
+      contactsImage: {},
+      contacts: [],
+      twitter: {},
+      linkedin: {},
     };
   },
   mounted() {
@@ -119,6 +153,15 @@ export default {
     this.buttons = this.data.buttons;
     this.contact = this.data.contact;
     this.options = this.data.options;
+    this.logo = footer.logo;
+    this.privacy = footer.privacy;
+    this.address = footer.address;
+    this.copyright = footer.copyright;
+    this.locationPoint = footer.location;
+    this.contactsImage = footer.contactsImage;
+    this.contacts = footer.contacts;
+    this.twitter = footer.twitter;
+    this.linkedin = footer.linkedin;
   },
 };
 </script>
@@ -306,8 +349,51 @@ width: fit-content;
     }
   }
 }
+.footer{
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  .head{
+    margin-bottom: 4rem;
+    .logo{
+      width: 30%;
+    }
+    p{
+      font-size: 19px;
+      font-family: $font__menu;
+    }
+  }
+  .location, .contacts{
+    text-align: center;
+    margin: auto;
+    p{
+      font-family: $font__menu;
+    }
+    a{
+      text-decoration: underline;
+      color: #2B2D42;
 
-
+    }
+  }
+  .contacts{
+    text-align: center;
+    p{
+      font-family: $font__menu;
+      font-size: 19px;
+    }
+  }
+  .copyright{
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    p{
+      font-family: $font__menu;
+    }
+    a{
+      color: #2B2D42;
+    }
+  }
+}
 @media only screen and (max-width: 1100px) {
   .header {
   margin-top: 30px;
