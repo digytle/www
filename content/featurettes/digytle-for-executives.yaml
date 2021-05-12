@@ -9,7 +9,7 @@ header:
 sections:
   - section:
     title:
-      title: Digytle for Executives
+      title: Toys
       colour: "#DAA520"
     text:
       - A common cliche says, that the difference between boys and men is the price of the toys. Sexism aside, this chliche is built one a major misconception and the misconception is, that there are no "toys".
@@ -19,7 +19,7 @@ sections:
       - T. E. Shaw has spent decades discovering and developing executive talent, helping individuals to cross the threshold, to make sense of the world they have arrived into, to be content and to be successful.
   - section:
     title:
-      title: Toys
+      title: Methaphores
       colour: "#DAA520"
     text:
       - MIT Scratch is a methaphore.
@@ -41,7 +41,7 @@ sections:
       colour: "#DAA520"
   - section:
     title:
-      title: Psychoanalysis for Executives
+      title: Psychoanalysis
       colour: "#DAA520"
   - section:
     text:
