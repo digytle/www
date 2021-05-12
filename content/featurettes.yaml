@@ -17,7 +17,7 @@ features:
   template: featurettes
   link: conversational-bots
 - name: Digytle for Executives
-  description: Engineers must understand the business, but does business understand the engineers? Fun one-on-one sessions for young, tired or confused executives, psychoterapy of sorts, helping you to make sense of the surrounding world and succeed.
+  description: The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..." Fun one-on-one sessions for young, tired or confused executives, psychoterapy of sorts, helping them to make sense of the surrounding world and succeed.
   image: assets/code.featurettes.png
   template: featurettes
   link: digytle-for-executives
