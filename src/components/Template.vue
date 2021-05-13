@@ -90,15 +90,14 @@
         <p>We build the future</p>
       </div>
       <div class="col-lg-4 location">
-        <img :src="locationPoint" />
-        <p>{{ address }}</p>
+        <p><img :src="locationPoint" />{{ address }}</p>
       </div>
       <div class="col-lg-4 contacts">
-        <img :src="contactsImage" />
+
         <div class="emails">
           <div v-for="email in contacts" :key="email">
             <a :href="`mailto:${email}`">
-              <p>{{ email }}</p>
+              <p><img :src="contactsImage" />{{ email }}</p>
             </a>
           </div>
         </div>
@@ -357,6 +356,7 @@ width: fit-content;
     margin-bottom: 4rem;
     .logo{
       width: 30%;
+      margin-top: 3rem;
     }
     p{
       font-size: 19px;
@@ -372,7 +372,9 @@ width: fit-content;
     a{
       text-decoration: underline;
       color: #2B2D42;
-
+    }
+    img{
+      margin-right: 10px;
     }
   }
   .contacts{
@@ -385,7 +387,7 @@ width: fit-content;
   .copyright{
     text-align: center;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 7rem;
     p{
       font-family: $font__menu;
     }
