@@ -377,6 +377,9 @@ width: fit-content;
       margin-right: 10px;
     }
   }
+  .location{
+      max-width: 250px;
+  }
   .contacts{
     text-align: center;
     p{
