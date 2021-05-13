@@ -69,8 +69,8 @@ action:
     background:
   buttons:
   - button:
-    link: https://calendly.com/
-    image: ../assets/Calendly.png
+    link: https://www.blits.ai/
+    image: ../assets/blits-footer.png
 contact:
   text:
     heading: Do you want to work with us

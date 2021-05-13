@@ -139,24 +139,4 @@ p {
   max-width: 60%;
   }
 }
-// @media only screen and (max-width: 1000px) {
-//   .logo {
-//   margin-left: -5rem;
-//   width: 80%;
-//   }
-//   .location {
-//   margin-top: 5rem;
-//   margin-left: 2rem;
-//   }
-//   .contacts {
-//   margin-top: 2rem;
-//   margin-bottom: 5rem;
-//   margin-left: 2rem;
-// }
-// }
-// @media only screen and (max-width: 450px) {
-//   .logo {
-//   margin-left: 0rem;
-//   }
-// }
 </style>

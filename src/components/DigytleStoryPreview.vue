@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="story" >
       <div class="row-md-12 title">
-          <img class="img-fluid logo" src="/assets/logo.png" />
+          <img class="img-fluid logo" src="/assets/logo.new.png" />
           <p>Stories</p>
       </div>
       <div class="container">

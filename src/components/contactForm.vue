@@ -36,7 +36,7 @@
         <div class="col send">
           <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" name="news">
+              <input class="form-check-input" type="checkbox" checked id="gridCheck" name="news">
               <label class="form-check-label" for="gridCheck">
                 {{ contact.confirm.text }}
               </label>
@@ -52,20 +52,6 @@
         </div>
       </div>
     </form>
-    <div class="contact">
-      <hr>
-      <h2>Or contact us personaly</h2>
-      <p>Shoot us an email or call us</p>
-      <div class="flex">
-        <a href="mailto:cc@digytle.com" :style="{ color: contact.text.color }" class="clickable">Charlie Cox <br>/UK representative/</a>
-        <a href="mailto:t.e.shaw@digytle.com" :style="{ color: contact.text.color }" class="clickable">Thomas Shaw <br>/DE representative/</a>
-      </div>
-      <div class="flex">
-        <a href="tel:1-562-867-5309" :style="{ color: contact.text.color }" class="clickable">+ 12 345 6789 1011<br>(Charlie Cox)</a>
-        <a href="tel:31-970-1028-0106" :style="{ color: contact.text.color }" class="clickable">+ 31 970 1028 0106<br>(Thomas Shaw)</a>
-      </div>
-      <hr class="two">
-    </div>
 </div>
 </template>
 
@@ -125,20 +111,30 @@ export default Vue.extend({
   .two{
     margin-top: 5rem;
   }
-  .flex{
+  .contacts{
     display: flex;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    .clickable{
-      text-decoration: none;
-      width: fit-content;
-      font-size: 18px;
-      margin-top: 2rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      display: flex;
-      flex-direction: column;
+    margin-top: 5rem;
+    .item{
+      margin-right: 2rem;
+      margin-left: 2rem;
+      .flex{
+        flex-direction: column;
+        width: fit-content;
+        margin-right: auto;
+        h2{
+          font-size: 20px;
+        }
+        .clickable{
+          text-decoration: none;
+          font-size: 18px;
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
   }
   .form-control{
@@ -187,6 +183,13 @@ export default Vue.extend({
   margin-right: auto;
   width: 80%;
   margin-bottom: 5rem;
+    .contacts{
+      display: flex;
+      flex-direction: column;
+      .one{
+        margin-top: 4rem;
+      }
+    }
     .row{
       display: flex;
       flex-direction: column;
