@@ -361,6 +361,7 @@ width: fit-content;
     p{
       font-size: 19px;
       font-family: $font__menu;
+      margin-top: 10px;
     }
   }
   .location, .contacts{
@@ -390,9 +391,10 @@ width: fit-content;
   .copyright{
     text-align: center;
     margin: auto;
-    margin-top: 7rem;
+    margin-top: 4.5rem;
     p{
       font-family: $font__menu;
+      width: 300px;
     }
     a{
       color: #2B2D42;
