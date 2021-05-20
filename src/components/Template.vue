@@ -64,6 +64,22 @@
         </div>
       </div>
     </div>
+
+    <div class="similar" >
+      <div v-for="(featurette, index) in similar" :key="index">
+        <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
+          <div class="text">
+            <p class="read-more">Read similar</p>
+            <p class="title">{{ featurette.title }}</p>
+            <p v-if="featurette.description">{{ featurette.description }}</p>
+          </div>
+          <img :src="featurette.image" />
+        </a>
+        <hr>
+      </div>
+
+    </div>
+
     <div
       class="work-with-us"
       :style="{ 'background-image': `url('${action.text.background}')` }"
@@ -103,9 +119,9 @@
         </div>
       </div>
       <div class="col-lg-4 copyright">
-        <router-link to="/privacy-policy/"
-          ><p>{{ privacy }}</p></router-link
-        >
+        <router-link to="/privacy-policy/">
+        <p>{{ privacy }}</p>
+        </router-link>
         <p>{{ copyright }}</p>
       </div>
     </div>
@@ -140,6 +156,8 @@ export default {
       contacts: [],
       twitter: {},
       linkedin: {},
+      similar: [],
+      featurette: []
     };
   },
   mounted() {
@@ -161,6 +179,8 @@ export default {
     this.contacts = footer.contacts;
     this.twitter = footer.twitter;
     this.linkedin = footer.linkedin;
+    this.similar = this.data.similar;
+    this.featurette = this.similar.featurette;
   },
 };
 </script>
@@ -170,6 +190,7 @@ export default {
 @import "../assets/main.scss";
 .fea{
   overflow: hidden;
+  margin-top: 10rem;
 }
 .image {
   margin-top: 5rem;
@@ -399,6 +420,47 @@ width: fit-content;
     a{
       color: #2B2D42;
     }
+  }
+}
+.similar{
+  max-width: 620px;
+  margin: auto;
+  a:hover {
+    text-decoration: none;
+    color: #8d90a8;
+    img {
+      opacity: 0.85;
+    }
+  }
+  a, p{
+    font-family: $font__menu;
+    text-align: left;
+  }
+  .read-more{
+    padding-top: 5px;
+    .text{
+      display: flex;
+    }
+  }
+  .items{
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 2px solid #2B2D42;
+    padding-top: 1rem;
+    color: #2B2D42;
+    width: fit-content;
+    img{
+      height: 170px;
+      margin: auto 10px auto auto;
+    }
+    .title{
+      font-size: 22px;
+      font-family: $font__title;
+    }
+  }
+  hr{
+    border-top: 2px solid #2B2D42;
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 1100px) {

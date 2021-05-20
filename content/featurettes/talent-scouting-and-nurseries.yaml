@@ -41,11 +41,17 @@ sections:
       bigQuotes: ../assets/big_quotes.svg
       text: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
       smallQuotes: ../assets/small_quotes.svg
+similar:
+  - featurette:
+    title: Raspberry Pi Beowulf Cluster
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 action:
   text:
     question: Would you like to taste T.E.'s unique style?
     description: Book a free appointment.
-    background: 
+    background:
   buttons:
     - button:
       link: https://calendly.com/
