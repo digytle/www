@@ -75,9 +75,8 @@
           </div>
           <img :src="featurette.image" />
         </a>
-        <hr>
       </div>
-
+      <hr>
     </div>
 
     <div
@@ -437,7 +436,7 @@ width: fit-content;
     text-align: left;
   }
   .read-more{
-    padding-top: 5px;
+    padding-top: 10px;
     .text{
       display: flex;
     }
@@ -446,7 +445,6 @@ width: fit-content;
     display: flex;
     flex-direction: row-reverse;
     border-top: 2px solid #2B2D42;
-    padding-top: 1rem;
     color: #2B2D42;
     width: fit-content;
     img{
@@ -461,6 +459,7 @@ width: fit-content;
   hr{
     border-top: 2px solid #2B2D42;
     margin-bottom: 3rem;
+    margin-top: 0rem;
   }
 }
 @media only screen and (max-width: 1100px) {
