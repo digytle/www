@@ -204,7 +204,6 @@ export default {
 @import "../assets/main.scss";
 .fea{
   overflow: hidden;
-  margin-top: 10rem;
 }
 
 .image {
