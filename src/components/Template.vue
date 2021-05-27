@@ -69,8 +69,8 @@
       <div v-for="(featurette, index) in similar" :key="index">
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
           <div class="text">
-            <p class="read-more">Read similar</p>
-            <p class="title">{{ featurette.title }}</p>
+            <p class="read-more">{{ featurette.title }}</p>
+            <p class="title">{{ featurette.topic }}</p>
             <p v-if="featurette.description">{{ featurette.description }}</p>
           </div>
           <img :src="featurette.image" />
@@ -78,7 +78,6 @@
       </div>
       <hr>
     </div>
-
     <div
       class="work-with-us"
       :style="{ 'background-image': `url('${action.text.background}')` }"
@@ -99,6 +98,20 @@
       </div>
     </div>
     <contactForm></contactForm>
+    <div class="more">
+      <div v-for="(featurette, index) in more" :key="index">
+        <hr>
+        <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
+          <p class="read-more">{{ featurette.title }}</p>
+          <img :src="featurette.image" />
+          <div class="text">
+            <p class="title">{{ featurette.topic }}</p>
+            <p v-if="featurette.description">{{ featurette.description }}</p>
+          </div>
+        </a>
+        <hr>
+      </div>
+    </div>
     <div class="row-lg-12 footer">
       <div class="head">
         <img class="logo" :src="logo" />
@@ -180,6 +193,8 @@ export default {
     this.linkedin = footer.linkedin;
     this.similar = this.data.similar;
     this.featurette = this.similar.featurette;
+    this.more = this.data.more;
+    this.featurette = this.more.featurette;
   },
 };
 </script>
@@ -191,10 +206,12 @@ export default {
   overflow: hidden;
   margin-top: 10rem;
 }
+
 .image {
   margin-top: 5rem;
   margin-left: 4.2rem;
 }
+
 .header {
   margin-right: auto;
   text-align: left;
@@ -226,6 +243,7 @@ export default {
     margin-top: 5px;
   }
 }
+
 .sub-info {
   margin-top: -2rem;
   margin-bottom: 55px;
@@ -247,6 +265,7 @@ export default {
     font-family:  $font__menu;
   }
 }
+
 .quote {
   max-width: 618px;
   margin-top: 3rem;
@@ -270,6 +289,7 @@ export default {
     font-size: 40px;
   }
 }
+
 .first {
   margin-bottom: 2rem;
   p {
@@ -368,6 +388,7 @@ width: fit-content;
     }
   }
 }
+
 .footer{
   max-width: 950px;
   margin-left: auto;
@@ -421,6 +442,7 @@ width: fit-content;
     }
   }
 }
+
 .similar{
   max-width: 620px;
   margin: auto;
@@ -434,6 +456,7 @@ width: fit-content;
   a, p{
     font-family: $font__menu;
     text-align: left;
+    padding-right: 10px;
   }
   .read-more{
     padding-top: 10px;
@@ -449,7 +472,7 @@ width: fit-content;
     width: fit-content;
     img{
       height: 170px;
-      margin: auto 10px auto auto;
+      margin: auto 25px auto auto;
     }
     .title{
       font-size: 22px;
@@ -462,6 +485,47 @@ width: fit-content;
     margin-top: 0rem;
   }
 }
+
+.more{
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  hr{
+    border-top: 2px solid black;
+    margin: 0;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #8d90a8;
+    img {
+      opacity: 0.85;
+    }
+  }
+  a, p{
+    font-family: $font__menu;
+    text-align: center;
+    margin-right: 20px;
+  }
+  .items{
+    color: #2B2D42;
+    width: fit-content;
+    img{
+      height: 170px;
+      margin: auto auto 20px 0px;
+    }
+    .title{
+      font-size: 22px;
+      font-family: $font__title;
+    }
+  }
+  .read-more{
+    margin-top: 10px;
+  }
+  .text{
+    margin-bottom: -20px;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .header {
   margin-top: 30px;
