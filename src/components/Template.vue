@@ -102,14 +102,13 @@
       <div v-for="(featurette, index) in more" :key="index">
         <hr>
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
-          <p class="read-more">{{ featurette.title }}</p>
           <img :src="featurette.image" />
           <div class="text">
             <p class="title">{{ featurette.topic }}</p>
             <p v-if="featurette.description">{{ featurette.description }}</p>
           </div>
+          <button class="btn btn-primary" :style="{ background: header.title.colour }">{{ featurette.title }}</button>
         </a>
-        <hr>
       </div>
     </div>
     <div class="row-lg-12 footer">
@@ -495,10 +494,6 @@ width: fit-content;
   }
   a:hover {
     text-decoration: none;
-    color: #8d90a8;
-    img {
-      opacity: 0.85;
-    }
   }
   a, p{
     font-family: $font__menu;
@@ -510,11 +505,15 @@ width: fit-content;
     width: fit-content;
     img{
       height: 170px;
-      margin: auto auto 20px 0px;
+      margin: 20px auto 20px 0px;
     }
     .title{
       font-size: 22px;
       font-family: $font__title;
+    }
+    .btn{
+      border-radius: 0;
+      margin: 20px 0px 20px auto;
     }
   }
   .read-more{
