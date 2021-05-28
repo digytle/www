@@ -513,7 +513,7 @@ width: fit-content;
     }
     .btn{
       border-radius: 0;
-      margin: 20px 0px 20px auto;
+      margin: 30px 0px 20px auto;
     }
   }
   .read-more{
