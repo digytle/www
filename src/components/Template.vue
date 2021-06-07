@@ -98,9 +98,12 @@
       </div>
     </div>
     <contactForm></contactForm>
+    <div class="read-more-title">
+      <h2>Read similar</h2>
+      <hr>
+    </div>
     <div class="more">
       <div v-for="(featurette, index) in more" :key="index">
-        <hr>
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
           <img :src="featurette.image" />
           <div class="text">
@@ -484,6 +487,23 @@ width: fit-content;
   }
 }
 
+.read-more-title{
+  max-width: 950px;
+  margin: auto;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  h2{
+    display: inline-block;
+    background-color: white;
+    font-size: 30px;
+    width: 280px;
+  }
+  hr{
+    border-top: 2px solid black;
+    margin-top: -1.5rem;
+  }
+}
+
 .more{
   max-width: 950px;
   margin: auto;
@@ -598,6 +618,14 @@ width: fit-content;
       display: flex;
     }
   }
+  .read-more-title, .more{
+    max-width: 80%;
+  }
+  .read-more-title{
+    h2{
+      width: 250px;
+    }
+  }
 }
 @media only screen and (max-width: 500px) {
    .header {
@@ -637,6 +665,14 @@ width: fit-content;
     }
     .one, .two{
       max-width: 80%;
+    }
+  }
+  .more{
+    display: block;
+  }
+  .read-more-title{
+    h2{
+      width: 200px;
     }
   }
 }
