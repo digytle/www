@@ -58,6 +58,19 @@ sections:
   text:
     - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
     - Caterina is available as a consultant, lecturer and speaker.
+more:
+  - featurette:
+    button: Read more →
+    topic: "2020 Summarised"
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: 2020
+  - featurette:
+    button: Read more →
+    topic: Conversational bots
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/open.access-f.png
+    link: conversational-bots
 action:
   text:
     question: Would you like to read the book?

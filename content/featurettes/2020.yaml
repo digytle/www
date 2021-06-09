@@ -14,15 +14,15 @@ sections:
   - These words of Andrew Carnegie could not have been more true. The Talent scout T.E. Shaw had wanted to create a company, where he could nurse the scouted talent—for a very long time. But something was missing.
   - When T.E. Shaw founded Aux in 2013 with 2 partners the workload with his co-founders was distributed in what felt a very natural way, with all major decision making a shared event and then other work distributed in accordance to each partners natural strengths and passions.
   - This even handed and harmonious partnering style has certainly played a great part in Aux's continuing success and we have never really needed defined C-level roles. So when T.E. Shaw saw the book Distributed Leadership and Digital Innovation, he realised "This is what we have been doing for years!" After reading he was so impressed he made it one of his missions to meet its author Caterina Maniscalco, which he eventually did in early 2020.
-  - With T.E. Shaw being based in Germany with one co-founder in Canada and the other in Bulgaria, Aux had already leaned heavily on technology make those distances feel smaller and woven remote working and collaboration solutions seamlessly into our day to day operations, we are also seeking to improve and expand our offering so are in continuous cycle of Digital Innovation.  
+  - With T.E. Shaw being based in Germany with one co-founder in Canada and the other in Bulgaria, Aux had already leaned heavily on technology make those distances feel smaller and woven remote working and collaboration solutions seamlessly into our day to day operations, we are also seeking to improve and expand our offering so are in continuous cycle of Digital Innovation.
   - When Charlie Cox and T.E. Shaw co-founded Digytle in London in 2020 it felt only natural that they followed the same distributed route, with this time Aux itself being the third partner, adding British flavour to the Aux family and further developing their UK exposure.
 - section:
   title:
-    title: A Seminal Book for Digital Innovators 
+    title: A Seminal Book for Digital Innovators
     colour: "#EF233C"
 - section:
   text:
-  - So it was his passion for digital innovation and his natural interest in distributed leadership that brought T.E. Shaw to Caterina Maniscalco's book. 
+  - So it was his passion for digital innovation and his natural interest in distributed leadership that brought T.E. Shaw to Caterina Maniscalco's book.
   - It not only informs, instructs and inspires, but also convinces and is rich in both scientific research and real life examples of distributed leadership giving companies the edge in highly competitive spaces.
 - section:
   quote:
@@ -46,7 +46,7 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice 
+    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice
     - Caterina is one of our Digytle Partners, our highly specialised assemble of digital leaders and innovators as well as trusted partner organisations.
 - section:
   imageWide:
@@ -58,11 +58,24 @@ sections:
   text:
     - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
     - Caterina is available as a consultant, lecturer and speaker.
+more:
+  - featurette:
+    button: Read more →
+    topic: Green atlas earth
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: green-atlas-earth
+  - featurette:
+    button: Read more →
+    topic: Oppenaccess.app
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/open.access-f.png
+    link: accessapp
 action:
   text:
     question: Would you like to read the book?
     description: Order it from one of these selected bookstores.
-    background: 
+    background:
   buttons:
   - button:
     link: https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31

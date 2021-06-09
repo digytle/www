@@ -58,6 +58,19 @@ sections:
   text:
     - Interested?
     - Join Green Atlas.
+more:
+  - featurette:
+    button: Read more →
+    topic: "2020 Summarised"
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: 2020
+  - featurette:
+    button: Read more →
+    topic: Progressive products and tailored solutions
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/open.access-f.png
+    link: progressive-products-and-tailored-solutions
 action:
   text:
     question: Would you like to learn more about Green Atlas?

@@ -50,13 +50,13 @@ similar:
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 more:
   - featurette:
-    title: Read more →
+    button: Read more →
     topic: Raspberry Pi Beowulf Cluster
     description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/caterina.png
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
   - featurette:
-    title: Read more →
+    button: Read more →
     topic: Oppenaccess.app
     description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
     image: ../assets/open.access-f.png

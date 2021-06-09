@@ -65,13 +65,13 @@
       </div>
     </div>
 
-    <div class="similar" >
-      <div v-for="(featurette, index) in similar" :key="index">
+    <div class="similar" v-for="(featurette, index) in similar" :key="index">
+      <div>
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
           <div class="text">
             <p class="read-more">{{ featurette.title }}</p>
             <p class="title">{{ featurette.topic }}</p>
-            <p v-if="featurette.description">{{ featurette.description }}</p>
+            <p>{{ featurette.description }}</p>
           </div>
           <img :src="featurette.image" />
         </a>
@@ -108,9 +108,9 @@
           <img :src="featurette.image" />
           <div class="text">
             <p class="title">{{ featurette.topic }}</p>
-            <p v-if="featurette.description">{{ featurette.description }}</p>
+            <p>{{ featurette.description }}</p>
           </div>
-          <button class="btn btn-primary" :style="{ background: header.title.colour }">{{ featurette.title }}</button>
+          <button class="btn btn-primary" :style="{ background: header.title.colour }">{{ featurette.button }}</button>
         </a>
       </div>
     </div>
@@ -123,7 +123,6 @@
         <p><img :src="locationPoint" />{{ address }}</p>
       </div>
       <div class="col-lg-4 contacts">
-
         <div class="emails">
           <div v-for="email in contacts" :key="email">
             <a :href="`mailto:${email}`">
@@ -170,8 +169,7 @@ export default {
       contacts: [],
       twitter: {},
       linkedin: {},
-      similar: [],
-      featurette: []
+      similar: []
     };
   },
   mounted() {
@@ -194,9 +192,7 @@ export default {
     this.twitter = footer.twitter;
     this.linkedin = footer.linkedin;
     this.similar = this.data.similar;
-    this.featurette = this.similar.featurette;
     this.more = this.data.more;
-    this.featurette = this.more.featurette;
   },
 };
 </script>

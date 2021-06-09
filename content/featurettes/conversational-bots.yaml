@@ -11,7 +11,7 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-  - Whether it be qualifying leads, collecting information or directing their visitors to the right part of their website, large corporates saved an average of £300,000 in 2019 by using chatbots within their sales and support teams.    
+  - Whether it be qualifying leads, collecting information or directing their visitors to the right part of their website, large corporates saved an average of £300,000 in 2019 by using chatbots within their sales and support teams.
   - According to a recent business survey most chatbots (41%) are used in a sales function of one form or another and with the speeding up the essential response times by an average of 4x you can see why the business leaders reported an increase in customer satisfaction scores by 24% and an average sales increase of 67%.
   quote:
     colour: "#6E44FF"
@@ -21,7 +21,7 @@ sections:
 - section:
   text:
   - If those figures have made automating part or all of your sales and marketing team sound like the way forward the sobering reality is that, across the board, the vast majority of consumers still want to have a human interaction and they attach much greater value to a conversation if they believe they are talking to a 'real' person – even if they are not!
-  - It is for that reason the ultimate accolade within the bot management realm, the mark of excellence, is when the customer cannot tell they are speaking with a bot or that the experience is so seamless they do not care.It might not pass the Turing test but it may convert a browsing bystander into a hot prospect! 
+  - It is for that reason the ultimate accolade within the bot management realm, the mark of excellence, is when the customer cannot tell they are speaking with a bot or that the experience is so seamless they do not care.It might not pass the Turing test but it may convert a browsing bystander into a hot prospect!
   - Whether it be through clever software or by the diligent training of an experienced sales and marketing team, the power of a bot is only reached through optimisation. The greater the optimisation, the greater the result.
   - A lot of this optimisation is in the form training and learnings but as more vendors and platforms have come to market, more choice has been given to optimise your offering by cherry picking the best Natural Language Processing (NLP) engines and optimising them dependent on local language or industry segment served
 - section:
@@ -54,8 +54,21 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-    - You can now test our Digytle trained bot by clicking on the bot below you can also find a link to our page about Blits  
-action: 
+    - You can now test our Digytle trained bot by clicking on the bot below you can also find a link to our page about Blits
+more:
+  - featurette:
+    button: Read more →
+    topic: Conversational Bots Management Ecosystem
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: blits-conversational-bots-management-ecosystem
+  - featurette:
+    button: Read more →
+    topic: Oppenaccess.app
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/open.access-f.png
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+action:
   text:
     question: Would you like to read the book?
     description: Order it from one of these selected bookstores.

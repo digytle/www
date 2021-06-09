@@ -63,11 +63,24 @@ sections:
       - Next sessions at the cost of €... per 25 minutes with weekly, monthly, quarterly semi-annual or annual frequency as well as on demand.
       - You get a listener, a councellor and a hand written diary for you to keep and remiscense upon, until the next session or forever.
       - "Topics: personal growth, work-live-balance, leadership, digital,..."
-action: 
+more:
+  - featurette:
+    button: Read more →
+    topic: Raspberry Pi Beowulf Cluster
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+  - featurette:
+    button: Read more →
+    topic: Oppenaccess.app
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/open.access-f.png
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+action:
   text:
     question: Would you like to taste T.E.'s unique style?
     description: Book a free appointment.
-    background: 
+    background:
   buttons:
     - button:
       link: https://calendly.com/
