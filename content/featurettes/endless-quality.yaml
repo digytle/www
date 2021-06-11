@@ -61,14 +61,14 @@ sections:
 more:
   - featurette:
     button: Read more →
-    topic: Raspberry Pi Beowulf Cluster
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
-    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+    topic: AUXTA
+    description: AUXTA delivery peace of mind through in-depth monitoring and compliance conformity. AUXTA perform millions of steps every hour.
+    image: ../assets/caterina.png
+    link: auxta
   - featurette:
     button: Read more →
-    topic: Oppenaccess.app
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Digital Leadership
+    description: Our passion for teaching does not end with our talent and we seek to help and educate the wider business community through online learning.
     image: ../assets/open.access-f.png
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 action:

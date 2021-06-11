@@ -61,16 +61,16 @@ sections:
 more:
   - featurette:
     button: Read more →
-    topic: Raspberry Pi Beowulf Cluster
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
-    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+    topic: Green Atlas
+    description: The most innovative approach to informing, educating and helping green energy enthusiasts and site owners to evaluate and understand the potential of their sites.
+    image: ../assets/ga.e.featurette.png
+    link: green-atlas-earth
   - featurette:
     button: Read more →
-    topic: Oppenaccess.app
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/open.access-f.png
-    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+    topic: Talent Scouting & Nurseries
+    description: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
+    image: ../assets/teaching.png
+    link: talent-scouting-and-nurseries
 action:
   text:
     question: Would you like to read the book?

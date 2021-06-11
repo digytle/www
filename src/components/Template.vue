@@ -103,7 +103,7 @@
       <hr>
     </div>
     <div class="more">
-      <div v-for="(featurette, index) in more" :key="index">
+      <div class="width" v-for="(featurette, index) in more" :key="index">
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
           <img :src="featurette.image" />
           <div class="text">
@@ -515,6 +515,9 @@ width: fit-content;
     font-family: $font__menu;
     text-align: center;
     margin-right: 20px;
+  }
+  .width{
+    width: 475px;
   }
   .items{
     color: #2B2D42;

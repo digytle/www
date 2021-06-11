@@ -61,14 +61,14 @@ sections:
 more:
   - featurette:
     button: Read more →
-    topic: Raspberry Pi Beowulf Cluster
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Conversational Chatbots
+    description: One of our partner projects Blits powers all your company’s internal and external chatbots and voicebots.
     image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
   - featurette:
     button: Read more →
-    topic: Oppenaccess.app
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Digytle Stories
+    description: How we managed to build an app in the middle of the pandemic and how it will evolve after.
     image: ../assets/open.access-f.png
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 action:

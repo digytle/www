@@ -62,7 +62,7 @@ more:
   - featurette:
     button: Read more →
     topic: "2020 Summarised"
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    description: How we successfully pivoted during the pandemic, what ideas and apps came from it, and what do we hope to achieve in 2021
     image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
     link: 2020
   - featurette:

@@ -67,8 +67,8 @@ more:
     link: automation-of-quality
   - featurette:
     button: Read more →
-    topic: Endless quality
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Conversational Chatbots
+    description: One of our partner projects Blits powers all your company’s internal and external chatbots and voicebots. Compatible with any AI engine, comms channel and connectors
     image: ../assets/open.access-f.png
     link: endless-quality
 action:

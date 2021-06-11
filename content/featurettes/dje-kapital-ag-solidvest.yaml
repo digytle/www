@@ -58,14 +58,14 @@ sections:
 more:
   - featurette:
     button: Read more →
-    topic: Raspberry Pi Beowulf Cluster
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Progressive Products
+    description: From complex banking platforms through specialised bookshops to chatbot deployments, Digytle will help you choose, develop and run the best digital experience
     image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
   - featurette:
     button: Read more →
-    topic: Oppenaccess.app
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic:  Plug-n-Play Financing Solution
+    description: Leasingly allows small and large merchants to provide their customers with a point of sale financing. The solution is plug-and-play and can be purchased as a SaaS or on premise.
     image: ../assets/open.access-f.png
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 action:

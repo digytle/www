@@ -57,10 +57,10 @@ more:
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
   - featurette:
     button: Read more →
-    topic: Oppenaccess.app
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Endless Quality
+    description: Quality, defined as fitness for purpose, competitiveness and robustness, begins with the conception of the idea and accomompanies it until the very end.
     image: ../assets/open.access-f.png
-    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+    link: endless-quality
 action:
   text:
     question: Would you like to taste T.E.'s unique style?
