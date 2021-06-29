@@ -138,19 +138,20 @@ export default Vue.extend({
     }
   }
   .form-control{
-    border: none;
-    border-bottom: 2px solid #000;
-    border-radius: 0;
+    border-radius: 5px;
+    border-color: lightgray;
+  }
+  .description{
+    height: 90px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-color: lightgray;
   }
   .btn{
     border-radius: 0;
 
-  }
-  .description{
-    height: 40px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #000;
   }
   .hidden{
     display: none;

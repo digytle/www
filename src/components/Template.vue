@@ -102,8 +102,9 @@
       <h2>Read similar</h2>
       <hr>
     </div>
+
     <div class="more">
-      <div class="width" v-for="(featurette, index) in more" :key="index">
+      <div v-for="(featurette, index) in more" :key="index">
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
           <img :src="featurette.image" />
           <div class="text">
@@ -114,6 +115,7 @@
         </a>
       </div>
     </div>
+
     <div class="row-lg-12 footer">
       <div class="head">
         <img class="logo" :src="logo" />
@@ -504,42 +506,38 @@ width: fit-content;
   max-width: 950px;
   margin: auto;
   display: flex;
-  hr{
-    border-top: 2px solid black;
-    margin: 0;
+  a, p{
+    font-family: $font__menu;
+    text-align: center;
+    text-overflow: ellipsis;
+    word-break: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   a:hover {
     text-decoration: none;
   }
-  a, p{
-    font-family: $font__menu;
-    text-align: center;
-    margin-right: 20px;
-  }
-  .width{
-    width: 475px;
-  }
   .items{
     color: #2B2D42;
-    width: fit-content;
     img{
       height: 170px;
-      margin: 20px auto 20px 0px;
+      margin: 20px auto 20px auto;
     }
-    .title{
-      font-size: 22px;
-      font-family: $font__title;
+    .text{
+      width: 475px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .title {
+        font-size: 22px;
+        font-family: $font__title;
+      }
     }
     .btn{
       border-radius: 0;
-      margin: 30px 0px 20px auto;
+      margin: 30px auto 20px auto;
     }
-  }
-  .read-more{
-    margin-top: 10px;
-  }
-  .text{
-    margin-bottom: -20px;
   }
 }
 
