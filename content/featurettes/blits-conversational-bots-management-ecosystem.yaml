@@ -34,7 +34,7 @@ sections:
   - Thomas, maybe an example of a lesson learned from book or your experience of dist lead.
 - section:
   image:
-    url: ../assets/book-img.png
+    url: ../assets/blits.ai-f.png
     title: Different is Better than Better
     description: Written like a PhD, the book has the rare power to instruct and convince.
     colour: "#855c9c"
@@ -48,7 +48,7 @@ sections:
     - "Unlike the majority of chatbots, Blits is unlimited: it can be connecte to a unlimited Natural Language Processing (NLP) languages, to a unlimited number of conversation channels (web, app, voice) and to a unlimited number of SME or Enterprise IT systems and landscapes."
 - section:
   imageWide:
-    url: ../assets/the-crew.png
+    url: ../assets/blits.ai-f2.png
     title: Solid Science
     description: Written like a PhD, the book has the rare power to instruct and convince.
     colour: "#855c9c"
@@ -62,15 +62,28 @@ sections:
   text:
     - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
     - Caterina is available as a consultant, lecturer and speaker.
+more:
+  - featurette:
+    button: Read more →
+    topic: Conversational bots
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: conversational-bots
+  - featurette:
+    button: Read more →
+    topic: Stichting Bedrijfsfinanciering
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/open.access-f.png
+    link: stichting-bedrijfsfinanciering
 action:
   text:
     question: Would you like to learn more about Blits?
     description: Book a free conversation :)
-    background: 
+    background:
   buttons:
   - button:
-    link: https://calendly.com/
-    image: ../assets/Calendly.png
+    link: https://www.blits.ai/
+    image: ../assets/blits-footer.png
 contact:
   text:
     heading: Do you want to work with us

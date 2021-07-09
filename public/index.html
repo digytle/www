@@ -6,9 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- <link rel="icon" href="<%= BASE_URL %>assets/logo.svg"> -->
-  <link rel="icon" type="image/svg+xml" href="<%= BASE_URL %>assets/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="<%= BASE_URL %>assets/flavicon.png">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
   <title>Digytle - We build the future</title>
+  <meta name="keywords" content="Digital, Digital Products, Design, Transformation, development, disruptive technologies, transform, Digytle, Tailored Solutions, Assured Quality, Digital Leadership, ">
+  <meta name="description" content="Trusted development using disruptive technologies. We blend the best of the new with many years of experience to help you transform your offering and launch new projects. ">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PXRZ2QJ');</script>
+  <!-- End Google Tag Manager -->
   <!-- Twitter Specific Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Digital Products, Transformation and Design">
@@ -32,6 +41,26 @@
   <!-- built files will be auto injected -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXRZ2QJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Netlify forms -->
+  <form name="Contact-us" netlify hidden action="src\components\submited.vue" netlify-honeypot="bot-field">
+    <p class="hidden">
+      <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </p>
+    <label>Your Name: <input type="text" name="name" /></label>
+    <label>Your Surname: <input type="text" name="surname" /></label>
+    <label>Your Email: <input type="email" name="email" /></label>
+    <label>Here for:  <select name="here for"></select></label>
+    <label>Message: <textarea name="text"></textarea></label>
+    <label>Newsletter: <input type="checkbox" name="news"></label>
+    <button type="submit">Submit my request</button>
+  </form>
+  <!-- Netlify forms -->
 </body>
 
 </html>

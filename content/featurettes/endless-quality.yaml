@@ -1,13 +1,13 @@
 header:
   image: ../assets/Caterina_AboutPage.png
   title:
-    title: Stichting Bedrijfsfinanciering
+    title: Endless Quality
     colour: "#EF233C"
-    description: A social approach to helping small and medium size businesses learn about, discover and apply for classic and innovative financing.
+    description: Endless Quality
 sections:
 - section:
   title:
-    title: A Long History
+    title: Aux and Digytle, Ahead of Our Time
     colour: "#EF233C"
 - section:
   text:
@@ -61,16 +61,16 @@ sections:
 more:
   - featurette:
     button: Read more →
-    topic: Transforming a 40 Year Old German Investment Fund
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
-    link: 2020
+    topic: AUXTA
+    description: AUXTA delivery peace of mind through in-depth monitoring and compliance conformity. AUXTA perform millions of steps every hour.
+    image: ../assets/caterina.png
+    link: auxta
   - featurette:
     button: Read more →
-    topic: Digitising an International Investment Bank
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    topic: Digital Leadership
+    description: Our passion for teaching does not end with our talent and we seek to help and educate the wider business community through online learning.
     image: ../assets/open.access-f.png
-    link: thomas-lloyd
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 action:
   text:
     question: Would you like to read the book?
@@ -90,7 +90,7 @@ contact:
   text:
     heading: Do you want to work with us
     subheading: Lets get in touch
-    color: "#567d46"
+    color: "#855c9c"
   options:
   - option:
     text: Contact us for Caterina

@@ -1,25 +1,25 @@
 <template>
-        <div class="container" id="story" >
-            <div class="row-md-12 title">
-                <img class="img-fluid logo" src="/assets/logo.png" />
-                <p>Stories</p>
-            </div>
-            <div class="container">
-                <div class="row padding element">
-                    <div class="col-md-6">
-                        <router-link :to="`/${storyBase.template}/${storyBase.link}`">
-                            <h2>{{ text }}</h2>
-                            <p>{{ description }}</p>
-                        </router-link>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <router-link :to="`/${storyBase.template}/${storyBase.link}`">
-                            <img class="img-fluid" src="/assets/Digytle.stories.png" />
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container" id="story" >
+      <div class="row-md-12 title">
+          <img class="img-fluid logo" src="/assets/logo.new.png" />
+          <p>Stories</p>
+      </div>
+      <div class="container">
+          <div class="row padding element">
+              <div class="col-md-6">
+                  <router-link :to="`/${storyBase.template}/${storyBase.link}`">
+                      <h2>{{ text }}</h2>
+                      <p>{{ description }}</p>
+                  </router-link>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                  <router-link :to="`/${storyBase.template}/${storyBase.link}`">
+                      <img class="img-fluid" src="/assets/Digytle.stories.png" />
+                  </router-link>
+              </div>
+          </div>
+      </div>
+  </div>
 </template>
 
 <script>

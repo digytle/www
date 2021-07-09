@@ -34,7 +34,7 @@
             <hr :style="{ color: section.image.colour }">
           </div>
         </div>
-        
+
         <div class="col-7 quote" v-if="section.quote">
           <i class="fas fa-quote-left" :style="{ color: section.quote.colour }"></i>
           <h2>{{ section.quote.text }}</h2>
@@ -64,6 +64,20 @@
         </div>
       </div>
     </div>
+
+    <div class="similar" v-for="(featurette, index) in similar" :key="index">
+      <div>
+        <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
+          <div class="text">
+            <p class="read-more">{{ featurette.title }}</p>
+            <p class="title">{{ featurette.topic }}</p>
+            <p>{{ featurette.description }}</p>
+          </div>
+          <img :src="featurette.image" />
+        </a>
+      </div>
+      <hr>
+    </div>
     <div
       class="work-with-us"
       :style="{ 'background-image': `url('${action.text.background}')` }"
@@ -77,72 +91,65 @@
         </p>
         <div class="buttons">
           <div class="cta" >
-            <a :href="button.link" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
+            <a :href="button.link" target="_blank" rel="noopener noreferrer" v-for="(button, index) in action.buttons" :key="index"><img :src="button.image" class="button"></a>
           </div>
         </div>
         <hr class="two">
       </div>
     </div>
-    
-    <form class="contact" v-if="contact.text.heading">
-      <h2>{{ contact.text.heading }}</h2>
-      <p>{{ contact.text.subheading }}</p>
-      <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name">
-        </div>
+    <contactForm></contactForm>
+    <div class="read-more-title">
+      <h2>Read similar</h2>
+      <hr>
+    </div>
+
+    <div class="more">
+      <div v-for="(featurette, index) in more" :key="index">
+        <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
+          <img :src="featurette.image" />
+          <div class="text">
+            <p class="title">{{ featurette.topic }}</p>
+            <p>{{ featurette.description }}</p>
+          </div>
+          <button class="btn btn-primary" :style="{ background: header.title.colour }">{{ featurette.button }}</button>
+        </a>
       </div>
-      <div class="row">
-        <div class="col" style="margin: 3rem 0 3rem 0;" >
-          <div class="input-group">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+
+    <div class="row-lg-12 footer">
+      <div class="head">
+        <img class="logo" :src="logo" />
+        <p>We build the future</p>
+      </div>
+      <div class="col-lg-4 location">
+        <p><img :src="locationPoint" />{{ address }}</p>
+      </div>
+      <div class="col-lg-4 contacts">
+        <div class="emails">
+          <div v-for="email in contacts" :key="email">
+            <a :href="`mailto:${email}`">
+              <p><img :src="contactsImage" />{{ email }}</p>
+            </a>
           </div>
         </div>
-        <div class="col" style="margin: 3rem 0 3rem 0;">
-          <div class="form-group" style="text-align: start;">
-            <select class="form-control" >
-              <option v-for="(option, index) in contact.options" :key="index"><h2>{{ option.text }}</h2></option>
-            </select>
-          </div>
-        </div>
       </div>
-      <div class="form-group" style="text-align: start;">
-        <textarea class="description" id="inputDescription" type="text" placeholder="Description"></textarea>
+      <div class="col-lg-4 copyright">
+        <router-link to="/privacy-policy/">
+        <p>{{ privacy }}</p>
+        </router-link>
+        <p>{{ copyright }}</p>
       </div>
-      <div class="last-row">
-        <div class="col send">
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                {{ contact.confirm.text }}
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary" :style="{ background: contact.text.color }">Send my inquiry</button>
-        </div>
-        <div class="col social">
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
-          <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
-          <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
-          <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
-        </div>
-      </div>
-    </form> 
-    <Footer></Footer>
+    </div>
   </div>
 </template>
 
 <script>
-// import navigation from "js-yaml-loader!../../content/navigation.yaml";
 import Navigation from "./Navigation";
-import Footer from "./Footer";
+import contactForm from "./contactForm";
+import footer from "js-yaml-loader!../../content/footer.yaml";
 export default {
   name: "Featurette",
-  components: { Navigation, Footer },
+  components: { Navigation, contactForm },
   data() {
     return {
       data: {},
@@ -154,6 +161,17 @@ export default {
       buttons: [],
       contact: [],
       options: [],
+      logo: "",
+      privacy: "",
+      social: "",
+      copyright: "",
+      locationPoint: "",
+      address: "",
+      contactsImage: {},
+      contacts: [],
+      twitter: {},
+      linkedin: {},
+      similar: []
     };
   },
   mounted() {
@@ -166,6 +184,17 @@ export default {
     this.buttons = this.data.buttons;
     this.contact = this.data.contact;
     this.options = this.data.options;
+    this.logo = footer.logo;
+    this.privacy = footer.privacy;
+    this.address = footer.address;
+    this.copyright = footer.copyright;
+    this.locationPoint = footer.location;
+    this.contactsImage = footer.contactsImage;
+    this.contacts = footer.contacts;
+    this.twitter = footer.twitter;
+    this.linkedin = footer.linkedin;
+    this.similar = this.data.similar;
+    this.more = this.data.more;
   },
 };
 </script>
@@ -176,10 +205,12 @@ export default {
 .fea{
   overflow: hidden;
 }
+
 .image {
   margin-top: 5rem;
   margin-left: 4.2rem;
 }
+
 .header {
   margin-right: auto;
   text-align: left;
@@ -211,6 +242,7 @@ export default {
     margin-top: 5px;
   }
 }
+
 .sub-info {
   margin-top: -2rem;
   margin-bottom: 55px;
@@ -232,6 +264,7 @@ export default {
     font-family:  $font__menu;
   }
 }
+
 .quote {
   max-width: 618px;
   margin-top: 3rem;
@@ -255,6 +288,7 @@ export default {
     font-size: 40px;
   }
 }
+
 .first {
   margin-bottom: 2rem;
   p {
@@ -351,51 +385,159 @@ width: fit-content;
         width: 15rem;
       }
     }
-  } 
+  }
 }
-.contact{
+
+.footer{
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 950px;
-  margin-bottom: 5rem;
-  h2{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 0px;
-  }
-  p{
-    font-family: $font__menu;
-  }
-  .form-control{
-    border: none;
-    border-bottom: 2px solid #000;
-    border-radius: 0;
-  }
-  .btn{
-    border-radius: 0;
-    
-  }
-  .description{
-    height: 40px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #000;
-  }
-  .send{
-    text-align: start;
-    padding: 0;
-  }
-  .social{
-    font-size: 30px;
-    text-align: end;
-    padding: 0;
-    .fab{
-      margin-left: 1rem;
-      color: #007bff;
+  .head{
+    margin-bottom: 4rem;
+    .logo{
+      width: 30%;
+      margin-top: 3rem;
+    }
+    p{
+      font-size: 19px;
+      font-family: $font__menu;
+      margin-top: 10px;
     }
   }
-  .last-row{
+  .location, .contacts{
+    text-align: center;
+    margin: auto;
+    p{
+      font-family: $font__menu;
+    }
+    a{
+      text-decoration: underline;
+      color: #2B2D42;
+    }
+    img{
+      margin-right: 10px;
+    }
+  }
+  .location{
+      max-width: 250px;
+  }
+  .contacts{
+    text-align: center;
+    p{
+      font-family: $font__menu;
+      font-size: 19px;
+    }
+  }
+  .copyright{
+    text-align: center;
+    margin: auto;
+    margin-top: 4.5rem;
+    p{
+      font-family: $font__menu;
+      width: 300px;
+    }
+    a{
+      color: #2B2D42;
+    }
+  }
+}
+
+.similar{
+  max-width: 620px;
+  margin: auto;
+  a:hover {
+    text-decoration: none;
+    color: #8d90a8;
+    img {
+      opacity: 0.85;
+    }
+  }
+  a, p{
+    font-family: $font__menu;
+    text-align: left;
+    padding-right: 10px;
+  }
+  .read-more{
+    padding-top: 10px;
+    .text{
+      display: flex;
+    }
+  }
+  .items{
     display: flex;
+    flex-direction: row-reverse;
+    border-top: 2px solid #2B2D42;
+    color: #2B2D42;
+    width: fit-content;
+    img{
+      height: 170px;
+      margin: auto 25px auto auto;
+    }
+    .title{
+      font-size: 22px;
+      font-family: $font__title;
+    }
+  }
+  hr{
+    border-top: 2px solid #2B2D42;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+  }
+}
+
+.read-more-title{
+  max-width: 950px;
+  margin: auto;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  h2{
+    display: inline-block;
+    background-color: white;
+    font-size: 30px;
+    width: 280px;
+  }
+  hr{
+    border-top: 2px solid black;
+    margin-top: -1.5rem;
+  }
+}
+
+.more{
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  a, p{
+    font-family: $font__menu;
+    text-align: center;
+    text-overflow: ellipsis;
+    word-break: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .items{
+    color: #2B2D42;
+    img{
+      height: 170px;
+      margin: 20px auto 20px auto;
+    }
+    .text{
+      width: 475px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .title {
+        font-size: 22px;
+        font-family: $font__title;
+      }
+    }
+    .btn{
+      border-radius: 0;
+      margin: 30px auto 20px auto;
+    }
   }
 }
 
@@ -445,7 +587,7 @@ width: fit-content;
     }
   }
 }
-  
+
 
 @media only screen and (max-width: 1025px) and (orientation: landscape) {
   .header {
@@ -459,7 +601,7 @@ width: fit-content;
       margin-left: 0px;
     }
   }
-  
+
 }
 @media only screen and (max-width: 800px) {
   .work-with-us{
@@ -473,8 +615,13 @@ width: fit-content;
       display: flex;
     }
   }
-  .contact{
-    width: 80%;
+  .read-more-title, .more{
+    max-width: 80%;
+  }
+  .read-more-title{
+    h2{
+      width: 250px;
+    }
   }
 }
 @media only screen and (max-width: 500px) {
@@ -485,7 +632,7 @@ width: fit-content;
   }
   .image {
     margin-top: 0rem;
-  } 
+  }
   .info {
     margin-left: 0px;
     margin-top: 20px;
@@ -515,29 +662,14 @@ width: fit-content;
     }
     .one, .two{
       max-width: 80%;
-    } 
+    }
   }
-} 
-@media only screen and (max-width: 400px) {
-  .contact{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  margin-bottom: 5rem;
-    .row{
-      display: flex;
-      flex-direction: column;
-      .col{
-        margin: 0 !important;
-        margin-bottom: 2rem !important;
-      }
-    }
-    .last-row{
+  .more{
     display: block;
-    }
-    .send, .social{
-      text-align: center;
-      margin-bottom: 1rem;
+  }
+  .read-more-title{
+    h2{
+      width: 200px;
     }
   }
 }

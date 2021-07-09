@@ -15,11 +15,11 @@ sections:
   - But that was not the most interesting thing about Len. It was the air of determination, which led to briefness and swiftness, to focus and no spare time.
 - section:
   title:
-    title: A Seminal Book for Digital Innovators 
+    title: A Seminal Book for Digital Innovators
     colour: "#EF233C"
 - section:
   text:
-  - So it was his passion for digital innovation and his natural interest in distributed leadership that brought T.E. Shaw to Caterina Maniscalco's book. 
+  - So it was his passion for digital innovation and his natural interest in distributed leadership that brought T.E. Shaw to Caterina Maniscalco's book.
   - It not only informs, instructs and inspires, but also convinces and is rich in both scientific research and real life examples of distributed leadership giving companies the edge in highly competitive spaces.
 - section:
   quote:
@@ -43,7 +43,7 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice 
+    - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice
     - Caterina is one of our Digytle Partners, our highly specialised assemble of digital leaders and innovators as well as trusted partner organisations.
 - section:
   imageWide:
@@ -55,11 +55,24 @@ sections:
   text:
     - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
     - Caterina is available as a consultant, lecturer and speaker.
+more:
+  - featurette:
+    button: Read more →
+    topic: Progressive Products
+    description: From complex banking platforms through specialised bookshops to chatbot deployments, Digytle will help you choose, develop and run the best digital experience
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
+  - featurette:
+    button: Read more →
+    topic:  Plug-n-Play Financing Solution
+    description: Leasingly allows small and large merchants to provide their customers with a point of sale financing. The solution is plug-and-play and can be purchased as a SaaS or on premise.
+    image: ../assets/open.access-f.png
+    link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 action:
   text:
     question: Would you like to read the book?
     description: Order it from one of these selected bookstores.
-    background: 
+    background:
   buttons:
   - button:
     link: https://www.amazon.com/Distributed-Leadership-Digital-Innovation-Management/dp/0367361485/ref=sr_1_31?keywords=innovation&qid=1573320208&refinements=p_n_publication_date%3A1250228011&s=books&sr=1-31

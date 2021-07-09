@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="header">
+    <div class="header" id="header">
       <div class="container-fluid">
         <div class="row hero">
           <div class="col">

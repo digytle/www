@@ -15,7 +15,7 @@ sections:
   - A most misunderstood point about talent is that it need not be young or inexperienced. People reach turning points in their career and need as much help to figure out what they want and can do next, as the smallest child.
 - section:
   title:
-    title: Endless Innovation 
+    title: Endless Innovation
     colour: "#567d46"
 - section:
   text:
@@ -31,7 +31,7 @@ sections:
   - Green Atlas is relentlessly business and relentlessly green. It is a powerful busienss tool and a powerful tool of ecological transformation. It begins by allowing green enthusiasts to explore renuable options and then helps them transform the dreams into viable projects.
 - section:
   image:
-    url: ../assets/book-img.png
+    url: ../assets/ga.e-f.png
     title: Solid Science
     description: Written like a PhD, the book has the rare power to instruct and convince.
     colour: "#567d46"
@@ -58,11 +58,24 @@ sections:
   text:
     - Interested?
     - Join Green Atlas.
+more:
+  - featurette:
+    button: Read more →
+    topic: "2020 Summarised"
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+    link: 2020
+  - featurette:
+    button: Read more →
+    topic: Transforming a German Investment Fund
+    description: Prior to that one had to go with a suitcase with half a million Euro to München. Now one can begin with €10 000 from the comfort of their home.
+    image: ../assets/open.access-f.png
+    link: progressive-products-and-tailored-solutions
 action:
   text:
     question: Would you like to learn more about Green Atlas?
     description: Visit the website.
-    background: 
+    background:
   buttons:
   - button:
     link: https://greenatlas.earth/

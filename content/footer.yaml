@@ -2,9 +2,8 @@ logo: /assets/logo.new.png
 location: /assets/location-point.svg
 address: 27 Old Gloucester Street, London, WC1N 3AX
 contactsImage: /assets/contacts.svg
-contacts: 
-- cc@digytle.com
-- t.e.shaw@digytle.com
+contacts:
+- hello@digytle.com
 privacy: Privacy policy
 copyright: © 2020-2021 Digytle. All rights reserved
 twitter: /assets/twitter_image.svg

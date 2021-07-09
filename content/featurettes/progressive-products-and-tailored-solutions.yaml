@@ -1,13 +1,13 @@
 header:
   image: ../assets/Caterina_AboutPage.png
   title:
-    title: Stichting Bedrijfsfinanciering
+    title: Progressive products and tailored solutions
     colour: "#EF233C"
-    description: A social approach to helping small and medium size businesses learn about, discover and apply for classic and innovative financing.
+    description: Progressive products and tailored solutions
 sections:
 - section:
   title:
-    title: A Long History
+    title: Aux and Digytle, Ahead of Our Time
     colour: "#EF233C"
 - section:
   text:
@@ -61,16 +61,16 @@ sections:
 more:
   - featurette:
     button: Read more →
-    topic: Transforming a 40 Year Old German Investment Fund
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
-    link: 2020
+    topic: Green Atlas
+    description: The most innovative approach to informing, educating and helping green energy enthusiasts and site owners to evaluate and understand the potential of their sites.
+    image: ../assets/ga.e.featurette.png
+    link: green-atlas-earth
   - featurette:
     button: Read more →
-    topic: Digitising an International Investment Bank
-    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
-    image: ../assets/open.access-f.png
-    link: thomas-lloyd
+    topic: Talent Scouting & Nurseries
+    description: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
+    image: ../assets/teaching.png
+    link: talent-scouting-and-nurseries
 action:
   text:
     question: Would you like to read the book?
@@ -90,7 +90,7 @@ contact:
   text:
     heading: Do you want to work with us
     subheading: Lets get in touch
-    color: "#567d46"
+    color: "#855c9c"
   options:
   - option:
     text: Contact us for Caterina

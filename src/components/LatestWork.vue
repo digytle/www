@@ -11,9 +11,9 @@
           <div class="image-box">
             <div class="card">
               <router-link :to="`${item.template}/${item.link}`">
-                <!-- <img class="card-img-top img" :src="item.image" /> -->
                 <img src="/assets/auxta.logo.png" class="img">
                 <img src="/assets/blits.bot.bg.png" class="img-bg">
+                <img src="/assets/qa.gif" class="img-bot">
                 <img src="/assets/auxta.work.png" class="img-bot">
                 <div class="card-body">
                   <h2>{{ item.title }}</h2>
@@ -29,10 +29,9 @@
           <div class="image-container" v-for="item in left" :key="item.text">
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
+                <h2>{{ item.title }}</h2>
               </router-link>
-              <h2>{{ item.title }}</h2>
               <p>{{ item.description }}</p>
-              <!-- <hr /> -->
           </div>
         </div>
         <div class="col-lg-6 section section1" id="section">
@@ -44,8 +43,8 @@
             <div class="image-box">
               <router-link :to="`${item.template}/${item.link}`">
                 <img class="img-fluid" :src="item.image" />
+                <h2>{{ item.title }}</h2>
               </router-link>
-              <h2>{{ item.title }}</h2>
               <p>{{ item.description }}</p>
               <!-- <hr /> -->
             </div>
@@ -124,14 +123,14 @@ export default {
       .img-bot{
         position: absolute;
         left: 0;
-        bottom: 3rem;
+        bottom: 2rem;
         width: 100%;
       }
       .card-body {
         p {
           position: absolute;
           top: 13rem;
-          color: black;
+          color: white;
           text-align: left;
           font-size: 16px;
           padding-left: 2rem;
@@ -140,7 +139,7 @@ export default {
         }
         h2 {
           position: absolute;
-          color: black;
+          color: white;
           font-size: 30px;
           top: 10%;
           padding-left: 2.1rem;
@@ -175,6 +174,9 @@ export default {
       background-color: white;
       font-weight: 400;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 .section {
@@ -197,7 +199,7 @@ export default {
         word-wrap: break-word;
       }
     }
-  } 
+  }
   .bigsection {
     .image-container {
       .card {

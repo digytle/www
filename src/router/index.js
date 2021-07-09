@@ -2,12 +2,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../components/MainPage'
 import Template from '../components/Template'
-// import DigytleStory from '../components/DigytleStory'
-// import DesignPage from '../components/DesignPage'
+import submited from '../components/submited'
 import PrivacyPolicy from '../components/PrivacyPolicy'
+// Google Analytics
+// https://matteo-gabriele.gitbook.io/vue-gtag/
+import VueGtag from "vue-gtag";
+
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+  {
     path: '/',
     name: 'MainPage',
     component: MainPage
@@ -25,20 +29,15 @@ const routes = [{
     path: '/stories',
     redirect: '/'
   },
-  // {
-  //   path: '/stories/**',
-  //   name: 'DigytleStory',
-  //   component: DigytleStory
-  // },
-  // {
-  //   path: '/feature/**',
-  //   name: 'DesignPage',
-  //   component: DesignPage
-  // },
   {
     path: '/privacy-policy/**',
     name: 'PrivacyPolicy',
     component: PrivacyPolicy
+  },
+  {
+    path: '/submited',
+    name: 'submited',
+    component: submited
   }
 ]
 
@@ -59,5 +58,11 @@ const router = new VueRouter({
     }
   }
 })
+
+// Auto tracking
+// https://matteo-gabriele.gitbook.io/vue-gtag/auto-tracking
+Vue.use(VueGtag, {
+  config: { id: "G-WXBKHYSJCZ" }
+}, router);
 
 export default router

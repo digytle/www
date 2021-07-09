@@ -1,0 +1,66 @@
+header:
+  image: ../assets/raspberry-pi-the-pie-hut-transparrent-cluster-with-fans.jpg
+  title:
+    title: Raspberry Pi Beowulf Cluster
+    colour: "#DAA520"
+    description: 'The frequently quoted, but seldom understood Agile Manifesto is four lines long. Not even four sentences. It begins with: "Individuals and interactions..."'
+sections:
+  - section:
+    title:
+      title: Talent Scouting & Nurseries
+      colour: "#DAA520"
+    text:
+      - T.E. Shaw has been scouting & nursing undiscovered and lost talent for over 40 years.
+      - The executive talent is one of the most underreated.
+      - Executives are expected to be strong, to know all and everything, to manage and survive. And they should.
+      - But not without help.
+      - T.E.'s concise style of nursing helps executives make sense of the world around them and be successful.
+  - section:
+    title:
+      title: Scratch-like
+      colour: "#DAA520"
+    text:
+      - MIT Scratch is a methaphore.
+      - Another mathaphores are the sail of the ship, being in the battle or standing on the hill, a hypeman.
+      - "T.E.'s long international experience and successes are brought on a local, personal level, to help you be happier and more successful."
+  - section:
+    image:
+      url: ../assets/sail.png
+      title: Solid Science
+      description: The triangle front sail of the ship is attached at three points. When these points are the right ones, the sail is full of wind and the ship sails.
+      colour: "#DAA520"
+  - section:
+    title:
+      title: Psychoanalysis for Executives
+      colour: "#DAA520"
+  - section:
+    text:
+      - You can talk or listen.
+    quote:
+      colour: "#DAA520"
+      bigQuotes: ../assets/big_quotes.svg
+      text: "The book inspired me and showed me ways to lead and do business, good for distributed contexts such as those enforced by a global pandemic."
+      smallQuotes: ../assets/small_quotes.svg
+action:
+  text:
+    question: Would you like to taste T.E.'s unique style?
+    description: Book a free appointment.
+    background: 
+  buttons:
+    - button:
+      link: https://calendly.com/
+      image: ../assets/calendly.png
+contact:
+  text:
+    heading: Do you want to work with us
+    subheading: Lets get in touch
+    color: "#DAA520"
+  options:
+  - option:
+    text: Contact us for Caterina
+  - option:
+    text: Contact us for a Conversational chatbot
+  - option:
+    text: Contact us for a Digytle for executives
+  confirm:
+    text: I agree to recieve news from Digytle
