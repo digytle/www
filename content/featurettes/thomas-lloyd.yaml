@@ -91,12 +91,5 @@ contact:
     heading: Do you want to work with us
     subheading: Lets get in touch
     color: "#567d46"
-  options:
-  - option:
-    text: Contact us for Caterina
-  - option:
-    text: Contact us for a Conversational chatbot
-  - option:
-    text: Contact us for a Digytle for executives
   confirm:
     text: I agree to recieve news from Digytle

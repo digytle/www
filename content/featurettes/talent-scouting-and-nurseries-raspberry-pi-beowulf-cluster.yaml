@@ -45,7 +45,7 @@ action:
   text:
     question: Would you like to taste T.E.'s unique style?
     description: Book a free appointment.
-    background: 
+    background:
   buttons:
     - button:
       link: https://calendly.com/
@@ -55,12 +55,5 @@ contact:
     heading: Do you want to work with us
     subheading: Lets get in touch
     color: "#DAA520"
-  options:
-  - option:
-    text: Contact us for Caterina
-  - option:
-    text: Contact us for a Conversational chatbot
-  - option:
-    text: Contact us for a Digytle for executives
   confirm:
     text: I agree to recieve news from Digytle
