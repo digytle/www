@@ -121,6 +121,12 @@
         <img class="logo" :src="logo" />
         <p>We build the future</p>
       </div>
+      <div class="col social">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
+        <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
+        <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
+        <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
+      </div>
       <div class="col-lg-4 location">
         <p><img :src="locationPoint" />{{ address }}</p>
       </div>
@@ -393,7 +399,7 @@ width: fit-content;
   margin-left: auto;
   margin-right: auto;
   .head{
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     .logo{
       width: 30%;
       margin-top: 3rem;
@@ -402,6 +408,15 @@ width: fit-content;
       font-size: 19px;
       font-family: $font__menu;
       margin-top: 10px;
+    }
+  }
+  .social{
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 4rem;
+    .fab{
+      margin-left: 1rem;
+      color: #007bff;
     }
   }
   .location, .contacts{

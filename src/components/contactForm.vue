@@ -44,12 +44,6 @@
           </div>
           <button type="submit" class="btn btn-primary" :style="{ background: contact.text.color }">Submit my request</button>
         </div>
-        <div class="col social">
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
-          <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
-          <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
-          <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
-        </div>
       </div>
     </form>
 </div>
@@ -159,15 +153,6 @@ export default Vue.extend({
   .send{
     text-align: start;
     padding: 0;
-  }
-  .social{
-    font-size: 30px;
-    text-align: end;
-    padding: 0;
-    .fab{
-      margin-left: 1rem;
-      color: #007bff;
-    }
   }
   .last-row{
     display: flex;
