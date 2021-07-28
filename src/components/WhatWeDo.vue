@@ -79,7 +79,7 @@
 </template>
 
 <script>
-import WhatWeDo from "js-yaml-loader!../../content/what-we-do.yaml";
+import WhatWeDo from "js-yaml-loader!../../content/do.yaml";
 export default {
   name: "WhatWeDo",
   data() {

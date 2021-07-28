@@ -1,3 +1,9 @@
+# TODO
+# Implement Social Media Cards and find out how to have more headers in Vue.js !!!
+card:
+  # image: optional--if non, it is taken from the page
+  # title: optional--if non, it is taken from the page
+  # description: optional--if non, it is taken from the page
 header:
 # TODO
 # Remove the path.
