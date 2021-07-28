@@ -102,8 +102,9 @@
       <h2>Read similar</h2>
       <hr>
     </div>
+
     <div class="more">
-      <div class="width" v-for="(featurette, index) in more" :key="index">
+      <div v-for="(featurette, index) in more" :key="index">
         <a :href="featurette.link" class="items" target="_blank" rel="noopener noreferrer">
           <img :src="featurette.image" />
           <div class="text">
@@ -114,10 +115,17 @@
         </a>
       </div>
     </div>
+
     <div class="row-lg-12 footer">
       <div class="head">
         <img class="logo" :src="logo" />
         <p>We build the future</p>
+      </div>
+      <div class="col social">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square" :style="{ color: contact.text.color }"></i></a>
+        <a href="https://twitter.com/digytle"><i class="fab fa-twitter-square" :style="{ color: contact.text.color }"></i></a>
+        <a href="https://www.linkedin.com/company/digytle/about/"><i class="fab fa-linkedin-in" :style="{ color: contact.text.color }"></i></a>
+        <a href="https://github.com/digytle/www"><i class="fab fa-github" :style="{ color: contact.text.color }"></i></a>
       </div>
       <div class="col-lg-4 location">
         <p><img :src="locationPoint" />{{ address }}</p>
@@ -391,7 +399,7 @@ width: fit-content;
   margin-left: auto;
   margin-right: auto;
   .head{
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     .logo{
       width: 30%;
       margin-top: 3rem;
@@ -400,6 +408,15 @@ width: fit-content;
       font-size: 19px;
       font-family: $font__menu;
       margin-top: 10px;
+    }
+  }
+  .social{
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 4rem;
+    .fab{
+      margin-left: 1rem;
+      color: #007bff;
     }
   }
   .location, .contacts{
@@ -504,42 +521,38 @@ width: fit-content;
   max-width: 950px;
   margin: auto;
   display: flex;
-  hr{
-    border-top: 2px solid black;
-    margin: 0;
+  a, p{
+    font-family: $font__menu;
+    text-align: center;
+    text-overflow: ellipsis;
+    word-break: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   a:hover {
     text-decoration: none;
   }
-  a, p{
-    font-family: $font__menu;
-    text-align: center;
-    margin-right: 20px;
-  }
-  .width{
-    width: 475px;
-  }
   .items{
     color: #2B2D42;
-    width: fit-content;
     img{
       height: 170px;
-      margin: 20px auto 20px 0px;
+      margin: 20px auto 20px auto;
     }
-    .title{
-      font-size: 22px;
-      font-family: $font__title;
+    .text{
+      width: 475px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .title {
+        font-size: 22px;
+        font-family: $font__title;
+      }
     }
     .btn{
       border-radius: 0;
-      margin: 30px 0px 20px auto;
+      margin: 30px auto 20px auto;
     }
-  }
-  .read-more{
-    margin-top: 10px;
-  }
-  .text{
-    margin-bottom: -20px;
   }
 }
 

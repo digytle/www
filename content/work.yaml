@@ -31,7 +31,7 @@ left:
 # rename to right:
 right:
 - title: SME Re-Financing and Discovery Marketplace
-  description: A complex marketplace for informing, educating, and helping SMEs discover, prepare and choose a re-financing soluion as well as other innovative finanance, income and employee retention solutions.
+  description: An intuative marketplace for informing, educating, and helping SMEs discover, prepare and choose a re-financing soluions as well as other innovative finanance, income and employee retention solutions. 
   image: assets/stichting.png
   template: featurettes
   link: stichting-bedrijfsfinanciering
