@@ -11,7 +11,7 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-  - "Quality is one of these categories, which we think we understand intuitively, but in fact: we don't."
+  - "Quality is one of those categories that we think we understand intuitively, but in fact: we don't."
   - "Quality must be managed: systematically, end-to-end."
   - "It begins with the people and continues with the culture and processes."
 - section:
@@ -20,8 +20,8 @@ sections:
     colour: "#EF233C"
 - section:
   text:
-  - Digytle has over 40 years of experience enforcing quality in digital processes and products.
-  - We will speak with you, understandyou understand your situation, if needed--help you understand it (better), and then help you improve it.
+  - Digytle has over 40 years of experience applying and embedding quality into digital processes and products.
+  - We will speak with you to better understand you and your situation, and if needed we can help you understand it better. Then help you improve it.
 - section:
   title:
     title: Approach and Instruments
@@ -39,10 +39,7 @@ sections:
 - section:
   text:
   - Digytle works with a KPMG style Control Framework.
-  - Then we explore and agree with you upon the desired state.
-  - Then we design, propose and agree with you a roadmap.
-  - Last but not least, we build a Control Framework.
-- section:
+ - section:
   image:
     url: ../assets/book-img.png
     title: Control Framework
