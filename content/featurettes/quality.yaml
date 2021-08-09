@@ -98,6 +98,8 @@ more:
     link: talent-scouting-and-nurseries-raspberry-pi-beowulf-cluster
 # TODO
 # The action does not seems to be possible to be turned off.
+# rename here action to books
+# create action called prices
 action:
   text:
     question: Would you like to read the book?
