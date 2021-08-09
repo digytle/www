@@ -39,7 +39,7 @@ sections:
 - section:
   text:
   - Digytle works with a KPMG style Control Framework.
- - section:
+- section:
   image:
     url: ../assets/book-img.png
     title: Control Framework
