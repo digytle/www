@@ -81,7 +81,7 @@
     <div
       class="work-with-us"
       :style="{ 'background-image': `url('${action.text.background}')` }"
-      v-if="action.text.question"
+      v-if="data.action"
     >
       <div class="work">
         <hr class="one">
@@ -97,7 +97,25 @@
         <hr class="two">
       </div>
     </div>
+    <div v-if="data.prices">
+      <h2 style="color: red">This is WIP and a test for functionality. Needs styling and responsive</h2>
+    </div>
+    <div class="prices" v-if="data.prices">
+      <div class="option" v-for="(option, index) in prices" :key="index">
+        <h3>{{ option.name }}</h3>
+        <p>{{ option.description }}</p>
+        <h2>{{ option.price }}</h2>
+        <div class="include">
+          <h3>This includes:</h3>
+          <p class="text" v-for="(text) in option.text" :key="text">
+            {{ text }}
+          </p>
+        </div>
+      </div>
+    </div>
+
     <contactForm></contactForm>
+
     <div class="read-more-title">
       <h2>Read similar</h2>
       <hr>
@@ -164,6 +182,7 @@ export default {
       sections: [],
       text: [],
       action: [],
+      prices: [],
       buttons: [],
       contact: [],
       options: [],
@@ -187,6 +206,7 @@ export default {
     this.sections = this.data.sections;
     this.text = this.sections.section;
     this.action = this.data.action;
+    this.prices = this.data.prices;
     this.buttons = this.data.buttons;
     this.contact = this.data.contact;
     this.options = this.data.options;
@@ -552,6 +572,28 @@ width: fit-content;
     .btn{
       border-radius: 0;
       margin: 30px auto 20px auto;
+    }
+  }
+}
+
+.prices{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: auto;
+  .option{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 20px 4rem 20px;
+    width: 285px;
+
+    .include{
+      margin-top: 2rem;
+      .text{
+        border-bottom: 1px solid black;
+        text-align: left;
+      }
     }
   }
 }
