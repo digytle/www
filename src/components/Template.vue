@@ -97,16 +97,14 @@
         <hr class="two">
       </div>
     </div>
-    <div v-if="data.prices">
-      <h2 style="color: red">This is WIP and a test for functionality. Needs styling and responsive</h2>
-    </div>
+
     <div class="prices" v-if="data.prices">
       <div class="option" v-for="(option, index) in prices" :key="index">
         <h3>{{ option.name }}</h3>
-        <p>{{ option.description }}</p>
-        <h2>{{ option.price }}</h2>
+        <p class="description">{{ option.description }}</p>
+        <h2 class="price">{{ option.price }}</h2>
+        <h3 class="includes">This includes:</h3>
         <div class="include">
-          <h3>This includes:</h3>
           <p class="text" v-for="(text) in option.text" :key="text">
             {{ text }}
           </p>
@@ -581,21 +579,51 @@ width: fit-content;
   flex-direction: row;
   width: fit-content;
   margin: auto;
+
   .option{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
     padding: 30px;
     margin: 0 20px 4rem 20px;
     width: 285px;
+    user-select: none;
+
+    .price{
+      margin-top: 40px;
+    }
+    .description{
+      font-family: $font__menu;
+      font-size: 14px;
+    }
+
+    .includes{
+      font-size: 16px;
+      margin-top: 20px;
+    }
 
     .include{
-      margin-top: 2rem;
+      height: 300px;
+      padding: 0 10px;
+
       .text{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(94, 94, 94);
         text-align: left;
+        font-family: $font__menu;
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(158, 158, 158);
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 1100px) {

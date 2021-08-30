@@ -104,33 +104,34 @@ prices:
   - option:
     name: Starter
     description: Jump start your transformation
-    price: £150
+    price: £35/h
     text:
-      - lorem
-      - lorem
-      - lorem
+      - Design
+      - Technology
+      - Multi word sentence test
   - option:
     name: Medium
     description: Digytise your business
-    price: £400
+    price: £65/h
     text:
-      - lorem
-      - lorem
-      - lorem
-      - lorem
-      - lorem
+      - Design
+      - Technology
+      - Multi word sentence test
+      - Design
+      - Technology
+      - Multi word sentence test
   - option:
     name: Business
     description: Full package
-    price: £550
+    price: £75/h
     text:
-      - lorem
-      - lorem
-      - lorem
-      - lorem
-      - lorem
-      - lorem
-      - lorem
+      - Design
+      - Technology
+      - Multi word sentence test
+      - Design
+      - Technology
+      - Multi word sentence test
+      - Design
 contact:
   text:
     heading: Do you want to work with us
