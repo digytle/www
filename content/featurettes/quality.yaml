@@ -2,13 +2,13 @@ header:
   image: ../assets/fitness.png
   title:
     title: Quality
-    colour: "#EF233C"
+    colour: "#1E90FF"
     description: Fitness for Purpose, Competitiveness and Robustness
 sections:
 - section:
   title:
     title: Definition
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
   - "Quality is one of those categories that we think we understand intuitively, but in fact: we don't."
@@ -17,7 +17,7 @@ sections:
 - section:
   title:
     title: How we can help?
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
   - Digytle has over 40 years of experience applying and embedding quality into digital processes and products.
@@ -25,7 +25,7 @@ sections:
 - section:
   title:
     title: Approach and Instruments
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
   - Digytle approaches quality by first describing the status quo.
@@ -35,7 +35,7 @@ sections:
 - section:
   title:
     title: Control Framework
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
   - Digytle works with a KPMG style Control Framework.
@@ -44,7 +44,7 @@ sections:
     url: ../assets/framework.png
     title: Control Framework
     description: Contains controls, grouped in sections, descriptions of the controls and how are they to be executed, an indicator if they are proposed, required or rejected, a period of execution, a responsible person and a result.
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
   - "Sections can be: Security, Scalability."
@@ -59,7 +59,7 @@ sections:
 - section:
   title:
     title: AUXTA
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
     - Besides the Control Framework, Digytle applies the services of AUXTA.
@@ -67,7 +67,7 @@ sections:
 - section:
   title:
     title: Engagement and Price
-    colour: "#EF233C"
+    colour: "#1E90FF"
 - section:
   text:
     - The initial conversation and the assessment of the potential cooperation are free.
@@ -78,7 +78,7 @@ sections:
 #     url: ../assets/the-crew.png
 #     title: Solid Science
 #     description: Written like a PhD, the book has the rare power to instruct and convince.
-#     colour: "#EF233C"
+#     colour: "#1E90FF"
 # - section:
 #   text:
 #     - Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice. Caterina was born in New York and spent the last 20 years consulting digital strategy. Long form biography of her choice.
@@ -136,6 +136,6 @@ contact:
   text:
     heading: Do you want to work with us
     subheading: Lets get in touch
-    color: "#855c9c"
+    color: "#1E90FF"
   confirm:
     text: I agree to recieve news from Digytle
