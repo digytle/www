@@ -1,5 +1,5 @@
 header:
-  image: ../assets/Caterina_AboutPage.png
+  image: ../assets/fitness.png
   title:
     title: Quality
     colour: "#EF233C"
@@ -41,7 +41,7 @@ sections:
   - Digytle works with a KPMG style Control Framework.
 - section:
   image:
-    url: ../assets/book-img.png
+    url: ../assets/framework.png
     title: Control Framework
     description: Contains controls, grouped in sections, descriptions of the controls and how are they to be executed, an indicator if they are proposed, required or rejected, a period of execution, a responsible person and a result.
     colour: "#EF233C"
